@@ -30,7 +30,7 @@ export const BlogsPage = () => {
                 <div className="blogs mt-10 flex flex-wrap gap-[40px]">
                     {blogs.map((data:any) => {
                         return (
-                            <div className="card bg-base-100 rounded-none w-[33%]">
+                            <div className="card bg-base-100 rounded-none w-full md:w-[33%] lg:w-[33%]">
                                 <figure>
                                     <img
                                     src={data.imgUrl}
