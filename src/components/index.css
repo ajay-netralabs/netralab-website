@@ -1,0 +1,9 @@
+.nav-bar {
+    /* background: #0B0B22; */
+    box-shadow: 2px -1px 7.6px 0px #181818;
+}
+
+.accordion-item {
+    border-radius: 10px;
+    background: var(--Up-Color-BG, linear-gradient(179deg, rgba(110, 110, 112, 0.10) 43.81%, rgba(11, 11, 34, 0.10) 81.95%));
+}
