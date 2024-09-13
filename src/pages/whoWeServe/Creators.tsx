@@ -6,7 +6,7 @@ import MarketOpportunity from "../../../public/vids/marketopp.mp4"
 import Creator1Vid from "../../../public/vids/Creator-1.mp4"
 
 import CreatorImg from "../../../public/Creator-img.png"
-import CreatorImg2 from "../../../public/Creator-img-2.png"
+import CreatorImg2 from "../../../public/creator-img-2.png"
 
 import Creator1Icon from "../../../public/vids/creator-icon-1.mp4"
 import Creator2Icon from "../../../public/vids/creator-icon-2.mp4"
