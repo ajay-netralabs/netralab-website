@@ -58,7 +58,7 @@ export const ContactUsPage = () => {
                 </div>
                 <div className="contact-form-container w-full md:w-[50%] lg:w-[50%] p-[20px]">
                     <h1 className="font-bold text-[20px] leading-[28px] pb-[28px] border-b border-b-[#252525]">Details</h1>
-                    <div className="flex my-[20px] gap-[20px]">
+                    <div className="flex flex-col md:flex-row lg:flex-row my-[20px] gap-[20px]">
                         <label className="form-control w-full max-w-xs">
                             <div className="label">
                                 <span className="label-text">Full Name</span>
@@ -73,7 +73,7 @@ export const ContactUsPage = () => {
                         </label>
                     </div>
 
-                    <div className="flex mb-[20px] gap-[20px]">
+                    <div className="flex flex-col md:flex-row lg:flex-row mb-[20px] gap-[20px]">
                         <label className="form-control w-full max-w-xs">
                             <div className="label">
                                 <span className="label-text">Mobile Number</span>
