@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom"
-import GTLOGO from "../../public/GT_logo.png"
+// import GTLOGO from "../../public/GT_logo.png"
+import GTLOGO from "../../public/netralabs.png"
 import X from "../../public/X.svg"
 import LinkedIn from "../../public/LinkedIn.svg"
 

@@ -1,39 +1,161 @@
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import careerImg from "../../../public/static_img/carrer_img.png"
+import { useDispatch, useSelector } from "react-redux"
+import { resetPrevLocation } from "../../store/locationSlice"
 
 export const ContactUsPage = () => {
+
+    const dispatch = useDispatch()
+
+    const { prev } = useSelector((state:any) => state.location)
+
+    // const [prev, setPrev] = useState<string|null>("")
+ 
+ 
     useEffect(() => {
         window.scrollTo(0,0)
+
+        return () => {
+            // localStorage.setItem("prev", "/")
+            dispatch(resetPrevLocation())
+        }
     }, [])
 
-    const [userData , setUserData] = useState({
-        name: "",
-        email: "",
-        mobile: "",
-        organization: "",
-        integrator: false,
-        innovator: false,
-        creator: false,
-        comments: ""
-    })
+    // useEffect(() => {
+    //     setPrev(localStorage.getItem("prev"))
+    // }, [localStorage.getItem("prev")])
 
-    const [agree, setAgree] = useState(false)
 
-    const handleDataUpdate = (name:string, value: any) => {
+    // const [userData , setUserData] = useState({
+    //     name: "",
+    //     email: "",
+    //     mobile: "",
+    //     organization: "",
+    //     integrator: false,
+    //     innovator: false,
+    //     creator: false,
+    //     comments: ""
+    // })
 
-        if(name === "mobile" && isNaN(value)){
-            return
+    // const location = useLocation()
+
+    // const [agree, setAgree] = useState(false)
+
+    // const handleDataUpdate = (name:string, value: any) => {
+
+    //     if(name === "mobile" && isNaN(value)){
+    //         return
+    //     }
+
+    //     setUserData((prev) => ({...prev, [name]: value}))
+    // }
+
+
+    // useEffect(() => {
+    //     const iframe:any = document.getElementsByTagName('iframe')[0];
+    //     if(iframe) {
+    //         iframe.style.background = 'red';
+    //         console.log("iframe.contentWindow.document", iframe.contentWindow.document)
+    //         iframe.contentWindow.document.body.style.backgroundColor = 'red';
+    //     }
+    //     // updateIframeBackground('contact-iframe')
+    // })
+
+    const getIframe = (prevNav: string) => {
+        if(prevNav === "/integrators"){
+            return <iframe
+            src="https://api.leadconnectorhq.com/widget/form/s7iYzGLOdPnZLM3hScna"
+            style={{width: "100%", height: "100%", border: "none", borderRadius: "3px"}}
+            id="inline-s7iYzGLOdPnZLM3hScna"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Contact - Integrator Page"
+            data-height="748"
+            data-layout-iframe-id="inline-s7iYzGLOdPnZLM3hScna"
+            data-form-id="s7iYzGLOdPnZLM3hScna"
+            title="Contact - Integrator Page"
+                >
+          </iframe>
+        } else if(prevNav === "/innovators") {
+            return <iframe
+            src="https://api.leadconnectorhq.com/widget/form/d3rhkdryyOx3g1c8EI9r"
+            style={{width: "100%", height: "100%", border: "none", borderRadius:"3px"}}
+            id="inline-d3rhkdryyOx3g1c8EI9r"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Contact - Innovator Page"
+            data-height="748"
+            data-layout-iframe-id="inline-d3rhkdryyOx3g1c8EI9r"
+            data-form-id="d3rhkdryyOx3g1c8EI9r"
+            title="Contact - Innovator Page"
+                >
+          </iframe>
+        } else if(prevNav === "/creators"){
+            return <iframe
+            src="https://api.leadconnectorhq.com/widget/form/uQRkUGdi8YKpr6RvdtUH"
+            style={{width: "100%", height: "100%", border:"none", borderRadius: "3px"}}
+            id="inline-uQRkUGdi8YKpr6RvdtUH"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Contact - Creator Page"
+            data-height="829"
+            data-layout-iframe-id="inline-uQRkUGdi8YKpr6RvdtUH"
+            data-form-id="uQRkUGdi8YKpr6RvdtUH"
+            title="Contact - Creator Page"
+                >
+          </iframe>
+        }else {
+            return <iframe
+            src="https://api.leadconnectorhq.com/widget/form/uQRkUGdi8YKpr6RvdtUH"
+            style={{width: "100%" , height: "100%", border: "none", borderRadius: "3px"}}
+            id="inline-uQRkUGdi8YKpr6RvdtUH"
+            data-layout="{'id':'INLINE'}"
+            data-trigger-type="alwaysShow"
+            data-trigger-value=""
+            data-activation-type="alwaysActivated"
+            data-activation-value=""
+            data-deactivation-type="neverDeactivate"
+            data-deactivation-value=""
+            data-form-name="Contact - Creator Page"
+            data-height="829"
+            data-layout-iframe-id="inline-uQRkUGdi8YKpr6RvdtUH"
+            data-form-id="uQRkUGdi8YKpr6RvdtUH"
+            title="Contact - Creator Page"
+                >
+          </iframe>
         }
 
-        setUserData((prev) => ({...prev, [name]: value}))
     }
 
+    // function updateIframeBackground(iframeId:string) {
+    //     var x:any = document.getElementById(iframeId);
+    //     if(!x) return
+    //     var y = (x.contentWindow || x.contentDocument);
+    //     if (y.document) y = y.document;
+    //     y.body.style.backgroundColor = "red";
+    // }
+
     return (
-        <div>
+        <div className="mb-10">
             {/* header */}
             <div className="w-full relative">
                 <img className="w-full object-cover" src={careerImg} alt="careers" />
-                <p className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-[15px]  md:text-[45px] lg:text-[55px] font-bold text-center">
+                <p className="heading-text absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-[15px]  md:text-[45px] lg:text-[55px] font-bold text-center">
                     Let's Talk Expert AI Agents.
                 </p>
             </div>
@@ -48,7 +170,7 @@ export const ContactUsPage = () => {
                         <p className="text-[16px] leading-[22px] mt-4">We look forward to speaking with you and exploring the possibilities.</p>
                           
                     </div>
-                    <h1 className="text-accent text-[24px] mt-[40px] font-bold">About Netra Labs</h1>
+                    <h1 className="heading-text text-[24px] mt-[40px] font-bold">About Netra Labs</h1>
                     <div className="mt-[20px] text-[16px] leading-[22px] text-[#B1B1B1]">
                         <p className="text-[16px] leading-[22px] mt-4">Netra Labs is more than just an AI company; we are a catalyst for technological innovation and business transformation. Our founders have spent years developing AI and automation solutions for some of the world’s most prominent corporations.</p>
                         <p className="text-[16px] leading-[22px] mt-4">This experience has led us to a groundbreaking realization: the transformative power of AI should be accessible to all, not just a privileged few.</p>
@@ -56,8 +178,32 @@ export const ContactUsPage = () => {
                         <p className="text-[16px] leading-[22px] mt-4">We’re not just selling products; we’re selling empowerment. We believe that every business, regardless of size or industry, should have the tools to harness the full potential of AI. And this is just the beginning. We are continually innovating to redefine the boundaries of what AI can achieve.</p>  
                     </div>
                 </div>
-                <div className="contact-form-container w-full md:w-[50%] lg:w-[50%] p-[20px]">
-                    <h1 className="font-bold text-[20px] leading-[28px] pb-[28px] border-b border-b-[#252525]">Details</h1>
+
+                {/* based on the previous link, render iframes */}
+                <div className="contact-form-container w-full md:w-[50%] lg:w-[50%] p-0 md:p-[40px] lg:p-[40px] h-[900px]">
+                    {getIframe(prev || "")}
+                
+                {/* <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/uQRkUGdi8YKpr6RvdtUH"
+                    // className="contact-iframe"
+                    style={{width: "100%", height: "100%", border: "none", borderRadius:"3px" }}
+                    id="inline-uQRkUGdi8YKpr6RvdtUH contact-iframe"
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="Contact - Creator Page"
+                    data-height="829"
+                    data-layout-iframe-id="inline-uQRkUGdi8YKpr6RvdtUH"
+                    data-form-id="uQRkUGdi8YKpr6RvdtUH"
+                    title="Contact - Creator Page"
+                    // onLoad={() => updateIframeBackground("contact-iframe")}
+                        >
+                </iframe> */}
+                    {/* <h1 className="font-bold text-[20px] leading-[28px] pb-[28px] border-b border-b-[#252525]">Details</h1>
                     <div className="flex flex-col md:flex-row lg:flex-row my-[20px] gap-[20px]">
                         <label className="form-control w-full max-w-xs">
                             <div className="label">
@@ -137,7 +283,7 @@ export const ContactUsPage = () => {
                         </p>
                     </div>
 
-                    <button className="btn hover:cursor-not-allowed w-full rounded-md bg-[#B1B1B1] text-black hover:border hover:border-[#B1B1B1] hover:text-[#B1B1B1]">Submit Request</button>
+                    <button className="btn hover:cursor-not-allowed w-full rounded-md bg-[#B1B1B1] text-black hover:border hover:border-[#B1B1B1] hover:text-[#B1B1B1]">Submit Request</button> */}
                 </div>
             </div>
 

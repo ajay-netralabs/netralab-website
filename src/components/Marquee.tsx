@@ -11,72 +11,71 @@ import Anthropic from "../../public/marq/Anthropic.svg"
 import Openai from "../../public/marq/OpenAi.svg"
 import Mistral from "../../public/marq/Mistral.svg"
 
-export const Marquee = () => {
+export const MarqueeLogo = () => {
     return (
-        <div className="flex items-center relative">
+        <div className="marquee-bg flex items-center py-6 mt-4">
             {/* meta */}
-            <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Meta} alt="meta" />
+            <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Meta} alt="meta" className="mx-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">META</p>
             </div>
 
              {/* lengchain */}
-             <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Langchain} alt="meta" />
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">LangChain</p>
+             <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Langchain} alt="meta" className="mx-4"/>
+                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px] ">LangChain</p>
             </div>
 
              {/* Kubernetes */}
-             <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Kubernate} alt="meta" />
+             <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Kubernate} alt="meta" className="mx-4" />
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">KUBERNETES</p>
             </div>
 
             {/* hugging face */}
-            <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Huggingface} alt="meta" />
+            <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Huggingface} alt="meta" className="mx-4" />
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">HUGGINGFACE</p>
             </div>
 
              {/* Google */}
-             <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Google} alt="meta" />
+             <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Google} alt="meta" className="mr-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">GOOGLE</p>
             </div>
 
             {/* Deepmind */}
-            <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Deepmind} alt="meta" />
+            <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Deepmind} alt="meta" className="mr-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">DEEPMIND</p>
             </div>
 
              {/* Azure */}
-             <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Azure} alt="meta" />
+             <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Azure} alt="meta" className="mr-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">AZURE</p>
             </div>
 
             {/* Aws */}
-            <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Aws} alt="meta" />
+            <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Aws} alt="meta" className="mr-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">AWS</p>
             </div>
 
              {/* Anthropix */}
-             <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Anthropic} alt="meta" />
+             <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Anthropic} alt="meta" className="mr-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">ANTHROPIC</p>
             </div>
-
             {/* Openai */}
-            <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Openai} alt="meta" />
+            <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Openai} alt="meta" className="mr-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">OPENAI</p>
             </div>
 
             {/* mistral */}
-            <div className="flex gap-4 items-center border-r border-r-[#B1B1B1] w-[300px] absolute">
-                <img src={Mistral} alt="meta" />
+            <div className="flex items-center justify-center marquee-border w-[300px]">
+                <img src={Mistral} alt="meta" className="mr-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">MISTRAL LABS</p>
             </div>
 

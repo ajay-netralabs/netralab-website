@@ -1,6 +1,6 @@
 export const FaqAccordion = () => {
     return (
-        <div className="join join-vertical w-full gap-[40px] text-[#CECECE]">
+        <div className="join join-vertical w-full gap-[20px] text-[#CECECE]">
             <div className="collapse collapse-arrow join-item accordion-item">
                 <input type="checkbox" name="my-accordion-4" />
                 <div className="collapse-title font-medium">How long does it typically take develop custom Expert AI Agents™?</div>

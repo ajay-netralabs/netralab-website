@@ -1,8 +1,12 @@
 import { useEffect } from "react"
 import careerImg from "../../../public/static_img/carrer_img.png"
 import { useNavigate } from "react-router-dom"
+import { useDispatch } from "react-redux"
+import { resetPrevLocation } from "../../store/locationSlice"
 
 export const CareersPage = () => {
+
+    const dispatch = useDispatch()
 
     const navigate = useNavigate()
 
@@ -12,6 +16,13 @@ export const CareersPage = () => {
 
     useEffect(() => {
         window.scrollTo(0,0)
+    }, [])
+
+    useEffect(() => {
+        return () => {
+            // localStorage.setItem("prev", "/")
+            dispatch(resetPrevLocation())
+        }
     }, [])
 
     return (

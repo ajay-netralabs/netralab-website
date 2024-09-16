@@ -80,3 +80,43 @@
     border: 2px solid var(--Up-half-stroke, rgba(15, 174, 150, 0.26));
     background: var(--Up-Color-BG, linear-gradient(179deg, rgba(110, 110, 112, 0.10) 43.81%, rgba(11, 11, 34, 0.10) 81.95%));
 }
+
+.solve-card-to-left {
+    /* border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1; */
+    border-image: linear-gradient(to left, #cecece4d 0%, transparent 100%) 1;
+    border-radius: 5px; /* this doesn't work */
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    border-top: none;
+}
+
+.solve-card-to-left-sm {
+    /* border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1; */
+    border-image: linear-gradient(to left, #cecece4d 0%, #cecece4d 100%) 1;
+    border-radius: 5px; /* this doesn't work */
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    border-top: none;
+}
+
+.solve-card-to-right {
+    /* border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1; */
+    border-image: linear-gradient(to right, #cecece4d 0%, transparent 100%) 1;
+    border-radius: 5px; /* this doesn't work */
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    border-top: none;
+}
+
+.solve-card-to-right-sm {
+    /* border-image: linear-gradient(to right, #3acfd5 0%, #3a4ed5 100%) 1; */
+    border-image: linear-gradient(to right, #cecece4d 0%, #cecece4d 100%) 1;
+    border-radius: 5px; /* this doesn't work */
+    border-width: 1px;
+    border-style: solid;
+    padding: 5px;
+    border-top: none;
+}

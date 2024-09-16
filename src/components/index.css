@@ -7,3 +7,11 @@
     border-radius: 10px;
     background: var(--Up-Color-BG, linear-gradient(179deg, rgba(110, 110, 112, 0.10) 43.81%, rgba(11, 11, 34, 0.10) 81.95%));
 }
+
+.marquee-bg {
+    background: linear-gradient(180deg, #181829 0%, #0B0B22 75.91%);
+}
+
+.marquee-border {
+    border-right: 1px solid rgba(206, 206, 206, 0.1);
+}

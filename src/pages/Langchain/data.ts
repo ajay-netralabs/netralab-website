@@ -30,22 +30,22 @@ export const cardsData: {[key: string]: { img: any, text: string};} = {
 
 
 export const IntegrationData: {[key: string]: string;} = {
-    "1" : `<h1 className="font-bold">CRM Integration</h1>
-            <p> <span className="uppercase text-accent"> Integrate language models </span> into your CRM system for enhanced customer support and personalized interactions. </p>
+    "1" : `<h1 className="font-bold heading-text">CRM Integration</h1>
+            <p className="text-[#CECECE] mt-2"> <span className=""> Integrate language models </span> into your CRM system for enhanced customer support and personalized interactions. </p>
     `,
-    "2" : `<h1 className="font-bold">ERP Integration</h1>
-            <p> <span className="uppercase text-accent"> Deploy language models </span> within your ERP system to automate document processing and improve efficiency.</p>
+    "2" : `<h1 className="font-bold heading-text">ERP Integration</h1>
+            <p className="text-[#CECECE] mt-2"> <span className=""> Deploy language models </span> within your ERP system to automate document processing and improve efficiency.</p>
     `,
-    "3" : `<h1 className="font-bold">Communication Platform Integration</h1>
-            <p> <span className="uppercase text-accent"> Seamlessly integrate language models </span> into your communication platforms for automated responses and efficient communication. </p>
+    "3" : `<h1 className="font-bold heading-text">Communication Platform Integration</h1>
+            <p className="text-[#CECECE] mt-2"> <span className=""> Seamlessly integrate language models </span> into your communication platforms for automated responses and efficient communication. </p>
     `,
-    "4" : `<h1 className="font-bold">Chatbot Deployment</h1>
-            <p> <span className="uppercase text-accent"> Deploy language models </span> as chat-bots to provide instant and accurate responses to customer queries. </p>
+    "4" : `<h1 className="font-bold heading-text">Chatbot Deployment</h1>
+            <p className="text-[#CECECE] mt-2"> <span className=""> Deploy language models </span> as chat-bots to provide instant and accurate responses to customer queries. </p>
     `,
-    "5" : `<h1 className="font-bold">Virtual Assistant Deployment</h1>
-            <p> <span className="uppercase text-accent"> Leverage language models </span> as virtual assistants to assist employees with tasks and provide real-time information.</p>
+    "5" : `<h1 className="font-bold heading-text">Virtual Assistant Deployment</h1>
+            <p className="text-[#CECECE] mt-2"> <span className=""> Leverage language models </span> as virtual assistants to assist employees with tasks and provide real-time information.</p>
     `,
-    "6" : `<h1 className="font-bold">Automated Reporting Tool Integration</h1>
-            <p> <span className="uppercase text-accent"> Integrate language models </span> into automated reporting tools to generate insightful and actionable reports.</p>
+    "6" : `<h1 className="font-bold heading-text">Automated Reporting Tool Integration</h1>
+            <p className="text-[#CECECE] mt-2"> <span className=""> Integrate language models </span> into automated reporting tools to generate insightful and actionable reports.</p>
     `,
 }

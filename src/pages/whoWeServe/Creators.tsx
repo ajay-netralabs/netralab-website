@@ -25,12 +25,15 @@ import { useEffect, useState } from "react"
 import { CreatorData } from "./data"
 import { FaqAccordion } from "../../components"
 import { useNavigate } from "react-router-dom"
+import { useDispatch } from 'react-redux';
+import { addPrevLocation } from '../../store/locationSlice';
 
 
 
 export const Creators = () => {
 
     const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     const [processNo, setProcessNo] = useState<string>("1")
 
@@ -46,11 +49,23 @@ export const Creators = () => {
         window.scrollTo(0,0)
     }, [])
 
+    // useEffect(() => {
+    //     return () => {
+    //         // localStorage.setItem("prev", "/creators")
+    //         dispatch(addPrevLocation("/creators"))
+    //     }
+    // }, [])
+
+    const handleNavigate = () => {
+        dispatch(addPrevLocation("/creators"))
+        navigate("/contact-us")
+    }
+
     return (
-        <div className="mt-12">
+        <div className="mt-1 md:mt-12 lg:mt-12">
             {/* first container */}
-           <div className="p-10 flex flex-col-reverse items-center md:flex-row lg:flex-row">
-                <div className="w-full md:w-[60%] lg:w-[60%] mt-[20px] md:mt-0 lg:mt-0">
+           <div className="p-3 md:p-10 lg:p-10 flex flex-col items-center md:flex-row lg:flex-row">
+                <div className="w-full md:w-[60%] lg:w-[60%]">
                         <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                             muted // @ts-ignore
@@ -59,17 +74,17 @@ export const Creators = () => {
                             loop>
                             <source src={Creator} type="video/mp4"/>
                         </video>
-                        <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Transform Your Unique Idea into a Unicorn with AI Agents.</h1>
+                        <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Transform Your Unique Idea into a Unicorn with AI Agents.</h1>
                         <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">
                             Join our AI Agent Incubator and leverage our 
-                            <span className="uppercase text-accent text-[18px] font-bold leading-[28px]"> Ground Truth® framework </span>
+                            <span className=" text-[18px] font-bold leading-[28px]"> Ground Truth® framework </span>
                              to turn your ideas, concepts, IP, or patents into a thriving AI-powered business. 
                         </p>
                         <div className="mt-[40px]">
-                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => navigate("/contact-us")}>Apply Now</button>
+                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => handleNavigate()}>Apply Now</button>
                         </div>
                 </div>
-                <div className="w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
+                <div className="mt-[20px] md:mt-0 lg:mt-0 w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
                     <div className=" w-[70%] md:w-[50%] lg:w-[50%] flex justify-center items-center">
                         <video
                             className="mix-blend-exclusion"
@@ -85,8 +100,8 @@ export const Creators = () => {
 
 
            {/* second container */}
-           <div className="md:mt-[60px] lg:mt-[60px] p-10 flex flex-col-reverse items-center md:flex-row lg:flex-row">
-                <div className="w-full md:w-[60%] lg:w-[60%] mt-[20px] md:mt-0 lg:mt-0">
+           <div className="p-3 md:p-10 lg:p-10 flex flex-col items-center md:flex-row lg:flex-row">
+                <div className="w-full md:w-[60%] lg:w-[60%]">
                         <video
                             className="mix-blend-exclusion w-[150px] md:w-[200px] lg:w-[220px]"
                             muted // @ts-ignore
@@ -95,7 +110,7 @@ export const Creators = () => {
                             loop>
                             <source src={MarketOpportunity} type="video/mp4"/>
                         </video>
-                        <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Creators Like You Will Shape the Future of AI Agents</h1>
+                        <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Creators Like You Will Shape the Future of AI Agents</h1>
                         <div className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">
                             Ground Truth® empowers you to seize the massive opportunity in the Gen AI market and build the next generation of transformative solutions.
                         </div>
@@ -124,7 +139,7 @@ export const Creators = () => {
                 </div>
 
                 {/* for mobile render the feedback */}
-                <div className="flex flex-col gap-[20px] md:hidden lg:hidden text-center border border-[#CECECE] p-[10px] rounded-lg">
+                <div className="mt-[20px] md:mt-0 lg:mt-0 flex flex-col gap-[20px] md:hidden lg:hidden text-center border border-[#CECECE] p-[10px] rounded-lg">
                     <div className="">
                         <h1 className="font-bold text-[20px]">$2.6+ TRILLION</h1>
                         <p className="text-[16px] mt-[20px]">"Gen-AI-enabled agents hold the promise of accelerating the automation of a very long tail of workflows that would otherwise require inordinate amounts of resources to implement. And the potential extends even beyond these use cases: 60 to 70 percent of the work hours in today’s global economy...We have estimated that gen AI enterprise use cases could yield $2.6 trillion to $4.4 trillion annually in value across more than 60 use cases."</p>
@@ -138,14 +153,14 @@ export const Creators = () => {
            </div>
 
             {/* 3rd container */}
-            <div className="md:mt-12 lg:mt-12 p-10">
+            <div className="p-3 md:p-10 lg:p-10">
                 <div className="text-center">
-                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Why join</h1>
+                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Why join</h1>
                 </div>
                 {/* cards */}
-                <div className="flex flex-wrap items-center gap-[28px] justify-between mt-[60px]">
+                <div className="flex flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-12 lg:mt-12">
                     {/* card 1 */}
-                    <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px]">
+                    <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px] p-[50px]">
                         <video
                             className="mix-blend-exclusion w-[80px]"
                             muted // @ts-ignore
@@ -154,14 +169,14 @@ export const Creators = () => {
                             loop>
                             <source src={Creator1Icon} type="video/mp4"/>
                         </video>
-                        <h2 className="font-bold text-[20px]">Seiza a Unique Opportunity</h2>
+                        <h2 className="font-bold text-[20px] heading-text">Seiza a Unique Opportunity</h2>
                         <p className="text-[#B1B1B1]">
                             The Generative AI market is exploding, presenting a once-in-a-generation opportunity akin to the internet boom.
                         </p>
                     </div>
 
                     {/* card 2 */}
-                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px]">
+                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px] p-[50px]">
                         <video
                             className="mix-blend-exclusion w-[80px]"
                             muted // @ts-ignore
@@ -170,14 +185,14 @@ export const Creators = () => {
                             loop>
                             <source src={Creator2Icon} type="video/mp4"/>
                         </video>
-                        <h2 className="font-bold text-[20px]">Build on a Powerful Foundation</h2>
+                        <h2 className="font-bold text-[20px] heading-text">Build on a Powerful Foundation</h2>
                         <p className="text-[#B1B1B1]">         
                             Leverage our proprietary language chain framework, unmatched in the industry, to develop your unique Expert AI Agent™ and capture this massive market.
                         </p>
                     </div>
 
                     {/* card 3 */}
-                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px]">
+                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px] p-[50px]">
                         <video
                             className="mix-blend-exclusion w-[80px]"
                             muted // @ts-ignore
@@ -186,7 +201,7 @@ export const Creators = () => {
                             loop>
                             <source src={Creator3Icon} type="video/mp4"/>
                         </video>
-                        <h2 className="font-bold text-[20px]">Have a Partner for Success</h2>
+                        <h2 className="font-bold text-[20px] heading-text">Have a Partner for Success</h2>
                         <p className="text-[#B1B1B1]">
                             We're invested in your success. Our team of seasoned experts will work side-by-side with you to bring your Expert AI Agent™ to market – at no cost if you're approved for our incubation program.
                         </p>
@@ -196,7 +211,7 @@ export const Creators = () => {
             </div>
 
             {/* 4th container */}
-            <div className="md:mt-[60px] lg:mt-[60px] p-10 ">
+            <div className="p-3 md:p-10 lg:p-10 ">
                 <div className="">
                         <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
@@ -206,11 +221,11 @@ export const Creators = () => {
                             loop>
                             <source src={Proof} type="video/mp4"/>
                         </video>
-                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Joseph Did It, So Can You.</h1>
+                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Joseph Did It, So Can You.</h1>
                     <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">With the Ground Truth® framework, we were able to deliver an Expert AI Agent that redefines a core industry problem.</p>
                 </div>
-                <div className="mt-12 md:mt-0 lg:mt-0 flex items-center justify-between flex-col-reverse md:flex-row lg:flex-row">
-                    <div className="flex flex-col gap-[40px] ">
+                <div className="flex items-center justify-between flex-col md:flex-row lg:flex-row">
+                    <div className="flex flex-col gap-[20px] ">
                         <div className="flex items-center gap-3 glass-card-1">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div>Transformed a critical COBOL batch processing problem into a new patented method.</div>
@@ -231,7 +246,7 @@ export const Creators = () => {
                     </div>
 
                     {/* for mobile render the feedback */}
-                    <div className="flex flex-col gap-[20px] md:hidden lg:hidden text-center border border-[#CECECE] p-[10px] rounded-lg">
+                    <div className="mt-12 md:mt-0 lg:mt-0 flex flex-col gap-[20px] md:hidden lg:hidden text-center border border-[#CECECE] p-[10px] rounded-lg">
                         <div className="">
                             <h1 className="font-bold text-[20px]">$78 Billion Market Opportunity</h1>
                             <p className="text-[16px] mt-[20px]">"I developed a patent to optimize COBOL code for batch processing, significantly improving cost and speed. Transforming the code was costly and time-consuming, but partnering with Netra Labs' incubation program led to the creation of the first COBOL Batch Transformation Program Expert AI Agent, targeting a $78 billion market!"</p>
@@ -255,9 +270,9 @@ export const Creators = () => {
                             loop>
                             <source src={Process} type="video/mp4"/>
                         </video>
-                    <h1 className="text-xl lg:text-[45px] lg:leading-[66px] font-bold mt-[26px]">From Concept to Launch: A Clear Path to Success.</h1>
+                    <h1 className="text-xl lg:text-[45px] lg:leading-[66px] font-bold mt-[26px] heading-text">From Concept to Launch: A Clear Path to Success.</h1>
                     <div className="mt-[40px]">
-                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => navigate("/contact-us")}>Request Demo</button>
+                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => handleNavigate()}>Request Demo</button>
                     </div>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-[40px] mt-[40px]">
@@ -277,10 +292,10 @@ export const Creators = () => {
                 </div>
             </div>
 
-            <div className="p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[20px] mt-[40px]">
+            <div className="p-3 md:p-10 lg:p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[20px] mt-[40px]">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
-                        <h1 className="text-[40px] leading-[66px] font-bold mt-[26px]">FAQs</h1>
+                        <h1 className="text-[40px] leading-[66px] font-bold mt-[26px] heading-text">FAQs</h1>
                         <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">These are the frequently asked questions by our users , if you have similar doubts you can read these answers. We hope it will help you to better understanding.</p>
                     </div>
                     <div className="mt-[40px]">

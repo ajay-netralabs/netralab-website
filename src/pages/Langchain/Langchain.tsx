@@ -4,8 +4,12 @@ import { cardsData, IntegrationData } from "./data"
 import parse from 'html-react-parser';
 
 import Home3Vid from "../../../public/vids/home-3.mp4"
+import { useDispatch } from "react-redux";
+import { resetPrevLocation } from "../../store/locationSlice";
 
 export const Langchain = () => {
+
+    const dispatch = useDispatch()
 
     const [clickedCard, setClickedCard] = useState<string>("1")
     const [cardDetails, setCardDetails] = useState<any>({})
@@ -14,6 +18,13 @@ export const Langchain = () => {
         const card = cardsData[clickedCard]
         setCardDetails(card)
     }, [clickedCard])
+
+    useEffect(() => {
+        return () => {
+            // localStorage.setItem("prev", "/")
+            dispatch(resetPrevLocation())
+        }
+    }, [])
 
 
     const [integrateCard, setIntegratedCard] = useState<string>("1")
@@ -26,9 +37,9 @@ export const Langchain = () => {
     <div>
         {/* header */}
         <div className="w-full h-[400px] relative">
-            <img className="w-full h-full object-cover brightness-[0.3]" src={HeroSection} alt="language chain" />
+            <img className="w-full h-full object-cover brightness-[0.15]" src={HeroSection} alt="language chain" />
             <div className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <p className="text-[15px] md:text-[45px] lg:text-[55px] font-bold text-center">
+                <p className="text-xl lg:text-[40px] lg:leading-[66px] font-bold text-center heading-text">
                     Unleash the Power of Language
                 </p>
                 <p className="text-center text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">Transform your organization with our enterprise language chain, enabling you to develop, manage, and deploy complex language models and NLP applications at scale.</p>
@@ -36,15 +47,15 @@ export const Langchain = () => {
         </div>
 
         {/* 1st */}
-        <div className="mt-[100px] mx-10">
+        <div className="p-3 md:p-10 lg:p-10">
             <div className="flex flex-col gap-[26px]">
-                <p className="text-[15px] md:text-[45px] text-center text-xl lg:text-[45px] lg:leading-[66px] font-bold">Data Ingestion and Management</p>
-                <p className="text-center text-base lg:text-[18px] lg:leading-[28px] text-[#CECECE]">Efficiently handle vast amounts of structured and unstructured data from various sources.</p>
+                <p className="text-xl lg:text-[40px] lg:leading-[66px] font-bold text-center heading-text">Data Ingestion and Management</p>
+                <p className="text-center text-base lg:text-[18px] lg:leading-[28px] mt-[0px] text-[#CECECE]">Efficiently handle vast amounts of structured and unstructured data from various sources.</p>
             </div>
                 {/* cards */}
-                <div className="flex flex-wrap justify-between mt-[90px]">
+                <div className="flex flex-wrap justify-center gap-[20px]  mt-[90px]">
                     {/* card 1 */}
-                    <div className="flex items-center justify-between w-full md:w-[33%] lg:w-[33%] p-5 pr-0">
+                    <div className="lang-card flex items-center justify-between w-full md:w-[30%] lg:w-[30%] p-5">
                         {/* icon */}
                         <div className="flex flex-col">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,15 +65,15 @@ export const Langchain = () => {
                             </svg>
 
                             <div className="mt-[30px]">
-                                <p className="font-bold">Data Integration</p>
-                                <p className="text-[#B1B1B1]">Seamlessly integrate data from multiple sources into a unified system.</p>
+                                <p className="font-bold heading-text">Data Integration</p>
+                                <p className="text-[#B1B1B1] mt-[15px]">Seamlessly integrate data from multiple sources into a unified system.</p>
                             </div>
                         </div>
-                        <div className="hidden md:flex lg:flex w-[1px] h-[87px] bg-[#515151] mx-5"></div>
+                        {/* <div className="hidden md:flex lg:flex w-[1px] h-[87px] bg-[#515151] mx-5"></div> */}
                     </div>
 
                     {/* card 2 */}
-                    <div className="flex items-center justify-between w-full md:w-[33%] lg:w-[33%] p-5 pr-0">
+                    <div className="lang-card flex items-center justify-between w-full md:w-[30%] lg:w-[30%] p-5">
                         {/* icon */}
                         <div className="flex flex-col">
                             <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,14 +83,14 @@ export const Langchain = () => {
                             </svg>
 
                             <div className="mt-[30px]">
-                                <p className="font-bold">Data Cleansing</p>
-                                <p className="text-[#B1B1B1]">Clean and preprocess data to ensure accuracy and quality.</p>
+                                <p className="font-bold heading-text">Data Cleansing</p>
+                                <p className="text-[#B1B1B1] mt-[15px]">Clean and preprocess data to ensure accuracy and quality.</p>
                             </div>
                         </div>
-                        <div className="hidden md:flex lg:flex w-[1px] h-[87px] bg-[#515151] mx-5"></div>
+                        {/* <div className="hidden md:flex lg:flex w-[1px] h-[87px] bg-[#515151] mx-5"></div> */}
                     </div>
 
-                    <div className="flex items-center justify-between w-full md:w-[33%] lg:w-[33%] p-5 pr-0">
+                    <div className=" lang-card flex items-center justify-between w-full md:w-[30%] lg:w-[30%] p-5">
                         {/* icon */}
                         <div className="flex flex-col">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -90,13 +101,13 @@ export const Langchain = () => {
 
 
                             <div className="mt-[30px]">
-                                <p className="font-bold">Data Storage</p>
-                                <p className="text-[#B1B1B1]">Store and organize data in a scalable and secure manner.</p>
+                                <p className="font-bold heading-text">Data Storage</p>
+                                <p className="text-[#B1B1B1] mt-[15px]">Store and organize data in a scalable and secure manner.</p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="flex items-center justify-between w-full md:w-[33%] lg:w-[33%] p-5 pr-0">
+                    <div className="lang-card flex items-center justify-between w-full md:w-[30%] lg:w-[30%] p-5">
                         {/* icon */}
                         <div className="flex flex-col">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -106,15 +117,15 @@ export const Langchain = () => {
                             </svg>
 
                             <div className="mt-[30px]">
-                                <p className="font-bold">Data Processing</p>
-                                <p className="text-[#B1B1B1]">Efficiently process and analyze large volumes of data.</p>
+                                <p className="font-bold heading-text">Data Processing</p>
+                                <p className="text-[#B1B1B1] mt-[15px]">Efficiently process and analyze large volumes of data.</p>
                             </div>
                         </div>
-                        <div className="hidden md:flex lg:flex w-[1px] h-[87px] bg-[#515151] mx-5"></div>
+                        {/* <div className="hidden md:flex lg:flex w-[1px] h-[87px] bg-[#515151] mx-5"></div> */}
                     </div>
 
 
-                    <div className="flex items-center justify-between w-full md:w-[33%] lg:w-[33%] p-5 pr-0">
+                    <div className="lang-card flex items-center justify-between w-full md:w-[30%] lg:w-[30%] p-5">
                         {/* icon */}
                         <div className="flex flex-col">
                             <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,31 +136,31 @@ export const Langchain = () => {
 
 
                             <div className="mt-[30px]">
-                                <p className="font-bold">Data Governance</p>
-                                <p className="text-[#B1B1B1]">Implement policies and procedures to ensure data integrity and compliance.</p>
+                                <p className="font-bold heading-text">Data Governance</p>
+                                <p className="text-[#B1B1B1] mt-[15px]">Implement policies and procedures to ensure data integrity and compliance.</p>
                             </div>
                         </div>
-                        <div className="hidden md:flex lg:flex w-[1px] h-[87px] mx-5"></div>
+                        {/* <div className="hidden md:flex lg:flex w-[1px] h-[87px] mx-5"></div> */}
                     </div>
 
-                    <div className="w-[33%]">
+                    {/* <div className="w-[30%]"> */}
                         {/* occupy space */}
-                    </div>
+                    {/* </div> */}
                 </div>
             
 
         </div>
 
         {/* 2nd */}
-        <div className="mt-[100px] pt-[100px] px-10 lang-alt-container">
-            <div className="flex flex-col gap-[20px]">
-                <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Model Training and Fine-Tuning</h1>
-                <p className="text-base lg:text-[18px] lg:leading-[28px] text-[#CECECE]">In the Model Training and Fine-Tuning phase of an enterprise language chain, large language models are trained using enterprise-specific data and fine-tuned for specific tasks. This process involves several steps to ensure that the models are optimized for the organization's unique needs and requirements.</p>
+        <div className="mt-[50px] p-3 md:p-10 lg:p-10 lang-alt-container">
+            <div className="flex flex-col gap-[20px] text-center">
+                <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Model Training and Fine-Tuning</h1>
+                <p className="text-base lg:text-[18px] lg:leading-[28px] text-[#B1B1B1]">In the Model Training and Fine-Tuning phase of an enterprise language chain, large language models are trained using enterprise-specific data and fine-tuned for specific tasks. This process involves several steps to ensure that the models are optimized for the organization's unique needs and requirements.</p>
             </div>
 
             <div className="mt-[50px] flex flex-col-reverse md:flex-row lg:flex-row  gap-[20px] justify-between">
                 {/* left */}
-                <div className="w-full md:w-[50%] lg:w-[50%] flex flex-col gap-[50px]">
+                <div className="w-full md:w-[50%] lg:w-[50%] flex flex-col gap-[20px]">
                     <div className="flex items-center gap-[20px]">
                         <div className={`btn btn-circle text-accent lang-btn ${clickedCard === "1" ? "lang-btn-active" : ""}`}>1</div>
                         <div className={`lang-cards w-full ${clickedCard === "1" ? "lang-cards-active" : ""} hover:cursor-pointer`} onClick={() => setClickedCard("1")}>Data Collection and Preparation</div>
@@ -172,11 +183,15 @@ export const Langchain = () => {
                     </div>
                 </div>
                 {/* right */}
-                <div className="w-full md:w-[50%] lg:w-[50%] px-10">
+                <div className="monitor-card w-full md:w-[50%] lg:w-[50%]  md:px-10 lg:px-10">
                     {cardDetails ? (
-                        <div className="relative">
-                            <img src={cardDetails.img} alt="img" className="w-full h-[600px] object-cover object-center" />
-                            <div className="p-[20px] text-center lang-card-bottom absolute bottom-0">
+                        <div className="flex flex-col justify-center items-center">
+                            <div className=" h-full w-full flex flex-col justify-center items-center">
+                                <div className="h-[300px]">
+                                    <img src={cardDetails.img} alt="img" className="max-w-full max-h-full object-cover object-center" />
+                                </div>
+                            </div>
+                            <div className="p-[20px] leading-[28px] text-center ">
                                 {cardDetails.text}
                             </div>
                         </div>
@@ -186,16 +201,16 @@ export const Langchain = () => {
         </div>
 
         {/* 3rd */}
-        <div className="mt-[100px] mx-10">
+        <div className="p-3 md:p-10 lg:p-10">
             <div className="flex justify-center items-center flex-col gap-[20px]">
-                <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Integration and Deployment</h1>
+                <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Integration and Deployment</h1>
                 <p className="text-base lg:text-[18px] lg:leading-[28px] text-[#CECECE]">Seamlessly integrating language models into existing enterprise systems and deploying them across various channels.</p>
             </div>
 
-            <div className="flex w-full mt-[90px]">
+            <div className="flex w-full mt-[40px]">
 
             {/* left */}
-            <div className="w-[25%] flex flex-col mr-1">
+            {/* <div className="w-[25%] flex flex-col mr-1">
                 <div className="border-b border-b-[#1F1F1F] flex justify-end">
                     <div className={`border-l border-l-[#1F1F1F] md:p-[43px] md:ml-[43px] lg:p-[43px] lg:ml-[43px] ${integrateCard === "1" ? "border !border-white rounded-lg" : ""}`}>
                     <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="hover:cursor-pointer" onClick={() => setIntegratedCard("1")} >
@@ -223,15 +238,15 @@ export const Langchain = () => {
                     </svg>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* middle */}
-            <div className="lang-card-bottom flex flex-col gap-[20px] items-center justify-center text-center p-10 w-[70vw] border border-white">
+            {/* <div className="lang-card-bottom flex flex-col gap-[20px] items-center justify-center text-center p-10 w-[70vw]">
                 {parse(getIntegratedCardDetails(integrateCard))}
-            </div>
+            </div> */}
 
             {/* right */}
-            <div className="w-[25%] ml-1">
+            {/* <div className="w-[25%] ml-1">
                 <div className="border-b border-b-[#1F1F1F] flex justify-start">
                     <div className={`border-r border-r-[#1F1F1F] md:p-[43px] md:mr-[43px] lg:p-[43px] lg:mr-[43px] ${integrateCard === "4" ? "border !border-white rounded-lg" : ""}`}>
                         <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="hover:cursor-pointer" onClick={() => setIntegratedCard("4") }>
@@ -261,47 +276,132 @@ export const Langchain = () => {
                         </svg>
                     </div>
                 </div>
-            </div>
+            </div> */}
+
+                <div className="flex flex-col gap-[20px] w-full">
+                    <div className="flex flex-col md:flex-row lg:flex-row gap-4">
+                        <div className="w-full md:w-[50%] lg:w-[50%] long-card flex items-center gap-2 !p-[32px]">
+                            <div className={` ${integrateCard === "1" ? "" : ""}`}>
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="hover:cursor-pointer" onClick={() => setIntegratedCard("1")} >
+                                    <g id="integration_instructions_24dp_5F6368_FILL0_wght300_GRAD0_opsz24 (1) 1" opacity="0.4">
+                                    <path id="Vector" d="M19.8414 28L23.629 24.213C23.9759 23.8657 24.147 23.4595 24.1423 22.9944C24.1381 22.5293 23.967 22.1157 23.629 21.7537C23.267 21.392 22.851 21.2051 22.3813 21.1931C21.9119 21.181 21.4962 21.356 21.1341 21.7181L16.328 26.5236C15.9065 26.9455 15.6957 27.4377 15.6957 28C15.6957 28.5623 15.9065 29.0545 16.328 29.4764L21.1341 34.2819C21.481 34.6288 21.893 34.8001 22.3702 34.7958C22.8473 34.7912 23.267 34.608 23.629 34.2463C23.967 33.8843 24.142 33.4744 24.154 33.0167C24.1657 32.5589 23.9907 32.1491 23.629 31.787L19.8414 28ZM36.1573 28L32.3697 31.787C32.0228 32.1343 31.8517 32.5405 31.8563 33.0056C31.8606 33.4707 32.0317 33.8843 32.3697 34.2463C32.7317 34.608 33.1477 34.7949 33.6174 34.8069C34.0868 34.819 34.5025 34.644 34.8646 34.2819L39.6707 29.4764C40.0922 29.0545 40.303 28.5623 40.303 28C40.303 27.4377 40.0922 26.9455 39.6707 26.5236L34.8646 21.7181C34.5177 21.3712 34.1057 21.1999 33.6285 21.2042C33.1513 21.2088 32.7317 21.392 32.3697 21.7537C32.0317 22.1157 31.8567 22.5256 31.8447 22.9833C31.833 23.4411 32.008 23.8509 32.3697 24.213L36.1573 28ZM12.3841 47.8333C11.2205 47.8333 10.2265 47.4213 9.4021 46.5972C8.57804 45.7728 8.16602 44.7788 8.16602 43.6152V12.3847C8.16602 11.2212 8.57804 10.2272 9.4021 9.40275C10.2265 8.57869 11.2205 8.16667 12.3841 8.16667H22.7674C22.914 6.87128 23.4795 5.76975 24.4638 4.86208C25.4477 3.95403 26.6262 3.5 27.9993 3.5C29.3873 3.5 30.5734 3.95403 31.5577 4.86208C32.542 5.76975 33.0998 6.87128 33.2313 8.16667H43.6146C44.7782 8.16667 45.7722 8.57869 46.5966 9.40275C47.4207 10.2272 47.8327 11.2212 47.8327 12.3847V43.6152C47.8327 44.7788 47.4207 45.7728 46.5966 46.5972C45.7722 47.4213 44.7782 47.8333 43.6146 47.8333H12.3841ZM12.3841 44.3333H43.6146C43.7943 44.3333 43.9588 44.2585 44.1081 44.1087C44.2578 43.9594 44.3327 43.7949 44.3327 43.6152V12.3847C44.3327 12.2051 44.2578 12.0406 44.1081 11.8912C43.9588 11.7415 43.7943 11.6667 43.6146 11.6667H12.3841C12.2044 11.6667 12.0399 11.7415 11.8906 11.8912C11.7409 12.0406 11.666 12.2051 11.666 12.3847V43.6152C11.666 43.7949 11.7409 43.9594 11.8906 44.1087C12.0399 44.2585 12.2044 44.3333 12.3841 44.3333ZM27.9993 10.1412C28.5049 10.1412 28.923 9.97597 29.2535 9.64541C29.5841 9.31486 29.7493 8.8968 29.7493 8.39125C29.7493 7.88569 29.5841 7.46764 29.2535 7.13708C28.923 6.80653 28.5049 6.64125 27.9993 6.64125C27.4938 6.64125 27.0757 6.80653 26.7452 7.13708C26.4146 7.46764 26.2493 7.88569 26.2493 8.39125C26.2493 8.8968 26.4146 9.31486 26.7452 9.64541C27.0757 9.97597 27.4938 10.1412 27.9993 10.1412Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                {parse(getIntegratedCardDetails("1"))}
+                            </div>
+                        </div>
+                        <div className="w-full md:w-[50%] lg:w-[50%] long-card flex items-center gap-2 !p-[32px]">
+                            <div className={` ${integrateCard === "2" ? "" : ""}`}>
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="hover:cursor-pointer" onClick={() => setIntegratedCard("2")}>
+                                    <g id="webhook_24dp_5F6368_FILL0_wght300_GRAD0_opsz24 1" opacity="0.4">
+                                    <path id="Vector" d="M16.3333 48.4167C13.2701 48.4167 10.6571 47.3352 8.4945 45.1722C6.3315 43.0096 5.25 40.3966 5.25 37.3333C5.25 35.2753 5.74875 33.4065 6.74625 31.7269C7.74414 30.0469 9.07317 28.7239 10.7333 27.7579C11.3556 27.3959 11.9583 27.3906 12.5417 27.7422C13.125 28.0937 13.4167 28.6074 13.4167 29.2833C13.4167 29.5913 13.3478 29.8793 13.2102 30.1472C13.0725 30.4148 12.8856 30.6114 12.6496 30.737C11.5008 31.3802 10.5636 32.2875 9.83792 33.4588C9.11264 34.6298 8.75 35.9213 8.75 37.3333C8.75 39.4275 9.49044 41.2148 10.9713 42.6953C12.4518 44.1762 14.2392 44.9167 16.3333 44.9167C18.3976 44.9167 20.1625 44.2025 21.6283 42.7741C23.094 41.3457 23.8568 39.607 23.9167 37.5579C23.9318 36.9862 24.1016 36.5143 24.4259 36.1422C24.7506 35.7696 25.1913 35.5833 25.7478 35.5833H37.0638C37.3302 35.1587 37.6907 34.8131 38.1453 34.5468C38.6003 34.2808 39.1074 34.1478 39.6667 34.1478C40.5491 34.1478 41.3006 34.4581 41.9213 35.0788C42.5419 35.6994 42.8522 36.4509 42.8522 37.3333C42.8522 38.2157 42.5419 38.9673 41.9213 39.5879C41.3006 40.2086 40.5491 40.5189 39.6667 40.5189C39.0923 40.5189 38.5815 40.3896 38.1343 40.131C37.687 39.8724 37.3302 39.5232 37.0638 39.0833H27.2732C26.8186 41.8565 25.5539 44.1053 23.4792 45.8296C21.4044 47.5543 19.0225 48.4167 16.3333 48.4167ZM16.3333 40.5189C15.4509 40.5189 14.6994 40.2086 14.0788 39.5879C13.4581 38.9673 13.1477 38.2157 13.1477 37.3333C13.1477 36.5077 13.4311 35.7912 13.9977 35.1838C14.5647 34.5767 15.282 34.2508 16.1496 34.2061L21.8797 24.6797C20.6621 23.6444 19.725 22.4052 19.0686 20.9621C18.4118 19.5185 18.0833 17.9756 18.0833 16.3333C18.0833 13.2701 19.1648 10.6571 21.3278 8.4945C23.4904 6.3315 26.1034 5.25 29.1667 5.25C31.8741 5.25 34.2382 6.10633 36.2588 7.819C38.2795 9.53167 39.5306 11.6669 40.012 14.2246C40.1466 14.769 40.0367 15.2565 39.6824 15.687C39.3278 16.1179 38.8663 16.3333 38.2982 16.3333C37.9124 16.3333 37.5519 16.1898 37.2167 15.9028C36.8818 15.6154 36.659 15.2668 36.5482 14.8569C36.2102 13.11 35.3599 11.6554 33.9972 10.493C32.6346 9.331 31.0244 8.75 29.1667 8.75C27.0725 8.75 25.2852 9.49045 23.8047 10.9713C22.3238 12.4518 21.5833 14.2392 21.5833 16.3333C21.5833 17.6614 21.8966 18.879 22.5231 19.9862C23.15 21.0929 23.9913 22.0024 25.0472 22.7144C25.5022 22.9956 25.7901 23.3545 25.9111 23.7912C26.0324 24.228 25.9719 24.6497 25.7297 25.0565L19.1648 36.0138C19.2873 36.2234 19.377 36.436 19.4338 36.6514C19.4905 36.8669 19.5189 37.0942 19.5189 37.3333C19.5189 38.2157 19.2086 38.9673 18.5879 39.5879C17.9672 40.2086 17.2157 40.5189 16.3333 40.5189ZM39.6667 48.4167C38.6108 48.4167 37.5989 48.2753 36.631 47.9926C35.6634 47.7099 34.7564 47.3097 33.9097 46.7921C33.1289 46.3285 32.8154 45.6608 32.9694 44.7889C33.1234 43.917 33.7015 43.4811 34.7037 43.4811C34.8833 43.4811 35.0712 43.52 35.2672 43.5978C35.4628 43.6755 35.643 43.7652 35.8079 43.8667C36.373 44.2136 36.9816 44.4753 37.6338 44.6518C38.2859 44.8284 38.9636 44.9167 39.6667 44.9167C41.7608 44.9167 43.5482 44.1762 45.0287 42.6953C46.5096 41.2148 47.25 39.4275 47.25 37.3333C47.25 35.2392 46.5096 33.4518 45.0287 31.9713C43.5482 30.4904 41.7608 29.75 39.6667 29.75C39.2778 29.75 38.9083 29.7792 38.5583 29.8375C38.2083 29.8958 37.8583 29.9757 37.5083 30.0772C36.9759 30.2421 36.4675 30.2408 35.9829 30.0732C35.4984 29.9056 35.1348 29.6302 34.8921 29.2472L29.0185 19.4606C28.2018 19.44 27.4913 19.1372 26.887 18.5523C26.2831 17.9674 25.9811 17.2278 25.9811 16.3333C25.9811 15.4509 26.2914 14.6994 26.9121 14.0787C27.5328 13.4581 28.2843 13.1478 29.1667 13.1478C30.0491 13.1478 30.8006 13.4581 31.4213 14.0787C32.0419 14.6994 32.3522 15.4509 32.3522 16.3333C32.3522 16.5725 32.3299 16.7938 32.2852 16.9972C32.2404 17.2009 32.1566 17.4001 32.0338 17.5945L37.3333 26.4921C37.6892 26.4143 38.0609 26.3546 38.4487 26.313C38.836 26.271 39.242 26.25 39.6667 26.25C42.7299 26.25 45.3429 27.3315 47.5055 29.4945C49.6685 31.6571 50.75 34.2701 50.75 37.3333C50.75 40.3966 49.6685 43.0096 47.5055 45.1722C45.3429 47.3352 42.7299 48.4167 39.6667 48.4167Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                {parse(getIntegratedCardDetails("2"))}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col md:flex-row lg:flex-row gap-4">
+                        <div className="w-full md:w-[50%] lg:w-[50%] long-card flex items-center gap-2 !p-[32px]">
+                            <div className={` ${integrateCard === "3" ? "" : ""}`}> 
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="hover:cursor-pointer" onClick={() => setIntegratedCard("3")}>
+                                    <g id="hub_24dp_5F6368_FILL0_wght300_GRAD0_opsz24 1" opacity="0.4">
+                                    <path id="Vector" d="M14.0036 53.084C12.2217 53.084 10.7064 52.4604 9.45765 51.2132C8.20854 49.9661 7.58398 48.4517 7.58398 46.6702C7.58398 44.8883 8.20796 43.373 9.4559 42.1243C10.7035 40.8752 12.2186 40.2507 14.0012 40.2507C14.5006 40.2507 14.991 40.3127 15.4724 40.4367C15.9542 40.5612 16.409 40.728 16.8368 40.9372L21.4627 35.1803C20.4935 34.1241 19.825 32.9425 19.4572 31.6354C19.0893 30.328 19.0144 29.0131 19.2326 27.6909L12.5108 25.4655C11.9244 26.4078 11.1534 27.163 10.1979 27.7312C9.2424 28.2997 8.17665 28.584 7.00065 28.584C5.21837 28.584 3.70326 27.9604 2.45532 26.7132C1.20776 25.4661 0.583984 23.9517 0.583984 22.1702C0.583984 20.3883 1.20757 18.873 2.45473 17.6243C3.7019 16.3752 5.21623 15.7507 6.99773 15.7507C8.77962 15.7507 10.2949 16.3744 11.5437 17.622C12.7928 18.8699 13.4173 20.385 13.4173 22.1673C13.4173 22.305 13.4136 22.4201 13.4062 22.5126C13.3985 22.6056 13.3946 22.6983 13.3946 22.7909L20.0942 25.1202C20.7374 23.9294 21.6207 22.9078 22.7442 22.0553C23.8673 21.2029 25.1557 20.6555 26.6094 20.4132V13.2511C25.1079 12.8983 23.895 12.1392 22.9706 10.9737C22.0462 9.80862 21.584 8.48115 21.584 6.99132C21.584 5.2176 22.2076 3.70637 23.4547 2.45765C24.7019 1.20854 26.2162 0.583984 27.9977 0.583984C29.7796 0.583984 31.2949 1.20776 32.5437 2.45532C33.7928 3.70326 34.4173 5.21837 34.4173 7.00065C34.4173 8.48426 33.9491 9.80862 33.0126 10.9737C32.0766 12.1392 30.8697 12.8983 29.3919 13.2511V20.4132C30.8456 20.6555 32.1303 21.2029 33.246 22.0553C34.3617 22.9078 35.2488 23.9294 35.9072 25.1202L42.6067 22.7909C42.5916 22.6832 42.584 22.5867 42.584 22.5016V22.1673C42.584 20.385 43.2076 18.8699 44.4547 17.622C45.7019 16.3744 47.2162 15.7507 48.9977 15.7507C50.7796 15.7507 52.2949 16.3742 53.5437 17.6214C54.7928 18.8686 55.4173 20.3829 55.4173 22.1644C55.4173 23.9463 54.7935 25.4616 53.546 26.7103C52.298 27.9594 50.7829 28.584 49.0007 28.584C47.8293 28.584 46.7587 28.2997 45.7888 27.7312C44.8189 27.163 44.0528 26.4078 43.4905 25.4655L36.7687 27.6909C36.9869 29.0131 36.912 30.3219 36.5442 31.6173C36.1763 32.9127 35.5078 34.0928 34.5387 35.1576L39.1645 40.8789C39.5923 40.6845 40.0471 40.5312 40.5289 40.4192C41.0103 40.3068 41.5007 40.2507 42.0001 40.2507C43.7827 40.2507 45.2978 40.8742 46.5454 42.1214C47.7933 43.3686 48.4173 44.8829 48.4173 46.6644C48.4173 48.4463 47.7937 49.9616 46.5466 51.2103C45.2994 52.4594 43.7851 53.084 42.0036 53.084C40.2217 53.084 38.7064 52.4602 37.4576 51.2127C36.2085 49.9647 35.584 48.4496 35.584 46.6673C35.584 45.9315 35.703 45.2234 35.941 44.5428C36.1786 43.8623 36.5338 43.2377 37.0067 42.6692L32.3803 36.8673C31.055 37.6572 29.5928 38.0521 27.9937 38.0521C26.3949 38.0521 24.9255 37.6572 23.5854 36.8673L18.9946 42.6692C19.4523 43.2377 19.8038 43.8623 20.0492 44.5428C20.2946 45.2234 20.4173 45.9315 20.4173 46.6673C20.4173 48.4496 19.7937 49.9647 18.5466 51.2127C17.2994 52.4602 15.7851 53.084 14.0036 53.084ZM7.00065 25.084C7.81148 25.084 8.50021 24.8005 9.06682 24.2335C9.63382 23.6669 9.91732 22.9782 9.91732 22.1673C9.91732 21.3565 9.63382 20.6678 9.06682 20.1012C8.50021 19.5342 7.81148 19.2507 7.00065 19.2507C6.18982 19.2507 5.5011 19.5342 4.93448 20.1012C4.36748 20.6678 4.08398 21.3565 4.08398 22.1673C4.08398 22.9782 4.36748 23.6669 4.93448 24.2335C5.5011 24.8005 6.18982 25.084 7.00065 25.084ZM14.0007 49.584C14.8115 49.584 15.5002 49.3005 16.0668 48.7335C16.6338 48.1669 16.9173 47.4781 16.9173 46.6673C16.9173 45.8565 16.6338 45.1678 16.0668 44.6012C15.5002 44.0342 14.8115 43.7507 14.0007 43.7507C13.1898 43.7507 12.5011 44.0342 11.9345 44.6012C11.3675 45.1678 11.084 45.8565 11.084 46.6673C11.084 47.4781 11.3675 48.1669 11.9345 48.7335C12.5011 49.3005 13.1898 49.584 14.0007 49.584ZM28.0007 9.91732C28.8115 9.91732 29.5002 9.63382 30.0668 9.06682C30.6338 8.50021 30.9173 7.81148 30.9173 7.00065C30.9173 6.18982 30.6338 5.5011 30.0668 4.93449C29.5002 4.36749 28.8115 4.08398 28.0007 4.08398C27.1898 4.08398 26.5011 4.36749 25.9345 4.93449C25.3675 5.5011 25.084 6.18982 25.084 7.00065C25.084 7.81148 25.3675 8.50021 25.9345 9.06682C26.5011 9.63382 27.1898 9.91732 28.0007 9.91732ZM28.0007 34.5521C29.4994 34.5521 30.7715 34.0292 31.8168 32.9835C32.8625 31.9382 33.3854 30.6661 33.3854 29.1673C33.3854 27.6685 32.8625 26.3965 31.8168 25.3512C30.7715 24.3054 29.4994 23.7826 28.0007 23.7826C26.5019 23.7826 25.2298 24.3054 24.1845 25.3512C23.1388 26.3965 22.6159 27.6685 22.6159 29.1673C22.6159 30.6661 23.1388 31.9382 24.1845 32.9835C25.2298 34.0292 26.5019 34.5521 28.0007 34.5521ZM42.0007 49.584C42.8115 49.584 43.5002 49.3005 44.0668 48.7335C44.6338 48.1669 44.9173 47.4781 44.9173 46.6673C44.9173 45.8565 44.6338 45.1678 44.0668 44.6012C43.5002 44.0342 42.8115 43.7507 42.0007 43.7507C41.1898 43.7507 40.5011 44.0342 39.9345 44.6012C39.3675 45.1678 39.084 45.8565 39.084 46.6673C39.084 47.4781 39.3675 48.1669 39.9345 48.7335C40.5011 49.3005 41.1898 49.584 42.0007 49.584ZM49.0007 25.084C49.8115 25.084 50.5002 24.8005 51.0668 24.2335C51.6338 23.6669 51.9173 22.9782 51.9173 22.1673C51.9173 21.3565 51.6338 20.6678 51.0668 20.1012C50.5002 19.5342 49.8115 19.2507 49.0007 19.2507C48.1898 19.2507 47.5011 19.5342 46.9345 20.1012C46.3675 20.6678 46.084 21.3565 46.084 22.1673C46.084 22.9782 46.3675 23.6669 46.9345 24.2335C47.5011 24.8005 48.1898 25.084 49.0007 25.084Z" fill="white"/>
+                                </g>
+                                </svg>
+                            </div>
+                            <div>
+                                {parse(getIntegratedCardDetails("3"))}
+                            </div>
+                        </div>
+
+                        <div className="w-full md:w-[50%] lg:w-[50%] long-card flex items-center gap-2 !p-[32px]">
+                            <div className={` ${integrateCard === "4" ? "" : ""}`}>
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="hover:cursor-pointer" onClick={() => setIntegratedCard("4") }>
+                                <g id="smart_toy_24dp_5F6368_FILL0_wght300_GRAD0_opsz24 1" opacity="0.4">
+                                <path id="Vector" d="M10.4993 33.8333C8.86913 33.8333 7.48935 33.2687 6.36002 32.1393C5.23068 31.01 4.66602 29.6302 4.66602 28C4.66602 26.3698 5.23068 24.99 6.36002 23.8607C7.48935 22.7313 8.86913 22.1667 10.4993 22.1667V17.0514C10.4993 15.8914 10.9123 14.8983 11.7383 14.0723C12.5643 13.2463 13.5574 12.8333 14.7174 12.8333H22.166C22.166 11.2031 22.7307 9.82333 23.86 8.694C24.9893 7.56467 26.3691 7 27.9993 7C29.6296 7 31.0093 7.56467 32.1387 8.694C33.268 9.82333 33.8327 11.2031 33.8327 12.8333H41.2813C42.4413 12.8333 43.4343 13.2463 44.2603 14.0723C45.0863 14.8983 45.4993 15.8914 45.4993 17.0514V22.1667C47.1296 22.1667 48.5093 22.7313 49.6387 23.8607C50.768 24.99 51.3327 26.3698 51.3327 28C51.3327 29.6302 50.768 31.01 49.6387 32.1393C48.5093 33.2687 47.1296 33.8333 45.4993 33.8333V43.6152C45.4993 44.7753 45.0863 45.7683 44.2603 46.5943C43.4343 47.4203 42.4413 47.8333 41.2813 47.8333H14.7174C13.5574 47.8333 12.5643 47.4203 11.7383 46.5943C10.9123 45.7683 10.4993 44.7753 10.4993 43.6152V33.8333ZM20.9964 29.75C21.8061 29.75 22.495 29.4667 23.0632 28.9001C23.6317 28.3335 23.916 27.6455 23.916 26.8362C23.916 26.0266 23.6327 25.3377 23.0661 24.7695C22.4995 24.2009 21.8115 23.9167 21.0023 23.9167C20.1926 23.9167 19.5037 24.2 18.9355 24.7666C18.367 25.3332 18.0827 26.0211 18.0827 26.8304C18.0827 27.6401 18.366 28.329 18.9326 28.8972C19.4992 29.4657 20.1872 29.75 20.9964 29.75ZM34.9964 29.75C35.8061 29.75 36.495 29.4667 37.0632 28.9001C37.6317 28.3335 37.916 27.6455 37.916 26.8362C37.916 26.0266 37.6327 25.3377 37.0661 24.7695C36.4995 24.2009 35.8115 23.9167 35.0023 23.9167C34.1926 23.9167 33.5037 24.2 32.9355 24.7666C32.367 25.3332 32.0827 26.0211 32.0827 26.8304C32.0827 27.6401 32.366 28.329 32.9326 28.8972C33.4992 29.4657 34.1872 29.75 34.9964 29.75ZM20.9993 39.0833H34.9993C35.4952 39.0833 35.9107 38.9155 36.2459 38.5799C36.5815 38.2443 36.7493 37.8286 36.7493 37.3327C36.7493 36.8365 36.5815 36.421 36.2459 36.0862C35.9107 35.7509 35.4952 35.5833 34.9993 35.5833H20.9993C20.5035 35.5833 20.088 35.7511 19.7528 36.0867C19.4172 36.4224 19.2493 36.8381 19.2493 37.3339C19.2493 37.8301 19.4172 38.2457 19.7528 38.5805C20.088 38.9157 20.5035 39.0833 20.9993 39.0833ZM14.7174 44.3333H41.2813C41.4909 44.3333 41.663 44.2661 41.7975 44.1315C41.9321 43.9969 41.9993 43.8249 41.9993 43.6152V17.0514C41.9993 16.8418 41.9321 16.6697 41.7975 16.5352C41.663 16.4006 41.4909 16.3333 41.2813 16.3333H14.7174C14.5078 16.3333 14.3357 16.4006 14.2012 16.5352C14.0666 16.6697 13.9993 16.8418 13.9993 17.0514V43.6152C13.9993 43.8249 14.0666 43.9969 14.2012 44.1315C14.3357 44.2661 14.5078 44.3333 14.7174 44.3333Z" fill="white"/>
+                                </g>
+                                </svg>
+                            </div>
+                            <div>
+                                {parse(getIntegratedCardDetails("4"))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex flex-col md:flex-row lg:flex-row gap-4">
+                        <div className="w-full md:w-[50%] lg:w-[50%] long-card flex items-center gap-2 !p-[32px]">
+                            <div className={` ${integrateCard === "5" ? "" : ""}`}>
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="hover:cursor-pointer" onClick={() => setIntegratedCard("5") }>
+                                    <g id="vr180_create2d_24dp_5F6368_FILL0_wght300_GRAD0_opsz24 1" opacity="0.4">
+                                    <path id="Vector" d="M5.83398 23.334C5.83398 18.4519 7.53012 14.3147 10.9224 10.9224C14.3147 7.53012 18.4519 5.83398 23.334 5.83398C26.7383 5.83398 29.851 6.71948 32.672 8.49048C35.4926 10.2615 37.6255 12.6337 39.0706 15.6071C39.2918 16.0318 39.3097 16.4843 39.1242 16.9646C38.9387 17.4445 38.6097 17.7832 38.1372 17.9807C37.7032 18.1783 37.262 18.1806 36.8137 17.9877C36.3649 17.7948 36.0298 17.4859 35.8086 17.0608C34.6088 14.7096 32.9036 12.834 30.6927 11.434C28.4823 10.034 26.0294 9.33398 23.334 9.33398C19.4451 9.33398 16.1395 10.6951 13.4173 13.4173C10.6951 16.1395 9.33398 19.4451 9.33398 23.334C9.33398 26.0383 10.0348 28.5017 11.4363 30.7242C12.8379 32.9471 14.7261 34.6464 17.1011 35.822C17.5409 36.058 17.8431 36.3968 18.0076 36.8382C18.1721 37.2795 18.1796 37.7244 18.0303 38.1728C17.8569 38.6457 17.5421 38.9807 17.0859 39.1779C16.6293 39.3755 16.1887 39.356 15.7641 39.1196C12.7576 37.699 10.3509 35.5721 8.54415 32.7391C6.73737 29.906 5.83398 26.771 5.83398 23.334ZM28.0007 50.1673C26.8219 50.1673 25.8242 49.759 25.0076 48.9423C24.1909 48.1256 23.7826 47.128 23.7826 45.9492V28.0007C23.7826 26.8219 24.1909 25.8242 25.0076 25.0076C25.8242 24.1909 26.8219 23.7826 28.0007 23.7826H45.9492C47.128 23.7826 48.1256 24.1909 48.9423 25.0076C49.759 25.8242 50.1673 26.8219 50.1673 28.0007V45.9492C50.1673 47.128 49.759 48.1256 48.9423 48.9423C48.1256 49.759 47.128 50.1673 45.9492 50.1673H28.0007ZM28.0007 46.6673H45.9492C46.1289 46.6673 46.2934 46.5925 46.4427 46.4427C46.5925 46.2934 46.6673 46.1289 46.6673 45.9492V28.0007C46.6673 27.821 46.5925 27.6565 46.4427 27.5072C46.2934 27.3574 46.1289 27.2826 45.9492 27.2826H28.0007C27.821 27.2826 27.6565 27.3574 27.5072 27.5072C27.3574 27.6565 27.2826 27.821 27.2826 28.0007V45.9492C27.2826 46.1289 27.3574 46.2934 27.5072 46.4427C27.6565 46.5925 27.821 46.6673 28.0007 46.6673ZM35.8086 42.9427L33.7173 40.0622C33.5439 39.8258 33.3076 39.7076 33.0086 39.7076C32.7091 39.7076 32.4727 39.8258 32.2992 40.0622L30.3206 42.6919C30.0841 42.991 30.0526 43.3021 30.2261 43.6252C30.3995 43.948 30.6673 44.1094 31.0293 44.1094H42.8844C43.2706 44.1094 43.5443 43.948 43.7057 43.6252C43.8671 43.3021 43.8298 42.991 43.5937 42.6919L40.484 38.6261C40.3105 38.39 40.0743 38.272 39.7752 38.272C39.4758 38.272 39.2393 38.39 39.0659 38.6261L35.8086 42.9427Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                {parse(getIntegratedCardDetails("5"))}
+                            </div>
+                        </div>
+
+                        <div className="w-full md:w-[50%] lg:w-[50%] long-card flex items-center gap-2 !p-[32px]">
+                            <div className={` ${integrateCard === "6" ? "" : ""}`}>
+                                <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" className="hover:cursor-pointer" onClick={() => setIntegratedCard("6") }>
+                                    <g id="construction_24dp_5F6368_FILL0_wght300_GRAD0_opsz24 1" opacity="0.4">
+                                    <path id="Vector" d="M42.3237 45.9886L31.3034 34.9683L34.9912 31.2799L46.0121 42.3002C46.5088 42.7968 46.7571 43.4116 46.7571 44.1447C46.7571 44.8774 46.5088 45.492 46.0121 45.9886C45.5155 46.4852 44.9007 46.7335 44.1676 46.7335C43.435 46.7335 42.8203 46.4852 42.3237 45.9886ZM10.0117 45.9886C9.51511 45.492 9.26681 44.8774 9.26681 44.1447C9.26681 43.4116 9.51511 42.7968 10.0117 42.3002L24.3349 27.9776L18.8871 22.552C18.5041 22.9351 18.0195 23.1266 17.4335 23.1266C16.847 23.1266 16.3623 22.9351 15.9792 22.552L14.84 21.39V26.2585C14.84 26.7431 14.6253 27.0715 14.196 27.2438C13.7666 27.4157 13.3799 27.3295 13.0357 26.9854L7.14872 21.0984C6.80456 20.7542 6.71861 20.3676 6.89089 19.9387C7.06278 19.5094 7.391 19.2947 7.87556 19.2947H12.7441L11.6626 18.2132C11.241 17.7912 11.0302 17.2954 11.0302 16.7257C11.0302 16.156 11.241 15.6601 11.6626 15.2382L16.8321 10.0693C17.4901 9.41089 18.2027 8.92925 18.97 8.62436C19.7373 8.31908 20.5353 8.16644 21.364 8.16644C22.022 8.16644 22.6426 8.26075 23.226 8.44936C23.8093 8.63758 24.3792 8.93527 24.9357 9.34244C25.2017 9.52172 25.3483 9.76769 25.3756 10.0804C25.4024 10.393 25.2947 10.6705 25.0524 10.9128L21.2922 14.6729L22.5756 15.9563C22.9582 16.3389 23.1496 16.8235 23.1496 17.4099C23.1496 17.9964 22.9582 18.4809 22.5756 18.8636L28.0227 24.2892L33.6321 18.6799C33.3719 18.2074 33.1819 17.7191 33.0621 17.2151C32.9424 16.7107 32.8825 16.1805 32.8825 15.6244C32.8825 13.5244 33.6064 11.7504 35.0542 10.3026C36.5021 8.85477 38.276 8.13086 40.376 8.13086C40.6424 8.13086 40.8854 8.13669 41.1051 8.14836C41.3253 8.16041 41.5564 8.19794 41.7987 8.26094C42.0888 8.36244 42.2788 8.56797 42.3686 8.87753C42.4581 9.18747 42.3893 9.456 42.1621 9.68311L38.5945 13.2502C38.3763 13.4687 38.2672 13.7186 38.2672 13.9998C38.2672 14.2809 38.3763 14.5308 38.5945 14.7494L41.251 17.4059C41.4695 17.624 41.7194 17.7331 42.0006 17.7331C42.2817 17.7331 42.5316 17.624 42.7501 17.4059L46.3172 13.8382C46.5443 13.6111 46.8129 13.5364 47.1228 13.6142C47.4324 13.692 47.6379 13.8878 47.7394 14.2016C47.8024 14.4439 47.8399 14.6751 47.852 14.8952C47.8636 15.1149 47.8695 15.358 47.8695 15.6244C47.8695 17.7244 47.1456 19.4983 45.6977 20.9461C44.2499 22.3939 42.476 23.1179 40.376 23.1179C39.8199 23.1179 39.2896 23.064 38.7852 22.9563C38.2812 22.8486 37.793 22.6526 37.3205 22.3683L13.7001 45.9886C13.2035 46.4852 12.5887 46.7335 11.8556 46.7335C11.123 46.7335 10.5083 46.4852 10.0117 45.9886Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>
+                                {parse(getIntegratedCardDetails("6"))}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
 
         {/* 4th */}
-        <div className="mt-[100px] mx-10">
-            <div className="flex flex-col gap-[20px]">
-                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Security and Compliance</h1>
+        <div className="p-3 md:p-10 lg:p-10">
+            <div className="flex flex-col gap-[20px] text-center">
+                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Security and Compliance</h1>
                     <p className="text-base lg:text-[18px] lg:leading-[28px] text-[#CECECE]">Ensuring that the language models comply with industry standards, regulations, and company-specific security requirements.</p>
             </div>
 
 
-            <div className="flex gap-[50px] items-center justify-between flex-col md:flex-row lg:flex-row mt-[20px]">
+            <div className="flex gap-[40px] items-center justify-between flex-col md:flex-row lg:flex-row mt-[20px]">
                 {/* cards */}
-                <div className="flex flex-col gap-[40px] mt-[40px] w-full md:w-[60%] lg:w-[60%] md:mt-0 lg:mt-0">
+                <div className="flex flex-col gap-[20px] mt-[40px] w-full md:w-[60%] lg:w-[60%] md:mt-0 lg:mt-0">
                     <div className="long-card">
                         <div className="flex gap-4 items-center">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <p className="text-bold text-[24px] text-accent">Industry Standards Compliance</p>
+                            <p className="text-bold text-[24px] heading-text">Industry Standards Compliance</p>
                         </div>
                         <p className="mt-[20px] text-[#B1B1B1]">Ensure that the language models meet industry standards and regulations to maintain data privacy and security.</p>
                     </div>
                     <div className="long-card">
                         <div className="flex gap-4 items-center">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <p className="text-bold text-[24px] text-accent">Data Privacy and Confidentiality</p>
+                            <p className="text-bold text-[24px] heading-text">Data Privacy and Confidentiality</p>
                         </div>
                         <p className="mt-[20px] text-[#B1B1B1]">Implement measures to protect sensitive data and ensure confidentiality throughout the language model lifecycle.</p>
                     </div>
                     <div className="long-card">
                         <div className="flex gap-4 items-center">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <p className="text-bold text-[24px] text-accent">Audit and Compliance Reporting</p>
+                            <p className="text-bold text-[24px] heading-text">Audit and Compliance Reporting</p>
                         </div>
                         <p className="mt-[20px] text-[#B1B1B1]">Generate comprehensive reports and documentation to demonstrate compliance with regulatory requirements.</p>
                     </div>
                     <div className="long-card">
                         <div className="flex gap-4 items-center">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <p className="text-bold text-[24px] text-accent">Company-Specific Security Requirements</p>
+                            <p className="text-bold text-[24px] heading-text">Company-Specific Security Requirements</p>
                         </div>
                         <p className="mt-[20px] text-[#B1B1B1]">Customize the language models to adhere to your organization's unique security protocols and requirements.</p>
                     </div>
@@ -324,9 +424,9 @@ export const Langchain = () => {
         </div>
 
         {/* 5th container */}
-        <div className="pt-[100px] px-10">
-            <div className="flex flex-col gap-[20px]">
-                <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Monitoring and Optimization</h1>
+        <div className="alt-container mt-4 p-3 md:p-10 lg:p-10">
+            <div className="flex flex-col gap-[20px] text-center">
+                <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Monitoring and Optimization</h1>
                 <p className="text-base lg:text-[18px] lg:leading-[28px] text-[#CECECE]">In an enterprise language chain, monitoring and optimization play a crucial role in ensuring the performance and effectiveness of language models. Continuous monitoring allows organizations to track the performance metrics of their language models and identify areas for improvement. Optimization involves refining the models based on feedback and evolving data patterns to enhance their accuracy and relevance.</p>
             </div>
 
@@ -335,49 +435,49 @@ export const Langchain = () => {
                 <div className="flex flex-col md:flex-row lg:flex-row items-center gap-4">
                     <div className={`btn btn-circle text-accent lang-btn-active`}>1</div>
                     <div className="long-card flex flex-col text-left">
-                        <h1>Performance Metrics Tracking</h1>
-                        <p>The first step in monitoring and optimization is to establish a set of performance metrics to track the effectiveness of language models. These metrics may include accuracy, precision, recall, and F1 score. By regularly monitoring these metrics, organizations can identify any deviations or decline in performance and take necessary actions to address them.</p>
+                        <h1 className="font-bold heading-text">Performance Metrics Tracking</h1>
+                        <p className="text-[#CECECE] mt-2">The first step in monitoring and optimization is to establish a set of performance metrics to track the effectiveness of language models. These metrics may include accuracy, precision, recall, and F1 score. By regularly monitoring these metrics, organizations can identify any deviations or decline in performance and take necessary actions to address them.</p>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row lg:flex-row items-center gap-4">
                     <div className={`btn btn-circle text-accent lang-btn-active`}>2</div>
                     <div className="long-card flex flex-col text-left">
-                        <h1>Feedback Collection and Analysis</h1>
-                        <p>Collecting feedback from users and stakeholders is essential for understanding the strengths and weaknesses of language models. This feedback can be gathered through user surveys, customer support interactions, or automated feedback mechanisms. Analyzing the feedback helps identify areas where the models can be optimized to better meet user expectations and requirements.</p>
+                        <h1 className="font-bold heading-text">Feedback Collection and Analysis</h1>
+                        <p className="text-[#CECECE] mt-2">Collecting feedback from users and stakeholders is essential for understanding the strengths and weaknesses of language models. This feedback can be gathered through user surveys, customer support interactions, or automated feedback mechanisms. Analyzing the feedback helps identify areas where the models can be optimized to better meet user expectations and requirements.</p>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row lg:flex-row items-center gap-4">
                     <div className={`btn btn-circle text-accent lang-btn-active`}>3</div>
                     <div className="long-card flex flex-col text-left">
-                        <h1>Data Pattern Analysis</h1>
-                        <p>Language models need to adapt to evolving data patterns to maintain their relevance and accuracy. Analyzing data patterns helps identify emerging trends, changes in user behavior, or shifts in language usage. By understanding these patterns, organizations can optimize their models to better align with the current needs and preferences of their users.</p>
+                        <h1 className="font-bold heading-text">Data Pattern Analysis</h1>
+                        <p className="text-[#CECECE] mt-2">Language models need to adapt to evolving data patterns to maintain their relevance and accuracy. Analyzing data patterns helps identify emerging trends, changes in user behavior, or shifts in language usage. By understanding these patterns, organizations can optimize their models to better align with the current needs and preferences of their users.</p>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row lg:flex-row items-center gap-4">
                     <div className={`btn btn-circle text-accent lang-btn-active`}>4</div>
                     <div className="long-card flex flex-col text-left">
-                        <h1>Model Refinement and Fine-Tuning</h1>
-                        <p>Based on the insights gained from performance metrics tracking, feedback analysis, and data pattern analysis, organizations can refine and fine-tune their language models. This process involves adjusting the model parameters, retraining with updated data, and incorporating new techniques or algorithms to improve performance. Continuous refinement ensures that the models stay up-to-date and deliver accurate results.</p>
+                        <h1 className="font-bold heading-text">Model Refinement and Fine-Tuning</h1>
+                        <p className="text-[#CECECE] mt-2">Based on the insights gained from performance metrics tracking, feedback analysis, and data pattern analysis, organizations can refine and fine-tune their language models. This process involves adjusting the model parameters, retraining with updated data, and incorporating new techniques or algorithms to improve performance. Continuous refinement ensures that the models stay up-to-date and deliver accurate results.</p>
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row lg:flex-row items-center gap-4">
                     <div className={`btn btn-circle text-accent lang-btn-active`}>5</div>
                     <div className="long-card flex flex-col text-left">
-                        <h1>Iterative Improvement</h1>
-                        <p>Monitoring and optimization is an iterative process that requires ongoing efforts. As language models are deployed and used in real-world scenarios, new challenges and opportunities may arise. Organizations need to continuously monitor the performance, collect feedback, analyze data patterns, and refine the models to achieve optimal results. By embracing an iterative approach, enterprises can ensure that their language models evolve and adapt to changing requirements.</p>
+                        <h1 className="font-bold heading-text">Iterative Improvement</h1>
+                        <p className="text-[#CECECE] mt-2">Monitoring and optimization is an iterative process that requires ongoing efforts. As language models are deployed and used in real-world scenarios, new challenges and opportunities may arise. Organizations need to continuously monitor the performance, collect feedback, analyze data patterns, and refine the models to achieve optimal results. By embracing an iterative approach, enterprises can ensure that their language models evolve and adapt to changing requirements.</p>
                     </div>
                 </div>
             </div>
         </div>
 
         {/* sixth container */}
-        <div className="pt-[100px] px-10 sixth-con mt-[100px] mb-[100px]">
-            <div className="flex flex-col gap-[20px]">
-                <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold ">Customization and Personalization</h1>
+        <div className="sixth-con mt-4 mb-[100px] p-3 md:p-10 lg:p-10">
+            <div className="flex flex-col gap-[20px] text-center">
+                <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold heading-text">Customization and Personalization</h1>
                 <p className="text-base lg:text-[18px] lg:leading-[28px] text-[#CECECE]">Explore the ability of enterprises to customize language models for their unique needs.</p>
             </div>
 
-            <div className="flex flex-wrap justify-evenly">
+            <div className="flex flex-wrap justify-evenly mt-8">
                 <div className="customization-card w-full md:w-[30%] lg:w-[30%]">
                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="50" cy="50" r="49.5" fill="url(#paint0_linear_723_83567)" fillOpacity="0.1" stroke="url(#paint1_linear_723_83567)"/>
@@ -394,7 +494,7 @@ export const Langchain = () => {
                             </defs>
                         </svg>
                     <div className="mt-[40px] text-center">
-                        <h1 className="font-semibold mb-[20px]">Industry-Specific Jargon</h1>
+                        <h1 className="font-semibold mb-[20px] heading-text">Industry-Specific Jargon</h1>
                         <p className="text-[#B1B1B1]">Tailor language models to understand and generate industry-specific terminology and language.</p>
                     </div>
                 </div>
@@ -416,7 +516,7 @@ export const Langchain = () => {
                     </svg>
 
                     <div className="mt-[40px] text-center">
-                        <h1 className="font-semibold mb-[20px]">Internal Process Optimization</h1>
+                        <h1 className="font-semibold mb-[20px] heading-text">Internal Process Optimization</h1>
                         <p className="text-[#B1B1B1]">Optimize language models to automate and streamline internal processes within the organization.</p>
                     </div>
                 </div>
@@ -439,7 +539,7 @@ export const Langchain = () => {
                     </svg>
 
                     <div className="mt-[40px] text-center">
-                        <h1 className="font-semibold mb-[20px]">Customer Interaction Enhancement</h1>
+                        <h1 className="font-semibold mb-[20px] heading-text">Customer Interaction Enhancement</h1>
                         <p className="text-[#B1B1B1]">Enhance customer interactions by training language models to understand specific customer queries and needs.</p>
                     </div>
                 </div>
@@ -462,7 +562,7 @@ export const Langchain = () => {
                     </svg>
 
                     <div className="mt-[40px] text-center">
-                        <h1 className="font-semibold mb-[20px]">Contextual Understanding</h1>
+                        <h1 className="font-semibold mb-[20px] heading-text">Contextual Understanding</h1>
                         <p className="text-[#B1B1B1]">Enable language models to understand and generate responses based on the conversation or document.</p>
                     </div>
                 </div>
@@ -484,7 +584,7 @@ export const Langchain = () => {
                     </svg>
 
                     <div className="mt-[40px] text-center">
-                        <h1 className="font-semibold mb-[20px]">Brand Voice Consistency</h1>
+                        <h1 className="font-semibold mb-[20px] heading-text">Brand Voice Consistency</h1>
                         <p className="text-[#B1B1B1]">Maintain consistent brand voice across all language model interactions to reinforce brand identity.</p>
                     </div>
                 </div>

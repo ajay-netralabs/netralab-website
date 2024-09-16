@@ -1,14 +1,26 @@
 import { blogs } from "./data"
 import blogImg from "../../../public/static_img/Blog-img.png"
 import { useNavigate } from "react-router-dom"
+import { useEffect } from "react"
+import { useDispatch } from "react-redux"
+import { resetPrevLocation } from "../../store/locationSlice"
 
 export const BlogsPage = () => {
+
+    const dispatch = useDispatch()
 
     const navigate = useNavigate()
 
     const handleBlogNavigation = (id:string) => {
         navigate(`/blogs/${id}`)
     }
+
+    useEffect(() => {
+        return () => {
+            // localStorage.setItem("prev", "/")
+            dispatch(resetPrevLocation())
+        }
+    }, [])
 
     return (
         <div>
@@ -37,7 +49,7 @@ export const BlogsPage = () => {
                                     alt="blog image" />
                                 </figure>
                                 <div className="card-body !px-0">
-                                    <h2 onClick={() => handleBlogNavigation(data.id)} className="card-title hover:text-accent hover:cursor-pointer">{data.title}</h2>
+                                    <h2 onClick={() => handleBlogNavigation(data.id)} className="card-title heading-text-hover hover:cursor-pointer">{data.title}</h2>
                                     <p className="text-[#B1B1B1]">{`${data.read.slice(0,200)}...`}</p>
                                 </div>
                             </div>

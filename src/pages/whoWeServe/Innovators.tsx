@@ -19,12 +19,15 @@ import { useEffect, useState } from "react"
 import { InnovatorData } from "./data"
 import { FaqAccordion } from "../../components"
 import { useNavigate } from "react-router-dom"
+import { useDispatch } from 'react-redux';
+import { addPrevLocation } from '../../store/locationSlice';
 
 
 
 export const Innovators = () => {
 
     const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     const [innovatorsData, setInnovatorsData] = useState<string[]>(Object.values(InnovatorData))
 
@@ -49,12 +52,23 @@ export const Innovators = () => {
         window.scrollTo(0,0)
     }, [])
 
+    // useEffect(() => {
+    //     return () => {
+    //         // localStorage.setItem("prev", "/innovators")
+    //         dispatch(addPrevLocation("/innovators"))
+    //     }
+    // }, [])
+
+    const handleNavigate = () => {
+        dispatch(addPrevLocation("/innovators"))
+        navigate("/contact-us")
+    }
 
     return (
-        <div className="mt-12">
+        <div className="mt-1 md:mt-12 lg:mt-12">
             {/* first container */}
-           <div className="p-10 flex flex-col-reverse items-center md:flex-row lg:flex-row">
-                <div className="w-full mt-[20px] md:mt-0 lg:mt-0 md:w-[60%] lg:w-[60%]">
+           <div className="p-3 md:p-10 lg:p-10 flex flex-col items-center md:flex-row lg:flex-row">
+                <div className="w-full md:w-[60%] lg:w-[60%]">
                         <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                             muted // @ts-ignore
@@ -63,13 +77,13 @@ export const Innovators = () => {
                             loop>
                             <source src={Innovator} type="video/mp4"/>
                         </video>
-                        <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Transform your Domain Expertise into Cutting-Edge AI Agents</h1>
-                        <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">Leverage the <span className="uppercase text-accent text-[18px] font-bold leading-[28px]">Ground Truth®</span> framework to build the next generation of AI Agents, powered by your expertise, for your domain, and scale your business like never before.</p>
+                        <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Transform your Domain Expertise into Cutting-Edge AI Agents</h1>
+                        <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">Leverage the <span className=" text-[18px] font-bold leading-[28px]">Ground Truth®</span> framework to build the next generation of AI Agents, powered by your expertise, for your domain, and scale your business like never before.</p>
                         <div className="mt-[40px]">
-                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white hover:cursor-pointer" onClick={() => navigate("/contact-us")}>Request Demo</button>
+                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white hover:cursor-pointer" onClick={() => handleNavigate()}>Request Demo</button>
                         </div>
                 </div>
-                <div className="w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
+                <div className="mt-[20px] md:mt-0 lg:mt-0  w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
                     <div className="w-[70%] md:w-[50%] lg:w-[50%] flex justify-center items-center">
                         <video
                             className="mix-blend-exclusion"
@@ -85,8 +99,8 @@ export const Innovators = () => {
 
 
            {/* second container */}
-           <div className="integrator-second-container mt-[60px] p-10 flex flex-col-reverse items-center justify-between md:flex-row lg:flex-row">
-                <div className="w-full md:w-[60%] lg:w-[60%] mt-[20px] md:mt-0 lg:mt-0">
+           <div className="integrator-second-container mt-1 md:mt-12 lg:mt-12 p-3 md:p-10 lg:p-10 flex flex-col items-center justify-between md:flex-row lg:flex-row">
+                <div className="w-full md:w-[60%] lg:w-[60%]">
                         <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                             muted // @ts-ignore
@@ -95,7 +109,7 @@ export const Innovators = () => {
                             loop>
                             <source src={Opportunity} type="video/mp4"/>
                         </video>
-                        <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Redefine Business with the Power of AI Agents</h1>
+                        <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Redefine Business with the Power of AI Agents</h1>
                         <div className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">
                             <p>AI is about to completely change how you use computers </p>
                             <p>- Bill Gates, 2023</p>
@@ -120,20 +134,20 @@ export const Innovators = () => {
                 
                 </div>
 
-                <div className="w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
+                <div className="w-full md:w-[40%] lg:w-[40%] flex justify-center items-center mt-[20px] md:mt-0 lg:mt-0">
                     <img src={Man} alt="" />
                 </div>
            </div>
 
             {/* 3rd container */}
-            <div className="md:mt-12 lg:mt-12 p-10">
+            <div className="mt-1 md:mt-12 lg:mt-12 p-3 md:p-10 lg:p-10">
                 <div className="text-center">
-                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Benefits</h1>
+                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Benefits</h1>
                 </div>
                 {/* cards */}
-                <div className="flex flex-wrap items-center gap-[28px] justify-between mt-[60px]">
+                <div className="flex flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-12 lg:mt-12">
                     {/* card 1 */}
-                    <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px]">
+                    <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px] p-[50px]">
                         <video
                             className="mix-blend-exclusion w-[80px]"
                             muted // @ts-ignore
@@ -142,14 +156,14 @@ export const Innovators = () => {
                             loop>
                             <source src={Innovator1Icon} type="video/mp4"/>
                         </video>
-                        <h2 className="font-bold text-[20px]">Expand Your Reach with a New Offering</h2>
+                        <h2 className="font-bold text-[20px] heading-text">Expand Your Reach with a New Offering</h2>
                         <p>
                             Develop a cutting-edge AI Agent product line that leverages your existing expertise to unlock exponential impact and reach new markets.
                         </p>
                     </div>
 
                     {/* card 2 */}
-                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px]">
+                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px] p-[50px]">
                         <video
                             className="mix-blend-exclusion w-[80px]"
                             muted // @ts-ignore
@@ -158,14 +172,14 @@ export const Innovators = () => {
                             loop>
                             <source src={Innovator2Icon} type="video/mp4"/>
                         </video>
-                        <h2 className="font-bold text-[20px]">Protect & Monetize Your IP</h2>
+                        <h2 className="font-bold text-[20px] heading-text">Protect & Monetize Your IP</h2>
                         <p>         
                             Build your Expert AI Agent™ on top of our proprietary language chain framework, creating a secure moat around your intellectual property while maximizing its value.
                         </p>
                     </div>
 
                     {/* card 3 */}
-                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px]">
+                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px] p-[50px]">
                         <video
                             className="mix-blend-exclusion w-[80px]"
                             muted // @ts-ignore
@@ -174,7 +188,7 @@ export const Innovators = () => {
                             loop>
                             <source src={Innovator3Icon} type="video/mp4"/>
                         </video>
-                        <h2 className="font-bold text-[20px]">Partner for Success</h2>
+                        <h2 className="font-bold text-[20px] heading-text">Partner for Success</h2>
                         <p>
                             We're committed to safeguarding and amplifying your IP. Our team of experts will partner with you every step of the way to ensure your Expert AI Agent™ thrives in the market.
                         </p>
@@ -184,7 +198,7 @@ export const Innovators = () => {
             </div>
 
             {/* 4th container */}
-            <div className="mt-[60px] p-10 ">
+            <div className="mt-1 md:mt-12 lg:mt-12 p-3 md:p-10 lg:p-10 ">
                 <div className="">
                     <video
                         className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
@@ -194,11 +208,11 @@ export const Innovators = () => {
                         loop>
                         <source src={Proof} type="video/mp4"/>
                     </video>
-                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">8X Energy</h1>
-                    <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">With the <span className="uppercase text-accent text-[18px] font-bold leading-[28px]">Ground Truth® framework,</span> we were able to deliver an Expert AI Agent™ that:</p>
+                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">8X Energy</h1>
+                    <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">With the <span className="text-[18px] font-bold leading-[28px]">Ground Truth® framework,</span> we were able to deliver an Expert AI Agent™ that:</p>
                 </div>
                 <div className="mt-12 flex items-center gap-[80px] flex-col-reverse md:flex-row lg:flex-row">
-                    <div className="flex flex-col gap-[40px] ">
+                    <div className="flex flex-col gap-[20px] ">
                         <div className="flex items-center gap-3 glass-card-1">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div>Bradley.ai™ significantly reduces operational costs by quickly generating essential information for DER designs, specifications, and financial analyses.</div>
@@ -238,7 +252,7 @@ export const Innovators = () => {
             </div>
 
             {/* 5th container */}
-            <div className="mt-[60px] p-10 ">
+            <div className="mt-1 md:mt-12 lg:mt-12 p-3 md:p-10 lg:p-10 ">
                 <div className="flex flex-col items-center justify-center text-center">
                     <video
                         className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
@@ -248,9 +262,9 @@ export const Innovators = () => {
                         loop>
                         <source src={Process} type="video/mp4"/>
                     </video>
-                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px]">Turning Your IP into Expert AI Agents™ is a clear process.</h1>
+                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Turning Your IP into Expert AI Agents™ is a clear process.</h1>
                     <div className="mt-[40px]">
-                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white hover:cursor-pointer" onClick={() => navigate("/contact-us")}>Request Demo</button>
+                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white hover:cursor-pointer" onClick={() => handleNavigate()}>Request Demo</button>
                     </div>
                 </div>
             </div>
@@ -304,10 +318,10 @@ export const Innovators = () => {
             </div>
 
             {/* seventh container */}
-            <div className="p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[20px]">
+            <div className="p-3 md:p-10 lg:p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[20px]">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
-                        <h1 className="text-[40px] leading-[66px] font-bold mt-[26px]">FAQs</h1>
+                        <h1 className="text-[40px] leading-[66px] font-bold mt-[26px] heading-text">FAQs</h1>
                         <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">These are the frequently asked questions by our users , if you have similar doubts you can read these answers. We hope it will help you to better understanding.</p>
                     </div>
                     <div className="mt-[40px]">

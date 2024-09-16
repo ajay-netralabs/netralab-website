@@ -1,5 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom"
-import GT_LOGO from "../../public/GT_logo.png"
+// import GT_LOGO from "../../public/GT_logo.png"
+import GT_LOGO from "../../public/netralabs.png"
 import { useEffect, useState } from "react"
 
 export const Navbar = () => {

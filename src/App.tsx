@@ -9,7 +9,6 @@ import { ContactUsPage } from './pages/ContactUs'
 import { Langchain } from './pages/Langchain'
 
 function App() {
-
   return (
     <Routes>
       <Route element={<NavbarLayout />}>

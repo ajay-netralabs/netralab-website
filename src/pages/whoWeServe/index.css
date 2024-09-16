@@ -58,3 +58,12 @@
     border: 1px 0px 0px 0px;
     opacity: 0.1;
 }
+
+
+.heading-text {
+    color: #0FAE96;
+}
+
+.heading-text-hover:hover {
+    color: #0FAE96;
+}
