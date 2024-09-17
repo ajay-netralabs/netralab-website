@@ -63,7 +63,7 @@ export const ContactUsPage = () => {
 
     const getIframe = (prevNav: string) => {
         if(prevNav === "/integrators"){
-            return <div className="h-[820px] md:h-[800px] lg:[800px]">
+            return <div className="h-[820px] md:h-[800px] lg:[800px] max-w-[650px]">
                 <iframe
                 src="https://api.leadconnectorhq.com/widget/form/s7iYzGLOdPnZLM3hScna"
                 style={{width: "100%", height: "100%", border: "none", borderRadius: "3px"}}
@@ -85,7 +85,7 @@ export const ContactUsPage = () => {
             </div>
             
         } else if(prevNav === "/innovators") {
-            return <div className="h-[820px] md:h-[800px] lg:h-[800px]">
+            return <div className="h-[820px] md:h-[800px] lg:h-[800px] max-w-[650px]">
                 <iframe
                 src="https://api.leadconnectorhq.com/widget/form/d3rhkdryyOx3g1c8EI9r"
                 style={{width: "100%", height: "100%", border: "none", borderRadius:"3px"}}
@@ -106,7 +106,7 @@ export const ContactUsPage = () => {
             </iframe>
             </div>
         } else if(prevNav === "/creators"){
-            return <div className="h-[900px] md:h-[850px] lg:h-[850px]">
+            return <div className="h-[900px] md:h-[850px] lg:h-[850px] max-w-[650px]">
                 <iframe
                 src="https://api.leadconnectorhq.com/widget/form/uQRkUGdi8YKpr6RvdtUH"
                 style={{width: "100%", height: "100%", border:"none", borderRadius: "3px"}}
@@ -146,7 +146,7 @@ export const ContactUsPage = () => {
         //         >
         //   </iframe>
 
-        return <div className="h-[950px] md:h-[900px] lg:h-[900px]">
+        return <div className="h-[950px] md:h-[900px] lg:h-[900px] max-w-[650px]">
                 <iframe
                     src="https://api.leadconnectorhq.com/widget/form/3awB04FlOIOzGoJvhRzn"
                     style={{width:"100%", height: "100%", border: "none", borderRadius:"3px"}}
@@ -189,7 +189,7 @@ export const ContactUsPage = () => {
             </div>
 
             <div className="md:mt-16 lg:mt-16 flex flex-col md:flex-row lg:flex-row gap-[90px] p-10">
-                <div className="w-full md:w-[40%] lg:w-[40%]">
+                <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div className="text-[#B1B1B1]">
                         <p className="text-[16px] leading-[22px]">Do you want to learn about AI Agents? Ground Truth™ is ready to guide you through the complexities of Generative AI and help you harness its potential to transform your business.</p>
                         <p className="text-[16px] leading-[22px] mt-4">We understand that your challenges are unique, and off-the-shelf solutions won’t cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain expertise to create Expert AI Agents that deliver unparalleled results.</p>
@@ -208,7 +208,7 @@ export const ContactUsPage = () => {
                 </div>
 
                 {/* based on the previous link, render iframes */}
-                <div className="contact-form-container w-[55%] p-0 pt-20px md:pt-0 lg:pt-0 md:p-[40px] lg:p-[40px]">
+                <div className="contact-form-container w-full md:w-[50%] lg:w-[50%] p-0 md:p-[40px] lg:p-[40px]">
                     {getIframe(prev || "")}
                 
                 {/* <iframe
