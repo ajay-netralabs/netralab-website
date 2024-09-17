@@ -4,6 +4,8 @@ import { cardsData, IntegrationData } from "./data"
 import parse from 'html-react-parser';
 
 import Home3Vid from "../../../public/vids/home-3.mp4"
+import Home4Vid from "../../../public/vids/home-4.mp4"
+
 import { useDispatch } from "react-redux";
 import { resetPrevLocation } from "../../store/locationSlice";
 
@@ -31,6 +33,23 @@ export const Langchain = () => {
 
     const getIntegratedCardDetails = (id:string) => {
         return IntegrationData[id]
+    }
+
+
+    const [currentStep, setCurrentStep] = useState<number>(1)
+
+    const getSteps = (step:number) => {
+        if(step === 1) {
+            return "The first step in monitoring and optimization is to establish a set of performance metrics to track the effectiveness of language models. These metrics may include accuracy, precision, recall, and F1 score. By regularly monitoring these metrics, organizations can identify any deviations or decline in performance and take necessary actions to address them."
+        } else if(step === 2) {
+            return "Collecting feedback from users and stakeholders is essential for understanding the strengths and weaknesses of language models. This feedback can be gathered through user surveys, customer support interactions, or automated feedback mechanisms. Analyzing the feedback helps identify areas where the models can be optimized to better meet user expectations and requirements."
+        } else if(step === 3) {
+            return "Language models need to adapt to evolving data patterns to maintain their relevance and accuracy. Analyzing data patterns helps identify emerging trends, changes in user behavior, or shifts in language usage. By understanding these patterns, organizations can optimize their models to better align with the current needs and preferences of their users."
+        } else if(step === 4) {
+            return "Based on the insights gained from performance metrics tracking, feedback analysis, and data pattern analysis, organizations can refine and fine-tune their language models. This process involves adjusting the model parameters, retraining with updated data, and incorporating new techniques or algorithms to improve performance. Continuous refinement ensures that the models stay up-to-date and deliver accurate results."
+        }else {
+            return "Monitoring and optimization is an iterative process that requires ongoing efforts. As language models are deployed and used in real-world scenarios, new challenges and opportunities may arise. Organizations need to continuously monitor the performance, collect feedback, analyze data patterns, and refine the models to achieve optimal results. By embracing an iterative approach, enterprises can ensure that their language models evolve and adapt to changing requirements."
+        }
     }
 
     return (
@@ -191,7 +210,7 @@ export const Langchain = () => {
                                     <img src={cardDetails.img} alt="img" className="max-w-full max-h-full object-cover object-center" />
                                 </div>
                             </div>
-                            <div className="p-[20px] leading-[28px] text-center ">
+                            <div className="p-[20px] leading-[28px] text-center text-[#CECECE] ">
                                 {cardDetails.text}
                             </div>
                         </div>
@@ -374,9 +393,9 @@ export const Langchain = () => {
             </div>
 
 
-            <div className="flex gap-[40px] items-center justify-between flex-col md:flex-row lg:flex-row mt-[20px]">
+            {/* <div className="flex gap-[40px] items-center justify-between flex-col md:flex-row lg:flex-row mt-[20px]"> */}
                 {/* cards */}
-                <div className="flex flex-col gap-[20px] mt-[40px] w-full md:w-[60%] lg:w-[60%] md:mt-0 lg:mt-0">
+                {/* <div className="flex flex-col gap-[20px] mt-[40px] w-full md:w-[60%] lg:w-[60%] md:mt-0 lg:mt-0">
                     <div className="long-card">
                         <div className="flex gap-4 items-center">
                             <div className="badge badge-secondary badge-xs"></div>
@@ -405,10 +424,10 @@ export const Langchain = () => {
                         </div>
                         <p className="mt-[20px] text-[#B1B1B1]">Customize the language models to adhere to your organization's unique security protocols and requirements.</p>
                     </div>
-                </div>
+                </div> */}
 
                 {/* animation */}
-                <div className="w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
+                {/* <div className="w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
                     <div className="w-[80%] md:w-[60%] lg:w-[70%] flex justify-center items-center">
                     <video
                         className="mix-blend-exclusion"
@@ -419,7 +438,56 @@ export const Langchain = () => {
                         <source src={Home3Vid} type="video/mp4"/>
                     </video>
                     </div>
-                </div>
+                </div> */}
+            {/* </div> */}
+
+            <div className="security-content-container relative">
+                    <div className="w-full flex justify-center items-center">
+                        <video
+                            className="mix-blend-exclusion max-h-[400px]"
+                            muted // @ts-ignore
+                            autoPlay={"autoplay"}
+                            preload="auto"
+                            loop>
+                            <source src={Home3Vid} type="video/mp4"/>
+                        </video>
+                    </div>
+
+                    <div className=" md:absolute lg:absolute md:top-[50%] lg:top-[50%] md:left-[50%] lg:left-[50%] md:translate-y-[-50%] lg:translate-y-[-50%] md:translate-x-[-50%] lg:translate-x-[-50%] w-full">
+                        <div className="w-full flex flex-col md:flex-row lg:flex-row gap-4">
+                            <div className="long-card w-full md:w-[50%] lg:w-[50%]">
+                                <div className="flex gap-4 items-center">
+                                    <div className="badge badge-secondary badge-xs"></div>
+                                    <p className="text-bold text-[24px] heading-text">Industry Standards Compliance</p>
+                                </div>
+                                <p className="mt-[20px] text-[#B1B1B1]">Ensure that the language models meet industry standards and regulations to maintain data privacy and security.</p>
+                            </div>
+                            <div className="long-card w-full md:w-[50%] lg:w-[50%]">
+                                <div className="flex gap-4 items-center">
+                                    <div className="badge badge-secondary badge-xs"></div>
+                                    <p className="text-bold text-[24px] heading-text">Data Privacy and Confidentiality</p>
+                                </div>
+                                <p className="mt-[20px] text-[#B1B1B1]">Implement measures to protect sensitive data and ensure confidentiality throughout the language model lifecycle.</p>
+                            </div>
+                        </div>
+
+                        <div className="w-full flex flex-col md:flex-row lg:flex-row gap-4">
+                            <div className="long-card w-full md:w-[50%] lg:w-[50%]">
+                                <div className="flex gap-4 items-center">
+                                    <div className="badge badge-secondary badge-xs"></div>
+                                    <p className="text-bold text-[24px] heading-text">Audit and Compliance Reporting</p>
+                                </div>
+                                <p className="mt-[20px] text-[#B1B1B1]">Generate comprehensive reports and documentation to demonstrate compliance with regulatory requirements.</p>
+                            </div>
+                            <div className="long-card w-full md:w-[50%] lg:w-[50%]">
+                                <div className="flex gap-4 items-center">
+                                    <div className="badge badge-secondary badge-xs"></div>
+                                    <p className="text-bold text-[24px] heading-text">Company-Specific Security Requirements</p>
+                                </div>
+                                <p className="mt-[20px] text-[#B1B1B1]">Customize the language models to adhere to your organization's unique security protocols and requirements.</p>
+                            </div>
+                        </div>
+                    </div>
             </div>
         </div>
 
@@ -430,7 +498,7 @@ export const Langchain = () => {
                 <p className="text-base lg:text-[18px] lg:leading-[28px] text-[#CECECE]">In an enterprise language chain, monitoring and optimization play a crucial role in ensuring the performance and effectiveness of language models. Continuous monitoring allows organizations to track the performance metrics of their language models and identify areas for improvement. Optimization involves refining the models based on feedback and evolving data patterns to enhance their accuracy and relevance.</p>
             </div>
 
-            {/* steps */}
+            {/* steps
             <div className="flex flex-col gap-[20px] mt-[60px]">
                 <div className="flex flex-col md:flex-row lg:flex-row items-center gap-4">
                     <div className={`btn btn-circle text-accent lang-btn-active`}>1</div>
@@ -467,7 +535,53 @@ export const Langchain = () => {
                         <p className="text-[#CECECE] mt-2">Monitoring and optimization is an iterative process that requires ongoing efforts. As language models are deployed and used in real-world scenarios, new challenges and opportunities may arise. Organizations need to continuously monitor the performance, collect feedback, analyze data patterns, and refine the models to achieve optimal results. By embracing an iterative approach, enterprises can ensure that their language models evolve and adapt to changing requirements.</p>
                     </div>
                 </div>
+            </div> */}
+            <div className="flex flex-col md:flex-row lg:flex-row gap-[20px] justify-center items-center">
+                <div className="flex flex-col gap-[20px] mt-[60px] w-full md:w-[50%] lg:w-[50%]">
+                    <div onClick={() => setCurrentStep(1)} className={`hover:cursor-pointer flex flex-row  items-center gap-4 ${currentStep === 1 ? "opacity-[1]" : "opacity-[0.4]"}`}>
+                        <div className={`btn btn-circle text-accent lang-btn-active`}>1</div>
+                        <div className={`long-card flex flex-col text-left w-full ${currentStep === 1 ? "lang-cards-active" : ""}`}>
+                            <h1 className="">Performance Metrics Tracking</h1>
+                        </div>
+                    </div>
+                    <div onClick={() => setCurrentStep(2)} className={`hover:cursor-pointer flex flex-row items-center gap-4 ${currentStep === 2 ? "opacity-[1]" : "opacity-[0.2]"}`}>
+                        <div className={`btn btn-circle text-accent lang-btn-active`}>2</div>
+                        <div className={`long-card flex flex-col text-left w-full ${currentStep === 2 ? "lang-cards-active" : ""}`}>
+                            <h1 className=" ">Feedback Collection and Analysis</h1>
+                        </div>
+                    </div>
+                    <div onClick={() => setCurrentStep(3)} className={`hover:cursor-pointer flex flex-row items-center gap-4 ${currentStep === 3 ? "opacity-[1]" : "opacity-[0.4]"}`}>
+                        <div className={`btn btn-circle text-accent lang-btn-active`}>3</div>
+                        <div className={`long-card flex flex-col text-left w-full ${currentStep === 3 ? "lang-cards-active" : ""}`}>
+                            <h1 className=" ">Data Pattern Analysis</h1>
+                        </div>
+                    </div>
+                    <div onClick={() => setCurrentStep(4)} className={`hover:cursor-pointer flex flex-row items-center gap-4 ${currentStep === 4 ? "opacity-[1]" : "opacity-[0.4]"}`}>
+                        <div className={`btn btn-circle text-accent lang-btn-active`}>4</div>
+                        <div className={`long-card flex flex-col text-left w-full ${currentStep === 4 ? "lang-cards-active" : ""}`}>
+                            <h1 className=" ">Model Refinement and Fine-Tuning</h1>
+                        </div>
+                    </div>
+                    <div onClick={() => setCurrentStep(5)} className={`hover:cursor-pointer flex flex-row items-center gap-4 ${currentStep === 5 ? "opacity-[1]" : "opacity-[0.4]"}`}>
+                        <div className={`btn btn-circle text-accent lang-btn-active`}>5</div>
+                        <div className={`long-card flex flex-col text-left w-full ${currentStep === 5 ? "lang-cards-active" : ""}`}>
+                            <h1 className=" ">Iterative Improvement</h1>
+                        </div>
+                    </div>
+                </div>
+                <div className="relative mt-6 md:mt-0 lg:mt-0 mx-6 card-text-container w-full md:w-[50%] lg:w-[50%] p-3 md:p-10 lg:p-10 text-center text-[#CECECE] h-[20rem] md:h-[30rem] lg:h-[30rem] flex items-center justify-center">
+                    <video
+                        className="mix-blend-lighten absolute max-w-full max-h-full"
+                        muted // @ts-ignore
+                        autoPlay={"autoplay"}
+                        preload="auto"
+                        loop>
+                        <source src={Home4Vid} type="video/mp4"/>
+                    </video>
+                     {getSteps(currentStep)}
+                </div>
             </div>
+
         </div>
 
         {/* sixth container */}
@@ -477,7 +591,7 @@ export const Langchain = () => {
                 <p className="text-base lg:text-[18px] lg:leading-[28px] text-[#CECECE]">Explore the ability of enterprises to customize language models for their unique needs.</p>
             </div>
 
-            <div className="flex flex-wrap justify-evenly mt-8">
+            <div className="flex flex-wrap justify-center gap-[20px] mt-8">
                 <div className="customization-card w-full md:w-[30%] lg:w-[30%]">
                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="50" cy="50" r="49.5" fill="url(#paint0_linear_723_83567)" fillOpacity="0.1" stroke="url(#paint1_linear_723_83567)"/>

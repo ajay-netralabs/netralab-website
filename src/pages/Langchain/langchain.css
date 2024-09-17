@@ -35,7 +35,15 @@
 }
 
 .long-card {
-    background: linear-gradient(180deg, rgba(11, 11, 34, 0.1) 25.7%, rgba(110, 110, 112, 0.1) 82.32%);
+    background: linear-gradient(180deg, rgba(11, 11, 34, 0.2) 25.7%, rgba(110, 110, 112, 0.2) 82.32%);
+    width: Fill (700px)px;
+    padding: 22px;
+    border-radius: 4px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+}
+
+.card-text-container {
+    background: linear-gradient(180deg, rgba(11, 11, 34, 0) 25.7%, rgba(110, 110, 112, 0.1) 82.32%);
     width: Fill (700px)px;
     padding: 22px;
     border-radius: 4px 0px 0px 0px;
@@ -74,4 +82,9 @@
 
 .lang-card {
     background: var(--Up-Color-BG, linear-gradient(179deg, rgba(110, 110, 112, 0.10) 43.81%, rgba(11, 11, 34, 0.10) 81.95%));
+}
+
+
+.security-content-container {
+    /* background: url("../../../public/vids/home-3.mp4"); */
 }

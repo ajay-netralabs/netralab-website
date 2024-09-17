@@ -12,6 +12,23 @@ export const Footer = () => {
         navigate(path || "/")
     }
 
+    const handleNavigateSocialMedia = (type:string) => {
+        let url = ""
+
+        if(type === "twitter"){
+            url = "https://twitter.com/ExpertAIAgents"
+
+        }else {
+            url = "https://www.linkedin.com/company/netraai"
+        }
+
+        if(window) {
+            // @ts-ignore
+            window?.open(url, '_blank').focus();
+        }
+
+    }
+
     return (
         <>
         {/* logo */}
@@ -61,8 +78,8 @@ export const Footer = () => {
                 <div className="grid grid-flow-col gap-4 text-[#B1B1B1]">
                     <p>Terms of use</p>
                     <p>Privacy policy</p>
-                    <img src={X} alt="x" />
-                    <img src={LinkedIn} alt="linkedin" />
+                    <img className="hover:cursor-pointer" src={X} alt="x" onClick={() => handleNavigateSocialMedia("twitter")}/>
+                    <img className="hover:cursor-pointer" src={LinkedIn} alt="linkedin" onClick={() => handleNavigateSocialMedia("linkedin")} />
                 </div>
             </nav>
         </footer>
