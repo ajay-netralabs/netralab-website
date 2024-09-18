@@ -27,13 +27,13 @@ export const BlogsPage = () => {
             {/* header */}
             <div className="w-full relative">
                 <img className="w-full object-cover" src={blogImg} alt="blogs" />
-                <p className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-[15px] md:text-[45px] lg:text-[55px] font-bold text-accent text-center">The AI Agent Landscape.</p>
+                <p className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed heading-text break-words font-bold text-accent text-center">The AI Agent Landscape.</p>
             </div>
 
             {/* popular topics */}
             <div className="m-10">
                 <div>
-                    <p className="font-bold text-[36px]">Popular topics</p>
+                    <p className="font-bold text-xl md:text-[2vw] lg:text-[2vw] leading-relaxed heading-text break-words">Popular topics</p>
                 </div>
 
                 {/* tabs */}
@@ -49,8 +49,8 @@ export const BlogsPage = () => {
                                     alt="blog image" />
                                 </figure>
                                 <div className="card-body !px-0">
-                                    <h2 onClick={() => handleBlogNavigation(data.id)} className="card-title heading-text-hover hover:cursor-pointer">{data.title}</h2>
-                                    <p className="text-[#B1B1B1]">{`${data.read.slice(0,200)}...`}</p>
+                                    <h2 onClick={() => handleBlogNavigation(data.id)} className="card-title text-xl md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed heading-text-hover hover:cursor-pointer">{data.title}</h2>
+                                    <p className="text-[#B1B1B1] text-xl md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">{`${data.read.slice(0,200)}...`}</p>
                                 </div>
                             </div>
                         )

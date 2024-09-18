@@ -28,6 +28,8 @@ import { useNavigate } from "react-router-dom"
 import { useDispatch } from 'react-redux';
 import { addPrevLocation } from '../../store/locationSlice';
 
+import Integrator1Bg from "../../../public/static_img/integrator-1-bg.jfif"
+
 
 
 export const Creators = () => {
@@ -74,17 +76,24 @@ export const Creators = () => {
                             loop>
                             <source src={Creator} type="video/mp4"/>
                         </video>
-                        <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Transform Your Unique Idea into a Unicorn with AI Agents.</h1>
-                        <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">
-                            Join our AI Agent Incubator and leverage our 
-                            <span className=" text-[18px] font-bold leading-[28px]"> Ground Truth® framework </span>
-                             to turn your ideas, concepts, IP, or patents into a thriving AI-powered business. 
-                        </p>
-                        <div className="mt-[40px]">
-                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => handleNavigate()}>Apply Now</button>
+                        <div className='relative'>
+                            <div>
+                                <img className="brightness-[0.4] mix-blend-color-dodge" src={Integrator1Bg} alt="" />
+                            </div>
+                            <div className='absolute top-0'>
+                                <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Transform Your Unique Idea into a Unicorn with AI Agents.</h1>
+                                <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
+                                    Join our AI Agent Incubator and leverage our 
+                                    <span className="font-bold text-accent"> Ground Truth® framework </span>
+                                    to turn your ideas, concepts, IP, or patents into a thriving AI-powered business. 
+                                </p>
+                                <div className="mt-[40px]">
+                                    <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => handleNavigate()}>Apply Now</button>
+                                </div>
+                            </div>
                         </div>
                 </div>
-                <div className="mt-[20px] md:mt-0 lg:mt-0 w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
+                <div className="mt-28 md:mt-0 lg:mt-0 w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
                     <div className=" w-[70%] md:w-[50%] lg:w-[50%] flex justify-center items-center">
                         <video
                             className="mix-blend-exclusion"
@@ -110,26 +119,28 @@ export const Creators = () => {
                             loop>
                             <source src={MarketOpportunity} type="video/mp4"/>
                         </video>
-                        <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Creators Like You Will Shape the Future of AI Agents</h1>
-                        <div className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">
-                            Ground Truth® empowers you to seize the massive opportunity in the Gen AI market and build the next generation of transformative solutions.
-                        </div>
-                
-                        <div className="mt-[40px] flex flex-col gap-[18px] text-[#B1B1B1]">
-                        <div className="flex items-center gap-3">
-                            <div className="badge badge-secondary badge-xs"></div>
-                            <div>AI Agents will be at the forefront of a new paradigm, revolutionizing industries and redefining how work gets done.</div>
-                        </div>
+                        <div className='leading-relaxed'> 
+                            <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Creators Like You Will Shape the Future of AI Agents</h1>
+                            <div className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
+                                Ground Truth® empowers you to seize the massive opportunity in the Gen AI market and build the next generation of transformative solutions.
+                            </div>
+                    
+                            <div className="mt-[40px] flex flex-col gap-[18px] text-[#B1B1B1] text-base md:text-[1.1vw] lg:text-[1.1vw]">
+                                <div className="flex items-center gap-3 ">
+                                    <div className="badge badge-secondary badge-xs"></div>
+                                    <div>AI Agents will be at the forefront of a new paradigm, revolutionizing industries and redefining how work gets done.</div>
+                                </div>
 
-                        <div className="flex items-center gap-3">
-                            <div className="badge badge-secondary badge-xs"></div>
-                            <div>Industries worldwide are turning to innovative AI solutions to overcome challenges and stay competitive.</div>
-                        </div>
+                                <div className="flex items-center gap-3">
+                                    <div className="badge badge-secondary badge-xs"></div>
+                                    <div>Industries worldwide are turning to innovative AI solutions to overcome challenges and stay competitive.</div>
+                                </div>
 
-                        <div className="flex items-center gap-3">
-                            <div className="badge badge-secondary badge-xs"></div>
-                            <div>Ground Truth® offers a perfect setting for creators to develop pioneering AI agents and launch thriving businesses.</div>
-                        </div>
+                                <div className="flex items-center gap-3">
+                                    <div className="badge badge-secondary badge-xs"></div>
+                                    <div>Ground Truth® offers a perfect setting for creators to develop pioneering AI agents and launch thriving businesses.</div>
+                                </div>
+                            </div>
                     </div>
                 
                 </div>
@@ -155,56 +166,68 @@ export const Creators = () => {
             {/* 3rd container */}
             <div className="p-3 md:p-10 lg:p-10">
                 <div className="text-center">
-                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Why join</h1>
+                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Why join</h1>
                 </div>
                 {/* cards */}
-                <div className="flex flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-12 lg:mt-12">
+                <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-12 lg:mt-12 leading-relaxed">
                     {/* card 1 */}
-                    <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px] p-[50px]">
-                        <video
-                            className="mix-blend-exclusion w-[80px]"
-                            muted // @ts-ignore
-                            autoPlay={"autoplay"}
-                            preload="auto"
-                            loop>
-                            <source src={Creator1Icon} type="video/mp4"/>
-                        </video>
-                        <h2 className="font-bold text-[20px] heading-text">Seiza a Unique Opportunity</h2>
-                        <p className="text-[#B1B1B1]">
-                            The Generative AI market is exploding, presenting a once-in-a-generation opportunity akin to the internet boom.
-                        </p>
+                    <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] min-h-[400px] p-[50px] flex flex-col justify-between">
+                        <div className='h-[40%]'>
+                            <video
+                                className="mix-blend-exclusion w-[80px]"
+                                muted // @ts-ignore
+                                autoPlay={"autoplay"}
+                                preload="auto"
+                                loop>
+                                <source src={Creator1Icon} type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div className='h-[60%]'>
+                            <h2 className="font-bold heading-text text-xl md:text-[1.2vw] lg:text-[1.2vw]">Seiza a Unique Opportunity</h2>
+                            <p className="text-[#B1B1B1] text-base md:text-[1.1vw] lg:text-[1.1vw] mt-2">
+                                The Generative AI market is exploding, presenting a once-in-a-generation opportunity akin to the internet boom.
+                            </p>
+                        </div>
                     </div>
 
                     {/* card 2 */}
-                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px] p-[50px]">
-                        <video
-                            className="mix-blend-exclusion w-[80px]"
-                            muted // @ts-ignore
-                            autoPlay={"autoplay"}
-                            preload="auto"
-                            loop>
-                            <source src={Creator2Icon} type="video/mp4"/>
-                        </video>
-                        <h2 className="font-bold text-[20px] heading-text">Build on a Powerful Foundation</h2>
-                        <p className="text-[#B1B1B1]">         
-                            Leverage our proprietary language chain framework, unmatched in the industry, to develop your unique Expert AI Agent™ and capture this massive market.
-                        </p>
+                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] min-h-[400px] p-[50px] flex flex-col justify-between">
+                        <div className="h-[40%]">
+                            <video
+                                className="mix-blend-exclusion w-[80px]"
+                                muted // @ts-ignore
+                                autoPlay={"autoplay"}
+                                preload="auto"
+                                loop>
+                                <source src={Creator2Icon} type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div className='h-[60%]'>
+                            <h2 className="font-bold heading-text text-xl md:text-[1.2vw] lg:text-[1.2vw]">Build on a Powerful Foundation</h2>
+                            <p className="text-[#B1B1B1] text-base md:text-[1.1vw] lg:text-[1.1vw] mt-2">         
+                                Leverage our proprietary language chain framework, unmatched in the industry, to develop your unique Expert AI Agent™ and capture this massive market.
+                            </p>
+                        </div>
                     </div>
 
                     {/* card 3 */}
-                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] min-h-[300px] p-[50px]">
-                        <video
-                            className="mix-blend-exclusion w-[80px]"
-                            muted // @ts-ignore
-                            autoPlay={"autoplay"}
-                            preload="auto"
-                            loop>
-                            <source src={Creator3Icon} type="video/mp4"/>
-                        </video>
-                        <h2 className="font-bold text-[20px] heading-text">Have a Partner for Success</h2>
-                        <p className="text-[#B1B1B1]">
-                            We're invested in your success. Our team of seasoned experts will work side-by-side with you to bring your Expert AI Agent™ to market – at no cost if you're approved for our incubation program.
-                        </p>
+                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] min-h-[400px] p-[50px] flex flex-col justify-between">
+                        <div className="h-[40%]">
+                            <video
+                                className="mix-blend-exclusion w-[80px]"
+                                muted // @ts-ignore
+                                autoPlay={"autoplay"}
+                                preload="auto"
+                                loop>
+                                <source src={Creator3Icon} type="video/mp4"/>
+                            </video>
+                        </div>
+                        <div className="h-[60%]">
+                            <h2 className="font-bold heading-text text-xl md:text-[1.2vw] lg:text-[1.2vw]">Have a Partner for Success</h2>
+                            <p className="text-[#B1B1B1] text-base md:text-[1.1vw] lg:text-[1.1vw] mt-2">
+                                We're invested in your success. Our team of seasoned experts will work side-by-side with you to bring your Expert AI Agent™ to market – at no cost if you're approved for our incubation program.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
@@ -221,11 +244,11 @@ export const Creators = () => {
                             loop>
                             <source src={Proof} type="video/mp4"/>
                         </video>
-                    <h1 className="text-xl lg:text-[40px] lg:leading-[66px] font-bold mt-[26px] heading-text">Joseph Did It, So Can You.</h1>
-                    <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">With the Ground Truth® framework, we were able to deliver an Expert AI Agent that redefines a core industry problem.</p>
+                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Joseph Did It, So Can You.</h1>
+                    <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">With the Ground Truth® framework, we were able to deliver an Expert AI Agent that redefines a core industry problem.</p>
                 </div>
                 <div className="flex items-center justify-between flex-col md:flex-row lg:flex-row">
-                    <div className="flex flex-col gap-[20px] ">
+                    <div className="flex flex-col gap-[20px] w-full md:w-[50%] lg:w-[50%] text-base md:text-[1.1vw] lg:text-[1.1vw]">
                         <div className="flex items-center gap-3 glass-card-1">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div>Transformed a critical COBOL batch processing problem into a new patented method.</div>
@@ -242,7 +265,9 @@ export const Creators = () => {
                         </div>
                     </div>
                     <div className="hidden md:flex lg:flex w-full md:w-[50%] lg:w-[50%] justify-center items-center">
-                        <img src={CreatorImg2} alt="" />
+                        <div className='w-[80%]'>
+                            <img src={CreatorImg2} alt="" />
+                        </div>
                     </div>
 
                     {/* for mobile render the feedback */}
@@ -270,21 +295,21 @@ export const Creators = () => {
                             loop>
                             <source src={Process} type="video/mp4"/>
                         </video>
-                    <h1 className="text-xl lg:text-[45px] lg:leading-[66px] font-bold mt-[26px] heading-text">From Concept to Launch: A Clear Path to Success.</h1>
+                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">From Concept to Launch: A Clear Path to Success.</h1>
                     <div className="mt-[40px]">
                             <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => handleNavigate()}>Request Demo</button>
                     </div>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-[40px] mt-[40px]">
-                    <div className="flex flex-wrap justify-center items-center gap-[20px]">
-                        <img src={CreatorProcess1} alt="" onClick={() => setProcessNo("1")} className={`hover:cursor-pointer ${processNo === "1" ? "opacity-[1]" : "opacity-[0.4]"}`}/>  
-                        <img src={CreatorProcess2} alt="" onClick={() => setProcessNo("2")} className={`hover:cursor-pointer ${processNo === "2" ? "opacity-[1]" : "opacity-[0.4]"}`}/>
-                        <img src={CreatorProcess3} alt="" onClick={() => setProcessNo("3")} className={`hover:cursor-pointer ${processNo === "3" ? "opacity-[1]" : "opacity-[0.4]"}`}/>
-                        <img src={CreatorProcess4} alt="" onClick={() => setProcessNo("4")} className={`hover:cursor-pointer ${processNo === "4" ? "opacity-[1]" : "opacity-[0.4]"}`}/>
-                        <img src={CreatorProcess5} alt="" onClick={() => setProcessNo("5")} className={`hover:cursor-pointer ${processNo === "5" ? "opacity-[1]" : "opacity-[0.4]"}`}/>
+                <div className="flex flex-col justify-center items-center gap-[40px] mt-[20%] md:mt-[15%] lg:mt-[12%] relative">
+                    <div className="absolute h-[350px] w-[350px]">
+                        <img src={CreatorProcess1} alt="" onClick={() => setProcessNo("1")} className={`hover:cursor-pointer absolute top-[-40%] right-[50%] translate-x-[50%] ${processNo === "1" ? "opacity-[1] !top-[-17%] z-10" : "opacity-[0.4]"}`}/>  
+                        <img src={CreatorProcess2} alt="" onClick={() => setProcessNo("2")} className={`hover:cursor-pointer absolute top-[10%] right-[-40%] ${processNo === "2" ? "opacity-[1] !right-[-15%] z-10" : "opacity-[0.4]"}`}/>
+                        <img src={CreatorProcess3} alt="" onClick={() => setProcessNo("3")} className={`hover:cursor-pointer absolute top-[60%] right-[-40%] ${processNo === "3" ? "opacity-[1] !right-[-15%] z-10" : "opacity-[0.4]"}`}/>
+                        <img src={CreatorProcess4} alt="" onClick={() => setProcessNo("4")} className={`hover:cursor-pointer absolute top-[60%] left-[-40%] ${processNo === "4" ? "opacity-[1] !left-[-15%] z-10" : "opacity-[0.4]"}`}/>
+                        <img src={CreatorProcess5} alt="" onClick={() => setProcessNo("5")} className={`hover:cursor-pointer absolute top-[10%] left-[-40%] ${processNo === "5" ? "opacity-[1] !left-[-15%] z-10" : "opacity-[0.4]"}`}/>
                     </div>
-                    <div className="border-[20px] border-[#CDDDEC] rounded-full h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[400px] lg:w-[400px] flex items-center justify-center">
-                        <div className="m-10 text-center">
+                    <div className="border-[20px] border-[#323449] rounded-full h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[400px] lg:w-[400px] flex items-center justify-center creator-circle">
+                        <div className="m-10 text-center text-base md:text-[1.1vw] lg:text-[1.1vw]">
                             {parse(processData)}
                         </div>
                     </div>

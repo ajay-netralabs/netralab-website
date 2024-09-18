@@ -1,12 +1,12 @@
 
 import Meta from "../../public/marq/meta.svg"
-import Langchain from "../../public/marq/langchain.svg"
-import Kubernate from "../../public/marq/kubernets.svg"
+// import Langchain from "../../public/marq/langchain.svg"
+// import Kubernate from "../../public/marq/kubernets.svg"
 import Huggingface from "../../public/marq/huggingface.svg"
 import Google from "../../public/marq/Google.svg"
 import Deepmind from "../../public/marq/Deepmind.svg"
-import Azure from "../../public/marq/Azure.svg"
-import Aws from "../../public/marq/Aws.svg"
+// import Azure from "../../public/marq/Azure.svg"
+// import Aws from "../../public/marq/Aws.svg"
 import Anthropic from "../../public/marq/Anthropic.svg"
 import Openai from "../../public/marq/OpenAi.svg"
 import Mistral from "../../public/marq/Mistral.svg"
@@ -21,16 +21,16 @@ export const MarqueeLogo = () => {
             </div>
 
              {/* lengchain */}
-             <div className="flex items-center justify-center marquee-border w-[300px]">
+             {/* <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Langchain} alt="meta" className="mx-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px] ">LangChain</p>
-            </div>
+            </div> */}
 
              {/* Kubernetes */}
-             <div className="flex items-center justify-center marquee-border w-[300px]">
+             {/* <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Kubernate} alt="meta" className="mx-4" />
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">KUBERNETES</p>
-            </div>
+            </div> */}
 
             {/* hugging face */}
             <div className="flex items-center justify-center marquee-border w-[300px]">
@@ -51,16 +51,16 @@ export const MarqueeLogo = () => {
             </div>
 
              {/* Azure */}
-             <div className="flex items-center justify-center marquee-border w-[300px]">
+             {/* <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Azure} alt="meta" className="mr-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">AZURE</p>
-            </div>
+            </div> */}
 
             {/* Aws */}
-            <div className="flex items-center justify-center marquee-border w-[300px]">
+            {/* <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Aws} alt="meta" className="mr-4"/>
                 <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">AWS</p>
-            </div>
+            </div> */}
 
              {/* Anthropix */}
              <div className="flex items-center justify-center marquee-border w-[300px]">

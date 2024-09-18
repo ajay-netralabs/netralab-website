@@ -48,7 +48,7 @@ export const Navbar = () => {
                         <li className={`mr-10  md:mr-4 relative ${activeMenu !== "/" && menu.whoWeServe.includes(activeMenu) ? "border-b border-b-accent" : ""}`}>
                             <div tabIndex={0} role="button" className="dropdown flex gap-1 items-center">
                                 <div className="flex gap-2 items-center">
-                                    Who we serve 
+                                    Who We Serve 
                                     <span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g id="keyboard_arrow_down_24dp_5F6368_FILL0_wght300_GRAD0_opsz24 1">
@@ -89,7 +89,7 @@ export const Navbar = () => {
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow right-[50%]">
                             <li><a onClick={() => handleNavigation("/")}>Home</a></li>
                             <li>
-                            <a>Who we serve</a>
+                            <a>Who We Serve</a>
                             <ul className="p-2">
                                 <li><a onClick={() => handleNavigation("/integrators")}>Integrators</a></li>
                                 <li><a onClick={() => handleNavigation("/innovators")}>Innovators</a></li>
@@ -101,7 +101,7 @@ export const Navbar = () => {
                             <li><a onClick={() => handleNavigation("/contact-us")}>Contact Us</a></li>
                         </ul>
                     </div>
-                <button className="hidden lg:flex btn btn-accent rounded-sm" onClick={() => handleNavigation("/contact-us")}>Let's Talk</button>
+                {/* <button className="hidden lg:flex btn btn-accent rounded-sm" onClick={() => handleNavigation("/contact-us")}>Let's Talk</button> */}
             </div>
         </div>
     )

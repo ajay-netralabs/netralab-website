@@ -45,17 +45,18 @@ export const Footer = () => {
                 <a className="link link-hover">Company Overview</a>
                 {/* <a className="link link-hover" onClick={() => handleNavigation("/careers")}>Careers</a> */}
             </nav>
-            <nav className="flex flex-col gap-2 w-full mt-10 md:mt-0 lg:mt-0 md:w-[unset] lg:w-[unset]">
+            {/* <nav className="flex flex-col gap-2 w-full mt-10 md:mt-0 lg:mt-0 md:w-[unset] lg:w-[unset]">
                 <h6 className="footer-title text-white">Resources</h6>
                 <a className="link link-hover" onClick={() => handleNavigation("/blogs")}>Blog</a>
                 <a className="link link-hover">Help Center</a>
                 <a className="link link-hover">Webinars & Events</a>
-            </nav>
+            </nav> */}
             <nav className="flex flex-col gap-2 mt-10 md:mt-0 lg:mt-0 w-full md:w-[unset] lg:w-[unset]">
                 <h6 className="footer-title text-white">Resources</h6>
                 <a className="link link-hover" onClick={() => handleNavigation("/blogs")}>Blog</a>
-                <a className="link link-hover">Help Center</a>
-                <a className="link link-hover">Webinars & Events</a>
+                <a className="link link-hover" onClick={() => handleNavigation("/integrators")}>Integrators</a>
+                <a className="link link-hover" onClick={() => handleNavigation("/innovators")}>Innovators</a>
+                <a className="link link-hover" onClick={() => handleNavigation("/creators")}>Creators</a>
             </nav>
             <nav className="flex flex-col gap-2 mt-10 md:mt-0 lg:mt-0 w-full md:w-[unset] lg:w-[unset]">
                 <h6 className="footer-title text-white">Support & Contact</h6>

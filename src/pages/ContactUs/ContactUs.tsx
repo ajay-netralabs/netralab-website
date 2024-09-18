@@ -189,21 +189,23 @@ export const ContactUsPage = () => {
             </div>
 
             <div className="md:mt-16 lg:mt-16 flex flex-col md:flex-row lg:flex-row gap-[90px] p-10">
-                <div className="w-full md:w-[50%] lg:w-[50%]">
+                <div className="w-full md:w-[50%] lg:w-[50%] text-base md:text-[1.1vw] lg:text-[1.1vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
                     <div className="text-[#B1B1B1]">
-                        <p className="text-[16px] leading-[22px]">Do you want to learn about AI Agents? Ground Truth™ is ready to guide you through the complexities of Generative AI and help you harness its potential to transform your business.</p>
-                        <p className="text-[16px] leading-[22px] mt-4">We understand that your challenges are unique, and off-the-shelf solutions won’t cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain expertise to create Expert AI Agents that deliver unparalleled results.</p>
-                        <p className="text-[16px] leading-[22px] mt-4">Don’t let the rapid pace of AI innovation leave you behind. Partner with Netra Labs, and let’s build the future of your business together.</p>
-                        <p className="text-[16px] leading-[22px] mt-4">Complete the form, and a Netra Labs representative will contact you shortly to discuss your specific goals and how Ground Truth™ can accelerate your AI journey.</p>
-                        <p className="text-[16px] leading-[22px] mt-4">We look forward to speaking with you and exploring the possibilities.</p>
+                        <p className="">Do you want to learn about AI Agents? Ground Truth™ is ready to guide you through the complexities of Generative AI and help you harness its potential to transform your business.</p>
+                        <p className="mt-4">We understand that your challenges are unique, and off-the-shelf solutions won’t cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain expertise to create Expert AI Agents that deliver unparalleled results.</p>
+                        <p className="mt-4">Don’t let the rapid pace of AI innovation leave you behind. Partner with Netra Labs, and let’s build the future of your business together.</p>
+                        <p className="mt-4">Complete the form, and a Netra Labs representative will contact you shortly to discuss your specific goals and how Ground Truth™ can accelerate your AI journey.</p>
+                        <p className="mt-4">We look forward to speaking with you and exploring the possibilities.</p>
                           
                     </div>
-                    <h1 className="heading-text text-[24px] mt-[40px] font-bold">About Netra Labs</h1>
-                    <div className="mt-[20px] text-[16px] leading-[22px] text-[#B1B1B1]">
-                        <p className="text-[16px] leading-[22px] mt-4">Netra Labs is more than just an AI company; we are a catalyst for technological innovation and business transformation. Our founders have spent years developing AI and automation solutions for some of the world’s most prominent corporations.</p>
-                        <p className="text-[16px] leading-[22px] mt-4">This experience has led us to a groundbreaking realization: the transformative power of AI should be accessible to all, not just a privileged few.</p>
-                        <p className="text-[16px] leading-[22px] mt-4">We are committed to making AI simple and affordable. Our plug-and-play solutions offer immediate value and are tailored to meet diverse business needs.</p>
-                        <p className="text-[16px] leading-[22px] mt-4">We’re not just selling products; we’re selling empowerment. We believe that every business, regardless of size or industry, should have the tools to harness the full potential of AI. And this is just the beginning. We are continually innovating to redefine the boundaries of what AI can achieve.</p>  
+                    <h1 className="heading-text text-xl md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[26px] heading-text break-words font-bold">About Netra Labs</h1>
+                    
+
+                    <div className="mt-[20px] text-[#B1B1B1]">
+                        <p className="mt-4">At Netra Labs, we are dedicated to empowering technical professionals with the freedom to build and deploy advanced AI agents. With our proprietary framework, Ground Truth®, we offer unparalleled control and customization, enabling you to develop AI solutions that are as unique as your vision.</p>
+                        <p className="mt-4">Join us in shaping the future of AI agent development.</p>
+                        {/* <p className="text-[16px] leading-[22px] mt-4">We are committed to making AI simple and affordable. Our plug-and-play solutions offer immediate value and are tailored to meet diverse business needs.</p>
+                        <p className="text-[16px] leading-[22px] mt-4">We’re not just selling products; we’re selling empowerment. We believe that every business, regardless of size or industry, should have the tools to harness the full potential of AI. And this is just the beginning. We are continually innovating to redefine the boundaries of what AI can achieve.</p>   */}
                     </div>
                 </div>
 
