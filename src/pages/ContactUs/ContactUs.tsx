@@ -183,27 +183,27 @@ export const ContactUsPage = () => {
             {/* header */}
             <div className="w-full relative">
                 <img className="w-full object-cover" src={careerImg} alt="careers" />
-                <p className="heading-text absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-[15px]  md:text-[45px] lg:text-[55px] font-bold text-center">
+                <p className="heading-text absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold text-center heading-text">
                     Let's Talk Expert AI Agents.
                 </p>
             </div>
 
-            <div className="md:mt-16 lg:mt-16 flex flex-col md:flex-row lg:flex-row gap-[90px] p-10">
-                <div className="w-full md:w-[50%] lg:w-[50%] text-base md:text-[1.1vw] lg:text-[1.1vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
-                    <div className="text-[#B1B1B1]">
-                        <p className="">Do you want to learn about AI Agents? Ground Truth™ is ready to guide you through the complexities of Generative AI and help you harness its potential to transform your business.</p>
-                        <p className="mt-4">We understand that your challenges are unique, and off-the-shelf solutions won’t cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain expertise to create Expert AI Agents that deliver unparalleled results.</p>
-                        <p className="mt-4">Don’t let the rapid pace of AI innovation leave you behind. Partner with Netra Labs, and let’s build the future of your business together.</p>
-                        <p className="mt-4">Complete the form, and a Netra Labs representative will contact you shortly to discuss your specific goals and how Ground Truth™ can accelerate your AI journey.</p>
-                        <p className="mt-4">We look forward to speaking with you and exploring the possibilities.</p>
+            <div className="flex flex-col md:flex-row lg:flex-row gap-[90px] p-10 contact-desc">
+                <div className="w-full md:w-[50%] lg:w-[50%] mt-[20px] text-[#CECECE]">
+                    <div className="text-[#CECECE]">
+                        <p className="text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">Do you want to learn about AI Agents? Ground Truth™ is ready to guide you through the complexities of Generative AI and help you harness its potential to transform your business.</p>
+                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">We understand that your challenges are unique, and off-the-shelf solutions won’t cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain expertise to create Expert AI Agents that deliver unparalleled results.</p>
+                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">Don’t let the rapid pace of AI innovation leave you behind. Partner with Netra Labs, and let’s build the future of your business together.</p>
+                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">Complete the form, and a Netra Labs representative will contact you shortly to discuss your specific goals and how Ground Truth™ can accelerate your AI journey.</p>
+                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">We look forward to speaking with you and exploring the possibilities.</p>
                           
                     </div>
                     <h1 className="heading-text text-xl md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[26px] heading-text break-words font-bold">About Netra Labs</h1>
                     
 
-                    <div className="mt-[20px] text-[#B1B1B1]">
-                        <p className="mt-4">At Netra Labs, we are dedicated to empowering technical professionals with the freedom to build and deploy advanced AI agents. With our proprietary framework, Ground Truth®, we offer unparalleled control and customization, enabling you to develop AI solutions that are as unique as your vision.</p>
-                        <p className="mt-4">Join us in shaping the future of AI agent development.</p>
+                    <div className="mt-[20px] text-[#CECECE]">
+                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">At Netra Labs, we are dedicated to empowering technical professionals with the freedom to build and deploy advanced AI agents. With our proprietary framework, Ground Truth®, we offer unparalleled control and customization, enabling you to develop AI solutions that are as unique as your vision.</p>
+                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">Join us in shaping the future of AI agent development.</p>
                         {/* <p className="text-[16px] leading-[22px] mt-4">We are committed to making AI simple and affordable. Our plug-and-play solutions offer immediate value and are tailored to meet diverse business needs.</p>
                         <p className="text-[16px] leading-[22px] mt-4">We’re not just selling products; we’re selling empowerment. We believe that every business, regardless of size or industry, should have the tools to harness the full potential of AI. And this is just the beginning. We are continually innovating to redefine the boundaries of what AI can achieve.</p>   */}
                     </div>
@@ -313,7 +313,7 @@ export const ContactUsPage = () => {
                         </p>
                     </div>
 
-                    <button className="btn hover:cursor-not-allowed w-full rounded-md bg-[#B1B1B1] text-black hover:border hover:border-[#B1B1B1] hover:text-[#B1B1B1]">Submit Request</button> */}
+                    <button className="btn hover:cursor-not-allowed w-full rounded-md bg-[#B1B1B1] text-black hover:border hover:border-[#B1B1B1] hover:text-[#CECECE]">Submit Request</button> */}
                 </div>
             </div>
 

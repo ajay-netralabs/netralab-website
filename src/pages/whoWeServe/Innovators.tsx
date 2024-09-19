@@ -112,7 +112,7 @@ export const Innovators = () => {
 
 
            {/* second container */}
-           <div className="integrator-second-container mt-1 md:mt-12 lg:mt-12 p-3 md:p-10 lg:p-10 flex flex-col items-center justify-between md:flex-row lg:flex-row">
+           <div className="integrator-second-container mt-1 p-3 md:p-10 lg:p-10 flex flex-col items-center justify-between md:flex-row lg:flex-row">
                 <div className="w-full md:w-[60%] lg:w-[60%]">
                         <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
@@ -128,7 +128,7 @@ export const Innovators = () => {
                             <p>- Bill Gates, 2023</p>
                         </div>
                 
-                        <div className="mt-[40px] flex flex-col text-[#B1B1B1] text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">
+                        <div className="mt-4 flex flex-col text-[#CECECE] text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">
                             <div className="flex items-center gap-3 glass-card-1">
                                 <div className="badge badge-secondary badge-xs"></div>
                                 <div>The global AI market is projected to surpass $2.6 trillion by 2030, with AI Agents driving significant growth.</div>
@@ -153,15 +153,15 @@ export const Innovators = () => {
            </div>
 
             {/* 3rd container */}
-            <div className="mt-1 md:mt-12 lg:mt-12 p-3 md:p-10 lg:p-10">
+            <div className="mt-1 p-3 md:p-10 lg:p-10">
                 <div className="text-center">
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text">Benefits of Our Approach</h1>
                 </div>
                 {/* cards */}
-                <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-12 lg:mt-12 leading-relaxed">
+                <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-4 lg:mt-4 leading-relaxed">
                     {/* card 1 */}
-                    <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] h-[350px] p-[50px] flex flex-col items-center justify-between">
-                        <div className='h-[40%]'>
+                    <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] h-[450px] p-[50px] flex flex-col items-center justify-between">
+                        <div className='h-[40%] flex items-end'>
                             <video
                                 className="mix-blend-exclusion w-[80px]"
                                 muted // @ts-ignore
@@ -171,17 +171,17 @@ export const Innovators = () => {
                                 <source src={Innovator1Icon} type="video/mp4"/>
                             </video>
                         </div>
-                        <div className='h-[60%] text-center'>
-                            <h2 className="font-bold text-lg md:text-[1.25vw] lg:text-[1.25vw] heading-text">Expand Your Reach with a New Offering</h2>
-                            <p className='text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed text-center px-6 mt-2'>
+                        <div className='h-[60%] text-center text-[#CECECE]'>
+                            <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Expand Your Reach with a New Offering</h2>
+                            <p className='text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2'>
                                 Develop a cutting-edge AI Agent product line that <span className='text-accent'>leverages your existing expertise to unlock exponential impact</span> and reach new markets.
                             </p>
                         </div>
                     </div>
 
                     {/* card 2 */}
-                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] h-[350px] p-[50px] flex flex-col items-center justify-between">
-                        <div className='h-[40%]'>
+                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] h-[450px] p-[50px] flex flex-col items-center justify-between">
+                        <div className='h-[40%] flex items-end'>
                             <video
                                 className="mix-blend-exclusion w-[80px]"
                                 muted // @ts-ignore
@@ -191,17 +191,17 @@ export const Innovators = () => {
                                 <source src={Innovator2Icon} type="video/mp4"/>
                             </video>
                         </div>
-                        <div className='h-[60%] text-center'>
-                            <h2 className="font-bold text-lg md:text-[1.25vw] lg:text-[1.25vw] heading-text">Protect & Monetize Your IP</h2>
-                            <p className='text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed text-center px-6 mt-2'>         
+                        <div className='h-[60%] text-center text-[#CECECE]'>
+                            <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Protect & Monetize Your IP</h2>
+                            <p className='text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2'>         
                                 Build your Expert AI Agent™ on top of our proprietary language chain framework, <span className='text-accent'>creating a secure moat around your intellectual property</span> while maximizing its value.
                             </p>
                         </div>
                     </div>
 
                     {/* card 3 */}
-                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] h-[350px] p-[50px] flex flex-col items-center justify-between">
-                        <div className='h-[40%]'>
+                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] h-[450px] p-[50px] flex flex-col items-center justify-between">
+                        <div className='h-[40%] flex items-end'>
                             <video
                                 className="mix-blend-exclusion w-[80px]"
                                 muted // @ts-ignore
@@ -211,9 +211,9 @@ export const Innovators = () => {
                                 <source src={Innovator3Icon} type="video/mp4"/>
                             </video>
                         </div>
-                        <div className='h-[60%] text-center'>
-                            <h2 className="font-bold text-lg md:text-[1.25vw] lg:text-[1.25vw] heading-text">Partner for Success</h2>
-                            <p className='text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed text-center px-6 mt-2'>
+                        <div className='h-[60%] text-center text-[#CECECE]'>
+                            <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Partner for Success</h2>
+                            <p className='text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2'>
                                 We're committed to safeguarding and amplifying your IP. Our team of experts will <span className='text-accent'>partner with you every step of the way</span> to ensure your Expert AI Agent™ thrives in the market.
                             </p>
                         </div>
@@ -223,7 +223,7 @@ export const Innovators = () => {
             </div>
 
             {/* 4th container */}
-            <div className="mt-1 md:mt-12 lg:mt-12 p-3 md:p-10 lg:p-10 ">
+            <div className="mt-1 p-3 md:p-10 lg:p-10 ">
                 <div className="w-full md:w-[70%] lg:w-[70%]">
                     <video
                         className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
@@ -236,11 +236,11 @@ export const Innovators = () => {
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Unlocking the Power of AI for a Sustainable Energy Future.</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">Bradley.ai, developed through our "Innovator" channel, is a testament to the transformative potential of combining deep industry expertise with cutting-edge AI.</p>
                 </div>
-                <div className="mt-12 flex items-center gap-[80px] flex-col-reverse md:flex-row lg:flex-row text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">
+                <div className="mt-4 flex items-center gap-[80px] flex-col-reverse md:flex-row lg:flex-row text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">
                     <div className="flex flex-col w-full md:w-[50%] lg:w-[50%]">
                         <div className="flex items-center gap-3 glass-card-1">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#B1B1B1] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
+                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
                                 <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent'>Problem Statement</span>
                                 <span>
                                     Traditional DER analysis is a complex and time-consuming process, hindering the rapid adoption of clean energy solutions.                                </span>
@@ -248,7 +248,7 @@ export const Innovators = () => {
                         </div>
                         <div className="flex items-center gap-3 glass-card-2">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#B1B1B1] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col'>
+                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col'>
                                 <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent'>Solution Statement</span>
                                 <span>
                                     Bradley.ai augments this process by fusing decades of DER analysis expertise with advanced generative AI and proprietary models, enabling rapid, accurate, and customized DER system recommendations.
@@ -257,7 +257,7 @@ export const Innovators = () => {
                         </div>
                         <div className="flex items-center gap-3 glass-card-3">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#B1B1B1] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col'>
+                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col'>
                                 <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent'>Potential Impact</span>
                                 <span>
                                     This accelerated DER adoption, driven by Bradley.ai's insights, can significantly reduce carbon emissions and accelerate the transition to a cleaner, more sustainable energy landscape.
@@ -307,7 +307,7 @@ export const Innovators = () => {
             {/* 5th 2nd */}
             <div className="integrator-second-container  pt-[20px]">
                 {/* icons */}
-                <div className="flex flex-wrap justify-center gap-[40px] mx-[1px] mt-10 md:mx-0 lg:mx-0">
+                <div className="flex flex-wrap justify-center gap-[40px] mx-[1px] md:mx-0 lg:mx-0">
                     <div className={`p-[20px] hover:cursor-pointer ${selectedIcon === 0 ? "border border-white rounded-lg" : "border border-[#1F1F1F] "}`} onClick={() => setSelectedIcon(0)}>
                         <svg width="57" height="56" viewBox="0 0 57 56" fill="none" xmlns="http://www.w3.org/2000/svg" opacity={selectedIcon === 0 ? "1" : "0.4"}>
                         <g id="action_key_24dp_5F6368_FILL0_wght300_GRAD0_opsz24 1">
@@ -347,8 +347,8 @@ export const Innovators = () => {
 
 
                 <div className="">
-                    <div className="innovator-data md:py-[50px] md:px-[100px] lg:py-[50px] lg:px-[100px] pt-0">
-                        {innovatorsData.map((data:string, index:number) => <div key={index} className={`${selectedIcon === index ? "opacity-[1]": "opacity-[0.4]"}`}>{parse(data)}</div>)}
+                    <div className="innovator-data md:py-[50px] md:px-[100px] lg:py-[50px] lg:px-[100px] !pt-0">
+                        {innovatorsData.map((data:string, index:number) => <div key={index} className={`${selectedIcon === index ? "opacity-[1]": "opacity-[0.4]"} text-center`}>{parse(data)}</div>)}
                     </div>
                 </div>
 
@@ -363,11 +363,11 @@ export const Innovators = () => {
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
                         <h1 className="text-[40px] leading-[66px] font-bold mt-[26px] heading-text">FAQs</h1>
-                        <p className="text-lg lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently, so if none of these answers on the right address your concers. Give us a call, we would be more than happy to clear up anything.</p>
+                        <p className="text-lg lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently, so if none of these answers on the right address your concerns. Please reach out, we would be more than happy to clear up anything.</p>
                     </div>
                     <div className="mt-[40px]">
                         <p className="text-[#a5a5a5]">
-                            Still you have questions? Please write your email address and we will contact you soon. Thank you!
+                            {/* Still you have questions? Please write your email address and we will contact you soon. Thank you! */}
                         </p>
                         <div className="mt-[20px] flex items-center">
                             <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" />

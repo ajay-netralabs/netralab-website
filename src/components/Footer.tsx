@@ -73,10 +73,10 @@ export const Footer = () => {
         {/* 2nd */}
         <footer className="footer bg-base-100 text-base-content px-10 py-4">
             <aside className="grid-flow-col items-center">
-                <p className="text-[#B1B1B1]">©2023 Netra Labs · All rights reserved.</p>
+                <p className="text-[#CECECE]">©2023 Netra Labs · All rights reserved.</p>
             </aside>
             <nav className="md:place-self-center md:justify-self-end">
-                <div className="grid grid-flow-col gap-4 text-[#B1B1B1]">
+                <div className="grid grid-flow-col gap-4 text-[#CECECE]">
                     <p>Terms of use</p>
                     <p>Privacy policy</p>
                     <img className="hover:cursor-pointer" src={X} alt="x" onClick={() => handleNavigateSocialMedia("twitter")}/>

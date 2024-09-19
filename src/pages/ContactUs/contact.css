@@ -5,3 +5,7 @@
 /* .contact-iframe body {
     background-color: red;
 } */
+
+.contact-desc p {
+    font-size: var(--medium-text) !important;
+}

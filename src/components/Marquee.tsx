@@ -17,66 +17,66 @@ export const MarqueeLogo = () => {
             {/* meta */}
             <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Meta} alt="meta" className="mx-4"/>
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">META</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px]">META</p>
             </div>
 
              {/* lengchain */}
              {/* <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Langchain} alt="meta" className="mx-4"/>
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px] ">LangChain</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px] ">LangChain</p>
             </div> */}
 
              {/* Kubernetes */}
              {/* <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Kubernate} alt="meta" className="mx-4" />
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">KUBERNETES</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px]">KUBERNETES</p>
             </div> */}
 
             {/* hugging face */}
             <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Huggingface} alt="meta" className="mx-4" />
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">HUGGINGFACE</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px]">HUGGINGFACE</p>
             </div>
 
              {/* Google */}
              <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Google} alt="meta" className="mr-4"/>
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">GOOGLE</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px]">GOOGLE</p>
             </div>
 
             {/* Deepmind */}
             <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Deepmind} alt="meta" className="mr-4"/>
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">DEEPMIND</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px]">DEEPMIND</p>
             </div>
 
              {/* Azure */}
              {/* <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Azure} alt="meta" className="mr-4"/>
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">AZURE</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px]">AZURE</p>
             </div> */}
 
             {/* Aws */}
             {/* <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Aws} alt="meta" className="mr-4"/>
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">AWS</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px]">AWS</p>
             </div> */}
 
              {/* Anthropix */}
              <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Anthropic} alt="meta" className="mr-4"/>
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">ANTHROPIC</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px]">ANTHROPIC</p>
             </div>
             {/* Openai */}
             <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Openai} alt="meta" className="mr-4"/>
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">OPENAI</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px]">OPENAI</p>
             </div>
 
             {/* mistral */}
             <div className="flex items-center justify-center marquee-border w-[300px]">
                 <img src={Mistral} alt="meta" className="mr-4"/>
-                <p className="uppercase text-[#B1B1B1] text-[22px] leading-[33px]">MISTRAL LABS</p>
+                <p className="uppercase text-[#CECECE] text-[22px] leading-[33px]">MISTRAL LABS</p>
             </div>
 
         </div>

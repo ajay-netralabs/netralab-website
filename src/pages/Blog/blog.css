@@ -1,5 +1,5 @@
 .blog-story h1 {
-    font-size: 1.5vw;
+    font-size: var(--large-text);
     margin: 30px 0;
     font-weight: 700;
     color: #1da797;
@@ -7,5 +7,5 @@
 
 .blog-story {
     line-height: 40px;
-    font-size: 1.1vw;
+    font-size: var(--medium-text);
 }
