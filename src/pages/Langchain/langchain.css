@@ -88,3 +88,43 @@
 .security-content-container {
     /* background: url("../../../public/vids/home-3.mp4"); */
 }
+
+.designer {
+    background: linear-gradient(rgba(11, 11, 34, 0.7), rgba(11, 11, 34, 1)),
+    url("../../../public//lang-page/Designer.jpeg");
+
+    background-position: center;
+}
+
+.designer-1 {
+    background: linear-gradient(rgba(11, 11, 34, 1), rgba(11, 11, 34, 0.8)),
+    url("../../../public//lang-page/Designer1.jpeg");
+
+    background-position: center;
+}
+.designer-2 {
+    background: linear-gradient(rgba(11, 11, 34, 1), rgba(11, 11, 34, 0.8)),
+    url("../../../public//lang-page/Designer2.jpeg");
+
+    background-position: center;
+}
+
+.designer-3 {
+    background: linear-gradient(rgba(11, 11, 34, 1), rgba(11, 11, 34, 0.8)),
+    url("../../../public//lang-page/Designer3.jpeg");
+
+    background-position: center;
+}
+
+/* .white-box-container {
+    position: relative;
+}
+
+.white-box-container::after {
+    content: "";
+    position: absolute;
+    height: 98%;
+    width: 99%;
+    border: 2px dashed #0FAE96;
+    border-radius: 0.75rem;
+} */

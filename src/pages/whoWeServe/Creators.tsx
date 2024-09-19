@@ -93,7 +93,7 @@ export const Creators = () => {
                             </div>
                         </div>
                 </div>
-                <div className="mt-28 md:mt-0 lg:mt-0 w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
+                <div className="mt-[50%] md:mt-0 lg:mt-0 w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
                     <div className=" w-[70%] md:w-[50%] lg:w-[50%] flex justify-center items-center">
                         <video
                             className="mix-blend-exclusion"
@@ -126,19 +126,19 @@ export const Creators = () => {
                             </div>
                     
                             <div className="mt-[40px] flex flex-col gap-[18px] text-[#B1B1B1] text-base md:text-[1.1vw] lg:text-[1.1vw]">
-                                <div className="flex items-center gap-3 ">
+                                <div className="flex items-center gap-3 glass-card-1">
                                     <div className="badge badge-secondary badge-xs"></div>
-                                    <div>AI Agents will be at the forefront of a new paradigm, revolutionizing industries and redefining how work gets done.</div>
+                                    <div className='text-[#B1B1B1] text-base md:text-[1.15vw] lg:text-[1.15vw]'>AI Agents will be at the forefront of a new paradigm, revolutionizing industries and redefining how work gets done.</div>
                                 </div>
 
-                                <div className="flex items-center gap-3">
+                                <div className="flex items-center gap-3 glass-card-2">
                                     <div className="badge badge-secondary badge-xs"></div>
-                                    <div>Industries worldwide are turning to innovative AI solutions to overcome challenges and stay competitive.</div>
+                                    <div className='text-[#B1B1B1] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Industries worldwide are turning to innovative AI solutions to overcome challenges and stay competitive.</div>
                                 </div>
 
-                                <div className="flex items-center gap-3">
+                                <div className="flex items-center gap-3 glass-card-3">
                                     <div className="badge badge-secondary badge-xs"></div>
-                                    <div>Ground Truth® offers a perfect setting for creators to develop pioneering AI agents and launch thriving businesses.</div>
+                                    <div className='text-[#B1B1B1] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Ground Truth® offers a perfect setting for creators to develop pioneering AI agents and launch thriving businesses.</div>
                                 </div>
                             </div>
                     </div>
@@ -166,12 +166,12 @@ export const Creators = () => {
             {/* 3rd container */}
             <div className="p-3 md:p-10 lg:p-10">
                 <div className="text-center">
-                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Why join</h1>
+                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Why Join Our Agentic Incubator</h1>
                 </div>
                 {/* cards */}
                 <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-12 lg:mt-12 leading-relaxed">
                     {/* card 1 */}
-                    <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] min-h-[400px] p-[50px] flex flex-col justify-between">
+                    <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] h-[400px] p-[50px] flex flex-col justify-between">
                         <div className='h-[40%]'>
                             <video
                                 className="mix-blend-exclusion w-[80px]"
@@ -191,7 +191,7 @@ export const Creators = () => {
                     </div>
 
                     {/* card 2 */}
-                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] min-h-[400px] p-[50px] flex flex-col justify-between">
+                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] h-[400px] p-[50px] flex flex-col justify-between">
                         <div className="h-[40%]">
                             <video
                                 className="mix-blend-exclusion w-[80px]"
@@ -211,7 +211,7 @@ export const Creators = () => {
                     </div>
 
                     {/* card 3 */}
-                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] min-h-[400px] p-[50px] flex flex-col justify-between">
+                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] h-[400px] p-[50px] flex flex-col justify-between">
                         <div className="h-[40%]">
                             <video
                                 className="mix-blend-exclusion w-[80px]"
@@ -235,7 +235,7 @@ export const Creators = () => {
 
             {/* 4th container */}
             <div className="p-3 md:p-10 lg:p-10 ">
-                <div className="">
+                <div className="w-full md:w-[70%] lg:w-[70%]">
                         <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                             muted // @ts-ignore
@@ -244,24 +244,24 @@ export const Creators = () => {
                             loop>
                             <source src={Proof} type="video/mp4"/>
                         </video>
-                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Joseph Did It, So Can You.</h1>
-                    <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">With the Ground Truth® framework, we were able to deliver an Expert AI Agent that redefines a core industry problem.</p>
+                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Unlocking the $78 Billion COBOL Time Bomb.</h1>
+                    <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"> Joseph.ai, the world's first COBOL Batch Transformation Program Expert AI Agent, shatters the limitations of traditional modernization approaches, achieving unprecedented performance and cost savings.</p>
                 </div>
                 <div className="flex items-center justify-between flex-col md:flex-row lg:flex-row">
                     <div className="flex flex-col gap-[20px] w-full md:w-[50%] lg:w-[50%] text-base md:text-[1.1vw] lg:text-[1.1vw]">
                         <div className="flex items-center gap-3 glass-card-1">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div>Transformed a critical COBOL batch processing problem into a new patented method.</div>
+                            <div className='text-[#B1B1B1] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Current COBOL modernization strategies rely on costly and time-consuming manual rewrites or inefficient lift-and-shift migrations, failing to fully leverage the power of modern cloud environments.</div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-2">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div>
-                                Achieved 80% less code and up to 60x faster performance.   
+                            <div className='text-[#B1B1B1] text-base md:text-[1.15vw] lg:text-[1.15vw]'>
+                                Joseph.ai's patented generative AI engine deciphers intricate COBOL business logic and transforms it into high-performance, cloud-native SQL, achieving unparalleled optimization. 
                             </div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-3">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div>Partnered to go to market, proving the concept of Expert AI Agents.</div>
+                            <div className='text-[#B1B1B1] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Joseph.ai achieves a staggering 60x performance increase over legacy mainframes, while slashing operating costs by 85%, delivering a compelling ROI with payback in less than a year.</div>
                         </div>
                     </div>
                     <div className="hidden md:flex lg:flex w-full md:w-[50%] lg:w-[50%] justify-center items-center">
@@ -296,11 +296,8 @@ export const Creators = () => {
                             <source src={Process} type="video/mp4"/>
                         </video>
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">From Concept to Launch: A Clear Path to Success.</h1>
-                    <div className="mt-[40px]">
-                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => handleNavigate()}>Request Demo</button>
-                    </div>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-[40px] mt-[20%] md:mt-[15%] lg:mt-[12%] relative">
+                <div className="flex flex-col justify-center items-center gap-[40px] mt-[20%] md:mt-[15%] lg:mt-[8%] relative">
                     <div className="absolute h-[350px] w-[350px]">
                         <img src={CreatorProcess1} alt="" onClick={() => setProcessNo("1")} className={`hover:cursor-pointer absolute top-[-40%] right-[50%] translate-x-[50%] ${processNo === "1" ? "opacity-[1] !top-[-17%] z-10" : "opacity-[0.4]"}`}/>  
                         <img src={CreatorProcess2} alt="" onClick={() => setProcessNo("2")} className={`hover:cursor-pointer absolute top-[10%] right-[-40%] ${processNo === "2" ? "opacity-[1] !right-[-15%] z-10" : "opacity-[0.4]"}`}/>
@@ -308,20 +305,23 @@ export const Creators = () => {
                         <img src={CreatorProcess4} alt="" onClick={() => setProcessNo("4")} className={`hover:cursor-pointer absolute top-[60%] left-[-40%] ${processNo === "4" ? "opacity-[1] !left-[-15%] z-10" : "opacity-[0.4]"}`}/>
                         <img src={CreatorProcess5} alt="" onClick={() => setProcessNo("5")} className={`hover:cursor-pointer absolute top-[10%] left-[-40%] ${processNo === "5" ? "opacity-[1] !left-[-15%] z-10" : "opacity-[0.4]"}`}/>
                     </div>
-                    <div className="border-[20px] border-[#323449] rounded-full h-[350px] w-[350px] md:h-[400px] md:w-[400px] lg:h-[400px] lg:w-[400px] flex items-center justify-center creator-circle">
+                    <div className="border-[20px] border-[#323449] rounded-full h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[400px] lg:w-[400px] flex items-center justify-center creator-circle">
                         <div className="m-10 text-center text-base md:text-[1.1vw] lg:text-[1.1vw]">
                             {parse(processData)}
                         </div>
                     </div>
 
                 </div>
+                <div className="flex justify-center  mt-[15%] md:mt-[10%] lg:mt-[5%]">
+                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => handleNavigate()}>Request Demo</button>
+                </div>
             </div>
 
-            <div className="p-3 md:p-10 lg:p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[20px] mt-[40px]">
+            <div className="p-3 md:p-10 lg:p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[5vw] mt-[40px]">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
                         <h1 className="text-[40px] leading-[66px] font-bold mt-[26px] heading-text">FAQs</h1>
-                        <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">These are the frequently asked questions by our users , if you have similar doubts you can read these answers. We hope it will help you to better understanding.</p>
+                        <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently, so if none of these answers on the right address your concers. Give us a call, we would be more than happy to clear up anything.</p>
                     </div>
                     <div className="mt-[40px]">
                         <p className="text-[#a5a5a5]">

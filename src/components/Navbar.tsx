@@ -36,18 +36,18 @@ export const Navbar = () => {
             <div className="navbar-start">
                 <img alt="GT Logo" src={GT_LOGO} className="h-16 w-16 hover:cursor-pointer" onClick={() => handleNavigation("/")}/>
                 <div className="ml-4">
-                    <p className="text-base md:text-xl lg:text-xl  font-bold hover:cursor-pointer" onClick={() => handleNavigation("/")}>Netra Labs</p>
-                    <p className="hidden md:flex lg:flex">Building the Autonomous Enterprise</p>
+                    <p className="text-xl md:text-[1.25vw] lg:text-[1.25vw]  font-bold hover:cursor-pointer" onClick={() => handleNavigation("/")}>Netra Labs</p>
+                    <p className="hidden md:flex lg:flex text-[1.1vw]">Building the Autonomous Enterprise</p>
                 </div>
             </div>
             <div className="navbar-end">
                 {/* links */}
                 <div className="flex-none hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-base">
-                        <li className={`mr-10  md:mr-4 ${menu.home.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation()}>Home</a></li>
-                        <li className={`mr-10  md:mr-4 relative ${activeMenu !== "/" && menu.whoWeServe.includes(activeMenu) ? "border-b border-b-accent" : ""}`}>
+                        <li className={`mr-10 text-[1.1vw]  md:mr-4 ${menu.home.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation()}>Home</a></li>
+                        <li className={`mr-10 text-[1.1vw] md:mr-4 relative ${activeMenu !== "/" && menu.whoWeServe.includes(activeMenu) ? "border-b border-b-accent" : ""}`}>
                             <div tabIndex={0} role="button" className="dropdown flex gap-1 items-center">
-                                <div className="flex gap-2 items-center">
+                                <div className="flex gap-2 items-center text-[1.1vw]">
                                     Who We Serve 
                                     <span>
                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +57,7 @@ export const Navbar = () => {
                                         </svg>
                                     </span>
                                 </div>
-                                <ul tabIndex={0} className="dropdown-content menu bg-base-100 z-[9999] top-[110%] right-0 translate-x-[-0%] w-full border border-accent"> 
+                                <ul tabIndex={0} className=" text-[1.1vw] dropdown-content menu bg-base-100 z-[9999] top-[110%] right-0 translate-x-[-0%] w-full border border-accent"> 
                                     <li><a onClick={() => handleNavigation("/integrators")}>Integrators</a></li>
                                     <li><a onClick={() => handleNavigation("/innovators")}>Innovators</a></li>
                                     <li><a onClick={() => handleNavigation("/creators")}>Creators</a></li>
@@ -65,8 +65,8 @@ export const Navbar = () => {
                             </div>
                         </li>
                         {/* <li className={`mr-10 md:mr-4 ${activeMenu !== "/" && menu.careers.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/careers")}>Careers</a></li> */}
-                        <li className={`mr-10 md:mr-4 ${activeMenu !== "/" && menu.blogs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/blogs")}>Blog</a></li>
-                        <li className={`mr-10 md:mr-4 ${activeMenu !== "/" && menu.contactUs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/contact-us")}>Contact Us</a></li>
+                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.blogs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/blogs")}>Blog</a></li>
+                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.contactUs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/contact-us")}>Contact Us</a></li>
                     </ul>
                 </div>
                     <div className="dropdown">

@@ -40,11 +40,11 @@ export const Footer = () => {
         </div>
         {/* 1st */}
         <footer className="flex flex-wrap justify-evenly bg-base-100 text-base-content p-10">
-            <nav className="flex flex-col gap-2 w-full md:w-[unset] lg:w-[unset]">
-                <h6 className="footer-title text-white">About</h6>
-                <a className="link link-hover">Company Overview</a>
+            {/* <nav className="flex flex-col gap-2 w-full md:w-[unset] lg:w-[unset]"> */}
+                {/* <h6 className="footer-title text-white">About</h6>
+                <a className="link link-hover">Company Overview</a> */}
                 {/* <a className="link link-hover" onClick={() => handleNavigation("/careers")}>Careers</a> */}
-            </nav>
+            {/* </nav> */}
             {/* <nav className="flex flex-col gap-2 w-full mt-10 md:mt-0 lg:mt-0 md:w-[unset] lg:w-[unset]">
                 <h6 className="footer-title text-white">Resources</h6>
                 <a className="link link-hover" onClick={() => handleNavigation("/blogs")}>Blog</a>
