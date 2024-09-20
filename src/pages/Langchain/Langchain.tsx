@@ -16,7 +16,7 @@ import SecurityAnimation from "../../../public/lottie/Security.json"
 
 import SlowAnimation from "../../../public/lottie/Slow.json"
 
-import IntegrateAnimations from "../../../public/lottie/integrate.json"
+import IntegrateAnimations from "../../../public/lottie/Integrate.json"
 import ControlAnimation from "../../../public/lottie/Control.json"
 import ScalabilityAnimation from "../../../public/lottie/Chart.json"
 
