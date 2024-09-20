@@ -35,7 +35,7 @@ export const Langchain = () => {
 
     const navigate = useNavigate()
 
-    const [activeTab, setActiveTab] = useState<string>("d1")
+    const [activeTab, setActiveTab] = useState<string>("d0")
 
     
     useEffect(() => {
