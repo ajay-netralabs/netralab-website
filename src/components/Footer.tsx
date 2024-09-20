@@ -61,7 +61,7 @@ export const Footer = () => {
             <nav className="flex flex-col gap-2 mt-10 md:mt-0 lg:mt-0 w-full md:w-[unset] lg:w-[unset]">
                 <h6 className="footer-title text-white">Support & Contact</h6>
                 <a className="link link-hover" onClick={() => handleNavigation("/contact-us")}>Contact Us</a>
-                <a className="link link-hover">Technical Support</a>
+                <a className="link link-hover" onClick={() => handleNavigation("/contact-us")}>Technical Support</a>
                 <a className="link link-hover" onClick={() => handleNavigation("/contact-us")}>Feedback</a>
             </nav>
         </footer>

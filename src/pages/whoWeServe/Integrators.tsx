@@ -66,7 +66,7 @@ export const Integrators = () => {
 
                         <div className="absolute top-0">
                             <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text">Agentic Workflows for System Integrators</h1>
-                            <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"><span className="font-bold text-accent">Ground Truth®</span> is the world’s first language chain framework built to empower SIs to build and deploy custom AI agents that redefine the way processes are automated for your customers.</p>
+                            <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"><span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the world’s first language chain framework built to empower SIs to build and deploy custom AI agents that redefine the way processes are automated for your customers.</p>
                             <div className="btn btn-accent rounded-sm mt-[35px] hover:cursor-pointer text-white" onClick={() => handleNavigate()}>Request Demo</div>
                         </div>
                     </div>
@@ -110,22 +110,22 @@ export const Integrators = () => {
                             <source src={Problem} type="video/mp4"/>
                         </video>
                         <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text">System Integrators have had limited success in deploying AI Agents in production.</h1>
-                        <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"><span className="font-bold text-accent">96% of executives agree</span> that leveraging AI Agent ecosystems will be a significant opportunity for their organizations in the next three years</p>
+                        <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"><span className="font-bold text-accent capitalize">96% of executives agree</span> that leveraging AI Agent ecosystems will be a significant opportunity for their organizations in the next three years.</p>
                 
                         <div className="mt-[40px] flex flex-col text-xl">
                         <div className="flex items-center gap-3 glass-card-1">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className="text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold text-accent">General-purpose frameworks</span> like Lang-chain limit the ability of SIs to refine AI Agents for their customer requirements.</div>
+                            <div className="text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold text-accent capitalize">General-purpose frameworks</span> like Lang-chain limit the ability of SIs to refine AI Agents for their customer requirements.</div>
                         </div>
 
                         <div className="flex items-center gap-3 glass-card-2">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className="text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]">These siloed agents make integration into complex enterprise workflows a <span className="font-bold text-accent">time-consuming and unreliable process.</span></div>
+                            <div className="text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]">These siloed agents make integration into complex enterprise workflows a <span className="font-bold text-accent capitalize">time-consuming and unreliable process.</span></div>
                         </div>
 
                         <div className="flex items-center gap-3 glass-card-3">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className="text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]">Ultimately, trying to build a custom AI Agent <span className="font-bold text-accent">drains resources and slows down time-to-market.</span>.</div>
+                            <div className="text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]">Ultimately, trying to build a custom AI Agent <span className="font-bold text-accent capitalize">drains resources and slows down time-to-market.</span></div>
                         </div>
                     </div>
                 
@@ -150,17 +150,17 @@ export const Integrators = () => {
                     <div className=" w-full md:w-[50%] lg:w-[50%] flex flex-col text-[#CECECE] text-xl md:text-[1.2vw] lg:text-[1.2vw]">
                         <div className="flex items-center gap-3 glass-card-1">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div><span className="font-bold text-accent">Orchestrate powerful AI Agents</span> with our unique proprietary framework, built for the complexity of enterprise needs.</div>
+                            <div><span className="font-bold text-accent capitalize">Orchestrate powerful AI Agents</span> with our unique proprietary framework, built for the complexity of enterprise needs.</div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-2">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div>
-                                <span className="font-bold text-accent">"Lift and Shift" agent setups </span> into your customers' environments, run entirely within their secure networks.
+                                <span className="font-bold text-accent capitalize">"Lift and Shift" agent setups </span> into your customers' environments, run entirely within their secure networks.
                              </div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-3">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div>Scale AI Agents across customers with ease,<span className="font-bold text-accent"> leveraging built-in governance and complete control over agent orchestration.</span></div>
+                            <div>Scale AI Agents across customers with ease,<span className="font-bold text-accent capitalize"> leveraging built-in governance and complete control over agent orchestration.</span></div>
                         </div>
                     </div>
                     <div className="mt-[20px] md:mt-0 lg:mt-0  w-full md:w-[50%] lg:w-[50%] flex justify-center items-center">
@@ -268,9 +268,9 @@ export const Integrators = () => {
                         <div className="flex flex-col justify-center items-center">
                             <img src={jsFramework} alt="illustration" className="w-[300px]" />
 
-                            <div className="text-base md:text-[1.25vw] lg:text-[1.25vw]">
+                            <div className="text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">
                                 Reach out to our team to discuss
-                                <span className="font-bold text-accent"> how the Ground Truth® framework </span> 
+                                <span className="font-bold text-accent capitalize"> how the Ground Truth<sup>®</sup> framework </span> 
                                 can empower System Integrator to build Expert AI Agents™.
                             </div>
                         </div>
@@ -282,9 +282,9 @@ export const Integrators = () => {
                         <div className="flex flex-col justify-center items-center">
                             <img src={designThinking} alt="illustration" className="w-[300px]" />
 
-                            <div className="text-base md:text-[1.25vw] lg:text-[1.25vw]">
+                            <div className="text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">
                                 We’ll schedule a consultation to explore your specific needs and determine if 
-                                <span className="font-bold text-accent"> Ground Truth® is the right solution </span> 
+                                <span className="font-bold text-accent capitalize"> Ground Truth<sup>®</sup> is the right solution </span> 
                                 for your AI agent projects.
                                
                             </div>
@@ -296,9 +296,9 @@ export const Integrators = () => {
                         <div className="flex flex-col justify-center items-center">
                             <img src={settings} alt="illustration" className="w-[300px]"/>
 
-                            <div className="text-base md:text-[1.25vw] lg:text-[1.25vw]">
+                            <div className="text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">
                             Once we’re aligned, our experts will help you define the 
-                            <span className=" font-bold text-accent"> ideal environment and configuration for our AI Agents </span> 
+                            <span className=" font-bold text-accent capitalize"> ideal environment and configuration for our AI Agents </span> 
                             to operate within your systems.
                             </div>
                         </div>
@@ -309,9 +309,9 @@ export const Integrators = () => {
                         <div className="flex flex-col justify-center items-center">
                             <img src={teamwork} alt="illustration" className="w-[300px]"/>
 
-                            <div className="text-base md:text-[1.25vw] lg:text-[1.25vw]">
+                            <div className="text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">
                                 We’ll work closely with your team to
-                                <span className="font-bold text-accent"> quickly onboard Ground Truth®, ensuring a smooth transition and minimal disruption to your operations. </span> 
+                                <span className="font-bold text-accent capitalize"> quickly onboard Ground Truth<sup>®</sup>, ensuring a smooth transition and minimal disruption to your operations. </span> 
                             </div>
                         </div>
                     </div>
@@ -322,8 +322,8 @@ export const Integrators = () => {
                         <div className="flex flex-col justify-center items-center">
                             <img src={working} alt="illustration" className="w-[300px]"/>
 
-                            <div className="text-base md:text-[1.25vw] lg:text-[1.25vw]">
-                                <span className="font-bold text-accent"> Begin creating powerful AI Agents immediately. </span> 
+                            <div className="text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">
+                                <span className="font-bold text-accent capitalize"> Begin creating powerful AI Agents immediately. </span> 
                                 We offer additional fine-tuning and customization to optimize each agent for its specific use case.
                             </div>
                         </div>
@@ -347,8 +347,9 @@ export const Integrators = () => {
                             {/* Still you have questions? Please write your email address and we will contact you soon. Thank you! */}
                         </p>
                         <div className="mt-[20px] flex items-center">
-                            <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" />
-                            <div className="btn btn-accent rounded-sm">Contact Me</div>
+                            {/* <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
+                            {/* <div className="btn btn-accent rounded-sm">Contact Me</div> */}
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us")}>Let's Talk</div>
                         </div>
                     </div>
                 </div>

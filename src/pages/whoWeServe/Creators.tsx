@@ -84,7 +84,7 @@ export const Creators = () => {
                                 <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Transform Your Unique Idea into a Unicorn with AI Agents.</h1>
                                 <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
                                     Join our AI Agent Incubator and leverage our 
-                                    <span className="font-bold text-accent"> Ground Truth® framework </span>
+                                    <span className="font-bold text-accent capitalize"> Ground Truth<sup>®</sup> framework </span>
                                     to turn your ideas, concepts, IP, or patents into a thriving AI-powered business. 
                                 </p>
                                 <div className="mt-[40px]">
@@ -112,7 +112,7 @@ export const Creators = () => {
            <div className="integrator-second-container p-3 md:p-10 lg:p-10 flex flex-col items-center md:flex-row lg:flex-row gap-[80px]">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                         <video
-                            className="mix-blend-exclusion w-[150px] md:w-[200px] lg:w-[220px]"
+                            className="mix-blend-exclusion w-[150px] md:w-[32%] lg:w-[32%]"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
@@ -122,7 +122,7 @@ export const Creators = () => {
                         <div className='leading-relaxed'> 
                             <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Creators Like You Will Shape the Future of AI Agents</h1>
                             <div className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
-                                Ground Truth® empowers you to seize the massive opportunity in the Gen AI market and build the next generation of transformative solutions.
+                                Ground Truth<sup>®</sup> empowers you to seize the massive opportunity in the Gen AI market and build the next generation of transformative solutions.
                             </div>
                     
                             <div className="mt-4 flex flex-col text-[#CECECE] text-base md:text-[1.1vw] lg:text-[1.1vw]">
@@ -138,7 +138,7 @@ export const Creators = () => {
 
                                 <div className="flex items-center gap-3 glass-card-3">
                                     <div className="badge badge-secondary badge-xs"></div>
-                                    <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Ground Truth® offers a perfect setting for creators to develop pioneering AI agents and launch thriving businesses.</div>
+                                    <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Ground Truth<sup>®</sup> offers a perfect setting for creators to develop pioneering AI agents and launch thriving businesses.</div>
                                 </div>
                             </div>
                         </div>
@@ -172,7 +172,7 @@ export const Creators = () => {
                 <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-4 lg:mt-4 leading-relaxed">
                     {/* card 1 */}
                     <div className=" glass-vertical-card-1 w-[100%] md:w-[30%] lg:w-[30%] h-[450px] p-[50px] flex flex-col justify-between items-center">
-                        <div className='h-[40%] flex items-end'>
+                        <div className='h-[20%] md:h-[40%] lg:h-[40%] flex items-end'>
                             <video
                                 className="mix-blend-exclusion w-[80px]"
                                 muted // @ts-ignore
@@ -182,17 +182,17 @@ export const Creators = () => {
                                 <source src={Creator1Icon} type="video/mp4"/>
                             </video>
                         </div>
-                        <div className='h-[60%] text-center text-[#CECECE]'>
+                        <div className='h-[80%] md:h-[60%] lg:h-[60%] text-center text-[#CECECE]'>
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Seiza a Unique Opportunity</h2>
                             <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
-                                The Generative AI market is exploding, presenting a once-in-a-generation opportunity akin to the internet boom.
+                                The Generative AI market is exploding, presenting a once-in-a-generation opportunity akin to the internet boom. 
                             </p>
                         </div>
                     </div>
 
                     {/* card 2 */}
                     <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] h-[450px] p-[50px] flex flex-col justify-between items-center">
-                        <div className="h-[40%] flex items-end">
+                        <div className="h-[20%] md:h-[40%] lg:h-[40%] flex items-end">
                             <video
                                 className="mix-blend-exclusion w-[80px]"
                                 muted // @ts-ignore
@@ -202,7 +202,7 @@ export const Creators = () => {
                                 <source src={Creator2Icon} type="video/mp4"/>
                             </video>
                         </div>
-                        <div className='h-[60%] text-center text-[#CECECE]'>
+                        <div className='h-[80%] md:h-[60%] lg:h-[60%] text-center text-[#CECECE]'>
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Build on a Powerful Foundation</h2>
                             <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">         
                                 Leverage our proprietary language chain framework, unmatched in the industry, to develop your unique Expert AI Agent™ and capture this massive market.
@@ -212,7 +212,7 @@ export const Creators = () => {
 
                     {/* card 3 */}
                     <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] h-[450px] p-[50px] flex flex-col justify-between items-center">
-                        <div className="h-[40%] flex items-end">
+                        <div className="h-[20%] md:h-[40%] lg:h-[40%] flex items-end">
                             <video
                                 className="mix-blend-exclusion w-[80px]"
                                 muted // @ts-ignore
@@ -222,7 +222,7 @@ export const Creators = () => {
                                 <source src={Creator3Icon} type="video/mp4"/>
                             </video>
                         </div>
-                        <div className="h-[60%] text-center text-[#CECECE]">
+                        <div className="h-[80%] md:h-[60%] lg:h-[60%] text-center text-[#CECECE]">
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Have a Partner for Success</h2>
                             <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
                                 We're invested in your success. Our team of seasoned experts will work side-by-side with you to bring your Expert AI Agent™ to market – at no cost if you're approved for our incubation program.
@@ -285,7 +285,7 @@ export const Creators = () => {
             </div>
 
             {/* process  */}
-            <div className="">
+            <div className="hidden md:block lg:block">
                 <div className="flex flex-col items-center justify-center text-center">
                         <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
@@ -313,9 +313,30 @@ export const Creators = () => {
 
                 </div>
                 <div className="flex justify-center  mt-[15%] md:mt-[10%] lg:mt-[5%]">
-                            <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => handleNavigate()}>Request Demo</button>
+                    <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => handleNavigate()}>Request Demo</button>
                 </div>
             </div>
+
+            {/* process for mobile view */}
+            <div className='flex flex-col gap-6 items-center justify-center mt-4 md:hidden lg:hidden'>
+                {/* icons */}
+                <div className='flex flex-wrap gap-2 justify-center'>
+                        <img src={CreatorProcess1} alt="" onClick={() => setProcessNo("1")} className={`hover:cursor-pointer ${processNo === "1" ? "opacity-[1]" : "opacity-[0.4]"}`}/>  
+                        <img src={CreatorProcess2} alt="" onClick={() => setProcessNo("2")} className={`hover:cursor-pointer ${processNo === "2" ? "opacity-[1]" : "opacity-[0.4]"}`}/>
+                        <img src={CreatorProcess3} alt="" onClick={() => setProcessNo("3")} className={`hover:cursor-pointer ${processNo === "3" ? "opacity-[1]" : "opacity-[0.4]"}`}/>
+                        <img src={CreatorProcess4} alt="" onClick={() => setProcessNo("4")} className={`hover:cursor-pointer ${processNo === "4" ? "opacity-[1]" : "opacity-[0.4]"}`}/>
+                        <img src={CreatorProcess5} alt="" onClick={() => setProcessNo("5")} className={`hover:cursor-pointer ${processNo === "5" ? "opacity-[1]" : "opacity-[0.4]"}`}/>
+                </div>
+                <div className="border-[20px] border-[#323449] rounded-full h-[350px] w-[350px] flex items-center justify-center creator-circle">
+                        <div className="m-10 text-center text-base md:text-[1.1vw] lg:text-[1.1vw]">
+                            {parse(processData)}
+                        </div>
+                </div>
+                <div className="flex justify-center">
+                    <button className="btn btn-accent rounded-sm px-4 py-2 !text-white" onClick={() => handleNavigate()}>Request Demo</button>
+                </div>
+            </div>
+
 
             <div className="p-3 md:p-10 lg:p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[5vw] mt-[40px]">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
@@ -328,8 +349,9 @@ export const Creators = () => {
                             {/* Still you have questions? Please write your email address and we will contact you soon. Thank you! */}
                         </p>
                         <div className="mt-[20px] flex items-center">
-                            <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" />
-                            <div className="btn btn-accent rounded-sm">Contact Me</div>
+                            {/* <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
+                            {/* <div className="btn btn-accent rounded-sm">Contact Me</div> */}
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us")}>Let's Talk</div>
                         </div>
                     </div>
                 </div>

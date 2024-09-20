@@ -198,14 +198,17 @@ export const ContactUsPage = () => {
                         <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">We look forward to speaking with you and exploring the possibilities.</p>
                           
                     </div>
-                    <h1 className="heading-text text-xl md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[26px] heading-text break-words font-bold">About Netra Labs</h1>
-                    
 
-                    <div className="mt-[20px] text-[#CECECE]">
-                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">At Netra Labs, we are dedicated to empowering technical professionals with the freedom to build and deploy advanced AI agents. With our proprietary framework, Ground Truth®, we offer unparalleled control and customization, enabling you to develop AI solutions that are as unique as your vision.</p>
-                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">Join us in shaping the future of AI agent development.</p>
-                        {/* <p className="text-[16px] leading-[22px] mt-4">We are committed to making AI simple and affordable. Our plug-and-play solutions offer immediate value and are tailored to meet diverse business needs.</p>
-                        <p className="text-[16px] leading-[22px] mt-4">We’re not just selling products; we’re selling empowerment. We believe that every business, regardless of size or industry, should have the tools to harness the full potential of AI. And this is just the beginning. We are continually innovating to redefine the boundaries of what AI can achieve.</p>   */}
+                    <div className="text-center mx-6">
+                        <h1 className="heading-text text-xl md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[26px] heading-text break-words font-bold">About Netra Labs</h1>
+                        
+
+                        <div className="mt-[20px] text-[#CECECE]">
+                            <p className="mt-4 text-base !md:text-[1.2vw] !lg:text-[1.2vw] leading-relaxed">At Netra Labs, we are dedicated to empowering technical professionals with the freedom to build and deploy advanced AI agents. With our proprietary framework, Ground Truth<sup>®</sup>, we offer unparalleled control and customization, enabling you to develop AI solutions that are as unique as your vision.</p>
+                            <p className="mt-4 text-base !md:text-[1.2vw] !lg:text-[1.2vw] leading-relaxed">Join us in shaping the future of AI agent development.</p>
+                            {/* <p className="text-[16px] leading-[22px] mt-4">We are committed to making AI simple and affordable. Our plug-and-play solutions offer immediate value and are tailored to meet diverse business needs.</p>
+                            <p className="text-[16px] leading-[22px] mt-4">We’re not just selling products; we’re selling empowerment. We believe that every business, regardless of size or industry, should have the tools to harness the full potential of AI. And this is just the beginning. We are continually innovating to redefine the boundaries of what AI can achieve.</p>   */}
+                        </div>
                     </div>
                 </div>
 
@@ -282,7 +285,7 @@ export const ContactUsPage = () => {
                         <div className="mt-[20px] flex flex-col gap-[20px]">
                             <div className="flex flex-col gap-[6px]">
                                 <h1 className="text-accent font-bold text-[14px]">Integrator</h1>
-                                <p>Interested in utilizing Ground Truth® to deliver Expert AI Agents™ to their clients.</p>
+                                <p>Interested in utilizing Ground Truth<sup>®</sup> to deliver Expert AI Agents™ to their clients.</p>
                             </div>
 
                             <div className="flex flex-col gap-[6px]">

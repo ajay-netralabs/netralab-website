@@ -65,8 +65,8 @@ export const Home = () => {
                         <div className="absolute top-0">
                             <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold heading-text">
                                 Turn Human Expertise into <br /> Expert AI Agents</h1>
-                            <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Netra Lab's <strong>Ground Truth®</strong> is the <strong>world's first Enterprise Language Chain</strong> framework for building and deploying Expert <strong>AI Agents™</strong> into production, at scale.</p>
-                            <div className="glass-btn mt-[50px] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" onClick={() => navigate("/enterprise-language-chain")}>Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></div>
+                            <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Netra Lab's <strong>Ground Truth<sup>®</sup></strong> is the <strong className="capitalize">world's first Enterprise Language Chain</strong> framework for building and deploying Expert <strong>AI Agents™</strong> into production, at scale.</p>
+                            <div className="glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" onClick={() => navigate("/enterprise-language-chain")}>Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></div>
                         </div>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ export const Home = () => {
                 <div className="flex flex-col md:flex-row lg:flex-row">
                     <div className="w-full md:w-[50%] lg:w-[50%]">
                         <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold heading-text">To simplify the complexity of Generative AI.</h1>
-                        <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] break-words mt-[20px]">Ground Truth® simplifies AI Agent development with an intuitive drag-and-drop interface, enabling rapid creation of complex agentic workflows.</p>
+                        <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] break-words mt-[20px]">Ground Truth<sup>®</sup> simplifies AI Agent development with an intuitive drag-and-drop interface, enabling rapid creation of complex agentic workflows.</p>
                         {/* lists */}
                         <div className="mt-[40px] flex flex-col text-[#CECECE]">
                             <div className="flex items-center gap-3 glass-card-1">
@@ -513,7 +513,7 @@ export const Home = () => {
                         </div>
                     </div>
 
-                    <div className="btn btn-accent rounded-sm mt-[35px] hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw]" onClick={() => navigate("/contact-us")}><span className="px-6">Request Demo</span></div>
+                    <div className="btn btn-accent rounded-sm mt-[35px] hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={() => navigate("/contact-us")}><span className="px-6">Request Demo</span></div>
                 </div>
 
             {/* fourth container */}
@@ -528,7 +528,7 @@ export const Home = () => {
                         <source src={Stable} type="video/mp4"/>
                     </video>
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] mt-[26px] font-bold heading-text leading-relaxed">Ensure Enterprise grade reliability and governance.</h1>
-                    <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] mt-[20px] text-[#CECECE] leading-relaxed">Enterprises demand security and accountability, the <span className="uppercase text-[18px] font-bold leading-relaxed">Ground Truth® Framework</span> delivers with enterprise-grade control mechanisms:</p>
+                    <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] mt-[20px] text-[#CECECE] leading-relaxed">Enterprises demand security and accountability, the <span className="uppercase text-[18px] font-bold leading-relaxed">Ground Truth<sup>®</sup> Framework</span> delivers with enterprise-grade control mechanisms:</p>
                 </div>
                 <div className="flex items-center gap-[40px] flex-col md:flex-row lg:flex-row mt-[20px]">
                     <div className="w-full md:w-[50%] lg:w-[50%] flex justify-center items-center">
@@ -546,7 +546,7 @@ export const Home = () => {
                     <div className="flex flex-col text-[#CECECE] w-full md:w-[50%] lg:w-[50%] mt-[20px] md:mt-0 lg:mt-0">
                         <div className="flex items-center gap-3 glass-card-1">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold"></span> Fine-tune agent responses and decision-marking processes</div>
+                            <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold"></span> Fine-tune agent responses and decision-marking processes.</div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-2">
                             <div className="badge badge-secondary badge-xs"></div>
@@ -572,24 +572,24 @@ export const Home = () => {
                         <source src={Scalable} type="video/mp4"/>
                     </video>
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text">And endless scaling possibilities for your AI Agents.</h1>
-                    <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE]">The Ground Truth® framework excels in the orchestration of complex agentic workflows, providing actual clarity around usage.</p>
+                    <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE]">The Ground Truth<sup>®</sup> framework excels in the orchestration of complex agentic workflows, providing actual clarity around usage.</p>
                 </div>
                 <div className="flex justify-between mt-[20px] md:mt-0 lg:mt-0 items-center flex-col md:flex-row lg:flex-row">
                     <div className="flex flex-col text-[#CECECE]  w-full md:w-[50%] lg:w-[50%] mt-[20px] md:mt-12 lg:mt-12">
                         <div className="flex items-center gap-3 glass-card-1">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold leading-relaxed text-accent">Track your token consumption and monitor usage</span> simultaneously across all agentic workflows.</div>
+                                <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold leading-relaxed text-accent capitalize">Track your token consumption and monitor usage</span> simultaneously across all agentic workflows.</div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-2">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]">
-                                Extract insights from diverse sources through <span className="font-bold leading-relaxed text-accent"> concurrent information retrieval.</span>
+                                Extract insights from diverse sources through <span className="font-bold leading-relaxed text-accent capitalize"> concurrent information retrieval.</span>
                             </div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-3">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]">
-                                Agents that <span className="font-bold leading-relaxed text-accent">operate asynchronously,</span> ensuring tasks are executed without waiting for sequential order.
+                                Agents that <span className="font-bold leading-relaxed text-accent capitalize">operate asynchronously,</span> ensuring tasks are executed without waiting for sequential order.
                             </div>
                         </div>
                     </div>
@@ -630,7 +630,7 @@ export const Home = () => {
                         </video>
                         <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Integrators</h2>
                         <p className=" text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
-                            <span className="font-bold text-accent"> Deliver the next era of AI-powered automation with Ground Truth®, </span>
+                            <span className="font-bold text-accent capitalize"> Deliver the next era of AI-powered automation with Ground Truth<sup>®</sup>, </span>
                               the enterprise language chain framework that empowers you to build and deploy Expert AI Agents™ for your clients.
                         </p>
 
@@ -657,7 +657,7 @@ export const Home = () => {
                         <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Innovators</h2>
                         <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
                          
-                            <span className="font-bold text-accent">Amplify your competitive advantage with Ground Truth®, </span>
+                            <span className="font-bold text-accent capitalize">Amplify your competitive advantage with Ground Truth<sup>®</sup>, </span>
                              the AI partner that empowers you to leverage your domain knowledge and build Expert AI Agents™ that transform your business.
                         </p>
 
@@ -683,10 +683,8 @@ export const Home = () => {
                         </div>
                         <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Creators</h2>
                         <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
-                            <span className="font-bold text-accent">
-                                Ground Truth® empowers developers and analysts 
-                            </span>
-                                to incubate their ideas, transforming them into powerful Expert AI Agents™ and launching successful businesses.
+                            <span className="font-bold text-accent capitalize">
+                                Ground Truth<sup>®</sup> empowers developers and analysts </span> to incubate their ideas, transforming them into powerful Expert AI Agents™ and launching successful businesses.
                         </p>
 
                         <div className="flex mt-[38px] hover:cursor-pointer"  onClick={() => navigate("/creators")}>
@@ -714,8 +712,8 @@ export const Home = () => {
                             Still you have questions? Please write your email address and we will contact you soon. Thank you!
                         </p> */}
                         <div className="mt-[20px] flex items-center">
-                            <input type="text" className=" input input-bordered w-full max-w-xs bg-white text-black rounded-sm" />
-                            <div className="btn btn-accent rounded-sm">Contact Me</div>
+                            {/* <input type="text" className=" input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us")}>Let's Talk</div>
                         </div>
                     </div>
                 </div>

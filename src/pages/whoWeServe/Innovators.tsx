@@ -89,7 +89,7 @@ export const Innovators = () => {
                             </div>
                             <div className='absolute top-0'>
                                 <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Transform your Domain Expertise into Cutting-Edge AI Agents</h1>
-                                <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">Leverage the <span className="font-bold text-accent">Ground Truth®</span> framework to build the next generation of AI Agents, powered by your expertise, for your domain, and scale your business like never before.</p>
+                                <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">Leverage the <span className="font-bold text-accent">Ground Truth<sup>®</sup></span> framework to build the next generation of AI Agents, powered by your expertise, for your domain, and scale your business like never before.</p>
                                 <div className="mt-[40px]">
                                     <button className="btn btn-accent rounded-sm px-4 py-2 !text-white hover:cursor-pointer" onClick={() => handleNavigate()}>Request Demo</button>
                                 </div>
@@ -141,7 +141,7 @@ export const Innovators = () => {
 
                             <div className="flex items-center gap-3 glass-card-3">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div>Ground Truth® allows you to harness this shift, turning your IP into a dynamic Expert AI Agent™.</div>
+                                <div>Ground Truth<sup>®</sup> allows you to harness this shift, turning your IP into a dynamic Expert AI Agent™.</div>
                             </div>
                         </div>
                 
@@ -248,7 +248,7 @@ export const Innovators = () => {
                         </div>
                         <div className="flex items-center gap-3 glass-card-2">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col'>
+                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
                                 <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent'>Solution Statement</span>
                                 <span>
                                     Bradley.ai augments this process by fusing decades of DER analysis expertise with advanced generative AI and proprietary models, enabling rapid, accurate, and customized DER system recommendations.
@@ -257,7 +257,7 @@ export const Innovators = () => {
                         </div>
                         <div className="flex items-center gap-3 glass-card-3">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col'>
+                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
                                 <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent'>Potential Impact</span>
                                 <span>
                                     This accelerated DER adoption, driven by Bradley.ai's insights, can significantly reduce carbon emissions and accelerate the transition to a cleaner, more sustainable energy landscape.
@@ -270,7 +270,7 @@ export const Innovators = () => {
                             <img src={InnovatorProof} alt="" className="w-full"/>
                             <div className="absolute p-[5%] md:top-[10%] md:p-[10%] lg:top-[10%] lg:p-[10%] leading-relaxed">
                                 <h1 className="font-bold text-[1.2vw]">$25 Billion Market Opportunity</h1>
-                                <p className="text-[1.1vw]">"With the Ground Truth® framework, we were able to create a systemic automation of information sources, and apply both objective and subjective analysis that cloned the domain expertise of our firm, to provide results at a speed that fundamentally changes how we do business."</p>
+                                <p className="text-[1.1vw]">"With the Ground Truth<sup>®</sup> framework, we were able to create a systemic automation of information sources, and apply both objective and subjective analysis that cloned the domain expertise of our firm, to provide results at a speed that fundamentally changes how we do business."</p>
                             </div>
                         </div>
                     </div>
@@ -279,7 +279,7 @@ export const Innovators = () => {
                     <div className="flex flex-col gap-[20px] md:hidden lg:hidden text-center border border-[#CECECE] p-[10px] rounded-lg">
                         <div className="">
                             <h1 className="font-bold text-[20px]">$25 Billion Market Opportunity</h1>
-                            <p className="text-[16px] mt-[20px]">"With the Ground Truth® framework, we were able to create a systemic automation of information sources, and apply both objective and subjective analysis that cloned the domain expertise of our firm, to provide results at a speed that fundamentally changes how we do business."</p>
+                            <p className="text-[16px] mt-[20px]">"With the Ground Truth<sup>®</sup> framework, we were able to create a systemic automation of information sources, and apply both objective and subjective analysis that cloned the domain expertise of our firm, to provide results at a speed that fundamentally changes how we do business."</p>
                         </div>
                         <div className="border-t border-[#CECECE]">
                             <p>John Dukes</p>
@@ -370,8 +370,9 @@ export const Innovators = () => {
                             {/* Still you have questions? Please write your email address and we will contact you soon. Thank you! */}
                         </p>
                         <div className="mt-[20px] flex items-center">
-                            <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" />
-                            <div className="btn btn-accent rounded-sm">Contact Me</div>
+                            {/* <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
+                            {/* <div className="btn btn-accent rounded-sm">Contact Me</div> */}
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us")}>Let's Talk</div>
                         </div>
                     </div>
                 </div>
