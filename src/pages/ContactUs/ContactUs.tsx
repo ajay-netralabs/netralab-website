@@ -200,12 +200,12 @@ export const ContactUsPage = () => {
                     </div>
 
                     <div className="text-center mx-6">
-                        <h1 className="heading-text text-xl md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[26px] heading-text break-words font-bold">About Netra Labs</h1>
+                        <h1 className="heading-text text-xl md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[40px] heading-text break-words font-bold">About Netra Labs</h1>
                         
 
-                        <div className="mt-[20px] text-[#CECECE]">
-                            <p className="mt-4 text-base !md:text-[1.2vw] !lg:text-[1.2vw] leading-relaxed">At Netra Labs, we are dedicated to empowering technical professionals with the freedom to build and deploy advanced AI agents. With our proprietary framework, Ground Truth<sup>®</sup>, we offer unparalleled control and customization, enabling you to develop AI solutions that are as unique as your vision.</p>
-                            <p className="mt-4 text-base !md:text-[1.2vw] !lg:text-[1.2vw] leading-relaxed">Join us in shaping the future of AI agent development.</p>
+                        <div className="text-[#CECECE]">
+                            <p className="text-base !md:text-[1vw] !lg:text-[1vw] leading-relaxed">At Netra Labs, we are dedicated to empowering technical professionals with the freedom to build and deploy advanced AI agents. With our proprietary framework, Ground Truth<sup>®</sup>, we offer unparalleled control and customization, enabling you to develop AI solutions that are as unique as your vision.</p>
+                            <p className="mt-4 text-base !md:text-[1vw] !lg:text-[1vw] leading-relaxed">Join us in shaping the future of AI agent development.</p>
                             {/* <p className="text-[16px] leading-[22px] mt-4">We are committed to making AI simple and affordable. Our plug-and-play solutions offer immediate value and are tailored to meet diverse business needs.</p>
                             <p className="text-[16px] leading-[22px] mt-4">We’re not just selling products; we’re selling empowerment. We believe that every business, regardless of size or industry, should have the tools to harness the full potential of AI. And this is just the beginning. We are continually innovating to redefine the boundaries of what AI can achieve.</p>   */}
                         </div>

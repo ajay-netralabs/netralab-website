@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import { Home } from './pages'
+import { Home, PrivacyPolicy, TermsAndCondition } from './pages'
 import './App.css'
 import { NavbarLayout } from './NavbarLayout'
 import { Creators, Innovators, Integrators } from './pages/whoWeServe'
@@ -21,6 +21,8 @@ function App() {
         <Route path="/careers" element={<CareersPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         <Route path="/enterprise-language-chain" element={<Langchain />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-condition" element={<TermsAndCondition />} />
       </Route>
     </Routes>
   )

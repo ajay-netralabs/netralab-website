@@ -77,8 +77,8 @@ export const Footer = () => {
             </aside>
             <nav className="md:place-self-center md:justify-self-end">
                 <div className="grid grid-flow-col gap-4 text-[#CECECE]">
-                    <p>Terms of use</p>
-                    <p>Privacy policy</p>
+                    <p className="hover:cursor-pointer" onClick={() => handleNavigation("/terms-and-condition")}>Terms of use</p>
+                    <p className="hover:cursor-pointer" onClick={() => handleNavigation("/privacy-policy")}>Privacy policy</p>
                     <img className="hover:cursor-pointer" src={X} alt="x" onClick={() => handleNavigateSocialMedia("twitter")}/>
                     <img className="hover:cursor-pointer" src={LinkedIn} alt="linkedin" onClick={() => handleNavigateSocialMedia("linkedin")} />
                 </div>

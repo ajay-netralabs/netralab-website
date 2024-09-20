@@ -174,7 +174,7 @@ export const Innovators = () => {
                         <div className='h-[60%] text-center text-[#CECECE]'>
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Expand Your Reach with a New Offering</h2>
                             <p className='text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2'>
-                                Develop a cutting-edge AI Agent product line that <span className='text-accent'>leverages your existing expertise to unlock exponential impact</span> and reach new markets.
+                                Develop a cutting-edge AI Agent product line that <span className='text-accent font-bold uppercase'>leverages your existing expertise to unlock exponential impact</span> and reach new markets.
                             </p>
                         </div>
                     </div>
@@ -194,7 +194,7 @@ export const Innovators = () => {
                         <div className='h-[60%] text-center text-[#CECECE]'>
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Protect & Monetize Your IP</h2>
                             <p className='text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2'>         
-                                Build your Expert AI Agent™ on top of our proprietary language chain framework, <span className='text-accent'>creating a secure moat around your intellectual property</span> while maximizing its value.
+                                Build your Expert AI Agent™ on top of our proprietary language chain framework, <span className='text-accent font-bold uppercase'>creating a secure moat around your intellectual property</span> while maximizing its value.
                             </p>
                         </div>
                     </div>
@@ -214,7 +214,7 @@ export const Innovators = () => {
                         <div className='h-[60%] text-center text-[#CECECE]'>
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Partner for Success</h2>
                             <p className='text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2'>
-                                We're committed to safeguarding and amplifying your IP. Our team of experts will <span className='text-accent'>partner with you every step of the way</span> to ensure your Expert AI Agent™ thrives in the market.
+                                We're committed to safeguarding and amplifying your IP. Our team of experts will <span className='text-accent font-bold uppercase'>partner with you every step of the way</span> to ensure your Expert AI Agent™ thrives in the market.
                             </p>
                         </div>
                     </div>
@@ -241,7 +241,7 @@ export const Innovators = () => {
                         <div className="flex items-center gap-3 glass-card-1">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
-                                <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent'>Problem Statement</span>
+                                <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent uppercase'>Problem Statement</span>
                                 <span>
                                     Traditional DER analysis is a complex and time-consuming process, hindering the rapid adoption of clean energy solutions.                                </span>
                                 </div>
@@ -249,7 +249,7 @@ export const Innovators = () => {
                         <div className="flex items-center gap-3 glass-card-2">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
-                                <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent'>Solution Statement</span>
+                                <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent uppercase'>Solution Statement</span>
                                 <span>
                                     Bradley.ai augments this process by fusing decades of DER analysis expertise with advanced generative AI and proprietary models, enabling rapid, accurate, and customized DER system recommendations.
                                 </span>
@@ -258,7 +258,7 @@ export const Innovators = () => {
                         <div className="flex items-center gap-3 glass-card-3">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
-                                <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent'>Potential Impact</span>
+                                <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent uppercase'>Potential Impact</span>
                                 <span>
                                     This accelerated DER adoption, driven by Bradley.ai's insights, can significantly reduce carbon emissions and accelerate the transition to a cleaner, more sustainable energy landscape.
                                 </span>

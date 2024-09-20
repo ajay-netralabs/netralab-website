@@ -1,0 +1,33 @@
+.extra-page {
+    padding: 5rem;
+    color: #CECECE;
+}
+
+.extra-page h1 {
+    font-size: 1.25vw;
+    line-height: 1.6;
+    margin: 15px 0;
+}
+
+.extra-page p {
+    font-size: 1.1vw;
+    line-height: 1.4;
+}
+
+.table-nl {
+    width: 50%;
+    margin: 0 auto;
+    gap: 10px;
+    border: 1px solid #CECECE;
+    text-align: right;
+}
+
+.table-nl .flex {
+    border-bottom: 1px solid #CECECE;
+    /* justify-content: space-between; */
+    gap: 30px;
+    padding: 10px;
+}
+
+.table-nl .flex p {
+}
