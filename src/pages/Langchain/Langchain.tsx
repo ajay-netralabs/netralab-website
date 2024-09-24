@@ -225,7 +225,7 @@ export const Langchain = () => {
         </div>
 
         {/* tabs */}
-        <div className="sticky top-0 py-4 bg-base-100 z-10 hidden md:flex lg:flex text-base md:text-[1.2vw] lg:text-[1.2vw] lg:leading-relaxed justify-around">
+        <div className="sticky top-0 py-8 bg-base-100 z-10 hidden md:flex lg:flex text-base md:text-[1.2vw] lg:text-[1.2vw] lg:leading-relaxed justify-around">
             {/* <div className=""> */}
                 <p className={`${activeTab === "d1" ? "text-accent border-b border-b-accent" : ""} hover:cursor-pointer`} onClick={() => setActiveTab("d1")}>Enterprise Struggles</p>
                 <p className={`${activeTab === "d2" ? "text-accent border-b border-b-accent" : ""} hover:cursor-pointer`} onClick={() => setActiveTab("d2")}>Beyond LangChain</p>

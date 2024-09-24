@@ -33,7 +33,7 @@ export const Navbar = () => {
 
 
     return (
-        <div className="navbar nav-bar bg-base-100 w-[unset]">
+        <div className="navbar nav-bar bg-base-100 w-[unset] sticky top-0 z-[9]">
             <div className="navbar-start">
                 <img alt="GT Logo" src={GT_LOGO} className="h-16 w-16 hover:cursor-pointer" onClick={() => handleNavigation("/")}/>
                 <div className="ml-4">
