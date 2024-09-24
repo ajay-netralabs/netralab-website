@@ -209,7 +209,7 @@ export const Langchain = () => {
     return (
     <div>
         {/* header */}
-        <div className="w-full h-[400px] flex flex-col justify-center items-center designer">
+        <div className="w-full h-[70vh] flex flex-col justify-center items-center designer">
             {/* <img className="w-full h-full object-cover" src={Designer} alt="language chain" /> */}
             <div className="m-3 md:m-12 lg:m-12">
                 <p className="text-base md:text-[1.2vw] lg:text-[1.2vw] lg:leading-relaxed text-[#CECECE]">For Data Scientists Focused on Deploying Expert AI Agents®</p>

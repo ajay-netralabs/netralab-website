@@ -12,7 +12,7 @@ import { Langchain } from './pages/Langchain'
 
 function App() {
 
-  console.log("ga test", import.meta.env)
+  console.log("prod test", import.meta.env.PROD)
 
   // ReactGA.initialize(import.meta.env.VITE_GA_ID);
 

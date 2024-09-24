@@ -52,14 +52,15 @@ export const Footer = () => {
                 <a className="link link-hover" onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a>
                 <a className="link link-hover" onClick={() => handleNavigation("/ai-agents-for-innovators/")}>Innovators</a>
                 <a className="link link-hover" onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a>
-            </nav>
-            <nav className="flex flex-col gap-2 w-full mt-10 md:mt-0 lg:mt-0 md:w-[unset] lg:w-[unset]">
-                <h6 className="footer-title text-white">Resources</h6>
                 <a className="link link-hover" onClick={() => handleNavigation("/language-chain/")}>Enterprise Language Chain</a>
+            </nav>
+            {/* <nav className="flex flex-col gap-2 w-full mt-10 md:mt-0 lg:mt-0 md:w-[unset] lg:w-[unset]"> */}
+                {/* <h6 className="footer-title text-white">Resources</h6>
+                <a className="link link-hover" onClick={() => handleNavigation("/language-chain/")}>Enterprise Language Chain</a> */}
                 {/* <a className="link link-hover" onClick={() => handleNavigation("/blogs")}>Blog</a>
                 <a className="link link-hover">Help Center</a>
                 <a className="link link-hover">Webinars & Events</a> */}
-            </nav>
+            {/* </nav> */}
             <nav className="flex flex-col gap-2 mt-10 md:mt-0 lg:mt-0 w-full md:w-[unset] lg:w-[unset]">
                 <h6 className="footer-title text-white">Support & Contact</h6>
                 <a className="link link-hover" onClick={() => handleNavigation("/contact-us-main/")}>Contact Us</a>
