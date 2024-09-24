@@ -8,13 +8,15 @@ import { CareersPage } from './pages/Careers'
 import { ContactUsPage } from './pages/ContactUs'
 import { Langchain } from './pages/Langchain'
 
-// import ReactGA from 'react-ga4';
+import ReactGA from 'react-ga4';
 
 function App() {
 
-  console.log("prod test", import.meta.env.PROD)
-
-  // ReactGA.initialize(import.meta.env.VITE_GA_ID);
+  // only send analytics on production environment
+  if(import.meta.env.PROD) {
+    console.log("true or false", !!import.meta.env.VITE_GA_ID)
+    ReactGA.initialize(import.meta.env.VITE_GA_ID);
+  }
 
 
   return (

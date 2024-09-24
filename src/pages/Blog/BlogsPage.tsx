@@ -5,7 +5,17 @@ import { useEffect } from "react"
 import { useDispatch } from "react-redux"
 import { resetPrevLocation } from "../../store/locationSlice"
 
+import ReactGA from 'react-ga4';
+
 export const BlogsPage = () => {
+
+    if(import.meta.env.PROD) {
+        ReactGA.send({
+            hitType: "pageview",
+            page: "/blog/",
+            title: "Blogs page",
+        })
+    }
 
     const dispatch = useDispatch()
 

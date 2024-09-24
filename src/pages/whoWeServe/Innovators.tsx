@@ -23,10 +23,18 @@ import { useDispatch } from 'react-redux';
 import { addPrevLocation } from '../../store/locationSlice';
 
 import Integrator1Bg from "../../../public/static_img/integrator-1-bg.jfif"
-
+import ReactGA from 'react-ga4';
 
 
 export const Innovators = () => {
+
+    if(import.meta.env.PROD) {
+        ReactGA.send({
+            hitType: "pageview",
+            page: "/ai-agents-for-innovators/",
+            title: "Innovators page",
+        })
+    }
 
     const navigate = useNavigate()
     const dispatch = useDispatch()

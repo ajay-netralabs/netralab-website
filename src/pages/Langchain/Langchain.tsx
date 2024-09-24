@@ -29,7 +29,17 @@ import trainAnimation from "../../../public/lottie/train.json"
 import cubeAnimation from "../../../public/lottie/cubes.json"
 import optimizationAnimation from "../../../public/lottie/Optimization.json"
 
+import ReactGA from 'react-ga4';
+
 export const Langchain = () => {
+
+    if(import.meta.env.PROD) {
+        ReactGA.send({
+            hitType: "pageview",
+            page: "/language-chain/",
+            title: "Enterprise language chain page",
+        })
+    }
 
     const dispatch = useDispatch()
 

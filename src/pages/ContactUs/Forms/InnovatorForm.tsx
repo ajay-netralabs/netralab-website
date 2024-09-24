@@ -1,5 +1,16 @@
 
+import ReactGA from 'react-ga4';
+
 export const InnovatorForm = () => {
+
+    if(import.meta.env.PROD) {
+        ReactGA.send({
+            hitType: "pageview",
+            page: "/contact-us-innovators-ai-agents/",
+            title: "Contact us innovators",
+        })
+    }
+
     return (
         <div className="h-[820px] md:h-[800px] lg:h-[800px] max-w-[650px]">
                 <iframe

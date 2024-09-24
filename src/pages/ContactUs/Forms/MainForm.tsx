@@ -1,5 +1,16 @@
 
+import ReactGA from 'react-ga4';
+
 export const MainForms = () => {
+
+    if(import.meta.env.PROD) {
+        ReactGA.send({
+            hitType: "pageview",
+            page: "/contact-us-main/",
+            title: "Contact us main",
+        })
+    }
+
     return (
         <div className="h-[950px] md:h-[900px] lg:h-[900px] max-w-[650px]">
                 <iframe

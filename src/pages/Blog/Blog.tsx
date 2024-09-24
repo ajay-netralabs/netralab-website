@@ -5,6 +5,8 @@ import parse from 'html-react-parser';
 import { useDispatch } from "react-redux";
 import { resetPrevLocation } from "../../store/locationSlice";
 
+import ReactGA from 'react-ga4';
+
 export const Blog = () => {
 
     const dispatch = useDispatch()
@@ -18,6 +20,15 @@ export const Blog = () => {
     useEffect(() => {
         const blogData = blogs.find((blog:any) => blog.pathUrl === pathUrl)
         setBlog(blogData)
+
+        if(import.meta.env.PROD && blogData?.pathUrl) {
+            ReactGA.send({
+                hitType: "pageview",
+                page: blogData.pathUrl,
+                title: "Blog page",
+            })
+        }
+
     }, [pathUrl])
 
     useEffect(() => {

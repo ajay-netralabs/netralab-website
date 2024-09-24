@@ -1,5 +1,15 @@
 
+import ReactGA from 'react-ga4';
+
 export const CreatorForm = () => {
+    if(import.meta.env.PROD) {
+        ReactGA.send({
+            hitType: "pageview",
+            page: "/contact-us-creators-ai-agents/",
+            title: "Contact us creators",
+        })
+    }
+
     return (
         <div className="h-[900px] md:h-[850px] lg:h-[850px] max-w-[650px]">
                 <iframe

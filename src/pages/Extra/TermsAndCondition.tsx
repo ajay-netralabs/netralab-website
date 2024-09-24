@@ -1,7 +1,17 @@
 import { useEffect } from "react"
 import "./index.css"
 
+import ReactGA from 'react-ga4';
+
 export const TermsAndCondition = () => {
+
+    if(import.meta.env.PROD) {
+        ReactGA.send({
+            hitType: "pageview",
+            page: "/terms-and-conditions/",
+            title: "Terms & conditions page",
+        })
+    }
 
     const scrollTOId = (id:string) => {
         const element = document.getElementById(id)

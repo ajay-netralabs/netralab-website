@@ -27,12 +27,14 @@ export const Navbar = () => {
 
     const handleNavigation = (path?:string) => {
         navigate(path || "/")
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
         setActiveMenu(path || "/")
     }
 
 
 
     return (
+        // z-index has to be lesser than the langChain page navbar z-index
         <div className="navbar nav-bar bg-base-100 w-[unset] sticky top-0 z-[9]">
             <div className="navbar-start">
                 <img alt="GT Logo" src={GT_LOGO} className="h-16 w-16 hover:cursor-pointer" onClick={() => handleNavigation("/")}/>

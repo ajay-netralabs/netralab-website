@@ -1,6 +1,16 @@
 import { useEffect } from "react"
 
+import ReactGA from 'react-ga4';
+
 export const PrivacyPolicy = () => {
+
+    if(import.meta.env.PROD) {
+        ReactGA.send({
+            hitType: "pageview",
+            page: "/privacy-policy/",
+            title: "Privacy policy page",
+        })
+    }
 
     const scrollTOId = (id:string) => {
         const element = document.getElementById(id)

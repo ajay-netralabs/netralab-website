@@ -28,15 +28,17 @@ import Marquee from "react-fast-marquee"
 import Integretor1Bg from "../../public/static_img/integrator-1-bg.jfif"
 
 // import { ParticlesComponent } from "../components"
-// import ReactGA from 'react-ga4';
+import ReactGA from 'react-ga4';
 
 export const Home = () => {
 
-    // ReactGA.send({
-    //     hitType: "pageview",
-    //     page: "/",
-    //     title: "Home",
-    // })
+    if(import.meta.env.PROD) {
+        ReactGA.send({
+            hitType: "pageview",
+            page: "/",
+            title: "Home",
+        })
+    }
 
     const navigate = useNavigate()
 
