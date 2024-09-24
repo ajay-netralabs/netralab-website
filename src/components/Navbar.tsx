@@ -7,10 +7,11 @@ export const Navbar = () => {
 
     const menu = {
         home : "/",
-        whoWeServe : "/integrators, /innovators, /creators",
+        whoWeServe : "/ai-agents-for-integrators/, /ai-agents-for-innovators/, /ai-agents-for-creators/",
         careers: "/careers",
-        blogs: "/blogs",
-        contactUs: "/contact-us"
+        blogs: "/blog/",
+        contactUs: "/contact-us-main/ , /contact-us-creators-ai-agents/, /contact-us-integrators-ai-agents/, /contact-us-innovators-ai-agents/",
+        enterpriseLangChain :"/language-chain/"
 
     }
 
@@ -58,15 +59,16 @@ export const Navbar = () => {
                                     </span>
                                 </div>
                                 <ul tabIndex={0} className=" text-[1.1vw] dropdown-content menu bg-base-100 z-[9999] top-[110%] right-0 translate-x-[-0%] w-full border border-accent"> 
-                                    <li><a onClick={() => handleNavigation("/integrators")}>Integrators</a></li>
-                                    <li><a onClick={() => handleNavigation("/innovators")}>Innovators</a></li>
-                                    <li><a onClick={() => handleNavigation("/creators")}>Creators</a></li>
+                                    <li><a onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a></li>
+                                    <li><a onClick={() => handleNavigation("/ai-agents-for-innovators/")}>Innovators</a></li>
+                                    <li><a onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a></li>
                                 </ul>
                             </div>
                         </li>
                         {/* <li className={`mr-10 md:mr-4 ${activeMenu !== "/" && menu.careers.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/careers")}>Careers</a></li> */}
-                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.blogs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/blogs")}>Blog</a></li>
-                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.contactUs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/contact-us")}>Contact Us</a></li>
+                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.blogs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/blog/")}>Blog</a></li>
+                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.enterpriseLangChain.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/language-chain/")}>Enterprise Language Chain</a></li>
+                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.contactUs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/contact-us-main/")}>Contact Us</a></li>
                     </ul>
                 </div>
                     <div className="dropdown">
@@ -91,14 +93,15 @@ export const Navbar = () => {
                             <li>
                             <a>Who We Serve</a>
                             <ul className="p-2">
-                                <li><a onClick={() => handleNavigation("/integrators")}>Integrators</a></li>
-                                <li><a onClick={() => handleNavigation("/innovators")}>Innovators</a></li>
-                                <li><a onClick={() => handleNavigation("/creators")}>Creators</a></li>
+                                <li><a onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a></li>
+                                <li><a onClick={() => handleNavigation("/ai-agents-for-innovators/")}>Innovators</a></li>
+                                <li><a onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a></li>
                             </ul>
                             </li>
                             {/* <li><a onClick={() => handleNavigation("/careers")}>Careers</a></li> */}
-                            <li><a onClick={() => handleNavigation("/blogs")}>Blog</a></li>
-                            <li><a onClick={() => handleNavigation("/contact-us")}>Contact Us</a></li>
+                            <li><a onClick={() => handleNavigation("/blog/")}>Blog</a></li>
+                            <li><a onClick={() => handleNavigation("/language-chain/")}>Enterprise Language Chain</a></li>
+                            <li><a onClick={() => handleNavigation("/contact-us-main/")}>Contact Us</a></li>
                         </ul>
                     </div>
                 {/* <button className="hidden lg:flex btn btn-accent rounded-sm" onClick={() => handleNavigation("/contact-us")}>Let's Talk</button> */}

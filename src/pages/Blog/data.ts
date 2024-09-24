@@ -2,8 +2,9 @@ export const blogs = [
         {
             "id": "1",
             "title": "How AI Agents are changing the Automation Landscape",
+            "pathUrl": "how-ai-agents-are-changing-the-automation-landscape",
             "date": "04/06/2023",
-            "tags": ["ai agents", "coding", "desing"],
+            "tags": ["ai agents", "coding", "designing"],
             "imgUrl": "https://shelf.io/wp-content/uploads/2024/01/The-Evolution-of-AI-Introducing-Autonomous-AI-Agents-_3.jpg.webp",
             "read" : `— Automation has long been a driving force in the quest for efficiency and productivity across industries. From the early days of rigid, rule-based systems to the advent of Robotic Process Automation (RPA) and its concept of “bots,” businesses have sought to streamline processes and reduce manual labor. However, these traditional automation technologies often struggled to adapt to context and handle subjectivity, limiting their applicability in complex, real-world scenarios.
 

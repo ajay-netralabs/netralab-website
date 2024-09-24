@@ -28,9 +28,15 @@ import Marquee from "react-fast-marquee"
 import Integretor1Bg from "../../public/static_img/integrator-1-bg.jfif"
 
 // import { ParticlesComponent } from "../components"
-
+// import ReactGA from 'react-ga4';
 
 export const Home = () => {
+
+    // ReactGA.send({
+    //     hitType: "pageview",
+    //     page: "/",
+    //     title: "Home",
+    // })
 
     const navigate = useNavigate()
 
@@ -66,7 +72,7 @@ export const Home = () => {
                             <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.3] font-bold heading-text">
                                 Turn Human Expertise into <br /> Expert AI Agents</h1>
                             <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Netra Lab's <strong className="text-accent">Ground Truth<sup>®</sup></strong> is the <strong className="uppercase text-accent">world's first Enterprise Language Chain</strong> framework for building and deploying Expert <strong className="uppercase text-accent">AI Agents™</strong> into production, at scale.</p>
-                            <div className="glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" onClick={() => navigate("/enterprise-language-chain")}>Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></div>
+                            <div className="border border-accent learn-more-btn glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" onClick={() => navigate("/language-chain/")}>Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></div>
                         </div>
                     </div>
                 </div>
@@ -513,7 +519,7 @@ export const Home = () => {
                         </div>
                     </div>
 
-                    <div className="btn btn-accent rounded-sm mt-[35px] hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={() => navigate("/contact-us")}><span className="px-6">Request Demo</span></div>
+                    <div className="btn btn-accent rounded-sm mt-[35px] hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={() => navigate("/contact-us-main/")}><span className="px-6">Request Demo</span></div>
                 </div>
 
             {/* fourth container */}
@@ -634,7 +640,7 @@ export const Home = () => {
                               the enterprise language chain framework that empowers you to build and deploy Expert AI Agents™ for your clients.
                         </p>
 
-                        <div className={`flex mt-[38px] hover:cursor-pointer`} onClick={() => navigate("/integrators")}>
+                        <div className={`flex mt-[38px] hover:cursor-pointer`} onClick={() => navigate("/ai-agents-for-integrators/")}>
                             Learn More
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                 <path d="M13.924 8.64648L17.3086 12.6465M17.3086 12.6465L13.924 16.6465M17.3086 12.6465L6.80859 12.6465" stroke="#0FAE96" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -661,7 +667,7 @@ export const Home = () => {
                              the AI partner that empowers you to leverage your domain knowledge and build Expert AI Agents™ that transform your business.
                         </p>
 
-                        <div className={`flex mt-[38px] hover:cursor-pointer`}  onClick={() => navigate("/innovators")}>
+                        <div className={`flex mt-[38px] hover:cursor-pointer`}  onClick={() => navigate("/ai-agents-for-innovators/")}>
                             Learn More
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                 <path d="M13.924 8.64648L17.3086 12.6465M17.3086 12.6465L13.924 16.6465M17.3086 12.6465L6.80859 12.6465" stroke="#0FAE96" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -687,7 +693,7 @@ export const Home = () => {
                                 Ground Truth<sup>®</sup> empowers developers and analysts </span> to incubate their ideas, transforming them into powerful Expert AI Agents™ and launching successful businesses.
                         </p>
 
-                        <div className="flex mt-[38px] hover:cursor-pointer"  onClick={() => navigate("/creators")}>
+                        <div className="flex mt-[38px] hover:cursor-pointer"  onClick={() => navigate("/ai-agents-for-creators/")}>
                             Learn More
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                                 <path d="M13.924 8.64648L17.3086 12.6465M17.3086 12.6465L13.924 16.6465M17.3086 12.6465L6.80859 12.6465" stroke="#0FAE96" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -713,7 +719,7 @@ export const Home = () => {
                         </p> */}
                         <div className="mt-[20px] flex items-center">
                             {/* <input type="text" className=" input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
-                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us")}>Let's Talk</div>
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us-main/")}>Let's Talk</div>
                         </div>
                     </div>
                 </div>

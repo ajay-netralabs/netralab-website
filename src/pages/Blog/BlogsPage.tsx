@@ -11,11 +11,12 @@ export const BlogsPage = () => {
 
     const navigate = useNavigate()
 
-    const handleBlogNavigation = (id:string) => {
-        navigate(`/blogs/${id}`)
+    const handleBlogNavigation = (pathUrl:string) => {
+        navigate(`/${pathUrl}`)
     }
 
     useEffect(() => {
+        window.scrollTo(0,0)
         return () => {
             // localStorage.setItem("prev", "/")
             dispatch(resetPrevLocation())
@@ -49,7 +50,7 @@ export const BlogsPage = () => {
                                     alt="blog image" />
                                 </figure>
                                 <div className="card-body !px-0">
-                                    <h2 onClick={() => handleBlogNavigation(data.id)} className="card-title text-xl md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed heading-text-hover hover:cursor-pointer">{data.title}</h2>
+                                    <h2 onClick={() => handleBlogNavigation(data["pathUrl"])} className="card-title text-xl md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed heading-text-hover hover:cursor-pointer">{data.title}</h2>
                                     <p className="text-[#CECECE] text-xl md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">{`${data.read.slice(0,200)}...`}</p>
                                 </div>
                             </div>

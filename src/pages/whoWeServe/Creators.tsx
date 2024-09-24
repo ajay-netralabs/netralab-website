@@ -53,14 +53,14 @@ export const Creators = () => {
 
     // useEffect(() => {
     //     return () => {
-    //         // localStorage.setItem("prev", "/creators")
-    //         dispatch(addPrevLocation("/creators"))
+    //         // localStorage.setItem("prev", "/ai-agents-for-creators/")
+    //         dispatch(addPrevLocation("/ai-agents-for-creators/"))
     //     }
     // }, [])
 
     const handleNavigate = () => {
-        dispatch(addPrevLocation("/creators"))
-        navigate("/contact-us")
+        dispatch(addPrevLocation("/ai-agents-for-creators/"))
+        navigate("/contact-us-creators-ai-agents/")
     }
 
     return (
@@ -183,7 +183,7 @@ export const Creators = () => {
                             </video>
                         </div>
                         <div className='h-[80%] md:h-[60%] lg:h-[60%] text-center text-[#CECECE]'>
-                            <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Seiza a Unique Opportunity</h2>
+                            <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Seize a Unique Opportunity</h2>
                             <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
                                 The Generative AI market is exploding, presenting a once-in-a-generation opportunity akin to the internet boom. 
                             </p>
@@ -351,7 +351,7 @@ export const Creators = () => {
                         <div className="mt-[20px] flex items-center">
                             {/* <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
                             {/* <div className="btn btn-accent rounded-sm">Contact Me</div> */}
-                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us")}>Let's Talk</div>
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us-main/")}>Let's Talk</div>
                         </div>
                     </div>
                 </div>

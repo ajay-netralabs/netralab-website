@@ -8,21 +8,36 @@ import { CareersPage } from './pages/Careers'
 import { ContactUsPage } from './pages/ContactUs'
 import { Langchain } from './pages/Langchain'
 
+// import ReactGA from 'react-ga4';
+
 function App() {
+
+  console.log("ga test", import.meta.env)
+
+  // ReactGA.initialize(import.meta.env.VITE_GA_ID);
+
+
   return (
     <Routes>
       <Route element={<NavbarLayout />}>
         <Route path="/" element={<Home />}/>
-        <Route path="/integrators" element={<Integrators />} />
-        <Route path="/innovators" element={<Innovators />} />
-        <Route path="/creators" element={<Creators />} />
-        <Route path="/blogs" element={<BlogsPage />} />
-        <Route path="/blogs/:id" element={<Blog />} />
+        <Route path="/ai-agents-for-integrators/" element={<Integrators />} />
+        <Route path="/ai-agents-for-innovators/" element={<Innovators />} />
+        <Route path="/ai-agents-for-creators/" element={<Creators />} />
         <Route path="/careers" element={<CareersPage />} />
-        <Route path="/contact-us" element={<ContactUsPage />} />
-        <Route path="/enterprise-language-chain" element={<Langchain />} />
-        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-        <Route path="/terms-and-condition" element={<TermsAndCondition />} />
+        <Route path="/language-chain/" element={<Langchain />} />
+        <Route path="/privacy-policy/" element={<PrivacyPolicy />} />
+        <Route path="/terms-and-conditions/" element={<TermsAndCondition />} />
+
+        {/* blogs */}
+        <Route path="/blog/" element={<BlogsPage />} />
+        <Route path="/:pathUrl" element={<Blog />} />
+
+        {/* contact pages */}
+        <Route path="/contact-us-main/" element={<ContactUsPage type="main"/>} />
+        <Route path="/contact-us-creators-ai-agents/" element={<ContactUsPage type="creators" />} />
+        <Route path="/contact-us-innovators-ai-agents/" element={<ContactUsPage type="innovators" />} />
+        <Route path="/contact-us-integrators-ai-agents/" element={<ContactUsPage type="integrators" />} />
       </Route>
     </Routes>
   )

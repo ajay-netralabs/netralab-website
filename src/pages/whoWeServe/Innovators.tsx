@@ -60,14 +60,14 @@ export const Innovators = () => {
 
     // useEffect(() => {
     //     return () => {
-    //         // localStorage.setItem("prev", "/innovators")
-    //         dispatch(addPrevLocation("/innovators"))
+    //         // localStorage.setItem("prev", "/ai-agents-for-innovators/")
+    //         dispatch(addPrevLocation("/ai-agents-for-innovators/"))
     //     }
     // }, [])
 
     const handleNavigate = () => {
-        dispatch(addPrevLocation("/innovators"))
-        navigate("/contact-us")
+        dispatch(addPrevLocation("/ai-agents-for-innovators/"))
+        navigate("/contact-us-innovators-ai-agents/")
     }
 
     return (
@@ -372,7 +372,7 @@ export const Innovators = () => {
                         <div className="mt-[20px] flex items-center">
                             {/* <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
                             {/* <div className="btn btn-accent rounded-sm">Contact Me</div> */}
-                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us")}>Let's Talk</div>
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us-main/")}>Let's Talk</div>
                         </div>
                     </div>
                 </div>

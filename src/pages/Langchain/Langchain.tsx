@@ -39,6 +39,7 @@ export const Langchain = () => {
 
     
     useEffect(() => {
+        window.scrollTo(0,0)
         return () => {
             // localStorage.setItem("prev", "/")
             dispatch(resetPrevLocation())
@@ -46,7 +47,7 @@ export const Langchain = () => {
     }, [])
 
     const handleNavigate = () => {
-        navigate("/contact-us")
+        navigate("/contact-us-main/")
     }
 
     const [limitation, setLimitation] = useState<number>(1)

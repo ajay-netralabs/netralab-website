@@ -1,3 +1,4 @@
+import { useEffect } from "react"
 import "./index.css"
 
 export const TermsAndCondition = () => {
@@ -9,6 +10,10 @@ export const TermsAndCondition = () => {
             element.scrollIntoView({ block: 'center',  behavior: 'smooth' })
         }
     }
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
 
 
     return (

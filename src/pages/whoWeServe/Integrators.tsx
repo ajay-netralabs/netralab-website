@@ -36,14 +36,14 @@ export const Integrators = () => {
 
     // useEffect(() => {
     //     return () => {
-    //         // localStorage.setItem("prev", "/integrators")
-    //         dispatch(addPrevLocation("/integrators"))
+    //         // localStorage.setItem("prev", "/ai-agents-for-integrators/")
+    //         dispatch(addPrevLocation("/ai-agents-for-integrators/"))
     //     }
     // }, [])
 
     const handleNavigate = () => {
-        dispatch(addPrevLocation("/integrators"))
-        navigate("/contact-us")
+        dispatch(addPrevLocation("/ai-agents-for-integrators/"))
+        navigate("/contact-us-integrators-ai-agents/")
     }
 
     return (
@@ -67,7 +67,8 @@ export const Integrators = () => {
                         <div className="absolute top-0">
                             <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text">Agentic Workflows for System Integrators</h1>
                             <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"><span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the world’s first language chain framework built to empower SIs to build and deploy custom AI agents that redefine the way processes are automated for your customers.</p>
-                            <div className="btn btn-accent rounded-sm mt-[35px] hover:cursor-pointer text-white" onClick={() => handleNavigate()}>Request Demo</div>
+                            {/* <div className="btn btn-accent rounded-sm mt-[35px] hover:cursor-pointer text-white" onClick={() => handleNavigate()}>Request Demo</div> */}
+                            <div className="border border-accent learn-more-btn glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" onClick={() => navigate("/language-chain/")}>Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></div>
                         </div>
                     </div>
                 </div>
@@ -349,7 +350,7 @@ export const Integrators = () => {
                         <div className="mt-[20px] flex items-center">
                             {/* <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
                             {/* <div className="btn btn-accent rounded-sm">Contact Me</div> */}
-                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us")}>Let's Talk</div>
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us-main/")}>Let's Talk</div>
                         </div>
                     </div>
                 </div>
