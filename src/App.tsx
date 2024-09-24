@@ -13,8 +13,8 @@ import ReactGA from 'react-ga4';
 function App() {
 
   // only send analytics on production environment
-  if(import.meta.env.PROD) {
-    console.log("true or false", !!import.meta.env.VITE_GA_ID)
+  console.log("true or false", !!import.meta.env.VITE_GA_ID)
+  if(import.meta.env.PROD && import.meta.env.VITE_GA_ID) {
     ReactGA.initialize(import.meta.env.VITE_GA_ID);
   }
 
