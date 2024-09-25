@@ -12,7 +12,7 @@ export const MainForms = () => {
     }
 
     return (
-        <div className="h-[950px] md:h-[900px] lg:h-[900px] max-w-[650px]">
+        <div className=" max-w-[650px]">
                 <iframe
                     src="https://api.leadconnectorhq.com/widget/form/3awB04FlOIOzGoJvhRzn"
                     style={{width:"100%", height: "100%", border: "none", borderRadius:"3px"}}

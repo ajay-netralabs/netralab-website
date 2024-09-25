@@ -1,7 +1,7 @@
 import parse from 'html-react-parser';
 
-import Creator from "../../../public/vids/creator.mp4"
-import MarketOpportunity from "../../../public/vids/marketopp.mp4"
+// import Creator from "../../../public/vids/creator.mp4"
+// import MarketOpportunity from "../../../public/vids/marketopp.mp4"
 
 import Creator1Vid from "../../../public/vids/Creator-1.mp4"
 
@@ -12,8 +12,8 @@ import Creator1Icon from "../../../public/vids/creator-icon-1.mp4"
 import Creator2Icon from "../../../public/vids/creator-icon-2.mp4"
 import Creator3Icon from "../../../public/vids/creator-icon-3.mp4"
 
-import Proof from "../../../public/vids/proof.mp4"
-import Process from "../../../public/vids/process.mp4"
+// import Proof from "../../../public/vids/proof.mp4"
+// import Process from "../../../public/vids/process.mp4"
 
 
 import CreatorProcess1 from "../../../public/creatore-process-1.svg"
@@ -76,19 +76,20 @@ export const Creators = () => {
             {/* first container */}
            <div className="p-3 md:p-10 lg:p-10 flex flex-col items-center md:flex-row lg:flex-row">
                 <div className="w-full md:w-[60%] lg:w-[60%]">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Creator} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                        <div className='tags-btn'>Creator</div>
                         <div className='relative'>
-                            <div>
+                            <div className='hidden md:block lg:block'>
                                 <img className="brightness-[0.4] mix-blend-color-dodge" src={Integrator1Bg} alt="" />
                             </div>
-                            <div className='absolute top-0'>
+                            <div className='static md:absolute lg:absolute top-0'>
                                 <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Transform Your Unique Idea into a Unicorn with AI Agents.</h1>
                                 <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
                                     Join our AI Agent Incubator and leverage our 
@@ -101,7 +102,7 @@ export const Creators = () => {
                             </div>
                         </div>
                 </div>
-                <div className="mt-[50%] md:mt-0 lg:mt-0 w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
+                <div className="mt-4 md:mt-0 lg:mt-0 w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
                     <div className=" w-[70%] md:w-[50%] lg:w-[50%] flex justify-center items-center">
                         <video
                             className="mix-blend-exclusion"
@@ -119,14 +120,15 @@ export const Creators = () => {
            {/* second container */}
            <div className="integrator-second-container p-3 md:p-10 lg:p-10 flex flex-col items-center md:flex-row lg:flex-row gap-[80px]">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion w-[150px] md:w-[32%] lg:w-[32%]"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={MarketOpportunity} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                        <div className='tags-btn'>Market Opportunity</div>
                         <div className='leading-relaxed'> 
                             <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Creators Like You Will Shape the Future of AI Agents</h1>
                             <div className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
@@ -134,19 +136,19 @@ export const Creators = () => {
                             </div>
                     
                             <div className="mt-4 flex flex-col text-[#CECECE] text-base md:text-[1.1vw] lg:text-[1.1vw]">
-                                <div className="flex items-center gap-3 glass-card-1">
+                                <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                                     <div className="badge badge-secondary badge-xs"></div>
-                                    <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>AI Agents will be at the forefront of a new paradigm, revolutionizing industries and redefining how work gets done.</div>
+                                    <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>AI Agents will be at the forefront of a new paradigm, revolutionizing industries and redefining how work gets done.</div>
                                 </div>
 
-                                <div className="flex items-center gap-3 glass-card-2">
+                                <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                                     <div className="badge badge-secondary badge-xs"></div>
-                                    <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Industries worldwide are turning to innovative AI solutions to overcome challenges and stay competitive.</div>
+                                    <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Industries worldwide are turning to innovative AI solutions to overcome challenges and stay competitive.</div>
                                 </div>
 
-                                <div className="flex items-center gap-3 glass-card-3">
+                                <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                                     <div className="badge badge-secondary badge-xs"></div>
-                                    <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Ground Truth<sup>®</sup> offers a perfect setting for creators to develop pioneering AI agents and launch thriving businesses.</div>
+                                    <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Ground Truth<sup>®</sup> offers a perfect setting for creators to develop pioneering AI agents and launch thriving businesses.</div>
                                 </div>
                             </div>
                         </div>
@@ -193,7 +195,7 @@ export const Creators = () => {
                         <div className='h-[80%] md:h-[60%] lg:h-[60%] text-center text-[#CECECE]'>
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Seize a Unique Opportunity</h2>
                             <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
-                                The Generative AI market is exploding, presenting a once-in-a-generation opportunity akin to the internet boom. 
+                                The Generative AI market is exploding, presenting a <span className='uppercase font-bold text-accent'>once-in-a-generation opportunity</span> akin to the internet boom. 
                             </p>
                         </div>
                     </div>
@@ -213,7 +215,7 @@ export const Creators = () => {
                         <div className='h-[80%] md:h-[60%] lg:h-[60%] text-center text-[#CECECE]'>
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Build on a Powerful Foundation</h2>
                             <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">         
-                                Leverage our proprietary language chain framework, unmatched in the industry, to develop your unique Expert AI Agent™ and capture this massive market.
+                                Leverage our <span className='uppercase font-bold text-accent'>proprietary language chain framework,</span> unmatched in the industry, to develop your unique Expert AI Agent™ and capture this massive market.
                             </p>
                         </div>
                     </div>
@@ -233,7 +235,7 @@ export const Creators = () => {
                         <div className="h-[80%] md:h-[60%] lg:h-[60%] text-center text-[#CECECE]">
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Have a Partner for Success</h2>
                             <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
-                                We're invested in your success. Our team of seasoned experts will work side-by-side with you to bring your Expert AI Agent™ to market – at no cost if you're approved for our incubation program.
+                                We're invested in your success. Our team of seasoned experts will <span className='uppercase font-bold text-accent'>work side-by-side with you to bring your Expert AI Agent™ to market</span> – at no cost if you're approved for our incubation program.
                             </p>
                         </div>
                     </div>
@@ -244,32 +246,33 @@ export const Creators = () => {
             {/* 4th container */}
             <div className="p-3 md:p-10 lg:p-10 ">
                 <div className="w-full md:w-[70%] lg:w-[70%]">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Proof} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                        <div className='tags-btn'>Proof</div>
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Unlocking the $78 Billion COBOL Time Bomb.</h1>
                     <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"> Joseph.ai, the world's first COBOL Batch Transformation Program Expert AI Agent, shatters the limitations of traditional modernization approaches, achieving unprecedented performance and cost savings.</p>
                 </div>
                 <div className="flex items-center gap-[80px] justify-between flex-col md:flex-row lg:flex-row">
                     <div className="flex flex-col w-full md:w-[50%] lg:w-[50%] text-base md:text-[1.1vw] lg:text-[1.1vw]">
-                        <div className="flex items-center gap-3 glass-card-1">
+                        <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Current COBOL modernization strategies rely on costly and time-consuming manual rewrites or inefficient lift-and-shift migrations, failing to fully leverage the power of modern cloud environments.</div>
+                            <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Current COBOL modernization strategies rely on costly and time-consuming manual rewrites or inefficient lift-and-shift migrations, failing to fully leverage the power of modern cloud environments.</div>
                         </div>
-                        <div className="flex items-center gap-3 glass-card-2">
+                        <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>
+                            <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>
                                 Joseph.ai's patented generative AI engine deciphers intricate COBOL business logic and transforms it into high-performance, cloud-native SQL, achieving unparalleled optimization. 
                             </div>
                         </div>
-                        <div className="flex items-center gap-3 glass-card-3">
+                        <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Joseph.ai achieves a staggering 60x performance increase over legacy mainframes, while slashing operating costs by 85%, delivering a compelling ROI with payback in less than a year.</div>
+                            <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Joseph.ai achieves a staggering 60x performance increase over legacy mainframes, while slashing operating costs by 85%, delivering a compelling ROI with payback in less than a year.</div>
                         </div>
                     </div>
                     <div className="hidden md:flex lg:flex w-full md:w-[50%] lg:w-[50%] justify-center items-center">
@@ -295,23 +298,24 @@ export const Creators = () => {
             {/* process  */}
             <div className="hidden md:block lg:block">
                 <div className="flex flex-col items-center justify-center text-center">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Process} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                        <div className='tags-btn'>Process</div>
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">From Concept to Launch: A Clear Path to Success.</h1>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-[40px] mt-[20%] md:mt-[15%] lg:mt-[8%] relative">
                     <div className="absolute h-[350px] w-[350px]">
-                        <img src={CreatorProcess1} alt="" onClick={() => setProcessNo("1")} className={`hover:cursor-pointer absolute top-[-40%] right-[50%] translate-x-[50%] ${processNo === "1" ? "opacity-[1] !top-[-17%] z-10" : "opacity-[0.4]"}`}/>  
-                        <img src={CreatorProcess2} alt="" onClick={() => setProcessNo("2")} className={`hover:cursor-pointer absolute top-[10%] right-[-40%] ${processNo === "2" ? "opacity-[1] !right-[-15%] z-10" : "opacity-[0.4]"}`}/>
-                        <img src={CreatorProcess3} alt="" onClick={() => setProcessNo("3")} className={`hover:cursor-pointer absolute top-[60%] right-[-40%] ${processNo === "3" ? "opacity-[1] !right-[-15%] z-10" : "opacity-[0.4]"}`}/>
-                        <img src={CreatorProcess4} alt="" onClick={() => setProcessNo("4")} className={`hover:cursor-pointer absolute top-[60%] left-[-40%] ${processNo === "4" ? "opacity-[1] !left-[-15%] z-10" : "opacity-[0.4]"}`}/>
-                        <img src={CreatorProcess5} alt="" onClick={() => setProcessNo("5")} className={`hover:cursor-pointer absolute top-[10%] left-[-40%] ${processNo === "5" ? "opacity-[1] !left-[-15%] z-10" : "opacity-[0.4]"}`}/>
+                        <img src={CreatorProcess1} alt="" onClick={() => setProcessNo("1")} className={`hover:cursor-pointer absolute top-[-40%] right-[50%] translate-x-[50%] ${processNo === "1" ? "opacity-[1] !top-[-17%] z-[8]" : "opacity-[0.4]"}`}/>  
+                        <img src={CreatorProcess2} alt="" onClick={() => setProcessNo("2")} className={`hover:cursor-pointer absolute top-[10%] right-[-40%] ${processNo === "2" ? "opacity-[1] !right-[-15%] z-[8]" : "opacity-[0.4]"}`}/>
+                        <img src={CreatorProcess3} alt="" onClick={() => setProcessNo("3")} className={`hover:cursor-pointer absolute top-[60%] right-[-40%] ${processNo === "3" ? "opacity-[1] !right-[-15%] z-[8]" : "opacity-[0.4]"}`}/>
+                        <img src={CreatorProcess4} alt="" onClick={() => setProcessNo("4")} className={`hover:cursor-pointer absolute top-[60%] left-[-40%] ${processNo === "4" ? "opacity-[1] !left-[-15%] z-[8]" : "opacity-[0.4]"}`}/>
+                        <img src={CreatorProcess5} alt="" onClick={() => setProcessNo("5")} className={`hover:cursor-pointer absolute top-[10%] left-[-40%] ${processNo === "5" ? "opacity-[1] !left-[-15%] z-[8]" : "opacity-[0.4]"}`}/>
                     </div>
                     <div className="border-[20px] border-[#323449] rounded-full h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[400px] lg:w-[400px] flex items-center justify-center creator-circle">
                         <div className="m-10 text-center text-base md:text-[1.1vw] lg:text-[1.1vw]">
@@ -350,7 +354,7 @@ export const Creators = () => {
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
                         <h1 className="text-[40px] leading-[66px] font-bold mt-[26px] heading-text">FAQs</h1>
-                        <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently, so if none of these answers on the right address your concerns. Please reach out, we would be more than happy to clear up anything.</p>
+                        <p className="text-base lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently. If none of these answers on the right address your concerns, please reach out. We would be more than happy to clear up anything.</p>
                     </div>
                     <div className="mt-[40px]">
                         <p className="text-[#a5a5a5]">

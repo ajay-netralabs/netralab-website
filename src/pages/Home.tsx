@@ -1,16 +1,16 @@
 
 import { FaqAccordion, MarqueeLogo } from "../components"
 
-import Home1Vid from "../../public/home-1-vid-n.mp4"
+// import Home1Vid from "../../public/home-1-vid-n.mp4"
 
-import Home2Vid from "../../public/vids/home-2.mp4"
-import Versatile from "../../public/vids/versatile.mp4"
-import Whyus from "../../public/vids/whyus.mp4"
-import Stable from "../../public/vids/stable.mp4"
-import Scalable from "../../public/vids/scalable.mp4"
+// import Home2Vid from "../../public/vids/home-2.mp4"
+// import Versatile from "../../public/vids/versatile.mp4"
+// import Whyus from "../../public/vids/whyus.mp4"
+// import Stable from "../../public/vids/stable.mp4"
+// import Scalable from "../../public/vids/scalable.mp4"
 
-import Home3Vid from "../../public/vids/home-3.mp4"
-import Home4Vid from "../../public/vids/home-4.mp4"
+// import Home3Vid from "../../public/vids/home-3.mp4"
+// import Home4Vid from "../../public/vids/home-4.mp4"
 
 import Home1Icon from "../../public/vids/home-icon-1.mp4"
 import Home2Icon from "../../public/vids/home-icon-2.mp4"
@@ -26,6 +26,13 @@ import { resetPrevLocation } from "../store/locationSlice"
 import Marquee from "react-fast-marquee"
 
 import Integretor1Bg from "../../public/static_img/integrator-1-bg.jfif"
+
+import Lottie from "lottie-react";
+
+import firstAnimation from "../../public/animations/home/1.json"
+import secondAnimation from "../../public/animations/home/2.json"
+import thirdAnimation from "../../public/animations/home/3.json"
+import fourthAnimation from "../../public/animations/home/4.json"
 
 // import { ParticlesComponent } from "../components"
 import ReactGA from 'react-ga4';
@@ -66,11 +73,11 @@ export const Home = () => {
                 {/* texts */}
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div className="relative">
-                        <div>
+                        <div className="hidden md:block lg:block">
                             <img className="brightness-[0.4] mix-blend-color-dodge" src={Integretor1Bg} alt="" />
                         </div>
 
-                        <div className="absolute top-0">
+                        <div className="static md:absolute lg:absolute top-0">
                             <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.3] font-bold heading-text">
                                 Turn Human Expertise into <br /> Expert AI Agents</h1>
                             <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Netra Lab's <strong className="text-accent">Ground Truth<sup>®</sup></strong> is the <strong className="uppercase text-accent">world's first Enterprise Language Chain</strong> framework for building and deploying Expert <strong className="uppercase text-accent">AI Agents™</strong> into production, at scale.</p>
@@ -80,16 +87,17 @@ export const Home = () => {
                 </div>
 
                 {/* graphics */}
-                <div className="mt-[50%] md:mt-0 lg:mt-0 w-full md:w-[50%] lg:w-[50%]">
+                <div className="mt-4 md:mt-0 lg:mt-0 w-full md:w-[50%] lg:w-[50%]">
                     <div className="w-full md:w-[80%] lg:w-[80%] flex justify-center items-center mx-auto">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Home1Vid} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                        <Lottie animationData={firstAnimation}/>
 
                     </div>
                 </div>
@@ -113,34 +121,34 @@ export const Home = () => {
 
             {/* second container */}
             <div className="p-3 md:p-10 lg:p-10 second-container flex flex-col">
-                <video
+                {/* <video
                     className="mix-blend-exclusion w-[110px] md:w-[135px] lg:w-[150px]"
                     muted // @ts-ignore
                     autoPlay={"autoplay"}
                     preload="auto"
                     loop>
                     <source src={Versatile} type="video/mp4"/>
-                </video>
-
+                </video> */}
+                <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw] text-xl md:text-[1.25vw] lg:text[1.25vw]'>Versatile</div>
                 <div className="flex flex-col md:flex-row lg:flex-row">
                     <div className="w-full md:w-[50%] lg:w-[50%]">
-                        <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold heading-text">To simplify the complexity of Generative AI.</h1>
+                        <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] mt-[26px] leading-relaxed font-bold heading-text">To simplify the complexity of Generative AI.</h1>
                         <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] break-words mt-[20px]">Ground Truth<sup>®</sup> simplifies AI Agent development with an intuitive drag-and-drop interface, enabling rapid creation of complex agentic workflows.</p>
                         {/* lists */}
                         <div className="mt-[40px] flex flex-col text-[#CECECE]">
-                            <div className="flex items-center gap-3 glass-card-1">
+                            <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold text-accent uppercase">Integrate with any model,</span> with no limitations.</div>
+                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold text-accent uppercase">Integrate with any model,</span> with no limitations.</div>
                             </div>
 
-                            <div className="flex items-center gap-3 glass-card-2">
+                            <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]">Easily craft prompts that guide your agent to <span className="font-bold text-accent uppercase"> act on your data exactly as you need.</span></div>
+                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Easily craft prompts that guide your agent to <span className="font-bold text-accent uppercase"> act on your data exactly as you need.</span></div>
                             </div>
 
-                            <div className="flex items-center gap-3 glass-card-3">
+                            <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]">Connect and synchronize with your <span className="font-bold text-accent uppercase">existing tools and systems for a unified workflow</span>.</div>
+                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Connect and synchronize with your <span className="font-bold text-accent uppercase">existing tools and systems for a unified workflow</span>.</div>
                             </div>
                         </div>
                     </div>
@@ -148,30 +156,80 @@ export const Home = () => {
                     {/* graphics */}
                     <div className="mt-8 md:mt-[26px] lg:mt-[26px] w-full md:w-[50%] lg:w-[50%]">
                         <div className="w-full md:w-[80%] lg:w-[80%] flex justify-center items-center mx-auto">
-                            <video
+                            {/* <video
                                 className="mix-blend-lighten"
                                 muted // @ts-ignore
                                 autoPlay={"autoplay"}
                                 preload="auto"
                                 loop>
                                 <source src={Home2Vid} type="video/mp4"/>
-                            </video>
+                            </video> */}
+                            <div className="animation-border">
+                                <Lottie animationData={secondAnimation}/>
+                                <div className="animation-box">
+                                <svg width="330" height="94" viewBox="0 0 330 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="0.5" width="330" height="93" rx="10" fill="url(#paint0_linear_723_49476)"/>
+                                    <g clip-path="url(#clip0_723_49476)">
+                                    <g opacity="0.4">
+                                    <circle cx="25" cy="17" r="5" fill="#FCA016"/>
+                                    <circle opacity="0.1" cx="25" cy="27" r="3" fill="#FCA016"/>
+                                    </g>
+                                    <rect opacity="0.4" x="42" y="12" width="150.584" height="8" rx="4" fill="#B1B1B1"/>
+                                    </g>
+                                    <g clip-path="url(#clip1_723_49476)">
+                                    <g opacity="0.4">
+                                    <circle cx="25" cy="43" r="5" fill="#FCA016"/>
+                                    <circle opacity="0.1" cx="25" cy="53" r="3" fill="#F3F6F5"/>
+                                    </g>
+                                    <g opacity="0.4">
+                                    <rect x="42" y="38" width="242" height="8" rx="4" fill="#B1B1B1"/>
+                                    </g>
+                                    </g>
+                                    <g clip-path="url(#clip2_723_49476)">
+                                    <g opacity="0.4">
+                                    <circle cx="25" cy="69" r="5" fill="#FCA016"/>
+                                    <circle opacity="0.1" cx="25" cy="79" r="3" fill="#FCA016"/>
+                                    </g>
+                                    <g opacity="0.4">
+                                    <rect x="42" y="64" width="242" height="8" rx="4" fill="#B1B1B1"/>
+                                    </g>
+                                    </g>
+                                    <defs>
+                                    <linearGradient id="paint0_linear_723_49476" x1="205" y1="-24" x2="195" y2="104.5" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0B0B22"/>
+                                    <stop offset="1" stop-color="#0B0B22"/>
+                                    </linearGradient>
+                                    <clipPath id="clip0_723_49476">
+                                    <rect width="172.584" height="18" fill="white" transform="translate(20 12)"/>
+                                    </clipPath>
+                                    <clipPath id="clip1_723_49476">
+                                    <rect width="264" height="18" fill="white" transform="translate(20 38)"/>
+                                    </clipPath>
+                                    <clipPath id="clip2_723_49476">
+                                    <rect width="264" height="18" fill="white" transform="translate(20 64)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
             {/* third container */}
-                <div className="p-3 md:p-10 lg:p-10 flex flex-col justify-center items-center third-container home-3-container">
+                <div className="p-3 mt-[100px] md:mt-0 lg:mt-0 md:p-10 lg:p-10 flex flex-col justify-center items-center third-container home-3-container">
                     {/* <ParticlesComponent /> */}
-                    <video
+                    {/* <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Whyus} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                    <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Why Us?</div>
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.2] text-center mt-[26px] font-bold heading-text">The only platform to provide complete control over the entire agentic workflow lifecycle, using our proprietary framework.</h1>
                     {/* cards */}
                     <div className="hidden md:flex lg:flex w-full mt-[90px]">
@@ -527,42 +585,44 @@ export const Home = () => {
             {/* fourth container */}
             <div className="p-3 md:p-10 lg:p-10 ">
                 <div className="w-full md:w-[70%] lg:w-[70%] flex flex-col justify-end">
-                    <video
+                    {/* <video
                         className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                         muted // @ts-ignore
                         autoPlay={"autoplay"}
                         preload="auto"
                         loop>
                         <source src={Stable} type="video/mp4"/>
-                    </video>
+                    </video> */}
+                    <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Stable</div>
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] mt-[26px] font-bold heading-text leading-relaxed">Ensure Enterprise grade reliability and governance.</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] mt-[20px] text-[#CECECE] leading-relaxed">Enterprises demand security and accountability, the <span className="uppercase text-[18px] font-bold leading-relaxed">Ground Truth<sup>®</sup> Framework</span> delivers with enterprise-grade control mechanisms:</p>
                 </div>
                 <div className="flex items-center gap-[40px] flex-col md:flex-row lg:flex-row mt-[20px]">
                     <div className="w-full md:w-[50%] lg:w-[50%] flex justify-center items-center">
                         <div className=" w-[90%] md:w-[90%] lg:w-[100%] flex justify-center items-center">
-                            <video
+                            {/* <video
                                 className="mix-blend-exclusion"
                                 muted // @ts-ignore
                                 autoPlay={"autoplay"}
                                 preload="auto"
                                 loop>
                                 <source src={Home3Vid} type="video/mp4"/>
-                            </video>
+                            </video> */}
+                            <Lottie animationData={thirdAnimation} style={{ opacity: 0.5}}/>
                         </div>
                     </div>
                     <div className="flex flex-col text-[#CECECE] w-full md:w-[50%] lg:w-[50%] mt-[20px] md:mt-0 lg:mt-0">
-                        <div className="flex items-center gap-3 glass-card-1">
+                        <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold"></span> Fine-tune agent responses and decision-marking processes.</div>
+                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold"></span> Fine-tune agent responses and decision-making processes by <span className="font-bold leading-relaxed text-accent uppercase">ADJUSTING HYPERPARAMETERS AND LEVERAGE ADVANCED FINE TUNING TECHNIQUES.</span></div>
                         </div>
-                        <div className="flex items-center gap-3 glass-card-2">
+                        <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]">Our unique Validation mode enables <span className="font-bold leading-relaxed text-accent uppercase">the debugging and optimization</span> of your agentic workflows.</div>
+                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Our unique Validation mode enables <span className="font-bold leading-relaxed text-accent uppercase">the debugging and optimization</span> of your agentic workflows.</div>
                         </div>
-                        <div className="flex items-center gap-3 glass-card-3">
+                        <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold leading-relaxed text-accent uppercase">Guarantee security by deploying</span> agents in your environment, using your data.</div>
+                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold leading-relaxed text-accent uppercase">Guarantee security by deploying</span> agents in your environment, using your data.</div>
                         </div>
                     </div>
                 </div>
@@ -571,46 +631,49 @@ export const Home = () => {
             {/* fifth container */}
             <div className="p-3 md:p-10 lg:p-10">
                 <div className="w-full md:w-[70%] lg:w-[70%]">
-                    <video
+                    {/* <video
                         className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                         muted // @ts-ignore
                         autoPlay={"autoplay"}
                         preload="auto"
                         loop>
                         <source src={Scalable} type="video/mp4"/>
-                    </video>
+                    </video> */}
+                    <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Scalable</div>
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text">And endless scaling possibilities for your AI Agents.</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE]">The Ground Truth<sup>®</sup> framework excels in the orchestration of complex agentic workflows, providing actual clarity around usage.</p>
                 </div>
                 <div className="flex justify-between mt-[20px] md:mt-0 lg:mt-0 items-center flex-col md:flex-row lg:flex-row">
                     <div className="flex flex-col text-[#CECECE]  w-full md:w-[50%] lg:w-[50%] mt-[20px] md:mt-12 lg:mt-12">
-                        <div className="flex items-center gap-3 glass-card-1">
+                        <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold leading-relaxed text-accent uppercase">Track your token consumption and monitor usage</span> simultaneously across all agentic workflows.</div>
+                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold leading-relaxed text-accent uppercase">Track your token consumption and monitor usage</span> simultaneously across all agentic workflows.</div>
                         </div>
-                        <div className="flex items-center gap-3 glass-card-2">
+                        <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]">
+                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">
                                 Extract insights from diverse sources through <span className="font-bold leading-relaxed text-accent uppercase"> concurrent information retrieval.</span>
                             </div>
                         </div>
-                        <div className="flex items-center gap-3 glass-card-3">
+                        <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className="text-base md:text-[1.15vw] lg:text-[1.15vw]">
+                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">
                                 Agents that <span className="font-bold leading-relaxed text-accent uppercase">operate asynchronously,</span> ensuring tasks are executed without waiting for sequential order.
                             </div>
                         </div>
                     </div>
                     <div className="w-full md:w-[50%] lg:w-[50%] flex justify-center items-center">
                         <div className=" w-[90%] md:w-[70%] lg:w-[70%] flex justify-center items-center">
-                            <video
+                            {/* <video
                                 className="mix-blend-lighten"
                                 muted // @ts-ignore
                                 autoPlay={"autoplay"}
                                 preload="auto"
                                 loop>
                                 <source src={Home4Vid} type="video/mp4"/>
-                            </video>
+                            </video> */}
+
+                            <Lottie animationData={fourthAnimation} style={{ opacity: 0.5}}/>
                         </div>
                     </div>
                 </div>
@@ -712,7 +775,7 @@ export const Home = () => {
                     <div>
                         <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text">FAQs</h1>
                         <div className=" flex justify-center items-center mx-auto">
-                            <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently, so if none of these answers on the right address your concerns. Please reach out, we would be more than happy to clear up anything.</p>
+                            <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently. If none of these answers on the right address your concerns, please reach out. We would be more than happy to clear up anything.</p>
                         </div>
                     </div>
                     <div className="mt-[40px] ">

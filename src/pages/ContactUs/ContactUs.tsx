@@ -182,7 +182,7 @@ export const ContactUsPage = ({ type }: {type:string}) => {
     // }
 
     return (
-        <div className="mb-20">
+        <div className="mb-2">
             {/* header */}
             <div className="w-full relative">
                 <img className="w-full object-cover" src={careerImg} alt="careers" />

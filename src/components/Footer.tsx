@@ -32,7 +32,7 @@ export const Footer = () => {
     return (
         <>
         {/* logo */}
-        <div className="flex items-center p-10 pb-0 gap-4">
+        <div className="flex items-center p-10 py-0 gap-4">
                 <img src={GTLOGO} alt="logo" height={"70px"} width={"70px"} />
                 <div className="border-b border-[#0FAE9642] w-full">
                     <p className="font-bold text-[28px] mb-2">Netra Labs</p>

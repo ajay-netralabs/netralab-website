@@ -25,20 +25,20 @@ export const PrivacyPolicy = () => {
     }, [])
 
     return (
-        <div className="extra-page">
+        <div className="extra-page p-3 md:p-[5rem] lg:p-[5rem] text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] break-words">
              {/* heading */}
              <div>
                 <h1>PRIVACY NOTICE</h1>
                 <p>Last updated 05/14/2024</p>
             </div>
-            <div>
+            <div className="text">
                 This privacy notice for __________ ("we," "us," or "our"), describes how and why we might collect, store, use, and/or share ("process") your information when you use our services ("Services"), such as when you:
                 <br />Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services.
             </div>
 
             <div>
                 <h1>SUMMARY OF KEY POINTS</h1>
-                <div>
+                <div className="text">
                     This summary provides key points from our privacy notice, but you can find out more details about any of these topics by clicking the link following each key point or by using our table of contents below to find the section you are looking for.
                     <br />What personal information do we process? When you visit, use, or navigate our Services, we may process personal information depending on how you interact with us and the Services, the choices you make, and the products and features you use. Learn more about personal information you disclose to us.
                     <br />Do we process any sensitive personal information? We do not process sensitive personal information.
@@ -54,7 +54,7 @@ export const PrivacyPolicy = () => {
              {/* table of Content */}
             <div>
                 <h1>TABLE OF CONTENTS</h1>
-                <div className="flex flex-col table-nl">
+                <div className="flex flex-col table-nl !w-full md:w-[50%] lg:w-[50%]">
                     <div className="flex">
                         <p>1</p>
                         <p className="hover:cursor-pointer" onClick={() => scrollTOId("s1")}>WHAT INFORMATION DO WE COLLECT?</p>

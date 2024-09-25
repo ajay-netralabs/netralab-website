@@ -219,14 +219,14 @@ export const Langchain = () => {
     return (
     <div>
         {/* header */}
-        <div className="w-full h-[70vh] flex flex-col justify-center items-center designer">
+        <div className="w-full h-[400px] md:h-[70vh] lg:h-[70vh] flex flex-col justify-center items-center designer">
             {/* <img className="w-full h-full object-cover" src={Designer} alt="language chain" /> */}
             <div className="m-3 md:m-12 lg:m-12">
-                <p className="text-base md:text-[1.2vw] lg:text-[1.2vw] lg:leading-relaxed text-[#CECECE]">For Data Scientists Focused on Deploying Expert AI Agents®</p>
+                <p className="text-base md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed text-[#CECECE]">For Data Scientists Focused on Deploying Expert AI Agents®</p>
                 <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.2] font-bold heading-text break-words mt-4">
                  Enterprise Language Chains: The Key to Production-Grade AI Agents
                 </h1>
-                <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed text-[#CECECE] mt-4">Discover how Enterprise Language Chains empower data scientists to build efficient, secure, and scalable AI agents tailored for enterprise 
+                <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] mt-4">Discover how Enterprise Language Chains empower data scientists to build efficient, secure, and scalable AI agents tailored for enterprise 
                 demands.</p>
 
                 <button className="btn btn-accent rounded-sm px-6 py-4 mt-4 !text-white" onClick={() => handleNavigate()}>Request Demo</button>
@@ -341,7 +341,7 @@ export const Langchain = () => {
                             <div className="text-black w-full  md:w-[50%] lg:w-[50%]">
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tl-xl md:rounded-br-xl lg:rounded-tl-xl lg:rounded-br-xl ${limitation === 1 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(1)}>
                                     <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={CustomizationAnimation} loop style={{ height: 80}}/>
+                                        <Lottie animationData={CustomizationAnimation} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${limitation === 1 ? "text-accent" : ""}`}>Lack of Customization</p>
                                             <div className="text-base md:text-[1vw] lg:text-[1vw]">
@@ -353,9 +353,9 @@ export const Langchain = () => {
                                     </div>
                                 </div>
 
-                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer rounded-tr-xl rounded-br-xl ${limitation === 2 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(2)}>
+                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${limitation === 2 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(2)}>
                                     <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={SlowAnimation} loop style={{ height: 80}}/>
+                                        <Lottie animationData={SlowAnimation} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold  ${limitation === 2 ? "text-accent" : ""}`}>Performance Bottlenecks</p>
                                             <div className="text-base md:text-[1vw] lg:text-[1vw]">
@@ -366,9 +366,9 @@ export const Langchain = () => {
                                     </div>
                                 </div>
 
-                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer rounded-tr-xl rounded-br-xl ${limitation === 3 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(3)}>
+                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${limitation === 3 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(3)}>
                                     <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={SecurityAnimation} loop style={{ height: 80}}/>
+                                        <Lottie animationData={SecurityAnimation} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${limitation === 3 ? "text-accent" : ""}`}>Security Concerns</p>
                                             <div className="text-base md:text-[1vw] lg:text-[1vw]">
@@ -378,9 +378,9 @@ export const Langchain = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer rounded-tr-xl rounded-br-xl ${limitation === 4 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(4)}>
+                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${limitation === 4 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(4)}>
                                     <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={IntegrateAnimations} loop style={{ height: 80}}/>
+                                        <Lottie animationData={IntegrateAnimations} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${limitation === 4 ? "text-accent" : ""}`}>Integration Hurdles</p>
                                             <div className="text-base md:text-[1vw] lg:text-[1vw]">
@@ -391,9 +391,9 @@ export const Langchain = () => {
                                     </div>
                                 </div>
 
-                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer rounded-tr-xl rounded-br-xl ${limitation === 5 ? "bg-[#CECECE]" : ""}`}  onClick={() => setLimitation(5)}>
+                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${limitation === 5 ? "bg-[#CECECE]" : ""}`}  onClick={() => setLimitation(5)}>
                                     <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={ControlAnimation} loop style={{ height: 80}}/>
+                                        <Lottie animationData={ControlAnimation} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${limitation === 5 ? "text-accent" : ""}`}>Limited Control</p>
                                             <div className="text-base md:text-[1vw] lg:text-[1vw]">
@@ -404,9 +404,9 @@ export const Langchain = () => {
                                     </div>
                                 </div>
         
-                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer rounded-tr-xl rounded-bl-xl ${limitation === 6 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(6)}>
+                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer rounded-tr-xl rounded-bl-xl rounded-br-xl md:rounded-br-none lg:rounded-br-none ${limitation === 6 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(6)}>
                                     <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={ScalabilityAnimation} loop style={{ height: 80}}/>
+                                        <Lottie animationData={ScalabilityAnimation} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${limitation === 6 ? "text-accent" : ""}`}>Scalability Issues</p>
                                             <div className="text-base md:text-[1vw] lg:text-[1vw]">
@@ -500,7 +500,7 @@ export const Langchain = () => {
                             <div className="text-black w-full md:w-[50%] lg:w-[50%]">
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tl-xl md:rounded-br-xl lg:rounded-tl-xl lg:rounded-br-xl ${engineData === 1 ? "bg-[#CECECE]" : ""}`} onClick={() => setEngineData(1)}>
                                     <div className="p-2 flex gap-4 items-center">
-                                        <Lottie animationData={flowAnimation} loop style={{ height: 80}}/>
+                                        <Lottie animationData={flowAnimation} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${engineData === 1 ? "text-accent" : ""}`}>Engineered Tracks (Custom Workflows)</p>
                                         </div>
@@ -510,7 +510,7 @@ export const Langchain = () => {
 
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${engineData === 2 ? "bg-[#CECECE]" : ""}`} onClick={() => setEngineData(2)}>
                                     <div className="p-2 flex gap-4 items-center">
-                                        <Lottie animationData={trainAnimation} loop style={{ height: 80}}/>
+                                        <Lottie animationData={trainAnimation} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold  ${engineData === 2 ? "text-accent" : ""}`}>High-Performance Trains (Optimized AI Agents)</p>
                                         </div>
@@ -519,7 +519,7 @@ export const Langchain = () => {
 
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${engineData === 3 ? "bg-[#CECECE]" : ""}`} onClick={() => setEngineData(3)}>
                                     <div className="p-2 flex gap-4 items-center">
-                                        <Lottie animationData={cubeAnimation} loop style={{ height: 80}}/>
+                                        <Lottie animationData={cubeAnimation} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${engineData === 3 ? "text-accent" : ""}`}>Central Control Station (Unified Platform)</p>
                                         </div>
@@ -527,16 +527,16 @@ export const Langchain = () => {
                                 </div>
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${engineData === 4 ? "bg-[#CECECE]" : ""}`} onClick={() => setEngineData(4)}>
                                     <div className="p-2 flex gap-4 items-center">
-                                        <Lottie animationData={SecurityAnimation} loop style={{ height: 80}}/>
+                                        <Lottie animationData={SecurityAnimation} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${engineData === 4 ? "text-accent" : ""}`}>Safety Protocols (Security Measures)</p>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-bl-xl lg:rounded-tr-xl lg:rounded-bl-xl ${engineData === 5 ? "bg-[#CECECE]" : ""}`}  onClick={() => setEngineData(5)}>
+                                <div className={`hover:bg-[#CECECE] hover:cursor-pointer rounded-tr-xl rounded-bl-xl rounded-br-xl md:rounded-br-none lg:rounded-br-none  md:rounded-tr-xl md:rounded-bl-xl lg:rounded-tr-xl lg:rounded-bl-xl ${engineData === 5 ? "bg-[#CECECE]" : ""}`}  onClick={() => setEngineData(5)}>
                                     <div className="p-2 flex gap-4 items-center">
-                                        <Lottie animationData={optimizationAnimation} loop style={{ height: 80}}/>
+                                        <Lottie animationData={optimizationAnimation} loop style={{ height: 80, width: 80}}/>
                                         <div>
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${engineData === 5 ? "text-accent" : ""}`}>Efficient Fuel Use (Resource Optimization)</p>
                                         </div>

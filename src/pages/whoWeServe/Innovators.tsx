@@ -1,10 +1,10 @@
 
 import parse from 'html-react-parser';
 
-import Innovator from "../../../public/vids/Innovator.mp4"
-import Opportunity from "../../../public/vids/opportunity.mp4"
-import Proof from "../../../public/vids/proof.mp4"
-import Process from "../../../public/vids/process.mp4"
+// import Innovator from "../../../public/vids/Innovator.mp4"
+// import Opportunity from "../../../public/vids/opportunity.mp4"
+// import Proof from "../../../public/vids/proof.mp4"
+// import Process from "../../../public/vids/process.mp4"
 
 import Innovator1Icon from "../../../public/vids/innovator-icon-1.mp4"
 import Innovator2Icon from "../../../public/vids/innovator-icon-2.mp4"
@@ -83,19 +83,20 @@ export const Innovators = () => {
             {/* first container */}
            <div className="p-3 md:p-10 lg:p-10 flex flex-col items-center md:flex-row lg:flex-row">
                 <div className="w-full md:w-[60%] lg:w-[60%]">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Innovator} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                        <div className='tags-btn'>Innovator</div>
                         <div className='relative'>
-                            <div>
+                            <div className='hidden md:block lg:block'>
                                 <img className="brightness-[0.4] mix-blend-color-dodge" src={Integrator1Bg} alt="" />
                             </div>
-                            <div className='absolute top-0'>
+                            <div className='static md:absolute lg:absolute top-0'>
                                 <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Transform your Domain Expertise into Cutting-Edge AI Agents</h1>
                                 <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">Leverage the <span className="font-bold text-accent">Ground Truth<sup>®</sup></span> framework to build the next generation of AI Agents, powered by your expertise, for your domain, and scale your business like never before.</p>
                                 <div className="mt-[40px]">
@@ -104,7 +105,7 @@ export const Innovators = () => {
                             </div>
                         </div>
                 </div>
-                <div className="mt-[50%] md:mt-0 lg:mt-0  w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
+                <div className="mt-4 md:mt-0 lg:mt-0  w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
                     <div className="w-[70%] md:w-[50%] lg:w-[50%] flex justify-center items-center">
                         <video
                             className="mix-blend-exclusion"
@@ -122,14 +123,15 @@ export const Innovators = () => {
            {/* second container */}
            <div className="integrator-second-container mt-1 p-3 md:p-10 lg:p-10 flex flex-col items-center justify-between md:flex-row lg:flex-row">
                 <div className="w-full md:w-[60%] lg:w-[60%]">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Opportunity} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                        <div className='tags-btn'>Opportunity</div>
                         <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Redefine Business with the Power of AI Agents</h1>
                         <div className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
                             <p>AI is about to completely change how you use computers </p>
@@ -137,19 +139,19 @@ export const Innovators = () => {
                         </div>
                 
                         <div className="mt-4 flex flex-col text-[#CECECE] text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">
-                            <div className="flex items-center gap-3 glass-card-1">
+                            <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div>The global AI market is projected to surpass $2.6 trillion by 2030, with AI Agents driving significant growth.</div>
+                                <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>The global AI market is projected to surpass $2.6 trillion by 2030, with AI Agents driving significant growth.</div>
                             </div>
 
-                            <div className="flex items-center gap-3 glass-card-2">
+                            <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div>These agents, much like the internet, disrupt business operations by introducing a new paradigm for product and service delivery, with unmatched value.</div>
+                                <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>These agents, much like the internet, disrupt business operations by introducing a new paradigm for product and service delivery, with unmatched value.</div>
                             </div>
 
-                            <div className="flex items-center gap-3 glass-card-3">
+                            <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div>Ground Truth<sup>®</sup> allows you to harness this shift, turning your IP into a dynamic Expert AI Agent™.</div>
+                                <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>Ground Truth<sup>®</sup> allows you to harness this shift, turning your IP into a dynamic Expert AI Agent™.</div>
                             </div>
                         </div>
                 
@@ -233,39 +235,40 @@ export const Innovators = () => {
             {/* 4th container */}
             <div className="mt-1 p-3 md:p-10 lg:p-10 ">
                 <div className="w-full md:w-[70%] lg:w-[70%]">
-                    <video
+                    {/* <video
                         className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                         muted // @ts-ignore
                         autoPlay={"autoplay"}
                         preload="auto"
                         loop>
                         <source src={Proof} type="video/mp4"/>
-                    </video>
+                    </video> */}
+                    <div className='tags-btn'>Proof</div>
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Unlocking the Power of AI for a Sustainable Energy Future.</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">Bradley.ai, developed through our "Innovator" channel, is a testament to the transformative potential of combining deep industry expertise with cutting-edge AI.</p>
                 </div>
                 <div className="mt-4 flex items-center gap-[80px] flex-col-reverse md:flex-row lg:flex-row text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">
                     <div className="flex flex-col w-full md:w-[50%] lg:w-[50%]">
-                        <div className="flex items-center gap-3 glass-card-1">
+                        <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
+                            <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
                                 <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent uppercase'>Problem Statement</span>
                                 <span>
                                     Traditional DER analysis is a complex and time-consuming process, hindering the rapid adoption of clean energy solutions.                                </span>
                                 </div>
                         </div>
-                        <div className="flex items-center gap-3 glass-card-2">
+                        <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
+                            <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
                                 <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent uppercase'>Solution Statement</span>
                                 <span>
                                     Bradley.ai augments this process by fusing decades of DER analysis expertise with advanced generative AI and proprietary models, enabling rapid, accurate, and customized DER system recommendations.
                                 </span>
                              </div>
                         </div>
-                        <div className="flex items-center gap-3 glass-card-3">
+                        <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div className='text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
+                            <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
                                 <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent uppercase'>Potential Impact</span>
                                 <span>
                                     This accelerated DER adoption, driven by Bradley.ai's insights, can significantly reduce carbon emissions and accelerate the transition to a cleaner, more sustainable energy landscape.
@@ -301,14 +304,15 @@ export const Innovators = () => {
             {/* 5th container */}
             <div className="mt-1 p-3 md:p-10 lg:p-10 ">
                 <div className="flex flex-col items-center justify-center text-center">
-                    <video
+                    {/* <video
                         className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                         muted // @ts-ignore
                         autoPlay={"autoplay"}
                         preload="auto"
                         loop>
                         <source src={Process} type="video/mp4"/>
-                    </video>
+                    </video> */}
+                    <div className='tags-btn'>Process</div>
                     <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Turning Your IP into Expert AI Agents™ is a clear process.</h1>
                 </div>
             </div>
@@ -371,7 +375,7 @@ export const Innovators = () => {
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
                         <h1 className="text-[40px] leading-[66px] font-bold mt-[26px] heading-text">FAQs</h1>
-                        <p className="text-lg lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently, so if none of these answers on the right address your concerns. Please reach out, we would be more than happy to clear up anything.</p>
+                        <p className="text-lg lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently. If none of these answers on the right address your concerns, please reach out. We would be more than happy to clear up anything.</p>
                     </div>
                     <div className="mt-[40px]">
                         <p className="text-[#a5a5a5]">

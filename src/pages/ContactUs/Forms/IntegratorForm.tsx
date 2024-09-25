@@ -12,7 +12,7 @@ export const IntegratorForm = () => {
     }
 
     return (
-        <div className="h-[820px] md:h-[800px] lg:[800px] max-w-[650px]">
+        <div className="max-w-[650px]">
                 <iframe
                 src="https://api.leadconnectorhq.com/widget/form/s7iYzGLOdPnZLM3hScna"
                 style={{width: "100%", height: "100%", border: "none", borderRadius: "3px"}}

@@ -13,7 +13,7 @@
 
 .glass-card-1 {
     display: flex;
-    padding: 24px;
+    /* padding: 24px; */
     align-items: center;
     gap: 20px;
     align-self: stretch;
@@ -29,7 +29,7 @@
 
 .glass-card-2 {
     display: flex;
-    padding: 24px;
+    /* padding: 24px; */
     align-items: center;
     gap: 20px;
     align-self: stretch;
@@ -43,7 +43,7 @@
 
 .glass-card-3 {
     display: flex;
-    padding: 24px;
+    /* padding: 24px; */
     align-items: center;
     gap: 20px;
     align-self: stretch;
@@ -187,7 +187,7 @@ p, span, li, div {
     height: 6px;
     width: 6px;
     background: #0FAE96;
-    z-index: 111;
+    z-index: 8;
     top: -10%;
     border-radius: 100%;
     box-shadow: inset 0px 0px 10px 2px rgba(0,255,182,0.5),
@@ -218,4 +218,82 @@ p, span, li, div {
         top: -10%;
         right: -1%;
     }
+}
+
+
+.glass-text {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+
+.tags-btn {
+    font-weight: 700;
+    border: 1px solid #0FAE96;
+    color: #0FAE96;
+    display: inline-block;
+    /* font-size: 1.25vw; */
+    border-radius: 4px;
+    padding: 4px 25px;
+    letter-spacing: 0.025rem;
+    filter: brightness(0.8);
+    position: relative;
+    width: fit-content;
+}
+
+.tags-btn::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 3px;
+    background: #0FAE96;
+    z-index: 8;
+    top: -10%;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 10px 2px rgba(0,255,182,0.5),
+                    0px 0px 10px 2px rgba(0,255,135,1);
+
+    animation:  moveTags 20s infinite;
+    animation-timing-function: linear;
+    filter: blur(1px);
+}
+
+
+@keyframes moveTags {
+    0%{
+        top: -5%;
+        right: -1%;
+    }
+    25%{
+        top: 93%;
+        right: -1%;
+    }
+    50%{
+        top:99%;
+        right: 99%;
+    }
+    75%{
+        top: -5%;
+        right: 99%;
+    }
+    100%{
+        top: -5%;
+        right: -1%;
+    }
+}
+
+.animation-border {
+    border: 1px solid rgba(15, 174, 150, 0.26);
+    /* border-image: linear-gradient(0deg,  rgba(15, 174, 150, 0.26) 0%, rgba(15, 174, 150, 0.26) 100%) 1; */
+    padding: 15px;
+    border-radius: 27px;
+    position: relative;
+}
+
+.animation-box {
+    position: absolute;
+    right: 5%;
+    top: 90%;
 }
