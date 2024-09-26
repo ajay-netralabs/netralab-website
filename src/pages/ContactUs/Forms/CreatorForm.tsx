@@ -2,7 +2,9 @@
 import ReactGA from 'react-ga4';
 
 export const CreatorForm = () => {
-    if(import.meta.env.PROD) {
+    // only send analytics on production environment
+    const { PROD } = import.meta.env
+    if(PROD) {
         ReactGA.send({
             hitType: "pageview",
             page: "/contact-us-creators-ai-agents/",

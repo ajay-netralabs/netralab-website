@@ -21,7 +21,9 @@ export const Blog = () => {
         const blogData = blogs.find((blog:any) => blog.pathUrl === pathUrl)
         setBlog(blogData)
 
-        if(import.meta.env.PROD && blogData?.pathUrl) {
+        // only send analytics on production environment
+        const { PROD } = import.meta.env
+        if(PROD && blogData?.pathUrl) {
             ReactGA.send({
                 hitType: "pageview",
                 page: blogData.pathUrl,

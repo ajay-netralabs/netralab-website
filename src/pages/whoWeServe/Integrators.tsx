@@ -27,8 +27,9 @@ import card3Icon from "../../../public/icons/integrators/card3.svg"
 // import firstAnimation from "../../../public/animations/integrators/1.json"
 
 export const Integrators = () => {
-
-    if(import.meta.env.PROD) {
+    // only send analytics on production environment
+    const { PROD } = import.meta.env
+    if(PROD) {
         ReactGA.send({
             hitType: "pageview",
             page: "/ai-agents-for-integrators/",

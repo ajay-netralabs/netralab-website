@@ -24,7 +24,9 @@ import card3Icon from "../../../public/icons/innovators/card3.svg"
 
 export const Innovators = () => {
 
-    if(import.meta.env.PROD) {
+    // only send analytics on production environment
+    const { PROD } = import.meta.env
+    if(PROD) {
         ReactGA.send({
             hitType: "pageview",
             page: "/ai-agents-for-innovators/",

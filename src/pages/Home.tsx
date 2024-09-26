@@ -28,8 +28,9 @@ import card3Icon from "../../public/icons/home/card3.svg"
 import ReactGA from 'react-ga4';
 
 export const Home = () => {
-    console.log("test", import.meta.env)
-    if(import.meta.env.PROD) {
+    // only send analytics on production environment
+    const { PROD } = import.meta.env
+    if(PROD) {
         ReactGA.send({
             hitType: "pageview",
             page: "/",
