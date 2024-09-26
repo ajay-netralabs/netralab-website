@@ -122,7 +122,7 @@ export const Home = () => {
                 <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw] text-xl md:text-[1.25vw] lg:text[1.25vw]'>Versatile</div>
                 <div className="flex flex-col md:flex-row lg:flex-row">
                     <div className="w-full md:w-[50%] lg:w-[50%]">
-                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] mt-[26px] leading-relaxed font-bold heading-text">To simplify the complexity of Generative AI.</h1>
+                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] mt-[26px] leading-[1.3] font-bold heading-text">To simplify the complexity of Generative AI.</h1>
                         <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] break-words mt-[20px]">Ground Truth<sup>®</sup> simplifies AI Agent development with an intuitive drag-and-drop interface, enabling rapid creation of complex agentic workflows.</p>
                         {/* lists */}
                         <div className="mt-[40px] flex flex-col text-[#CECECE]">
@@ -584,7 +584,7 @@ export const Home = () => {
                         <source src={Stable} type="video/mp4"/>
                     </video> */}
                     <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Stable</div>
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] mt-[26px] font-bold heading-text leading-relaxed">Ensure Enterprise grade reliability and governance.</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] mt-[26px] font-bold heading-text leading-[1.3]">Ensure Enterprise grade reliability and governance.</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] mt-[20px] text-[#CECECE] leading-relaxed">Enterprises demand security and accountability, the <span className="uppercase text-[18px] font-bold leading-relaxed">Ground Truth<sup>®</sup> Framework</span> delivers with enterprise-grade control mechanisms:</p>
                 </div>
                 <div className="flex items-center gap-[40px] flex-col md:flex-row lg:flex-row mt-[20px]">
@@ -630,7 +630,7 @@ export const Home = () => {
                         <source src={Scalable} type="video/mp4"/>
                     </video> */}
                     <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Scalable</div>
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text">And endless scaling possibilities for your AI Agents.</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text">And endless scaling possibilities for your AI Agents.</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE]">The Ground Truth<sup>®</sup> framework excels in the orchestration of complex agentic workflows, providing actual clarity around usage.</p>
                 </div>
                 <div className="flex justify-between mt-[20px] md:mt-0 lg:mt-0 items-center flex-col md:flex-row lg:flex-row">
@@ -673,7 +673,7 @@ export const Home = () => {
             <div className="p-3 md:p-10 lg:p-10">
                 <div className="text-center flex flex-col items-center justify-center">
                     <div className="w-full md:w-[70%] lg:w-[70%]">
-                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text">Built for Enterprise</h1>
+                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text">Built for Enterprise</h1>
                         <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE]">Whether you're a system integrator, an innovator, or a creator, our language chain framework provides the tools and capabilities you need to build and deploy Expert AI Agents™.</p>
                     </div>
                 </div>
@@ -781,7 +781,7 @@ export const Home = () => {
             <div className="p-3 md:p-10 lg:p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[5vw]">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
-                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text">FAQs</h1>
+                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text">FAQs</h1>
                         <div className=" flex justify-center items-center mx-auto">
                             <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently. If none of these answers on the right address your concerns, please reach out. We would be more than happy to clear up anything.</p>
                         </div>

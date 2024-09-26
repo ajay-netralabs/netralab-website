@@ -84,7 +84,7 @@ export const Creators = () => {
                                 <img className="brightness-[0.4] mix-blend-color-dodge" src={Integrator1Bg} alt="" />
                             </div>
                             <div className='static md:absolute lg:absolute top-0'>
-                                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Transform Your Unique Idea into a Unicorn with AI Agents.</h1>
+                                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Transform Your Unique Idea into a Unicorn with AI Agents.</h1>
                                 <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
                                 Join our AI Agent Incubator <span className="font-bold text-accent capitalize"> and leverage the Ground Truth<sup>®</sup> framework to develop, fine-tune, and deploy domain-specific agents </span> — all within a comprehensive, end-to-end platform.
                                     
@@ -124,7 +124,7 @@ export const Creators = () => {
                         </video> */}
                         <div className='tags-btn'>Market Opportunity</div>
                         <div className='leading-relaxed'> 
-                            <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Creators Like You Will Shape the Future of AI Agents</h1>
+                            <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Creators Like You Will Shape the Future of AI Agents</h1>
                             <div className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
                                 Ground Truth<sup>®</sup> empowers you to seize the massive opportunity in the Gen AI market and build the next generation of transformative solutions.
                             </div>
@@ -170,7 +170,7 @@ export const Creators = () => {
             {/* 3rd container */}
             <div className="p-3 md:p-10 lg:p-10">
                 <div className="text-center">
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Why Join</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Why Join</h1>
                 </div>
                 {/* cards */}
                 <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-4 lg:mt-4 leading-relaxed">
@@ -261,7 +261,7 @@ export const Creators = () => {
                             <source src={Proof} type="video/mp4"/>
                         </video> */}
                         <div className='tags-btn'>Proof</div>
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Unlocking the $78 Billion COBOL Time Bomb.</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Unlocking the $78 Billion COBOL Time Bomb.</h1>
                     <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"> Joseph.ai, the world's first COBOL Batch Transformation Program Expert AI Agent, shatters the limitations of traditional modernization approaches, achieving unprecedented performance and cost savings.</p>
                 </div>
                 <div className="flex items-center gap-[80px] justify-between flex-col md:flex-row lg:flex-row">
@@ -313,7 +313,7 @@ export const Creators = () => {
                             <source src={Process} type="video/mp4"/>
                         </video> */}
                         <div className='tags-btn'>Process</div>
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text break-words">From Concept to Launch: A Clear Path to Success.</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">From Concept to Launch: A Clear Path to Success.</h1>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-[40px] mt-[20%] md:mt-[15%] lg:mt-[8%] relative">
                     <div className="absolute h-[350px] w-[350px]">

@@ -75,7 +75,7 @@ export const Integrators = () => {
                         </div>
 
                         <div className='static md:absolute lg:absolute top-0'>
-                            <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text">Agentic Workflows for System Integrators</h1>
+                            <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text">Agentic Workflows for System Integrators</h1>
                             <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"><span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the world’s first language chain framework built to empower SIs to build and deploy custom AI agents that redefine the way processes are automated for your customers.</p>
                             {/* <div className="btn btn-accent rounded-sm mt-[35px] hover:cursor-pointer text-white" onClick={() => handleNavigate()}>Request Demo</div> */}
                             <div className="border border-accent learn-more-btn glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" onClick={() => navigate("/language-chain/")}>Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></div>
@@ -122,7 +122,7 @@ export const Integrators = () => {
                             <source src={Problem} type="video/mp4"/>
                         </video> */}
                         <div className='tags-btn'>Problem</div>
-                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text">System Integrators have had little success deploying AI Agents into production.</h1>
+                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text">System Integrators have had little success deploying AI Agents into production.</h1>
                         <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"><span className="font-bold text-accent uppercase">96% of executives agree</span> that leveraging AI Agent ecosystems will be a significant opportunity for their organizations in the next three years.</p>
                 
                         <div className="mt-[40px] flex flex-col text-xl">
@@ -158,7 +158,7 @@ export const Integrators = () => {
                             <source src={Solution} type="video/mp4"/>
                         </video> */}
                     <div className='tags-btn'>Solution</div>
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text">The AI Agent platform built for System Integrators.</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text">The AI Agent platform built for System Integrators.</h1>
                 </div>
                 <div className="mt-2 flex items-center justify-between flex-col md:flex-row lg:flex-row leading-relaxed">
                     <div className=" w-full md:w-[50%] lg:w-[50%] flex flex-col text-[#CECECE] text-xl md:text-[1.2vw] lg:text-[1.2vw]">
@@ -195,7 +195,7 @@ export const Integrators = () => {
             {/* 4th container */}
             <div className="mt-1 p-3 md:p-10 lg:p-10">
                 <div className="text-center">
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] font-bold leading-relaxed heading-text">The Benefits of Our Approach</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] font-bold leading-[1.3] heading-text">The Benefits of Our Approach</h1>
                 </div>
                 {/* cards */}
                 <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-12 lg:mt-12">
@@ -285,7 +285,7 @@ export const Integrators = () => {
                     <source src={Howitworks} type="video/mp4"/>
                 </video> */}
                 <div className='tags-btn'>How it works</div>
-                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] font-bold leading-relaxed heading-text text-center mt-10 md:mt-0 lg:mt-0">Smooth Integration, just like our AI Agents.</h1>
+                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] font-bold leading-[1.3] heading-text text-center mt-10 md:mt-0 lg:mt-0">Smooth Integration, just like our AI Agents.</h1>
                 
                 {/* cards */}
                 <div className="flex flex-wrap justify-evenly mt-2 mx-auto text-[1.1vw] leading-relaxed">
@@ -366,7 +366,7 @@ export const Integrators = () => {
              <div className="p-3 md:p-10 lg:p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[5vw]">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
-                        <h1 className="text-[40px] leading-relaxed font-bold mt-[26px] heading-text">FAQs</h1>
+                        <h1 className="text-[40px] leading-[1.3] font-bold mt-[26px] heading-text">FAQs</h1>
                         <p className="text-lg lg:text-[18px] leading-relaxed mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently. If none of these answers on the right address your concerns, please reach out. We would be more than happy to clear up anything.</p>
                     </div>
                     <div className="mt-[40px]">
