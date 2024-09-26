@@ -1,5 +1,5 @@
 import { blogs } from "./data"
-import blogImg from "../../../public/static_img/Blog-img.png"
+import blogImg from "../../../public/static_img/Blog-img.jpeg"
 import { useNavigate } from "react-router-dom"
 import { useEffect } from "react"
 import { useDispatch } from "react-redux"
@@ -36,9 +36,9 @@ export const BlogsPage = () => {
     return (
         <div>
             {/* header */}
-            <div className="w-full relative">
-                <img className="w-full object-cover" src={blogImg} alt="blogs" />
-                <p className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold heading-text text-center">The AI Agent Landscape.</p>
+            <div className="w-full relative h-[400px]">
+                <img className="w-full object-cover h-full brightness-50" src={blogImg} alt="blogs" />
+                <p className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold heading-text text-center">OUR THOUGHTS ON THE WILD, CRAZY LANDSCAPE OF AI AGENTS.</p>
             </div>
 
             {/* popular topics */}

@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import careerImg from "../../../public/static_img/carrer_img.png"
+import careerImg from "../../../public/static_img/carrer_img.jpeg"
 import { useNavigate } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { resetPrevLocation } from "../../store/locationSlice"

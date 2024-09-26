@@ -357,11 +357,6 @@ Use the Services as part of any effort to compete with us or otherwise use the S
             <br />Theme
 
             <br />Sharp (Default)
-            <br />Select "Create New Theme" to edit your policy style.
-            <br />APPLY THEME
-
-            <br />To create a custom theme, please upgrade. Pro+ plans start as low as $15/month. VIEW PLANS
-            <br />Privacy Policy
             <br />Terms Of Use
             <br />Disclaimer
             <br />Cookie Policy

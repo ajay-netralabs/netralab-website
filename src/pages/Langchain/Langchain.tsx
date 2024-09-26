@@ -223,7 +223,7 @@ export const Langchain = () => {
             {/* <img className="w-full h-full object-cover" src={Designer} alt="language chain" /> */}
             <div className="m-3 md:m-12 lg:m-12">
                 <p className="text-base md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed text-[#CECECE]">For Data Scientists Focused on Deploying Expert AI Agents®</p>
-                <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.2] font-bold heading-text break-words mt-4">
+                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.2] font-bold heading-text break-words mt-4">
                  Enterprise Language Chains: The Key to Production-Grade AI Agents
                 </h1>
                 <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] mt-4">Discover how Enterprise Language Chains empower data scientists to build efficient, secure, and scalable AI agents tailored for enterprise 
@@ -248,7 +248,7 @@ export const Langchain = () => {
         <div id="d1" className="mt-0 md:mt-[40px] lg:mt-[40px] p-3 md:p-10 lg:p-10 designer-1">
             <div className="m-3 md:m-12 lg:m-12">
                 <div className="flex flex-col justify-center items-center">
-                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.2] font-bold heading-text break-words">Enterprises Are Struggling to Deploy Production-Grade AI Agents</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.2] font-bold heading-text break-words">Enterprises Are Struggling to Deploy Production-Grade AI Agents</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed text-[#CECECE] mt-4">Despite the rapid evolution of generative AI, enterprises face significant hurdles when implementing AI agents in real-world scenarios. Large language models (LLMs) like GPT-4 are powerful but inherently generalist, 
                     lacking the specialization required for complex, domain-specific tasks.</p>
                 </div>
@@ -329,7 +329,7 @@ export const Langchain = () => {
         <div id="d2" className="mt-4 p-3 md:p-10 lg:p-10 designer-2">
             <div className="m-3 md:m-12 lg:m-12">
                 <div className="flex flex-col justify-center items-center">
-                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.2] font-bold heading-text break-words">The Limitations of Generic AI Frameworks</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.2] font-bold heading-text break-words">The Limitations of Generic AI Frameworks</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed text-[#CECECE] mt-2">Why tools like LangChain fall short in enterprise environments</p>
                 </div>
                 <div className="mt-[40px]">
@@ -340,11 +340,13 @@ export const Langchain = () => {
                             {/* headings */}
                             <div className="text-black w-full  md:w-[50%] lg:w-[50%]">
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tl-xl md:rounded-br-xl lg:rounded-tl-xl lg:rounded-br-xl ${limitation === 1 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(1)}>
-                                    <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={CustomizationAnimation} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                    <div className="p-4 flex gap-4 items-center justify-start">
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={CustomizationAnimation} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${limitation === 1 ? "text-accent" : ""}`}>Lack of Customization</p>
-                                            <div className="text-base md:text-[1vw] lg:text-[1vw]">
+                                            <div className="hidden md:block lg:block text-base md:text-[1vw] lg:text-[1vw]">
                                                 {/* {getLimitationData(1)} */}
                                                 {`${getLimitationData(1).slice(0, 101)}...`}
                                             </div>
@@ -354,11 +356,13 @@ export const Langchain = () => {
                                 </div>
 
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${limitation === 2 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(2)}>
-                                    <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={SlowAnimation} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                    <div className="p-4 flex gap-4 items-center justify-start">
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={SlowAnimation} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold  ${limitation === 2 ? "text-accent" : ""}`}>Performance Bottlenecks</p>
-                                            <div className="text-base md:text-[1vw] lg:text-[1vw]">
+                                            <div className="hidden md:block lg:block text-base md:text-[1vw] lg:text-[1vw]">
                                             {/* {getLimitationData(2)} */}
                                             {`${getLimitationData(2).slice(0, 102)}...`}
                                             </div>
@@ -367,11 +371,13 @@ export const Langchain = () => {
                                 </div>
 
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${limitation === 3 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(3)}>
-                                    <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={SecurityAnimation} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                    <div className="p-4 flex gap-4 items-center justify-start">
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={SecurityAnimation} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${limitation === 3 ? "text-accent" : ""}`}>Security Concerns</p>
-                                            <div className="text-base md:text-[1vw] lg:text-[1vw]">
+                                            <div className="hidden md:block lg:block text-base md:text-[1vw] lg:text-[1vw]">
                                             {/* {getLimitationData(3)} */}
                                             {`${getLimitationData(3).slice(0, 99)}...`}
                                             </div>
@@ -379,11 +385,13 @@ export const Langchain = () => {
                                     </div>
                                 </div>
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${limitation === 4 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(4)}>
-                                    <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={IntegrateAnimations} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                    <div className="p-4 flex gap-4 items-center justify-start">
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={IntegrateAnimations} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${limitation === 4 ? "text-accent" : ""}`}>Integration Hurdles</p>
-                                            <div className="text-base md:text-[1vw] lg:text-[1vw]">
+                                            <div className="hidden md:block lg:block text-base md:text-[1vw] lg:text-[1vw]">
                                             {/* {getLimitationData(4)} */}
                                             {`${getLimitationData(4).slice(0, 97)}...`}
                                             </div>
@@ -392,11 +400,13 @@ export const Langchain = () => {
                                 </div>
 
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${limitation === 5 ? "bg-[#CECECE]" : ""}`}  onClick={() => setLimitation(5)}>
-                                    <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={ControlAnimation} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                    <div className="p-4 flex gap-4 items-center justify-start">
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={ControlAnimation} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${limitation === 5 ? "text-accent" : ""}`}>Limited Control</p>
-                                            <div className="text-base md:text-[1vw] lg:text-[1vw]">
+                                            <div className="hidden md:block lg:block text-base md:text-[1vw] lg:text-[1vw]">
                                                 {/* {getLimitationData(5)} */}
                                                 {`${getLimitationData(5).slice(0, 98)}...`}
                                             </div>
@@ -405,11 +415,13 @@ export const Langchain = () => {
                                 </div>
         
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer rounded-tr-xl rounded-bl-xl rounded-br-xl md:rounded-br-none lg:rounded-br-none ${limitation === 6 ? "bg-[#CECECE]" : ""}`} onClick={() => setLimitation(6)}>
-                                    <div className="p-4 flex gap-4 items-center">
-                                        <Lottie animationData={ScalabilityAnimation} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                    <div className="p-4 flex gap-4 items-center justify-start">
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={ScalabilityAnimation} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${limitation === 6 ? "text-accent" : ""}`}>Scalability Issues</p>
-                                            <div className="text-base md:text-[1vw] lg:text-[1vw]">
+                                            <div className="hidden md:block lg:block text-base md:text-[1vw] lg:text-[1vw]">
                                                 {/* {getLimitationData(6)} */}
                                                 {`${getLimitationData(6).slice(0, 117)}...`}
                                             </div>
@@ -436,7 +448,7 @@ export const Langchain = () => {
 
         <div id="d3" className="mt-4 p-3 md:p-10 lg:p-10 designer-3">
             <div className="flex flex-col justify-center items-center">
-                <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.2] font-bold heading-text break-words">Introducing Enterprise Language Chains</h1>
+                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.2] font-bold heading-text break-words">Introducing Enterprise Language Chains</h1>
                 <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] mt-2">Your high-speed rail network for AI deployment</p>
                 <div>
                     <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-4 text-[#CECECE]">Imagine the vast and intricate network of a country's railway system. Trains, representing language models, carry vital cargo—data and insights—across the expanse of enterprise systems.  This well-oiled railway network is engineered to handle massive loads, operate with precision, and ensure that everything reaches its destination without delays or errors. An Enterprise Language Chain is akin to this robust railway network. It's designed to facilitate the seamless operation of AI agents within large organizations, ensuring:</p>
@@ -485,7 +497,7 @@ export const Langchain = () => {
 
         <div id="d4" className="mt-4 p-3 md:p-10 lg:p-10 designer-4">
             <div className="flex flex-col justify-center items-center">
-                <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.2] font-bold heading-text break-words">Ground Truth<sup>®</sup>: The Engine Behind Your Enterprise Language Chain</h1>
+                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.2] font-bold heading-text break-words">Ground Truth<sup>®</sup>: The Engine Behind Your Enterprise Language Chain</h1>
                 <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] mt-2">At Netra Labs, we've developed Ground Truth<sup>®</sup>, a platform designed from the ground up to provide the robust infrastructure of an Enterprise Language Chain. It's the technology that designs, builds, and maintains your AI railway network, enabling your AI agents to operate with precision and reliability.</p>
                 {/* <div>
                     <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-4 text-[#CECECE]">How Ground Truth® Powers Your AI Railway Network:</p>
@@ -499,9 +511,12 @@ export const Langchain = () => {
                             {/* headings */}
                             <div className="text-black w-full md:w-[50%] lg:w-[50%]">
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tl-xl md:rounded-br-xl lg:rounded-tl-xl lg:rounded-br-xl ${engineData === 1 ? "bg-[#CECECE]" : ""}`} onClick={() => setEngineData(1)}>
-                                    <div className="p-2 flex gap-4 items-center">
-                                        <Lottie animationData={flowAnimation} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                    <div className="p-2 flex gap-4 items-center justify-start">
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={flowAnimation} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${engineData === 1 ? "text-accent" : ""}`}>Engineered Tracks (Custom Workflows)</p>
                                         </div>
 
@@ -510,8 +525,10 @@ export const Langchain = () => {
 
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${engineData === 2 ? "bg-[#CECECE]" : ""}`} onClick={() => setEngineData(2)}>
                                     <div className="p-2 flex gap-4 items-center">
-                                        <Lottie animationData={trainAnimation} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={trainAnimation} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold  ${engineData === 2 ? "text-accent" : ""}`}>High-Performance Trains (Optimized AI Agents)</p>
                                         </div>
                                     </div>
@@ -519,16 +536,20 @@ export const Langchain = () => {
 
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${engineData === 3 ? "bg-[#CECECE]" : ""}`} onClick={() => setEngineData(3)}>
                                     <div className="p-2 flex gap-4 items-center">
-                                        <Lottie animationData={cubeAnimation} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={cubeAnimation} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${engineData === 3 ? "text-accent" : ""}`}>Central Control Station (Unified Platform)</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer md:rounded-tr-xl md:rounded-br-xl lg:rounded-tr-xl lg:rounded-br-xl ${engineData === 4 ? "bg-[#CECECE]" : ""}`} onClick={() => setEngineData(4)}>
                                     <div className="p-2 flex gap-4 items-center">
-                                        <Lottie animationData={SecurityAnimation} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={SecurityAnimation} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${engineData === 4 ? "text-accent" : ""}`}>Safety Protocols (Security Measures)</p>
                                         </div>
                                     </div>
@@ -536,8 +557,10 @@ export const Langchain = () => {
 
                                 <div className={`hover:bg-[#CECECE] hover:cursor-pointer rounded-tr-xl rounded-bl-xl rounded-br-xl md:rounded-br-none lg:rounded-br-none  md:rounded-tr-xl md:rounded-bl-xl lg:rounded-tr-xl lg:rounded-bl-xl ${engineData === 5 ? "bg-[#CECECE]" : ""}`}  onClick={() => setEngineData(5)}>
                                     <div className="p-2 flex gap-4 items-center">
-                                        <Lottie animationData={optimizationAnimation} loop style={{ height: 80, width: 80}}/>
-                                        <div>
+                                        <div className="w-[20%] lg:w-[10%] min-w-[50px] md:min-w-[80px]">
+                                            <Lottie animationData={optimizationAnimation} loop className="w-[50px] h-[50px] md:w-[80px] md:h-[80px]"/>
+                                        </div>
+                                        <div className="w-[70%]">
                                             <p className={`text-lg md:text-[1.2vw] lg:text-[1.2vw] font-semibold hover:cursor-pointer ${engineData === 5 ? "text-accent" : ""}`}>Efficient Fuel Use (Resource Optimization)</p>
                                         </div>
                                     </div>
@@ -620,7 +643,7 @@ export const Langchain = () => {
 
         <div id="d5" className="mt-4 p-3 md:p-10 lg:p-10 designer-5">
             <div className="flex flex-col justify-center items-center">
-                <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.2] font-bold heading-text break-words">Be part of our exclusive Pilot Program</h1>
+                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.2] font-bold heading-text break-words">Be part of our exclusive Pilot Program</h1>
                 <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] mt-2">Ready to build an Expert AI Agent? Join our Pilot Program and be among the first to leverage the power of true Enterprise Language Chains. See for yourself how Ground Truth can transform your AI initiatives from experimental projects to production-grade, enterprise-scale solutions.</p>
                 {/* <div>
                     <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-4 text-[#CECECE]">How Ground Truth® Powers Your AI Railway Network:</p>

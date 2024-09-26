@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import careerImg from "../../../public/static_img/carrer_img.png"
+import careerImg from "../../../public/static_img/carrer_img.jpeg"
 import { useDispatch } from "react-redux"
 import { resetPrevLocation } from "../../store/locationSlice"
 import { CreatorForm, InnovatorForm, IntegratorForm, MainForms } from "./Forms"
@@ -184,10 +184,10 @@ export const ContactUsPage = ({ type }: {type:string}) => {
     return (
         <div className="mb-2">
             {/* header */}
-            <div className="w-full relative">
-                <img className="w-full object-cover" src={careerImg} alt="careers" />
-                <p className="heading-text absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold text-center heading-text">
-                    Let's Talk Expert AI Agents.
+            <div className="w-full relative h-[400px]">
+                <img className="w-full h-full object-cover brightness-50" src={careerImg} alt="careers" />
+                <p className="heading-text absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold text-center heading-text">
+                    LETS DISCUSS THE FUTURE OF ENTERPRISE AI AGENTS.
                 </p>
             </div>
 
@@ -195,10 +195,10 @@ export const ContactUsPage = ({ type }: {type:string}) => {
                 <div className="w-full md:w-[50%] lg:w-[50%] mt-[20px] text-[#CECECE]">
                     <div className="text-[#CECECE]">
                         <p className="text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">Do you want to learn about AI Agents? Ground Truth™ is ready to guide you through the complexities of Generative AI and help you harness its potential to transform your business.</p>
-                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">We understand that your challenges are unique, and off-the-shelf solutions won’t cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain expertise to create Expert AI Agents that deliver unparalleled results.</p>
-                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">Don’t let the rapid pace of AI innovation leave you behind. Partner with Netra Labs, and let’s build the future of your business together.</p>
-                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">Complete the form, and a Netra Labs representative will contact you shortly to discuss your specific goals and how Ground Truth™ can accelerate your AI journey.</p>
-                        <p className="mt-4 text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">We look forward to speaking with you and exploring the possibilities.</p>
+                        <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">We understand that your challenges are unique, and off-the-shelf solutions won’t cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain expertise to create Expert AI Agents that deliver unparalleled results.</p>
+                        <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Don’t let the rapid pace of AI innovation leave you behind. Partner with Netra Labs, and let’s build the future of your business together.</p>
+                        <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Complete the form, and a Netra Labs representative will contact you shortly to discuss your specific goals and how Ground Truth™ can accelerate your AI journey.</p>
+                        <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">We look forward to speaking with you and exploring the possibilities.</p>
                           
                     </div>
 

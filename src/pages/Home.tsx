@@ -1,21 +1,6 @@
 
 import { FaqAccordion, MarqueeLogo } from "../components"
 
-// import Home1Vid from "../../public/home-1-vid-n.mp4"
-
-// import Home2Vid from "../../public/vids/home-2.mp4"
-// import Versatile from "../../public/vids/versatile.mp4"
-// import Whyus from "../../public/vids/whyus.mp4"
-// import Stable from "../../public/vids/stable.mp4"
-// import Scalable from "../../public/vids/scalable.mp4"
-
-// import Home3Vid from "../../public/vids/home-3.mp4"
-// import Home4Vid from "../../public/vids/home-4.mp4"
-
-import Home1Icon from "../../public/vids/home-icon-1.mp4"
-import Home2Icon from "../../public/vids/home-icon-2.mp4"
-import Home3Icon from "../../public/vids/home-icon-3.mp4"
-
 import { useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { homeData } from "./homedata"
@@ -34,11 +19,16 @@ import secondAnimation from "../../public/animations/home/2.json"
 import thirdAnimation from "../../public/animations/home/3.json"
 import fourthAnimation from "../../public/animations/home/4.json"
 
-// import { ParticlesComponent } from "../components"
+
+import Rectangle from "../../public/icons/Rectangle.png"
+import card1Icon from "../../public/icons/home/card1.svg"
+import card2Icon from "../../public/icons/home/card2.svg"
+import card3Icon from "../../public/icons/home/card3.svg"
+
 import ReactGA from 'react-ga4';
 
 export const Home = () => {
-
+    console.log("test", import.meta.env)
     if(import.meta.env.PROD) {
         ReactGA.send({
             hitType: "pageview",
@@ -78,7 +68,7 @@ export const Home = () => {
                         </div>
 
                         <div className="static md:absolute lg:absolute top-0">
-                            <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.3] font-bold heading-text">
+                            <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold heading-text">
                                 Turn Human Expertise into <br /> Expert AI Agents</h1>
                             <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Netra Lab's <strong className="text-accent">Ground Truth<sup>®</sup></strong> is the <strong className="uppercase text-accent">world's first Enterprise Language Chain</strong> framework for building and deploying Expert <strong className="uppercase text-accent">AI Agents™</strong> into production, at scale.</p>
                             <div className="border border-accent learn-more-btn glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" onClick={() => navigate("/language-chain/")}>Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></div>
@@ -132,7 +122,7 @@ export const Home = () => {
                 <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw] text-xl md:text-[1.25vw] lg:text[1.25vw]'>Versatile</div>
                 <div className="flex flex-col md:flex-row lg:flex-row">
                     <div className="w-full md:w-[50%] lg:w-[50%]">
-                        <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] mt-[26px] leading-relaxed font-bold heading-text">To simplify the complexity of Generative AI.</h1>
+                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] mt-[26px] leading-relaxed font-bold heading-text">To simplify the complexity of Generative AI.</h1>
                         <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] break-words mt-[20px]">Ground Truth<sup>®</sup> simplifies AI Agent development with an intuitive drag-and-drop interface, enabling rapid creation of complex agentic workflows.</p>
                         {/* lists */}
                         <div className="mt-[40px] flex flex-col text-[#CECECE]">
@@ -230,7 +220,7 @@ export const Home = () => {
                             <source src={Whyus} type="video/mp4"/>
                         </video> */}
                     <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Why Us?</div>
-                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.2] text-center mt-[26px] font-bold heading-text">The only platform to provide complete control over the entire agentic workflow lifecycle, using our proprietary framework.</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.2] text-center mt-[26px] font-bold heading-text">The only platform to provide complete control over the entire agentic workflow lifecycle, using our proprietary framework.</h1>
                     {/* cards */}
                     <div className="hidden md:flex lg:flex w-full mt-[90px]">
 
@@ -594,7 +584,7 @@ export const Home = () => {
                         <source src={Stable} type="video/mp4"/>
                     </video> */}
                     <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Stable</div>
-                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] mt-[26px] font-bold heading-text leading-relaxed">Ensure Enterprise grade reliability and governance.</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] mt-[26px] font-bold heading-text leading-relaxed">Ensure Enterprise grade reliability and governance.</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] mt-[20px] text-[#CECECE] leading-relaxed">Enterprises demand security and accountability, the <span className="uppercase text-[18px] font-bold leading-relaxed">Ground Truth<sup>®</sup> Framework</span> delivers with enterprise-grade control mechanisms:</p>
                 </div>
                 <div className="flex items-center gap-[40px] flex-col md:flex-row lg:flex-row mt-[20px]">
@@ -618,11 +608,11 @@ export const Home = () => {
                         </div>
                         <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Our unique Validation mode enables <span className="font-bold leading-relaxed text-accent uppercase">the debugging and optimization</span> of your agentic workflows.</div>
+                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Our unique Validation mode enables the <span className="font-bold leading-relaxed text-accent uppercase"> debugging and optimization of your agentic workflows.</span></div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold leading-relaxed text-accent uppercase">Guarantee security by deploying</span> agents in your environment, using your data.</div>
+                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold leading-relaxed text-accent uppercase">Guarantee security by deploying agents in your environment, </span> using your data.</div>
                         </div>
                     </div>
                 </div>
@@ -640,7 +630,7 @@ export const Home = () => {
                         <source src={Scalable} type="video/mp4"/>
                     </video> */}
                     <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Scalable</div>
-                    <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text">And endless scaling possibilities for your AI Agents.</h1>
+                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text">And endless scaling possibilities for your AI Agents.</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE]">The Ground Truth<sup>®</sup> framework excels in the orchestration of complex agentic workflows, providing actual clarity around usage.</p>
                 </div>
                 <div className="flex justify-between mt-[20px] md:mt-0 lg:mt-0 items-center flex-col md:flex-row lg:flex-row">
@@ -658,7 +648,7 @@ export const Home = () => {
                         <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">
-                                Agents that <span className="font-bold leading-relaxed text-accent uppercase">operate asynchronously,</span> ensuring tasks are executed without waiting for sequential order.
+                            <span className="font-bold leading-relaxed text-accent uppercase"> Agents that operate asynchronously,</span> ensuring tasks are executed without waiting for sequential order.
                             </div>
                         </div>
                     </div>
@@ -683,86 +673,104 @@ export const Home = () => {
             <div className="p-3 md:p-10 lg:p-10">
                 <div className="text-center flex flex-col items-center justify-center">
                     <div className="w-full md:w-[70%] lg:w-[70%]">
-                        <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text">Built for Enterprise</h1>
+                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text">Built for Enterprise</h1>
                         <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE]">Whether you're a system integrator, an innovator, or a creator, our language chain framework provides the tools and capabilities you need to build and deploy Expert AI Agents™.</p>
                     </div>
                 </div>
                 {/* cards */}
                 <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-[60px] text-[#CECECE]">
                     {/* card 1 */}
-                    <div className="glass-vertical-card-1 w-full md:w-[30%] lg:w-[30%] min-h-[450px] flex justify-center items-center">
-                        <video
-                            className="mix-blend-exclusion w-[100px]"
-                            muted // @ts-ignore
-                            autoPlay={"autoplay"}
-                            preload="auto"
-                            loop>
-                            <source src={Home1Icon} type="video/mp4"/>
-                        </video>
-                        <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Integrators</h2>
-                        <p className=" text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
-                            <span className="font-bold text-accent uppercase"> Deliver the next era of AI-powered automation with Ground Truth<sup>®</sup>, </span>
-                              the enterprise language chain framework that empowers you to build and deploy Expert AI Agents™ for your clients.
-                        </p>
+                    <div className="glass-vertical-card-1 w-full md:w-[30%] lg:w-[30%] min-h-[450px] h-auto md:h-[450px] lg:h-[450px] xl:h-[450px] 2xl:h-[500px] flex justify-center items-center">
+                        
+                        <div className="h-[30%] flex justify-center items-end">
+                            <div className="disc relative">
+                                <img src={Rectangle} alt="" />
+                                <img className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" src={card1Icon} alt="" />
+                            </div>
+                        </div>
+                        <div className="h-[70%] flex flex-col justify-start items-center">
+                            <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Integrators</h2>
+                            <p className=" text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
+                                <span className="font-bold text-accent uppercase"> Deliver the next era of AI-powered automation with Ground Truth<sup>®</sup>, </span>
+                                the enterprise language chain framework that empowers you to build and deploy Expert AI Agents™ for your clients.
+                            </p>
 
-                        <div className={`flex mt-[38px] hover:cursor-pointer`} onClick={() => navigate("/ai-agents-for-integrators/")}>
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M13.924 8.64648L17.3086 12.6465M17.3086 12.6465L13.924 16.6465M17.3086 12.6465L6.80859 12.6465" stroke="#0FAE96" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>    
+                            <div className={`flex mt-[38px] hover:cursor-pointer`} onClick={() => navigate("/ai-agents-for-integrators/")}>
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M13.924 8.64648L17.3086 12.6465M17.3086 12.6465L13.924 16.6465M17.3086 12.6465L6.80859 12.6465" stroke="#0FAE96" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>    
+                            </div>
                         </div>
                     </div>
 
                     {/* card 2 */}
-                    <div className="glass-vertical-card-2 w-full md:w-[30%] lg:w-[30%] min-h-[450px] flex justify-center items-center">
-                        <div className="flex items-center h-[100px]">
-                            <video
+                    <div className="glass-vertical-card-2 w-full md:w-[30%] lg:w-[30%] min-h-[450px] h-auto md:h-[450px] lg:h-[450px] xl:h-[450px] 2xl:h-[500px] flex justify-center items-center">
+                        <div className="h-[30%] flex justify-center items-end">
+                            {/* <video
                                 className="mix-blend-exclusion w-[85px]"
                                 muted // @ts-ignore
                                 autoPlay={"autoplay"}
                                 preload="auto"
                                 loop>
                                 <source src={Home2Icon} type="video/mp4"/>
-                            </video>
+                            </video> */}
+                            {/* <div className=""> */}
+                                <div className="disc relative">
+                                    <img src={Rectangle} alt="" />
+                                    <img className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" src={card2Icon} alt="" />
+                                </div>
+                            {/* </div> */}
                         </div>
-                        <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Innovators</h2>
-                        <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
-                         
-                            <span className="font-bold text-accent uppercase">Amplify your competitive advantage with Ground Truth<sup>®</sup>, </span>
-                             the AI partner that empowers you to leverage your domain knowledge and build Expert AI Agents™ that transform your business.
-                        </p>
+                        <div className="h-[70%] flex flex-col justify-start items-center">
+                            <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Innovators</h2>
+                            <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
+                            
+                                <span className="font-bold text-accent uppercase">Amplify your competitive advantage with Ground Truth<sup>®</sup>, </span>
+                                the AI partner that empowers you to leverage your domain knowledge and build Expert AI Agents™ that transform your business.
+                            </p>
 
-                        <div className={`flex mt-[38px] hover:cursor-pointer`}  onClick={() => navigate("/ai-agents-for-innovators/")}>
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M13.924 8.64648L17.3086 12.6465M17.3086 12.6465L13.924 16.6465M17.3086 12.6465L6.80859 12.6465" stroke="#0FAE96" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>    
+                            <div className={`flex mt-[38px] hover:cursor-pointer`}  onClick={() => navigate("/ai-agents-for-innovators/")}>
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M13.924 8.64648L17.3086 12.6465M17.3086 12.6465L13.924 16.6465M17.3086 12.6465L6.80859 12.6465" stroke="#0FAE96" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>    
+                            </div>
                         </div>
                     </div>
 
                     {/* card 3 */}
-                    <div className=" glass-vertical-card-3 w-full md:w-[30%] lg:w-[30%] min-h-[450px] flex justify-center items-center">
-                        <div className="flex items-center h-[100px]">
-                            <video
+                    <div className=" glass-vertical-card-3 w-full md:w-[30%] lg:w-[30%] min-h-[450px] h-auto md:h-[450px] lg:h-[450px] xl:h-[450px] 2xl:h-[500px] flex justify-center items-center">
+                        <div className="h-[30%] flex justify-center items-end">
+                            {/* <video
                                 className="mix-blend-exclusion w-[85px]"
                                 muted // @ts-ignore
                                 autoPlay={"autoplay"}
                                 preload="auto"
                                 loop>
                                 <source src={Home3Icon} type="video/mp4"/>
-                            </video>
-                        </div>
-                        <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Creators</h2>
-                        <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
-                            <span className="font-bold text-accent uppercase">
-                                Ground Truth<sup>®</sup> empowers developers and analysts </span> to incubate their ideas, transforming them into powerful Expert AI Agents™ and launching successful businesses.
-                        </p>
+                            </video> */}
 
-                        <div className="flex mt-[38px] hover:cursor-pointer"  onClick={() => navigate("/ai-agents-for-creators/")}>
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                <path d="M13.924 8.64648L17.3086 12.6465M17.3086 12.6465L13.924 16.6465M17.3086 12.6465L6.80859 12.6465" stroke="#0FAE96" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>    
+                            {/* <div> */}
+                                <div className="disc relative">
+                                    <img src={Rectangle} alt="" />
+                                    <img className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" src={card3Icon} alt="" />
+                                </div>
+                            {/* </div> */}
+                        </div>
+                        <div className="h-[70%] flex flex-col justify-start items-center">
+                            <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Creators</h2>
+                            <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
+                                <span className="font-bold text-accent uppercase">
+                                    Ground Truth<sup>®</sup> empowers developers and analysts </span> to incubate their ideas, transforming them into powerful Expert AI Agents™ and launching successful businesses.
+                            </p>
+
+                            <div className="flex mt-[38px] hover:cursor-pointer"  onClick={() => navigate("/ai-agents-for-creators/")}>
+                                Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                    <path d="M13.924 8.64648L17.3086 12.6465M17.3086 12.6465L13.924 16.6465M17.3086 12.6465L6.80859 12.6465" stroke="#0FAE96" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>    
+                            </div>
                         </div>
                     </div>
 
@@ -773,7 +781,7 @@ export const Home = () => {
             <div className="p-3 md:p-10 lg:p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[5vw]">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
-                        <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-relaxed font-bold mt-[26px] heading-text">FAQs</h1>
+                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text">FAQs</h1>
                         <div className=" flex justify-center items-center mx-auto">
                             <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently. If none of these answers on the right address your concerns, please reach out. We would be more than happy to clear up anything.</p>
                         </div>
