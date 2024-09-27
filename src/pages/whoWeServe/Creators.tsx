@@ -1,7 +1,5 @@
 import parse from 'html-react-parser';
 
-import Creator1Vid from "../../../public/vids/Creator-1.mp4"
-
 import CreatorImg from "../../../public/Creator-img.png"
 import CreatorImg2 from "../../../public/creator-img-2-updated.png"
 
@@ -25,6 +23,10 @@ import Rectangle from "../../../public/icons/Rectangle.png"
 import card1Icon from "../../../public/icons/creators/card1.svg"
 import card2Icon from "../../../public/icons/creators/card2.svg"
 import card3Icon from "../../../public/icons/creators/card3.svg"
+
+import Lottie from "lottie-react";
+
+import firstAnimation from "../../../public/animations/creators/1.json"
 
 export const Creators = () => {
 
@@ -86,7 +88,7 @@ export const Creators = () => {
                                 <img className="brightness-[0.4] mix-blend-color-dodge" src={Integrator1Bg} alt="" />
                             </div>
                             <div className='static md:absolute lg:absolute top-0'>
-                                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Transform Your Unique Idea into a Unicorn with AI Agents.</h1>
+                                <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">Transform Your Unique Idea into a Unicorn with AI Agents.</h1>
                                 <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
                                 Join our AI Agent Incubator <span className="font-bold text-accent capitalize"> and leverage the Ground Truth<sup>®</sup> framework to develop, fine-tune, and deploy domain-specific agents </span> — all within a comprehensive, end-to-end platform.
                                     
@@ -100,14 +102,16 @@ export const Creators = () => {
                 </div>
                 <div className="mt-4 md:mt-0 lg:mt-0 w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
                     <div className=" w-[70%] md:w-[50%] lg:w-[50%] flex justify-center items-center">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Creator1Vid} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                        <Lottie animationData={firstAnimation} style={{ height: 400}}/>
+
                     </div>
                 </div>
            </div> 
@@ -126,7 +130,7 @@ export const Creators = () => {
                         </video> */}
                         <div className='tags-btn'>Market Opportunity</div>
                         <div className='leading-relaxed'> 
-                            <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Creators Like You Will Shape the Future of AI Agents</h1>
+                            <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">Creators Like You Will Shape the Future of AI Agents</h1>
                             <div className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
                                 Ground Truth<sup>®</sup> empowers you to seize the massive opportunity in the Gen AI market and build the next generation of transformative solutions.
                             </div>
@@ -172,7 +176,7 @@ export const Creators = () => {
             {/* 3rd container */}
             <div className="p-3 md:p-10 lg:p-10">
                 <div className="text-center">
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Why Join</h1>
+                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">Why Join</h1>
                 </div>
                 {/* cards */}
                 <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-4 lg:mt-4 leading-relaxed">
@@ -263,7 +267,7 @@ export const Creators = () => {
                             <source src={Proof} type="video/mp4"/>
                         </video> */}
                         <div className='tags-btn'>Proof</div>
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Unlocking the $78 Billion COBOL Time Bomb.</h1>
+                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">Unlocking the $78 Billion COBOL Time Bomb.</h1>
                     <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"> Joseph.ai, the world's first COBOL Batch Transformation Program Expert AI Agent, shatters the limitations of traditional modernization approaches, achieving unprecedented performance and cost savings.</p>
                 </div>
                 <div className="flex items-center gap-[80px] justify-between flex-col md:flex-row lg:flex-row">
@@ -315,7 +319,7 @@ export const Creators = () => {
                             <source src={Process} type="video/mp4"/>
                         </video> */}
                         <div className='tags-btn'>Process</div>
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">From Concept to Launch: A Clear Path to Success.</h1>
+                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">From Concept to Launch: A Clear Path to Success.</h1>
                 </div>
                 <div className="flex flex-col justify-center items-center gap-[40px] mt-[20%] md:mt-[15%] lg:mt-[8%] relative">
                     <div className="absolute h-[350px] w-[350px]">
@@ -371,7 +375,7 @@ export const Creators = () => {
                         <div className="mt-[20px] flex items-center">
                             {/* <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
                             {/* <div className="btn btn-accent rounded-sm">Contact Me</div> */}
-                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us-main/")}>Let's Talk</div>
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => handleNavigate()}>Let's Talk</div>
                         </div>
                     </div>
                 </div>

@@ -53,7 +53,7 @@ export const Blog = () => {
                     {/* header */}
                     <div className="w-full relative h-[400px]">
                         <img className="w-full h-full object-cover brightness-50" src={blog.imgUrl} alt="blogs" />
-                        <p className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold text-center heading-text">{blog.title}</p>
+                        <p className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold text-center heading-text">{blog.title}</p>
                     </div>
 
                     <div className="my-10 mx-5 md:mx-10 lg:mx-10">

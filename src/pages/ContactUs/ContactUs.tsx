@@ -186,7 +186,7 @@ export const ContactUsPage = ({ type }: {type:string}) => {
             {/* header */}
             <div className="w-full relative h-[400px]">
                 <img className="w-full h-full object-cover brightness-50" src={careerImg} alt="careers" />
-                <p className="heading-text absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold text-center heading-text">
+                <p className="heading-text absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold text-center heading-text">
                     LETS DISCUSS THE FUTURE OF ENTERPRISE AI AGENTS.
                 </p>
             </div>

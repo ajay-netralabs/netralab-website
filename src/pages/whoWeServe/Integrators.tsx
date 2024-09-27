@@ -4,9 +4,6 @@ import settings from "../../../public/static_img/Settings.svg"
 import teamwork from "../../../public/static_img/Team-work.svg"
 import working from "../../../public/static_img/Working.svg"
 
-import Integrator1Vid from "../../../public/vids/Integrators-1.mp4"
-import Integrator2Vid from "../../../public/vids/Integrators-2.mp4"
-import Integrator3Vid from "../../../public/vids/Integrators-3.mp4"
 import { FaqAccordion } from "../../components"
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
@@ -22,9 +19,11 @@ import card1Icon from "../../../public/icons/integrators/card1.svg"
 import card2Icon from "../../../public/icons/integrators/card2.svg"
 import card3Icon from "../../../public/icons/integrators/card3.svg"
 
-// import Lottie from "lottie-react";
+import Lottie from "lottie-react";
 
-// import firstAnimation from "../../../public/animations/integrators/1.json"
+import firstAnimation from "../../../public/animations/integrators/1.json"
+import secondAnimation from "../../../public/animations/integrators/2.json"
+import thirdAnimation from "../../../public/animations/integrators/3.json"
 
 export const Integrators = () => {
     // only send analytics on production environment
@@ -76,7 +75,7 @@ export const Integrators = () => {
                         </div>
 
                         <div className='static md:absolute lg:absolute top-0'>
-                            <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text">Agentic Workflows for System Integrators</h1>
+                            <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text">Agentic Workflows for System Integrators</h1>
                             <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"><span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the world’s first language chain framework built to empower SIs to build and deploy custom AI agents that redefine the way processes are automated for your customers.</p>
                             {/* <div className="btn btn-accent rounded-sm mt-[35px] hover:cursor-pointer text-white" onClick={() => handleNavigate()}>Request Demo</div> */}
                             <div className="border border-accent learn-more-btn glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" onClick={() => navigate("/language-chain/")}>Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></div>
@@ -85,15 +84,15 @@ export const Integrators = () => {
                 </div>
                 <div className="mt-4 md:mt-0 lg:mt-0 w-full md:w-[50%] lg:w-[50%] flex justify-center items-center">
                     <div className="integrator-vid2-container  w-[70%] md:w-[50%] lg:w-[50%] flex justify-center items-center">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Integrator1Vid} type="video/mp4"/>
-                        </video>
-                        {/* <Lottie animationData={firstAnimation}/> */}
+                        </video> */}
+                        <Lottie animationData={firstAnimation}/>
                     </div>
                 </div>
            </div> 
@@ -103,14 +102,15 @@ export const Integrators = () => {
            <div className="integrator-second-container mt-1 p-3 md:p-10 lg:p-10 flex gap-[20px] justify-between flex-col-reverse items-center md:flex-row lg:flex-row">
                 <div className="w-full md:w-[50%] lg:w-[50%] flex justify-center items-center">
                     <div className="w-[70%] flex justify-center items-center">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion green-border"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Integrator2Vid} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                         <Lottie animationData={secondAnimation}/>
                     </div>
                 </div>
                 <div className="w-full mt-[20px] md:mt-0 lg:mt-0 md:w-[50%] lg:w-[50%]">
@@ -123,7 +123,7 @@ export const Integrators = () => {
                             <source src={Problem} type="video/mp4"/>
                         </video> */}
                         <div className='tags-btn'>Problem</div>
-                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text">System Integrators have had little success deploying AI Agents into production.</h1>
+                        <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text">System Integrators have had little success deploying AI Agents into production.</h1>
                         <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"><span className="font-bold text-accent uppercase">96% of executives agree</span> that leveraging AI Agent ecosystems will be a significant opportunity for their organizations in the next three years.</p>
                 
                         <div className="mt-[40px] flex flex-col text-xl">
@@ -159,7 +159,7 @@ export const Integrators = () => {
                             <source src={Solution} type="video/mp4"/>
                         </video> */}
                     <div className='tags-btn'>Solution</div>
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text">The AI Agent platform built for System Integrators.</h1>
+                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text">The AI Agent platform built for System Integrators.</h1>
                 </div>
                 <div className="mt-2 flex items-center justify-between flex-col md:flex-row lg:flex-row leading-relaxed">
                     <div className=" w-full md:w-[50%] lg:w-[50%] flex flex-col text-[#CECECE] text-xl md:text-[1.2vw] lg:text-[1.2vw]">
@@ -180,14 +180,15 @@ export const Integrators = () => {
                     </div>
                     <div className="mt-[20px] md:mt-0 lg:mt-0  w-full md:w-[50%] lg:w-[50%] flex justify-center items-center">
                         <div className="w-[70%] md:w-[50%] lg:w-[50%] flex justify-center items-center">
-                            <video
+                            {/* <video
                                 className="mix-blend-exclusion"
                                 muted // @ts-ignore
                                 autoPlay={"autoplay"}
                                 preload="auto"
                                 loop>
                                 <source src={Integrator3Vid} type="video/mp4"/>
-                            </video>
+                            </video> */}
+                            <Lottie animationData={thirdAnimation}/>
                         </div>
                     </div>
                 </div>
@@ -196,13 +197,13 @@ export const Integrators = () => {
             {/* 4th container */}
             <div className="mt-1 p-3 md:p-10 lg:p-10">
                 <div className="text-center">
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] font-bold leading-[1.3] heading-text">The Benefits of Our Approach</h1>
+                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] font-bold leading-[1.1] heading-text">The Benefits of Our Approach</h1>
                 </div>
                 {/* cards */}
                 <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-12 lg:mt-12">
                     {/* card 1 */}
-                    <div className="glass-vertical-card-1 w-full md:w-[30%] lg:w-[30%] min-h-[350px] h-auto md:h-[350px] lg:h-[350px] xl:h-[350px] 2xl:h-[350px] flex justify-center items-center">
-                        <div className="h-[30%] flex justify-center items-end">
+                    <div className="glass-vertical-card-1 w-full md:w-[30%] lg:w-[30%] min-h-[400px] h-auto md:h-[400px] lg:h-[400px] xl:h-[400px] 2xl:h-[400px] flex justify-center items-center">
+                        <div className="h-[40%] flex justify-center items-end">
                             {/* <video
                                 className="mix-blend-exclusion"
                                 muted // @ts-ignore
@@ -216,17 +217,19 @@ export const Integrators = () => {
                                 <img className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" src={card1Icon} alt="" />
                             </div>
                         </div>
-                        <div className="h-[70%] flex flex-col justify-start items-center text-[#CECECE]">
+                        <div className="h-[60%] flex flex-col justify-start items-center text-[#CECECE]">
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">No Limits</h2>
-                            <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
-                                Build AI solutions of any scope with a proprietary <span className="text-accent font-bold uppercase">framework that's free from the constraints of LangChain</span> or other generic solutions.
-                            </p>
+                            <div className="h-[70%]">
+                                <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
+                                    Build AI solutions of any scope with a proprietary <span className="text-accent font-bold uppercase">framework that's free from the constraints of LangChain</span> or other generic solutions.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     {/* card 2 */}
-                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] min-h-[350px] h-auto md:h-[350px] lg:h-[350px] xl:h-[350px] 2xl:h-[350px] flex justify-center items-center">
-                        <div className="h-[30%] flex justify-center items-end">
+                    <div className="glass-vertical-card-2 w-[100%] md:w-[30%] lg:w-[30%] min-h-[400px] h-auto md:h-[400px] lg:h-[400px] xl:h-[400px] 2xl:h-[400px] flex justify-center items-center">
+                        <div className="h-[40%] flex justify-center items-end">
                             {/* <video
                                 className="mix-blend-exclusion"
                                 muted // @ts-ignore
@@ -240,17 +243,19 @@ export const Integrators = () => {
                                 <img className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" src={card2Icon} alt="" />
                             </div>
                         </div>
-                        <div className="h-[70%] flex flex-col justify-start items-center text-[#CECECE]">
+                        <div className="h-[60%] flex flex-col justify-start items-center text-[#CECECE]">
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Deploy Anywhere</h2>
-                            <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">         
-                                Deploy AI Agents securely in any environment, even without internet access, ensuring <span className="text-accent font-bold uppercase">complete control over client data.</span>
-                            </p>
+                            <div className="h-[70%]">
+                                <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">         
+                                    Deploy AI Agents securely in any environment, even without internet access, ensuring <span className="text-accent font-bold uppercase">complete control over client data.</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     {/* card 3 */}
-                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] min-h-[350px] h-auto md:h-[350px] lg:h-[350px] xl:h-[350px] 2xl:h-[350px] flex justify-center items-center">
-                        <div className="h-[30%] flex justify-center items-end">
+                    <div className=" glass-vertical-card-3 w-[100%] md:w-[30%] lg:w-[30%] min-h-[400px] h-auto md:h-[400px] lg:h-[400px] xl:h-[400px] 2xl:h-[400px] flex justify-center items-center">
+                        <div className="h-[40%] flex justify-center items-end">
                             {/* <video
                                 className="mix-blend-exclusion"
                                 muted // @ts-ignore
@@ -264,11 +269,13 @@ export const Integrators = () => {
                                 <img className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" src={card3Icon} alt="" />
                             </div>
                         </div>
-                        <div className="h-[70%] flex flex-col justify-start items-center text-[#CECECE]">
+                        <div className="h-[60%] flex flex-col justify-start items-center text-[#CECECE]">
                             <h2 className="font-bold text-xl md:text-[1.5vw] lg:text-[1.5vw] mt-[21px] heading-text leading-relaxed">Scale & Control</h2>
-                            <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
-                                <span className="text-accent font-bold uppercase">Orchestrate agents across your entire client base,</span> track consumption with precision, and enjoy the flexibility of our licensing model.
-                            </p>
+                            <div className="h-[70%]">
+                                <p className="text-lg md:text-[1.25vw] lg:text-[1.25vw] px-6 leading-relaxed mt-2">
+                                    <span className="text-accent font-bold uppercase">Orchestrate agents across your entire client base,</span> track consumption with precision, and enjoy the flexibility of our licensing model.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -286,7 +293,7 @@ export const Integrators = () => {
                     <source src={Howitworks} type="video/mp4"/>
                 </video> */}
                 <div className='tags-btn'>How it works</div>
-                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] font-bold leading-[1.3] heading-text text-center mt-10 md:mt-0 lg:mt-0">Smooth Integration, just like our AI Agents.</h1>
+                <h1 className="text-xl md:text-[3vw] lg:text-[3vw] font-bold leading-[1.1] heading-text text-center mt-10 md:mt-[26px] lg:mt-[26px]">Smooth Integration, just like our AI Agents.</h1>
                 
                 {/* cards */}
                 <div className="flex flex-wrap justify-evenly mt-2 mx-auto text-[1.1vw] leading-relaxed">
@@ -367,7 +374,7 @@ export const Integrators = () => {
              <div className="p-3 md:p-10 lg:p-10 flex justify-between items-center flex-col md:flex-row lg:flex-row gap-[5vw]">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
-                        <h1 className="text-[40px] leading-[1.3] font-bold mt-[26px] heading-text">FAQs</h1>
+                        <h1 className="text-[40px] leading-[1.1] font-bold mt-[26px] heading-text">FAQs</h1>
                         <p className="text-lg lg:text-[18px] leading-relaxed mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently. If none of these answers on the right address your concerns, please reach out. We would be more than happy to clear up anything.</p>
                     </div>
                     <div className="mt-[40px]">
@@ -377,7 +384,7 @@ export const Integrators = () => {
                         <div className="mt-[20px] flex items-center">
                             {/* <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
                             {/* <div className="btn btn-accent rounded-sm">Contact Me</div> */}
-                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us-main/")}>Let's Talk</div>
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => handleNavigate()}>Let's Talk</div>
                         </div>
                     </div>
                 </div>

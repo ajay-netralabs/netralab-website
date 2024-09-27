@@ -1,8 +1,7 @@
 
 import parse from 'html-react-parser';
-import Innovartor1vid from "../../../public/vids/Innovator-1.mp4"
 
-import InnovatorProof from "../../../public/Innovator-john.svg"
+import InnovatorProof from "../../../public/Innovator-john-2.svg"
 import { useEffect, useState } from "react"
 import { InnovatorData } from "./data"
 import { FaqAccordion } from "../../components"
@@ -15,6 +14,7 @@ import ReactGA from 'react-ga4';
 
 import Lottie from "lottie-react";
 
+import firstAnimation from "../../../public/animations/innovators/1.json"
 import secondAnimation from "../../../public/animations/innovators/2.json"
 
 import Rectangle from "../../../public/icons/Rectangle.png"
@@ -95,7 +95,7 @@ export const Innovators = () => {
                                 <img className="brightness-[0.4] mix-blend-color-dodge" src={Integrator1Bg} alt="" />
                             </div>
                             <div className='static md:absolute lg:absolute top-0'>
-                                <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Turn Your Domain Expertise into a New Type of AI Agent</h1>
+                                <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">Turn Your Domain Expertise into a New Type of AI Agent</h1>
                                 <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">Leverage the <span className="font-bold text-accent">Ground Truth<sup>®</sup></span> framework to build the next generation of AI Agents, powered by your expertise, for your domain, and scale your business like never before.</p>
                                 <div className="mt-[40px]">
                                     <button className="btn btn-accent rounded-sm px-4 py-2 !text-white hover:cursor-pointer" onClick={() => handleNavigate()}>Request Demo</button>
@@ -105,14 +105,15 @@ export const Innovators = () => {
                 </div>
                 <div className="mt-4 md:mt-0 lg:mt-0  w-full md:w-[40%] lg:w-[40%] flex justify-center items-center">
                     <div className="w-[70%] md:w-[50%] lg:w-[50%] flex justify-center items-center">
-                        <video
+                        {/* <video
                             className="mix-blend-exclusion"
                             muted // @ts-ignore
                             autoPlay={"autoplay"}
                             preload="auto"
                             loop>
                             <source src={Innovartor1vid} type="video/mp4"/>
-                        </video>
+                        </video> */}
+                        <Lottie animationData={firstAnimation} className=''/>
                     </div>
                 </div>
            </div> 
@@ -130,7 +131,7 @@ export const Innovators = () => {
                             <source src={Opportunity} type="video/mp4"/>
                         </video> */}
                         <div className='tags-btn'>Opportunity</div>
-                        <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Be apart of the next generation of technology to solve your most complex problems.</h1>
+                        <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">Be apart of the next generation of technology to solve your most complex problems.</h1>
                         <div className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">
                             <p className='italic'>&quot;AI is about to completely change how you use computers&quot; </p>
                             <p>- Bill Gates, 2023</p>
@@ -164,7 +165,7 @@ export const Innovators = () => {
             {/* 3rd container */}
             <div className="mt-1 p-3 md:p-10 lg:p-10">
                 <div className="text-center">
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text">Benefits of Our Approach</h1>
+                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text">Benefits of Our Approach</h1>
                 </div>
                 {/* cards */}
                 <div className="flex flex-col md:flex-row lg:flex-row flex-wrap items-center gap-[28px] justify-between mt-2 md:mt-4 lg:mt-4 leading-relaxed">
@@ -255,7 +256,7 @@ export const Innovators = () => {
                         <source src={Proof} type="video/mp4"/>
                     </video> */}
                     <div className='tags-btn'>Proof</div>
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Unlocking the Power of AI for a Sustainable Energy Future.</h1>
+                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">Unlocking the Power of AI for a Sustainable Energy Future.</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">Bradley.ai, developed through our "Innovator" channel, is a testament to the transformative potential of combining deep industry expertise with cutting-edge AI.</p>
                 </div>
                 <div className="mt-4 flex items-center gap-[80px] flex-col-reverse md:flex-row lg:flex-row text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">
@@ -306,7 +307,7 @@ export const Innovators = () => {
                         <div className="border-t border-[#CECECE]">
                             <p>John Dukes</p>
                             <p>29+ Years DER Analysis Expertise</p>
-                            <p>CSO @ 8X Energy</p>
+                            <p>CEO @ 8X Energy</p>
                         </div>
                     </div>
                 </div>
@@ -324,7 +325,7 @@ export const Innovators = () => {
                         <source src={Process} type="video/mp4"/>
                     </video> */}
                     <div className='tags-btn'>Process</div>
-                    <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.3] font-bold mt-[26px] heading-text break-words">Turning Your IP into Expert AI Agents™ is a clear process.</h1>
+                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">Turning Your IP into Expert AI Agents™ is a clear process.</h1>
                 </div>
             </div>
             {/* 5th 2nd */}
@@ -371,11 +372,11 @@ export const Innovators = () => {
 
                 <div className="">
                     <div className="innovator-data md:py-[50px] md:px-[100px] lg:py-[50px] lg:px-[100px] !pt-0">
-                        {innovatorsData.map((data:string, index:number) => <div key={index} className={`${selectedIcon === index ? "opacity-[1]": "opacity-[0.4]"} text-center text-lg md:text-[1.25vw] lg:text-[1.25vw]`}>{parse(data)}</div>)}
+                        {innovatorsData.map((data:string, index:number) => <div key={index} className={`${selectedIcon === index ? "opacity-[1]": "opacity-[0.4]"} text-center text-lg md:text-[1.4vw] lg:text-[1.4vw] leading-[1.3]`}>{parse(data)}</div>)}
                     </div>
                 </div>
 
-                {/* <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Turning Your IP into Expert AI Agents™ is a clear process.</h1> */}
+                {/* <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-relaxed font-bold mt-[26px] heading-text break-words">Turning Your IP into Expert AI Agents™ is a clear process.</h1> */}
                 <div className="flex justify-center">
                         <button className="btn btn-accent rounded-sm px-4 py-2 !text-white hover:cursor-pointer" onClick={() => handleNavigate()}>Request Demo</button>
                 </div>
@@ -395,7 +396,7 @@ export const Innovators = () => {
                         <div className="mt-[20px] flex items-center">
                             {/* <input type="text" className="input input-bordered w-full max-w-xs bg-white text-black rounded-sm" /> */}
                             {/* <div className="btn btn-accent rounded-sm">Contact Me</div> */}
-                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => navigate("/contact-us-main/")}>Let's Talk</div>
+                            <div className="btn btn-accent btn-wide rounded-sm text-white" onClick={() => handleNavigate()}>Let's Talk</div>
                         </div>
                     </div>
                 </div>

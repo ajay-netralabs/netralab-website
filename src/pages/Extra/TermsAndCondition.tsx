@@ -353,19 +353,7 @@ Use the Services as part of any effort to compete with us or otherwise use the S
             <br />United States
  
             <br />info@netralabs.ai
-            <br />Custom Branding
-            <br />Hide “Powered by Termly” logo
-            <br />Customize Policy Style
-            <br />Theme
-
-            <br />Sharp (Default)
-            <br />Terms Of Use
-            <br />Disclaimer
-            <br />Cookie Policy
-            <br />Support
-            <br />Limit the use of my sensitive personal information
-            <br />Do not sell or share my personal information
-            <br />Consent Preferences
+            
 </p>
             </div>
         </div>
