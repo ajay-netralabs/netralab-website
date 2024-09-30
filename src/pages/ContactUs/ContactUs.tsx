@@ -181,25 +181,60 @@ export const ContactUsPage = ({ type }: {type:string}) => {
     //     y.body.style.backgroundColor = "red";
     // }
 
+    const getHeadline = (type: string) => {
+        if(type === "integrators") {
+            return "LET'S DISCUSS HOW AI AGENTS CAN NOW DELIVER EXPONENTIAL VALUE TO THE ENTERPRISE."
+        }else if(type === "creators") {
+            return "LET'S DISCUSS HOW AN EXPERT AI AGENTS CAN TURN YOUR IP INTO A UNICORN!"
+        } else {
+            return "LETS DISCUSS THE FUTURE OF ENTERPRISE AI AGENTS."
+        }
+    }
+
+    const getContent = (type: string) => {
+        if(type === "integrators"){
+            return <>
+            <p className="text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Do you want to learn how Expert AI Agents are the solution to solving your customers most challenging problems?</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Ground Truth™ is ready to guide you through the complexities of Generative AI and help you harness its potential to transform business.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">We understand that your customers' challenges are unique, and off-the-shelf solutions won’t cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain expertise to create Expert AI Agents that will deliver unparalleled results for your customers.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Don’t let the rapid pace of AI innovation leave you behind. Partner with Netra Labs, and let’s build the future of your business together.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Complete the form, and a Netra Labs representative will contact you shortly to discuss your specific goals and how Ground Truth™ can accelerate your AI journey.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">We look forward to speaking with you and exploring the possibilities.</p>
+         </>
+        }else if( type === "creators") {
+            return <>
+            <p className="text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Do you want to learn how the Expert class of AI Agents can transform a concept into a thriving business?</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Ground Truth™ is the only platform that builds agents from the ground up, leveraging the expertise and domain experience of its founders, at scale.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">We understand that your expertise and IP are unique, and off-the-shelf solutions won't cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain knowledge and IP to create Expert AI Agents that deliver unparalleled results.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Don’t let the rapid pace of AI innovation leave you behind. Partner with Netra Labs, and let’s build the future of your business together.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Complete the form, and a Netra Labs representative will contact you shortly to discuss your specific goals and how Ground Truth™ can accelerate your AI journey.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">We look forward to speaking with you and exploring the possibilities.</p>
+         </>
+        }else {
+            return <>
+            <p className="text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Do you want to learn about AI Agents? Ground Truth<sup>®</sup> is ready to guide you through the complexities of Generative AI and help you harness its potential to transform your business.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">We understand that your challenges are unique, and off-the-shelf solutions won’t cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain expertise to create Expert AI Agents that deliver unparalleled results.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Don’t let the rapid pace of AI innovation leave you behind. Partner with Netra Labs, and let’s build the future of your business together.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Complete the form, and a Netra Labs representative will contact you shortly to discuss your specific goals and how Ground Truth™ can accelerate your AI journey.</p>
+            <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">We look forward to speaking with you and exploring the possibilities.</p>
+         </>
+        }
+    }
+
     return (
         <div className="mb-2">
             {/* header */}
             <div className="w-full relative h-[400px]">
                 <img className="w-full h-full object-cover brightness-50" src={careerImg} alt="careers" />
                 <p className="heading-text absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold text-center heading-text">
-                    LETS DISCUSS THE FUTURE OF ENTERPRISE AI AGENTS.
+                    {getHeadline(type)}
                 </p>
             </div>
 
             <div className="flex flex-col md:flex-row lg:flex-row gap-[90px] p-10 contact-desc">
                 <div className="w-full md:w-[50%] lg:w-[50%] mt-[20px] text-[#CECECE]">
                     <div className="text-[#CECECE]">
-                        <p className="text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">Do you want to learn about AI Agents? Ground Truth™ is ready to guide you through the complexities of Generative AI and help you harness its potential to transform your business.</p>
-                        <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">We understand that your challenges are unique, and off-the-shelf solutions won’t cut it. That’s why we’re here to listen, learn, and craft a tailored approach that leverages your domain expertise to create Expert AI Agents that deliver unparalleled results.</p>
-                        <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Don’t let the rapid pace of AI innovation leave you behind. Partner with Netra Labs, and let’s build the future of your business together.</p>
-                        <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">Complete the form, and a Netra Labs representative will contact you shortly to discuss your specific goals and how Ground Truth™ can accelerate your AI journey.</p>
-                        <p className="mt-4 text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed">We look forward to speaking with you and exploring the possibilities.</p>
-                          
+                       {getContent(type)}
                     </div>
 
                     <div className="text-center mx-6">

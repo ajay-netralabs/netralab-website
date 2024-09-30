@@ -27,7 +27,7 @@ export const PrivacyPolicy = () => {
     }, [])
 
     return (
-        <div className="extra-page p-3 md:p-[5rem] lg:p-[5rem] text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] break-words">
+        <div className="extra-page p-3 md:p-[5rem] lg:p-[5rem] text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed text-[#CECECE] break-words">
              {/* heading */}
              <div>
                 <h1>PRIVACY NOTICE</h1>
@@ -56,7 +56,7 @@ export const PrivacyPolicy = () => {
              {/* table of Content */}
             <div>
                 <h1>TABLE OF CONTENTS</h1>
-                <div className="flex flex-col table-nl !w-full md:w-[50%] lg:w-[50%]">
+                <div className="flex flex-col table-nl !w-full md:w-[50%] lg:w-[50%] text-base md:text-[1.25vw] lg:text-[1.25vw]">
                     <div className="flex">
                         <p>1</p>
                         <p className="hover:cursor-pointer" onClick={() => scrollTOId("s1")}>WHAT INFORMATION DO WE COLLECT?</p>

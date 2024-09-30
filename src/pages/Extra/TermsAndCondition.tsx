@@ -29,7 +29,7 @@ export const TermsAndCondition = () => {
 
 
     return (
-        <div className="extra-page p-3 md:p-[5rem] lg:p-[5rem] text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] break-words">
+        <div className="extra-page p-3 md:p-[5rem] lg:p-[5rem] text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed text-[#CECECE] break-words">
             {/* heading */}
             <div>
                 <h1>TERMS AND CONDITIONS</h1>

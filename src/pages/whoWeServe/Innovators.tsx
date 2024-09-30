@@ -387,7 +387,7 @@ export const Innovators = () => {
                 <div className="w-full md:w-[50%] lg:w-[50%]">
                     <div>
                         <h1 className="text-[40px] leading-[66px] font-bold mt-[26px] heading-text">FAQs</h1>
-                        <p className="text-lg lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently. If none of these answers on the right address your concerns, please reach out. We would be more than happy to clear up anything.</p>
+                        <p className="text-lg lg:text-[18px] lg:leading-[28px] mt-[20px] text-[#CECECE]">Netra Lab's is pioneering the development of "Expert" AI Agents. Our approach via our proprietary Ground Truth framework is truly innovative and game changing.  We understand you may have serious questions. If none of the answers presented here address your concerns, please reach out to us and we will be happy to discuss and deep dive with you!</p>
                     </div>
                     <div className="mt-[40px]">
                         <p className="text-[#a5a5a5]">

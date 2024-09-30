@@ -60,7 +60,7 @@ export const Navbar = () => {
                                         </svg>
                                     </span>
                                 </div>
-                                <ul tabIndex={0} className=" text-[1.1vw] dropdown-content menu bg-base-100 z-[9999] top-[110%] right-0 translate-x-[-0%] w-full border border-accent"> 
+                                <ul tabIndex={0} className="drop-menu text-[1.1vw] dropdown-content menu bg-base-100 z-[9999] top-[110%] right-0 translate-x-[-0%] w-full border border-accent"> 
                                     <li><a onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a></li>
                                     <li><a onClick={() => handleNavigation("/ai-agents-for-innovators/")}>Innovators</a></li>
                                     <li><a onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a></li>

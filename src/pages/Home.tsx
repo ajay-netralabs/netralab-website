@@ -790,7 +790,7 @@ export const Home = () => {
                     <div>
                         <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text">FAQs</h1>
                         <div className=" flex justify-center items-center mx-auto">
-                            <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-[20px] text-[#CECECE]">This is a new space, and we're approaching things very differently. If none of these answers on the right address your concerns, please reach out. We would be more than happy to clear up anything.</p>
+                            <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-[20px] text-[#CECECE]">Netra Lab's is pioneering the development of "Expert" AI Agents. Our approach via our proprietary Ground Truth framework is truly innovative and game changing.  We understand you may have serious questions. If none of the answers presented here address your concerns, please reach out to us and we will be happy to discuss and deep dive with you!</p>
                         </div>
                     </div>
                     <div className="mt-[40px] ">

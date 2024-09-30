@@ -256,7 +256,7 @@ export const Langchain = () => {
         <div className="w-full h-[400px] md:h-[70vh] lg:h-[70vh] flex flex-col justify-center items-center designer">
             {/* <img className="w-full h-full object-cover" src={Designer} alt="language chain" /> */}
             <div className="m-3 md:m-12 lg:m-12">
-                <p className="text-base md:text-[1.2vw] lg:text-[1.2vw] leading-[1.4] text-[#CECECE]">For Data Scientists Focused on Deploying Expert AI Agents®</p>
+                <p className="text-base md:text-[1.2vw] lg:text-[1.2vw] leading-[1.4] text-[#CECECE]">For Data Scientists Focused on Deploying Expert AI Agents™</p>
                 <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.2] font-bold heading-text break-words mt-4">
                  Enterprise Language Chains: The Key to Production-Grade AI Agents
                 </h1>
