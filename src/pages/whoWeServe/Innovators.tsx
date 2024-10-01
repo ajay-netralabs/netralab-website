@@ -21,6 +21,7 @@ import Rectangle from "../../../public/icons/Rectangle.png"
 import card1Icon from "../../../public/icons/innovators/card1.svg"
 import card2Icon from "../../../public/icons/innovators/card2.svg"
 import card3Icon from "../../../public/icons/innovators/card3.svg"
+import { Helmet } from 'react-helmet-async';
 
 export const Innovators = () => {
 
@@ -78,6 +79,12 @@ export const Innovators = () => {
 
     return (
         <div className="mt-1 md:mt-12 lg:mt-12">
+
+            <Helmet>
+                <title>Netralabs | Innovators</title>
+                <meta name="description" content="Innovators" />
+            </Helmet>
+
             {/* first container */}
            <div className="p-3 md:p-10 lg:p-10 flex flex-col items-center md:flex-row lg:flex-row">
                 <div className="w-full md:w-[60%] lg:w-[60%]">

@@ -1,8 +1,10 @@
 
 import { FaqAccordion, MarqueeLogo } from "../components"
 
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import { useEffect, useState } from "react"
+import { Helmet } from "react-helmet-async"
+
 import { homeData } from "./homedata"
 
 import parse from 'html-react-parser';
@@ -59,6 +61,12 @@ export const Home = () => {
 
     return (
         <div className="">
+            <Helmet>
+                <title>Netralabs</title>
+                <meta name="description" content="netralabs home page" />
+            </Helmet>
+
+
             {/* first container */}
             <div className="m-3 md:m-12 lg:m-12 flex flex-col md:flex-row lg:flex-row">
                 {/* texts */}
@@ -72,7 +80,7 @@ export const Home = () => {
                             <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold heading-text">
                                 Turn Human Expertise into <br /> Expert AI Agents</h1>
                             <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Netra Lab's <strong className="text-accent">Ground Truth<sup>®</sup></strong> is the <strong className="uppercase text-accent">world's first Enterprise Language Chain</strong> framework for building and deploying Expert <strong className="uppercase text-accent">AI Agents™</strong> into production, at scale.</p>
-                            <div className="border border-accent learn-more-btn glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" onClick={() => navigate("/language-chain/")}>Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></div>
+                            <Link className="inline-block border border-accent learn-more-btn glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" to="/language-chain/">Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></Link>
                         </div>
                     </div>
                 </div>

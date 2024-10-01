@@ -27,6 +27,7 @@ import card3Icon from "../../../public/icons/creators/card3.svg"
 import Lottie from "lottie-react";
 
 import firstAnimation from "../../../public/animations/creators/1.json"
+import { Helmet } from 'react-helmet-async';
 
 export const Creators = () => {
 
@@ -71,6 +72,11 @@ export const Creators = () => {
 
     return (
         <div className="mt-1 md:mt-12 lg:mt-12">
+            <Helmet>
+                <title>Netralabs | Creators</title>
+                <meta name="description" content="Creators" />
+            </Helmet>
+
             {/* first container */}
            <div className="p-3 md:p-10 lg:p-10 flex flex-col items-center md:flex-row lg:flex-row">
                 <div className="w-full md:w-[60%] lg:w-[60%]">

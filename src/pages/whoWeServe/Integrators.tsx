@@ -6,7 +6,7 @@ import working from "../../../public/static_img/Working.svg"
 
 import { FaqAccordion } from "../../components"
 import { useEffect } from "react"
-import { useNavigate } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { addPrevLocation } from "../../store/locationSlice"
 
@@ -24,6 +24,7 @@ import Lottie from "lottie-react";
 import firstAnimation from "../../../public/animations/integrators/1.json"
 import secondAnimation from "../../../public/animations/integrators/2.json"
 import thirdAnimation from "../../../public/animations/integrators/3.json"
+import { Helmet } from "react-helmet-async"
 
 export const Integrators = () => {
     // only send analytics on production environment
@@ -57,6 +58,12 @@ export const Integrators = () => {
 
     return (
         <div className="mt-1 md:mt-12 lg:mt-12">
+
+            <Helmet>
+                <title>Netralabs | Integrators</title>
+                <meta name="description" content="Integrators" />
+            </Helmet>
+
             {/* first container */}
            <div className="p-3 md:p-10 lg:p-10 flex gap-[20px] flex-col items-start mt-[10px] md:flex-row lg:flex-row">
                 <div className="w-full md:w-[50%] lg:w-[50%]">
@@ -78,7 +85,7 @@ export const Integrators = () => {
                             <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text">Agentic Workflows for System Integrators</h1>
                             <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"><span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the world’s first language chain framework built to empower SIs to build and deploy custom AI agents that redefine the way processes are automated for your customers.</p>
                             {/* <div className="btn btn-accent rounded-sm mt-[35px] hover:cursor-pointer text-white" onClick={() => handleNavigate()}>Request Demo</div> */}
-                            <div className="border border-accent learn-more-btn glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" onClick={() => navigate("/language-chain/")}>Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></div>
+                            <Link className="inline-block border border-accent learn-more-btn glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" to="/language-chain/">Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></Link>
                         </div>
                     </div>
                 </div>

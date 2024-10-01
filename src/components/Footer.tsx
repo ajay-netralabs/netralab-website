@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 // import GTLOGO from "../../public/GT_logo.png"
 import GTLOGO from "../../public/netralabs.png"
 import X from "../../public/X.svg"
@@ -6,11 +6,11 @@ import LinkedIn from "../../public/LinkedIn.svg"
 
 export const Footer = () => {
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
-    const handleNavigation = (path?:string) => {
-        navigate(path || "/")
-    }
+    // const handleNavigation = (path?:string) => {
+    //     navigate(path || "/")
+    // }
 
     const handleNavigateSocialMedia = (type:string) => {
         let url = ""
@@ -48,11 +48,18 @@ export const Footer = () => {
            
             <nav className="flex flex-col gap-2 mt-10 md:mt-0 lg:mt-0 w-full md:w-[unset] lg:w-[unset]">
                 <h6 className="footer-title text-white">Resources</h6>
-                <a className="link link-hover" onClick={() => handleNavigation("/blog/")}>Blog</a>
+                {/* <a className="link link-hover" onClick={() => handleNavigation("/blog/")}>Blog</a>
                 <a className="link link-hover" onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a>
                 <a className="link link-hover" onClick={() => handleNavigation("/ai-agents-for-innovators/")}>Innovators</a>
                 <a className="link link-hover" onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a>
-                <a className="link link-hover" onClick={() => handleNavigation("/language-chain/")}>Enterprise Language Chain</a>
+                <a className="link link-hover" onClick={() => handleNavigation("/language-chain/")}>Enterprise Language Chain</a> */}
+                <Link className="link link-hover" to="/blog/">Blog</Link>
+                <Link className="link link-hover" to="/ai-agents-for-integrators/">Integrators</Link>
+                <Link className="link link-hover" to="/ai-agents-for-innovators/">Innovators</Link>
+                <Link className="link link-hover" to="/ai-agents-for-creators/">Creators</Link>
+                <Link className="link link-hover" to="/language-chain/">Enterprise Language Chain</Link>
+
+
             </nav>
             {/* <nav className="flex flex-col gap-2 w-full mt-10 md:mt-0 lg:mt-0 md:w-[unset] lg:w-[unset]"> */}
                 {/* <h6 className="footer-title text-white">Resources</h6>
@@ -63,9 +70,13 @@ export const Footer = () => {
             {/* </nav> */}
             <nav className="flex flex-col gap-2 mt-10 md:mt-0 lg:mt-0 w-full md:w-[unset] lg:w-[unset]">
                 <h6 className="footer-title text-white">Support & Contact</h6>
-                <a className="link link-hover" onClick={() => handleNavigation("/contact-us-main/")}>Contact Us</a>
+                {/* <a className="link link-hover" onClick={() => handleNavigation("/contact-us-main/")}>Contact Us</a>
                 <a className="link link-hover" onClick={() => handleNavigation("/contact-us-main/")}>Technical Support</a>
-                <a className="link link-hover" onClick={() => handleNavigation("/contact-us-main/")}>Feedback</a>
+                <a className="link link-hover" onClick={() => handleNavigation("/contact-us-main/")}>Feedback</a> */}
+
+                <Link className="link link-hover" to="/contact-us-main/">Contact Us</Link>
+                <Link className="link link-hover" to="/contact-us-main/">Technical Support</Link>
+                <Link className="link link-hover" to="/contact-us-main/">Feedback</Link>
             </nav>
         </footer>
 
@@ -80,8 +91,10 @@ export const Footer = () => {
             </aside>
             <nav className="md:place-self-center md:justify-self-end">
                 <div className="grid grid-flow-col gap-4 text-[#CECECE]">
-                    <p className="hover:cursor-pointer" onClick={() => handleNavigation("/terms-and-conditions/")}>Terms of Use</p>
-                    <p className="hover:cursor-pointer" onClick={() => handleNavigation("/privacy-policy/")}>Privacy policy</p>
+                    <Link to="/terms-and-conditions/" className="hover:cursor-pointer">Terms of Use</Link>
+                    <Link to="/privacy-policy/" className="hover:cursor-pointer">Privacy policy</Link>
+                    {/* <p className="hover:cursor-pointer" onClick={() => handleNavigation("/terms-and-conditions/")}>Terms of Use</p>
+                    <p className="hover:cursor-pointer" onClick={() => handleNavigation("/privacy-policy/")}>Privacy policy</p> */}
                     <img className="hover:cursor-pointer" src={X} alt="x" onClick={() => handleNavigateSocialMedia("twitter")}/>
                     <img className="hover:cursor-pointer" src={LinkedIn} alt="linkedin" onClick={() => handleNavigateSocialMedia("linkedin")} />
                 </div>
