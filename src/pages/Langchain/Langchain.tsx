@@ -30,6 +30,7 @@ import cubeAnimation from "../../../public/lottie/cubes.json"
 import optimizationAnimation from "../../../public/lottie/Optimization.json"
 
 import ReactGA from 'react-ga4';
+import { Helmet } from "react-helmet-async";
 
 export const Langchain = () => {
 
@@ -81,13 +82,40 @@ export const Langchain = () => {
 
     // }
 
+    const changeNav = () => {
+        const tabElement = document.getElementById("section-tabs")
 
-    // useEffect(() => {
-    //     window.addEventListener('scroll', changeNav);
-    //     return () => {
-    //       window.removeEventListener('scroll', changeNav);
-    //     }
-    //   }, [])
+        if(tabElement) {
+            const sectionTop = tabElement?.offsetTop
+            const navbarElement:any = document.getElementsByClassName("navbar")[0]
+
+            if(navbarElement.offsetTop) {
+
+                if(navbarElement.offsetTop < sectionTop) {
+                    tabElement.classList.remove("!z-[15]")
+                }else {
+                    tabElement.classList.add("!z-[15]")
+                }
+
+            }
+
+            // if(sectionTop < scrollTop){
+            //    if(navbarElement) {
+            //     navbarElement.classList.add("ajay")
+            //    }
+            // }else {
+            //    navbarElement && navbarElement.classList.remove("ajay")
+            // }
+        }
+    }
+
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav);
+        return () => {
+          window.removeEventListener('scroll', changeNav);
+        }
+      }, [])
 
 
     const handleNavigate = () => {
@@ -252,6 +280,12 @@ export const Langchain = () => {
 
     return (
     <div>
+
+            <Helmet>
+                <title>Netralabs | Enterprise Language Chain</title>
+                <meta name="description" content="Enterprise Language Chain" />
+            </Helmet>
+
         {/* header */}
         <div className="w-full h-[400px] md:h-[70vh] lg:h-[70vh] flex flex-col justify-center items-center designer">
             {/* <img className="w-full h-full object-cover" src={Designer} alt="language chain" /> */}
@@ -269,7 +303,7 @@ export const Langchain = () => {
         </div>
 
         {/* tabs */}
-        <div className="sticky top-0 py-8 bg-base-100 z-10 hidden md:flex lg:flex text-base md:text-[1.2vw] lg:text-[1.2vw] lg:leading-[1.4] justify-around">
+        <div id="section-tabs"  className="sticky top-0 py-8 bg-base-100 z-10 hidden md:flex lg:flex text-base md:text-[1.2vw] lg:text-[1.2vw] lg:leading-[1.4] justify-around">
             {/* <div className=""> */}
                 <p className={`${activeTab === "d1" ? "text-accent border-b border-b-accent" : ""} hover:cursor-pointer`} onClick={() => setActiveTab("d1")}>Enterprise Struggles</p>
                 <p className={`${activeTab === "d2" ? "text-accent border-b border-b-accent" : ""} hover:cursor-pointer`} onClick={() => setActiveTab("d2")}>Beyond LangChain</p>

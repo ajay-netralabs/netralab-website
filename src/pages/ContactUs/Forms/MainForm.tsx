@@ -1,5 +1,6 @@
 
 import ReactGA from 'react-ga4';
+import { Helmet } from 'react-helmet-async';
 
 export const MainForms = () => {
 
@@ -15,6 +16,10 @@ export const MainForms = () => {
 
     return (
         <div className=" max-w-[650px]">
+                <Helmet>
+                    <title>Netralabs | Contact us</title>
+                    <meta name="description" content="Contact us" />
+                </Helmet>
                 <iframe
                     src="https://api.leadconnectorhq.com/widget/form/3awB04FlOIOzGoJvhRzn"
                     style={{width:"100%", height: "100%", border: "none", borderRadius:"3px"}}

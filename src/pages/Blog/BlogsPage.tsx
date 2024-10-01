@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux"
 import { resetPrevLocation } from "../../store/locationSlice"
 
 import ReactGA from 'react-ga4';
+import { Helmet } from "react-helmet-async"
 
 export const BlogsPage = () => {
 
@@ -37,6 +38,10 @@ export const BlogsPage = () => {
 
     return (
         <div>
+             <Helmet>
+                <title>Netralabs | Blog</title>
+                <meta name="description" content="Blogs" />
+            </Helmet>
             {/* header */}
             <div className="w-full relative h-[400px]">
                 <img className="w-full object-cover h-full brightness-50" src={blogImg} alt="blogs" />

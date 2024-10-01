@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { resetPrevLocation } from "../../store/locationSlice";
 
 import ReactGA from 'react-ga4';
+import { Helmet } from "react-helmet-async";
 
 export const Blog = () => {
 
@@ -48,6 +49,10 @@ export const Blog = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Netralabs | Blog</title>
+                <meta name="description" content="Blogs" />
+            </Helmet>
             { blog ? (
                 <>
                     {/* header */}

@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom"
+import { useLocation, useNavigate, Link } from "react-router-dom"
 // import GT_LOGO from "../../public/GT_logo.png"
 import GT_LOGO from "../../public/netralabs.png"
 import { useEffect, useState } from "react"
@@ -32,14 +32,18 @@ export const Navbar = () => {
     }
 
 
+    const scrollWindowToTop = () => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
+    }
+
 
     return (
-        // z-index has to be lesser than the langChain page navbar z-index
-        <div className="navbar nav-bar bg-base-100 w-[unset] sticky top-0 z-[9]">
+        <div className="navbar nav-bar bg-base-100 w-[unset] sticky top-0 z-[11]">
             <div className="navbar-start">
                 <img alt="GT Logo" src={GT_LOGO} className="h-16 w-16 hover:cursor-pointer" onClick={() => handleNavigation("/")}/>
                 <div className="ml-4">
-                    <p className="text-xl md:text-[1.25vw] lg:text-[1.25vw]  font-bold hover:cursor-pointer" onClick={() => handleNavigation("/")}>Netra Labs</p>
+                    <Link to="/" className="text-xl md:text-[1.25vw] lg:text-[1.25vw]  font-bold hover:cursor-pointer" onClick={scrollWindowToTop}>Netra Labs</Link>
+                    {/* <p className="text-xl md:text-[1.25vw] lg:text-[1.25vw]  font-bold hover:cursor-pointer" onClick={() => handleNavigation("/")}>Netra Labs</p> */}
                     <p className="hidden md:flex lg:flex text-[1.1vw]">Building the Autonomous Enterprise</p>
                 </div>
             </div>
@@ -47,7 +51,7 @@ export const Navbar = () => {
                 {/* links */}
                 <div className="flex-none hidden lg:flex">
                     <ul className="menu menu-horizontal px-1 text-base">
-                        <li className={`mr-10 text-[1.1vw]  md:mr-4 ${menu.home.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation()}>Home</a></li>
+                        <li className={`mr-10 text-[1.1vw]  md:mr-4 ${menu.home.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><Link to="/" onClick={scrollWindowToTop}>Home</Link></li>
                         <li className={`mr-10 text-[1.1vw] md:mr-4 relative ${activeMenu !== "/" && menu.whoWeServe.includes(activeMenu) ? "border-b border-b-accent" : ""}`}>
                             <div tabIndex={0} role="button" className="dropdown flex gap-1 items-center">
                                 <div className="flex gap-2 items-center text-[1.1vw]">
@@ -61,16 +65,23 @@ export const Navbar = () => {
                                     </span>
                                 </div>
                                 <ul tabIndex={0} className="drop-menu text-[1.1vw] dropdown-content menu bg-base-100 z-[9999] top-[110%] right-0 translate-x-[-0%] w-full border border-accent"> 
-                                    <li><a onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a></li>
+                                    {/* <li><a onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a></li>
                                     <li><a onClick={() => handleNavigation("/ai-agents-for-innovators/")}>Innovators</a></li>
-                                    <li><a onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a></li>
+                                    <li><a onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a></li> */}
+                                    <li><Link to="/ai-agents-for-integrators/" onClick={scrollWindowToTop}>Integrators</Link></li>
+                                    <li><Link to="/ai-agents-for-innovators/" onClick={scrollWindowToTop}>Innovators</Link></li>
+                                    <li><Link to="/ai-agents-for-creators/" onClick={scrollWindowToTop}>Creators</Link></li>
                                 </ul>
                             </div>
                         </li>
-                        {/* <li className={`mr-10 md:mr-4 ${activeMenu !== "/" && menu.careers.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/careers")}>Careers</a></li> */}
-                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.blogs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/blog/")}>Blog</a></li>
+                        {/* <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.blogs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/blog/")}>Blog</a></li>
                         <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.enterpriseLangChain.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/language-chain/")}>Enterprise Language Chain</a></li>
-                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.contactUs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/contact-us-main/")}>Contact Us</a></li>
+                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.contactUs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><a onClick={() => handleNavigation("/contact-us-main/")}>Contact Us</a></li> */}
+
+                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.blogs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><Link to="/blog/" onClick={scrollWindowToTop}>Blog</Link></li>
+                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.enterpriseLangChain.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><Link to="/language-chain/" onClick={scrollWindowToTop}>Enterprise Language Chain</Link></li>
+                        <li className={`mr-10 text-[1.1vw] md:mr-4 ${activeMenu !== "/" && menu.contactUs.includes(activeMenu) ? "border-b border-b-accent" : ""}`}><Link to="/contact-us-main/" onClick={scrollWindowToTop}>Contact Us</Link></li>
+
                     </ul>
                 </div>
                     <div className="dropdown">
@@ -91,19 +102,25 @@ export const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow right-[50%]">
-                            <li><a onClick={() => handleNavigation("/")}>Home</a></li>
+                            <li><Link to="/" onClick={scrollWindowToTop}>Home</Link></li>
                             <li>
-                            <a>Who We Serve</a>
+                            <p>Who We Serve</p>
                             <ul className="p-2">
-                                <li><a onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a></li>
+                                {/* <li><a onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a></li>
                                 <li><a onClick={() => handleNavigation("/ai-agents-for-innovators/")}>Innovators</a></li>
-                                <li><a onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a></li>
+                                <li><a onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a></li> */}
+                                <li><Link to="/ai-agents-for-integrators/" onClick={scrollWindowToTop}>Integrators</Link></li>
+                                <li><Link to="/ai-agents-for-innovators/" onClick={scrollWindowToTop}>Innovators</Link></li>
+                                <li><Link to="/ai-agents-for-creators/" onClick={scrollWindowToTop}>Creators</Link></li>
                             </ul>
                             </li>
                             {/* <li><a onClick={() => handleNavigation("/careers")}>Careers</a></li> */}
-                            <li><a onClick={() => handleNavigation("/blog/")}>Blog</a></li>
+                            {/* <li><a onClick={() => handleNavigation("/blog/")}>Blog</a></li>
                             <li><a onClick={() => handleNavigation("/language-chain/")}>Enterprise Language Chain</a></li>
-                            <li><a onClick={() => handleNavigation("/contact-us-main/")}>Contact Us</a></li>
+                            <li><a onClick={() => handleNavigation("/contact-us-main/")}>Contact Us</a></li> */}
+                            <li><Link to="/blog/" onClick={scrollWindowToTop}>Blog</Link></li>
+                            <li><Link to="/language-chain/" onClick={scrollWindowToTop}>Enterprise Language Chain</Link></li>
+                            <li><Link to="/contact-us-main/" onClick={scrollWindowToTop}>Contact Us</Link></li>
                         </ul>
                     </div>
                 {/* <button className="hidden lg:flex btn btn-accent rounded-sm" onClick={() => handleNavigation("/contact-us")}>Let's Talk</button> */}
