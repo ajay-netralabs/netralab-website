@@ -70,6 +70,49 @@ export const Creators = () => {
         navigate("/contact-us-creators-ai-agents/")
     }
 
+
+    const [shouldDisplayModal, setShouldDisplayModal] = useState<boolean>(true)
+
+    const showModalOnScroll = () => {
+        const targetContainer = document.getElementById("s4")
+
+        if(targetContainer && shouldDisplayModal){
+            const top = targetContainer.offsetTop
+            const scrollPosition = window.scrollY
+            if(scrollPosition + 250 >= top) {
+                setShouldDisplayModal(false)
+                // open()
+                // setOpen(true)
+                const modal = document.getElementById('survey-modal')
+                //@ts-ignore
+                if(modal) modal.showModal()
+
+            }
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', showModalOnScroll);
+        return () => {
+          window.removeEventListener('scroll', showModalOnScroll);
+        }
+    })
+
+    useEffect(() => {
+       const timer = window.setTimeout(() => {
+            if(shouldDisplayModal){
+                setShouldDisplayModal(false)
+                // open()
+                // setOpen(true)
+                const modal = document.getElementById('survey-modal')
+                //@ts-ignore
+                if(modal) modal.showModal()
+            }
+        }, 20000)
+
+        return () => window.clearTimeout(timer)
+    })
+
     return (
         <div className="mt-1 md:mt-12 lg:mt-12">
             <Helmet>
@@ -262,7 +305,7 @@ export const Creators = () => {
             </div>
 
             {/* 4th container */}
-            <div className="p-3 md:p-10 lg:p-10 ">
+            <div id="s4" className="p-3 md:p-10 lg:p-10 ">
                 <div className="w-full md:w-[70%] lg:w-[70%]">
                         {/* <video
                             className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"

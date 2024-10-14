@@ -117,6 +117,49 @@ export const Langchain = () => {
         }
       }, [])
 
+    
+    const [shouldDisplayModal, setShouldDisplayModal] = useState<boolean>(true)
+
+    const showModalOnScroll = () => {
+        const targetContainer = document.getElementById("d3")
+
+        if(targetContainer && shouldDisplayModal){
+            const top = targetContainer.offsetTop
+            const scrollPosition = window.scrollY
+            if(scrollPosition + 250 >= top) {
+                setShouldDisplayModal(false)
+                // open()
+                // setOpen(true)
+                const modal = document.getElementById('survey-modal')
+                //@ts-ignore
+                if(modal) modal.showModal()
+
+            }
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', showModalOnScroll);
+        return () => {
+          window.removeEventListener('scroll', showModalOnScroll);
+        }
+    })
+
+    useEffect(() => {
+       const timer = window.setTimeout(() => {
+            if(shouldDisplayModal){
+                setShouldDisplayModal(false)
+                // open()
+                // setOpen(true)
+                const modal = document.getElementById('survey-modal')
+                //@ts-ignore
+                if(modal) modal.showModal()
+            }
+        }, 20000)
+
+        return () => window.clearTimeout(timer)
+    })
+
 
     const handleNavigate = () => {
         navigate("/contact-us-main/")

@@ -1,5 +1,5 @@
-import { Routes, Route } from 'react-router-dom'
-import { Home, PrivacyPolicy, TermsAndCondition } from './pages'
+import { Routes, Route, useNavigate } from 'react-router-dom'
+import { Home, LandingPage, PrivacyPolicy, SurveyTest, TermsAndCondition } from './pages'
 import './App.css'
 import { NavbarLayout } from './NavbarLayout'
 import { Creators, Innovators, Integrators } from './pages/whoWeServe'
@@ -9,9 +9,12 @@ import { ContactUsPage } from './pages/ContactUs'
 import { Langchain } from './pages/Langchain'
 
 import ReactGA from 'react-ga4';
+// import { useEffect } from 'react'
 
 
 function App() {
+
+  const navigate = useNavigate()
 
   // only send analytics on production environment
   const { PROD , VITE_GA_ID } = import.meta.env
@@ -19,9 +22,24 @@ function App() {
     ReactGA.initialize(VITE_GA_ID);
   }
 
+  // const showSurveyModal = (e:any) => {
+  //   e.preventDefault()
+  //   const modal = document.getElementById('survey-modal')
+  //   //@ts-ignore
+  //   if(modal) modal.showModal()
+  // }
+
+  // useEffect(() => {
+  //   window.addEventListener('beforeunload', showSurveyModal)
+  //   return () => removeEventListener('beforeunload', showSurveyModal)
+  // }, [])
+
 
   return (
+    <>
     <Routes>
+      <Route path="/ground-truth-gain-complete-control-over-your-ai-agent-development/" element={<LandingPage />} />
+      <Route path="/data-scientist-survey" element={<SurveyTest />} />
       <Route element={<NavbarLayout />}>
         <Route path="/" element={<Home />}/>
         <Route path="/ai-agents-for-integrators/" element={<Integrators />} />
@@ -42,7 +60,31 @@ function App() {
         <Route path="/contact-us-innovators-ai-agents/" element={<ContactUsPage type="innovators" />} />
         <Route path="/contact-us-integrators-ai-agents/" element={<ContactUsPage type="integrators" />} />
       </Route>
+      
     </Routes>
+
+        <dialog id="survey-modal" className="modal">
+          <div className="bg-gray-800 modal-box w-fit max-w-full !rounded-sm flex flex-col justify-center items-center">
+              <div className="bg-gray-600 w-full flex justify-center items-center rounded-sm">
+                  <h3 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold p-4">Your Unique Perspective Matters to Us.</h3>
+              </div>
+              <div className="mt-2 w-full p-4 bg-gray-600 flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-sm">
+                  <p>Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
+                  <ul className="list-disc">
+                      <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
+                      <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
+                  </ul>
+              </div>
+
+              <div className="w-full mt-2 rounded-sm btn btn-accent text-white" onClick={() => navigate("/data-scientist-survey")}>
+                  <p>Begin the Test - Your Insights Matter</p>
+              </div>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+              <button>close</button>
+          </form>
+      </dialog>
+    </>
   )
 }
 

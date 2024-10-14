@@ -5,7 +5,7 @@ import teamwork from "../../../public/static_img/Team-work.svg"
 import working from "../../../public/static_img/Working.svg"
 
 import { FaqAccordion } from "../../components"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate, Link } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { addPrevLocation } from "../../store/locationSlice"
@@ -55,6 +55,49 @@ export const Integrators = () => {
         dispatch(addPrevLocation("/ai-agents-for-integrators/"))
         navigate("/contact-us-integrators-ai-agents/")
     }
+
+
+    const [shouldDisplayModal, setShouldDisplayModal] = useState<boolean>(true)
+
+    const showModalOnScroll = () => {
+        const targetContainer = document.getElementById("s4")
+
+        if(targetContainer && shouldDisplayModal){
+            const top = targetContainer.offsetTop
+            const scrollPosition = window.scrollY
+            if(scrollPosition + 250 >= top) {
+                setShouldDisplayModal(false)
+                // open()
+                // setOpen(true)
+                const modal = document.getElementById('survey-modal')
+                //@ts-ignore
+                if(modal) modal.showModal()
+
+            }
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('scroll', showModalOnScroll);
+        return () => {
+          window.removeEventListener('scroll', showModalOnScroll);
+        }
+    })
+
+    useEffect(() => {
+       const timer = window.setTimeout(() => {
+            if(shouldDisplayModal){
+                setShouldDisplayModal(false)
+                // open()
+                // setOpen(true)
+                const modal = document.getElementById('survey-modal')
+                //@ts-ignore
+                if(modal) modal.showModal()
+            }
+        }, 20000)
+
+        return () => window.clearTimeout(timer)
+    })
 
     return (
         <div className="mt-1 md:mt-12 lg:mt-12">
@@ -202,7 +245,7 @@ export const Integrators = () => {
             </div>
 
             {/* 4th container */}
-            <div className="mt-1 p-3 md:p-10 lg:p-10">
+            <div id="s4" className="mt-1 p-3 md:p-10 lg:p-10">
                 <div className="text-center">
                     <h1 className="text-xl md:text-[3vw] lg:text-[3vw] font-bold leading-[1.1] heading-text">The Benefits of Our Approach</h1>
                 </div>
