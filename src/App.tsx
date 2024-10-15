@@ -30,7 +30,12 @@ function App() {
   // }
 
   // useEffect(() => {
-  //   window.addEventListener('beforeunload', showSurveyModal)
+  //   const modal = document.getElementById('survey-modal')
+  //   if(modal) {
+  //     //@ts-ignore
+  //     window.confirm = modal.showModal
+  //     window.addEventListener('beforeunload', showSurveyModal)
+  //   }
   //   return () => removeEventListener('beforeunload', showSurveyModal)
   // }, [])
 
@@ -64,13 +69,13 @@ function App() {
     </Routes>
 
         <dialog id="survey-modal" className="modal">
-          <div className="modal-box w-fit max-w-full bg-gray-800 flex flex-col justify-center items-center p-[10px] md:p-[60px] lg:p-[60px]">
-              <div className="bg-gray-600 w-full flex justify-center items-center rounded-sm">
+          <div className="modal-box w-fit max-w-full bg-[#303033FF] flex flex-col justify-center items-center p-[10px] md:p-[60px] lg:p-[60px]">
+              <div className="bg-[#DFDFDF17] w-full flex justify-center items-center rounded-sm">
                   <h3 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold p-4 text-center">Your Unique Perspective Matters to Us.</h3>
               </div>
-              <div className="mt-6 w-full p-[30px] bg-gray-600 flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-md">
-                  <p className='text-center'>Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
-                  <ul className="list-disc">
+              <div className="mt-6 w-full p-[30px] bg-[#DFDFDF17] flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-md">
+                  <p className='text-center text-base md:text-[1.25vw] lg:text-[1.25vw]'>Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
+                  <ul className="list-disc mt-4">
                       <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
                       <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
                   </ul>

@@ -207,10 +207,13 @@ export const LandingPage = () => {
                         </div> */}
 
                         <div className="flex flex-col justify-center items-center text-center m-0 md:m-[50px] lg:m-[50px]">
-                        <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold heading-text">Ground Truth<sup>®</sup>: Gain Complete Control Over Your AI Agent Development</h1>
-                        <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Create Hyper-Focused Expert AI Agents™ Without Limitations</p>
-                        <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]">As data scientists, we grapple with the constraints of generic AI frameworks that handcuff our ability to develop accurate solutions.</p>
-                        <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]"><span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the first enterprise language chain framework built specifically for data science teams. Ground Truth gives data scientists the power to create finely tuned enterprise AI Agents that solve enterprise problems, whilst being in your complete control.</p>
+                            <p className="w-full ml-[10vw] text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Create Hyper-Focused Expert AI Agents™ Without Limitations</p>
+                            {/* <div> */}
+                                <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold heading-text mt-4">Ground Truth<sup>®</sup>: Gain Complete Control Over Your AI Agent Development</h1>
+                                <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]">As data scientists, we grapple with the constraints of generic AI frameworks that handcuff our ability to develop accurate solutions.</p>
+                                <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]"><span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the first enterprise language chain framework <span className="font-bold text-accent uppercase">built specifically for data science teams</span>. Ground Truth gives data scientists the power to create finely tuned enterprise AI Agents that solve enterprise problems, whilst being in your complete control.</p>
+
+                            {/* </div> */}
                         </div>
                     </div>
                 </div>
@@ -296,9 +299,9 @@ export const LandingPage = () => {
             {/* video */}
             <div className="bg-white pt-4 md:pt-[10%] lg:pt-[10%] pb-4 flex flex-col justify-center items-center p-3 md:p-10 lg:p-10 ">
                 {/* videos */}
-                <div className="flex flex-col gap-y-2 md:flex-row lg:flex-row justify-between">
+                <div className="flex flex-col gap-y-2 md:flex-row lg:flex-row justify-center">
                     {/* <img src={f1} alt="" /> */}
-                    <div className="w-full md:w-[49%] lg:w-[49%]">
+                    <div className="w-full md:w-[70%] lg:w-[70%]">
                         <video
                             className=""
                             controls
@@ -308,7 +311,7 @@ export const LandingPage = () => {
                         </video>    
                     </div>
 
-                    <div className="w-full md:w-[49%] lg:w-[49%]">
+                    {/* <div className="w-full md:w-[49%] lg:w-[49%]">
                         <video
                             className=""
                             controls
@@ -316,12 +319,13 @@ export const LandingPage = () => {
                             >
                             <source src={video1} type="video/mp4"/>
                         </video>    
-                    </div>
+                    </div> */}
                     {/* video 1 */}
                     {/* video 2 */}
                 </div>
-                <div className="mt-10 flex flex-col items-center justify-center">   
-                    <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                <div className="mt-10 flex flex-col items-center justify-center">
+                    <p className="text-black">Take our 8-Question Test and For Your Time, Get...</p>
+                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
                 </div>
             </div>
 
@@ -339,8 +343,12 @@ export const LandingPage = () => {
                             <div className="mb-4">
                                 {parse(getCarouselData("1"))}
                             </div>
-                            <div className="flex justify-center mt-8">
-                                <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                            <div className="flex flex-col items-center justify-center mt-8">
+                                <p style={{fontSize: "initial"}} className="text-white">Take our 8-Question Test and For Your Time, Get...</p>
+                                <div>
+                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                                </div>
+                                {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
                             </div>
                         </div>
                         <div id="slide2" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
@@ -349,8 +357,12 @@ export const LandingPage = () => {
                             <div className="mb-4">
                                 {parse(getCarouselData("2"))}
                             </div>
-                            <div className="flex justify-center mt-8">
-                                <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                            <div className="flex flex-col items-center justify-center mt-8">
+                                <p style={{fontSize: "initial"}} className="text-white">Take our 8-Question Test and For Your Time, Get...</p>
+                                <div>
+                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                                </div>
+                                {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
                             </div>
                         </div>
                         <div id="slide3" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
@@ -359,8 +371,12 @@ export const LandingPage = () => {
                             <div className="mb-4">
                                 {parse(getCarouselData("3"))}
                             </div>
-                            <div className="flex justify-center mt-8">
-                                <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                            <div className="flex flex-col items-center justify-center mt-8">
+                                <p style={{fontSize: "initial"}} className="text-white">Take our 8-Question Test and For Your Time, Get...</p>
+                                <div>
+                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                                </div>
+                                {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
                             </div>
                         </div>
                         <div id="slide4" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
@@ -369,8 +385,12 @@ export const LandingPage = () => {
                             <div className="mb-4">
                                 {parse(getCarouselData("4"))}
                             </div>
-                            <div className="flex justify-center mt-8">
-                                <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                            <div className="flex flex-col items-center justify-center mt-8">
+                                <p style={{fontSize: "initial"}} className="text-white">Take our 8-Question Test and For Your Time, Get...</p>
+                                <div>
+                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                                </div>
+                                {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
                             </div>
                         </div>
                         <div id="slide5" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
@@ -379,8 +399,12 @@ export const LandingPage = () => {
                             <div className="mb-4">
                                 {parse(getCarouselData("5"))}
                             </div>
-                            <div className="flex justify-center mt-8">
-                                <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                            <div className="flex flex-col items-center justify-center mt-8">
+                                <p style={{fontSize: "initial"}} className="text-white">Take our 8-Question Test and For Your Time, Get...</p>
+                                <div>
+                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                                </div>
+                                {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
                             </div>
                         </div>
                     
@@ -592,13 +616,13 @@ export const LandingPage = () => {
                     <div className="mt-10 flex flex-col items-center justify-center">   
                             {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
                             <p className="text-center text-[#CECECE] text-base md:text-[1.2vw] lg:text-[1.2vw] mt-2">*Limited time offer: Get insights into Expert AI Agents and access to advanced workshops upon sign-up.</p> */}
-                        <div className="bg-gray-800/50 flex flex-col justify-center items-center p-[10px] md:p-[60px] lg:p-[60px]">
-                            <div className="bg-gray-600 w-full flex justify-center items-center rounded-sm text-center">
+                        <div className="bg-[#303033FF] flex flex-col justify-center items-center p-[10px] md:p-[60px] lg:p-[60px]">
+                            <div className="bg-[#DFDFDF17] w-full flex justify-center items-center rounded-sm text-center">
                                 <h3 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold p-[30px]">Your Unique Perspective Matters to Us.</h3>
                             </div>
-                            <div className="mt-6 w-full p-[30px] bg-gray-600 flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-md">
-                                <p className="text-center">Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
-                                <ul className="list-disc">
+                            <div className="mt-6 w-full p-[30px] bg-[#DFDFDF17] flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-md">
+                                <p className="text-center text-base md:text-[1.25vw] lg:text-[1.25vw] ">Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
+                                <ul className="list-disc mt-4">
                                     <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
                                     <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
                                 </ul>

@@ -1,0 +1,15 @@
+/* .modal-box {
+    position: absolute;
+    right: 100%;
+    transform: translate(0,0) !important;
+    animation: slide 1s;
+}
+
+@keyframes slide {
+    0% {
+        right: 100%;
+    }
+    100% {
+        right: 0;
+    }
+} */
