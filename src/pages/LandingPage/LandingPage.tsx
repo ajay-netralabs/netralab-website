@@ -207,7 +207,7 @@ export const LandingPage = () => {
                         </div> */}
 
                         <div className="flex flex-col justify-center items-center text-center m-0 md:m-[50px] lg:m-[50px]">
-                            <p className="w-full ml-[10vw] text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Create Hyper-Focused Expert AI Agents™ Without Limitations</p>
+                            <p className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Create Hyper-Focused Expert AI Agents™ Without Limitations</p>
                             {/* <div> */}
                                 <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold heading-text mt-4">Ground Truth<sup>®</sup>: Gain Complete Control Over Your AI Agent Development</h1>
                                 <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]">As data scientists, we grapple with the constraints of generic AI frameworks that handcuff our ability to develop accurate solutions.</p>
