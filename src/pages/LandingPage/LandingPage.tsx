@@ -1,6 +1,7 @@
 
 import "./landing-page.css"
-import GT_LOGO from "../../../public/GT_logo.png"
+// import GT_LOGO from "../../../public/GT_logo.png"
+import GT_LOGO from "../../../public/netralabs.png"
 import { Link, useNavigate } from "react-router-dom"
 import { useRef } from "react"
 import ReactGA from 'react-ga4';
@@ -89,13 +90,13 @@ export const LandingPage = () => {
             return `<p>Manage the entire AI development lifecycle within one platform—from synthetic data generation and preprocessing, model selection, adapter configuration, hyperparameter tuning, agentic workflow creation, to validation and human feedback. This integration streamlines your workflow and increases productivity by eliminating the need to use multiple disparate tools.</p>`
         }
         else if(activeTab === "3") {
-            return `<p>Ground Truth® handles the complexities of deployment for you. Deploy your AI agents effortlessly across any cloud provider or private infrastructure without worrying about configuring environments, managing dependencies, or integrating disparate systems. This allows you to focus on critical problem-solving and hypothesis testing, knowing that your models can be easily and reliably deployed.</p>`
+            return `<p>Ground Truth<sup>®</sup> handles the complexities of deployment for you. <span className="font-bold text-accent uppercase"> Deploy your AI agents effortlessly across any cloud provider or private infrastructure without worrying about configuring environments, managing dependencies, or integrating disparate systems.</span> This allows you to focus on critical problem-solving and hypothesis testing, knowing that your models can be easily and reliably deployed.</p>`
         }
         else if(activeTab === "4") {
-            return `<p>Utilize our patent-pending LoRA Adapter technology to fine-tune models efficiently, even with limited computational resources. By updating only a subset of model parameters, you achieve faster training times and significantly reduce computational load. This results in <span className="font-bold text-accent">4x faster inference</span> and <span className="font-bold text-accent">75% reduction in compute costs</span>, enabling you to deploy high-performance AI agents without the typical resource constraints associated with large models.</p>`
+            return `<p>Utilize our patent-pending LoRA Adapter technology to fine-tune models efficiently, even with limited computational resources. By updating only a subset of model parameters, you achieve faster training times and significantly reduce computational load. This results in <span className="font-bold text-accent uppercase">4x faster inference</span> and <span className="font-bold text-accent uppercase">75% reduction in compute costs</span>, enabling you to deploy high-performance AI agents without the typical resource constraints associated with large models.</p>`
         }
         else {
-            return `<p>Quickly validate outputs and adjust your models on the fly using Ground Truth's validation mode. Seamlessly integrate human feedback into the training process, allowing you to refine and improve your AI agents continuously. This iterative approach enhances model accuracy and effectiveness, and all of this is managed within a single platform—eliminating the need for manual interventions or separate systems for validation and feedback.</p>`
+            return `<p>Quickly validate outputs and adjust your models on the fly using Ground Truth's validation mode. Seamlessly integrate human feedback into the training process, allowing you to refine and improve your AI agents continuously. <span className="font-bold text-accent uppercase">This iterative approach enhances model accuracy and effectiveness</span>, and all of this is managed within a single platform—eliminating the need for manual interventions or separate systems for validation and feedback.</p>`
         }
     }
 
@@ -206,9 +207,10 @@ export const LandingPage = () => {
                         </div> */}
 
                         <div className="flex flex-col justify-center items-center text-center m-0 md:m-[50px] lg:m-[50px]">
-                        <h1 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold heading-text">Ground Truth<sup>®</sup>: Gain Complete Control Over Your AI Agent Development</h1>
+                        <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold heading-text">Ground Truth<sup>®</sup>: Gain Complete Control Over Your AI Agent Development</h1>
                         <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Create Hyper-Focused Expert AI Agents™ Without Limitations</p>
-                        <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]">As data scientists, we often grapple with the constraints of generic AI frameworks that hinder our ability to develop effective solutions. <span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the first enterprise language chain framework built specifically for data science teams. It empowers you to create hyper-focused AI agents finely tuned for complex, domain-specific tasks—providing you with a new level of control.</p>
+                        <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]">As data scientists, we grapple with the constraints of generic AI frameworks that handcuff our ability to develop accurate solutions.</p>
+                        <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]"><span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the first enterprise language chain framework built specifically for data science teams. Ground Truth gives data scientists the power to create finely tuned enterprise AI Agents that solve enterprise problems, whilst being in your complete control.</p>
                         </div>
                     </div>
                 </div>
@@ -225,36 +227,36 @@ export const LandingPage = () => {
                                     <svg viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#0FAE96"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow-down-circle</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd" > <g id="Icon-Set" transform="translate(-412.000000, -1087.000000)" fill="#000000"> <path d="M428,1117 C420.268,1117 414,1110.73 414,1103 C414,1095.27 420.268,1089 428,1089 C435.732,1089 442,1095.27 442,1103 C442,1110.73 435.732,1117 428,1117 L428,1117 Z M428,1087 C419.163,1087 412,1094.16 412,1103 C412,1111.84 419.163,1119 428,1119 C436.837,1119 444,1111.84 444,1103 C444,1094.16 436.837,1087 428,1087 L428,1087 Z M433.121,1102.46 L429,1106.59 L429,1096 C429,1095.45 428.553,1095 428,1095 C427.448,1095 427,1095.45 427,1096 L427,1106.59 L422.879,1102.46 C422.488,1102.07 421.855,1102.07 421.465,1102.46 C421.074,1102.86 421.074,1103.49 421.465,1103.88 L427.121,1109.54 C427.361,1109.78 427.689,1109.85 428,1109.79 C428.311,1109.85 428.639,1109.78 428.879,1109.54 L434.535,1103.88 C434.926,1103.49 434.926,1102.86 434.535,1102.46 C434.146,1102.07 433.512,1102.07 433.121,1102.46 L433.121,1102.46 Z" id="arrow-down-circle"> </path> </g> </g> </g></svg>
                                 </div>
                             </div>
-                            <div className="w-full  md:w-[16.6%] lg:w-[16.6%] flex flex-col justify-start items-center bg-white text-black p-4 border border-accent">
-                                <div className="h-[25%] flex justify-center items-center">
+                            <div className="w-full h-auto md:min-h-[15em]  md:w-[16.6%] lg:w-[16.6%] flex flex-col justify-start items-center bg-white text-black p-4 border border-accent">
+                                <div className="h-[25%] flex justify-center items-start">
                                     <h1 className="font-bold text-xl  md:text-[1.2vw] lg:text-[1.2vw] heading-text leading-[1.2]  text-accent text-center ">Full AI Agent Control</h1>
                                 </div>
-                                <p className="text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-[1.2] m-2">Take charge of every stage—from data generation to deployment—with Ground Truth® for customized, domain-specific AI solutions.</p>
+                                <p className="text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-[1.2] m-2 text-center">Take charge of every stage—from data generation to deployment—with Ground Truth® for customized, domain-specific AI solutions.</p>
                             </div>
                             <div className="w-full  md:w-[16.6%] lg:w-[16.6%] flex flex-col justify-start items-center bg-white text-black p-4 border border-accent">
-                            <div className="h-[25%] flex justify-center items-center">
-                                <h1 className="font-bold text-xl  md:text-[1.2vw] lg:text-[1.2vw] heading-text leading-[1.2]  text-accent text-center">Maximum Accuracy</h1>
-                            </div>
+                                <div className="h-[25%] flex justify-center items-start">
+                                    <h1 className="font-bold text-xl  md:text-[1.2vw] lg:text-[1.2vw] heading-text leading-[1.2]  text-accent text-center">Maximum Accuracy</h1>
+                                </div>
                                 
-                                <p className="text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-[1.2] m-2">Optimize models and fine-tune hyperparameters for unmatched accuracy in critical applications with Ground Truth®.</p>
+                                <p className="text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-[1.2] m-2 text-center">Optimize models and fine-tune hyperparameters for unmatched accuracy in critical applications with Ground Truth®.</p>
                             </div>
                             <div className="w-full  md:w-[16.6%] lg:w-[16.6%] flex flex-col justify-start items-center bg-white text-black p-4 border border-accent">
-                            <div className="h-[25%] flex justify-center items-center">
-                                <h1 className="font-bold text-xl  md:text-[1.2vw] lg:text-[1.2vw] heading-text leading-[1.2]  text-accent text-center">End-to-End Integration</h1>
-                            </div>
-                                <p className="text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-[1.2] m-2">Access a unified platform for data generation, model selection, tuning, and validation—no need for multiple tools.</p>
+                                <div className="h-[25%] flex justify-center items-start">
+                                    <h1 className="font-bold text-xl  md:text-[1.2vw] lg:text-[1.2vw] heading-text leading-[1.2]  text-accent text-center">End-to-End Integration</h1>
+                                </div>
+                                <p className="text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-[1.2] m-2 text-center">Access a unified platform for data generation, model selection, tuning, and validation—no need for multiple tools.</p>
                             </div>
                             <div className="w-full  md:w-[16.6%] lg:w-[16.6%] flex flex-col justify-start items-center bg-white text-black p-4 border border-accent">
-                            <div className="h-[25%] flex justify-center items-center">
+                            <div className="h-[25%] flex justify-center items-start">
                                 <h1 className="font-bold text-xl md:text-[1.2vw] lg:text-[1.2vw] heading-text leading-[1.2] text-accent text-center">Accelerated Hypothesis Testing</h1>
                             </div>
-                                <p className="text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-[1.2] m-2">Automate deployment across any cloud or infrastructure, streamlining hypothesis testing without operational hurdles.</p>
+                                <p className="text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-[1.2] m-2 text-center">Automate deployment across any cloud or infrastructure, streamlining hypothesis testing without operational hurdles.</p>
                             </div>
                             <div className="w-full  md:w-[16.6%] lg:w-[16.6%] flex flex-col justify-start items-center bg-white text-black p-4 border border-accent">
-                                <div className="h-[25%] flex justify-center items-center"> 
+                                <div className="h-[25%] flex justify-center items-start"> 
                                     <h1 className="font-bold text-xl md:text-[1.2vw] lg:text-[1.2vw] heading-text leading-[1.2] text-accent text-center">Fast Validation & Feedback</h1>
                                 </div>
-                                <p className="text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-[1.2] m-2">Validate and refine AI agents with integrated feedback loops for continuous improvement—all within Ground Truth®.</p>
+                                <p className="text-lg md:text-[1.1vw] lg:text-[1.1vw] leading-[1.2] m-2 text-center">Validate and refine AI agents with integrated feedback loops for continuous improvement—all within Ground Truth®.</p>
                             </div>
                             <div className="w-full  md:w-[16.6%] lg:w-[16.6%] bg-accent text-black flex md:hidden lg:hidden flex-col justify-center items-center text-center p-4">
                                 <p className="text-xl md:text-[1.2vw] lg:text-[1.2vw] heading-text leading-[1.2]">Watch Our Short Video to <span className="font-bold">Learn More</span></p>
@@ -294,7 +296,7 @@ export const LandingPage = () => {
             {/* video */}
             <div className="bg-white pt-4 md:pt-[10%] lg:pt-[10%] pb-4 flex flex-col justify-center items-center p-3 md:p-10 lg:p-10 ">
                 {/* videos */}
-                <div className="flex flex-col md:flex-row lg:flex-row justify-between">
+                <div className="flex flex-col gap-y-2 md:flex-row lg:flex-row justify-between">
                     {/* <img src={f1} alt="" /> */}
                     <div className="w-full md:w-[49%] lg:w-[49%]">
                         <video
@@ -327,71 +329,71 @@ export const LandingPage = () => {
             {/* section 3 */}
             <div className="integrator-second" id="features">
                 
-            <div className="flex flex-col justify-center items-center slider-container relative">
-                {/* beforeChange={(old:number, slide:number) => setActiveTab(`${slide + 1}`)} */}
-                {/* @ts-ignore */}
-                <Slider {...settings} className="w-[90%] md:w-full lg:w-full h-[600px] flex justify-center " ref={sliderRef}>
-                    <div id="slide1" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
-                        <h1 className="font-bold text-2xl md:text-[2.2vw] lg:text-[2.2vw] leading-[1.4] mb-4">Features #1</h1>
-                        <h1 className="font-bold text-xl md:text-[3vw] lg:text-[3vw] leading-[1.4] mb-4">Proprietary Agentic Framework</h1>
-                        <div className="mb-4">
-                            {parse(getCarouselData("1"))}
+                <div className="flex flex-col justify-center items-center slider-container relative">
+                    {/* beforeChange={(old:number, slide:number) => setActiveTab(`${slide + 1}`)} */}
+                    {/* @ts-ignore */}
+                    <Slider {...settings} className="w-[90%] md:w-full lg:w-full h-[600px] flex justify-center " ref={sliderRef}>
+                        <div id="slide1" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
+                            <h1 className="font-bold text-2xl md:text-[2.2vw] lg:text-[2.2vw] leading-[1.4] mb-4">Features #1</h1>
+                            <h1 className="font-bold text-xl md:text-[3vw] lg:text-[3vw] leading-[1.4] mb-4">Proprietary Agentic Framework</h1>
+                            <div className="mb-4">
+                                {parse(getCarouselData("1"))}
+                            </div>
+                            <div className="flex justify-center mt-8">
+                                <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                            </div>
                         </div>
-                        <div className="flex justify-center mt-8">
-                            <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                        <div id="slide2" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
+                            <h1 className="font-bold text-2xl md:text-[2.2vw] lg:text-[2.2vw] leading-[1.4] mb-4">Features #2</h1>
+                            <h1 className="font-bold text-xl md:text-[3vw] lg:text-[3vw] leading-[1.4] mb-4">Unified End-to-End Platform Workflow</h1>
+                            <div className="mb-4">
+                                {parse(getCarouselData("2"))}
+                            </div>
+                            <div className="flex justify-center mt-8">
+                                <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                            </div>
                         </div>
-                    </div>
-                    <div id="slide2" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
-                        <h1 className="font-bold text-2xl md:text-[2.2vw] lg:text-[2.2vw] leading-[1.4] mb-4">Features #2</h1>
-                        <h1 className="font-bold text-xl md:text-[3vw] lg:text-[3vw] leading-[1.4] mb-4">Unified End-to-End Platform Workflow</h1>
-                        <div className="mb-4">
-                            {parse(getCarouselData("2"))}
+                        <div id="slide3" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
+                            <h1 className="font-bold text-2xl md:text-[2.2vw] lg:text-[2.2vw] leading-[1.4] mb-4">Features #3</h1>
+                            <h1 className="font-bold text-xl md:text-[3vw] lg:text-[3vw] leading-[1.4] mb-4">Focus on Hypothesis Testing Without Deployment Hassles</h1>
+                            <div className="mb-4">
+                                {parse(getCarouselData("3"))}
+                            </div>
+                            <div className="flex justify-center mt-8">
+                                <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                            </div>
                         </div>
-                        <div className="flex justify-center mt-8">
-                            <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                        <div id="slide4" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
+                            <h1 className="font-bold text-2xl md:text-[2.2vw] lg:text-[2.2vw] leading-[1.4] mb-4">Features #4</h1>
+                            <h1 className="font-bold text-xl md:text-[3vw] lg:text-[3vw] leading-[1.4] mb-4">Efficient Model Fine-Tuning with LoRA Adapter Technology</h1>
+                            <div className="mb-4">
+                                {parse(getCarouselData("4"))}
+                            </div>
+                            <div className="flex justify-center mt-8">
+                                <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                            </div>
                         </div>
-                    </div>
-                    <div id="slide3" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
-                        <h1 className="font-bold text-2xl md:text-[2.2vw] lg:text-[2.2vw] leading-[1.4] mb-4">Features #3</h1>
-                        <h1 className="font-bold text-xl md:text-[3vw] lg:text-[3vw] leading-[1.4] mb-4">Focus on Hypothesis Testing Without Deployment Hassles</h1>
-                        <div className="mb-4">
-                            {parse(getCarouselData("3"))}
+                        <div id="slide5" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
+                            <h1 className="font-bold text-2xl md:text-[2.2vw] lg:text-[2.2vw] leading-[1.4] mb-4">Features #5</h1>
+                            <h1 className="font-bold text-xl md:text-[3vw] lg:text-[3vw] leading-[1.4] mb-4">Dynamic Validation and Human-in-the-Loop Feedback</h1>
+                            <div className="mb-4">
+                                {parse(getCarouselData("5"))}
+                            </div>
+                            <div className="flex justify-center mt-8">
+                                <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                            </div>
                         </div>
-                        <div className="flex justify-center mt-8">
-                            <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
-                        </div>
-                    </div>
-                    <div id="slide4" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
-                        <h1 className="font-bold text-2xl md:text-[2.2vw] lg:text-[2.2vw] leading-[1.4] mb-4">Features #4</h1>
-                        <h1 className="font-bold text-xl md:text-[3vw] lg:text-[3vw] leading-[1.4] mb-4">Efficient Model Fine-Tuning with LoRA Adapter Technology</h1>
-                        <div className="mb-4">
-                            {parse(getCarouselData("4"))}
-                        </div>
-                        <div className="flex justify-center mt-8">
-                            <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
-                        </div>
-                    </div>
-                    <div id="slide5" className="w-full text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed px-5 md:px-20 lg:px-20 py-10 h-[600px] !flex flex-col justify-center">
-                        <h1 className="font-bold text-2xl md:text-[2.2vw] lg:text-[2.2vw] leading-[1.4] mb-4">Features #5</h1>
-                        <h1 className="font-bold text-xl md:text-[3vw] lg:text-[3vw] leading-[1.4] mb-4">Dynamic Validation and Human-in-the-Loop Feedback</h1>
-                        <div className="mb-4">
-                            {parse(getCarouselData("5"))}
-                        </div>
-                        <div className="flex justify-center mt-8">
-                            <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
-                        </div>
-                    </div>
-                
-                </Slider>
+                    
+                    </Slider>
 
-                <div className="prev absolute left-1 top-[40%] translate-y-[-50%] w-8 hover:cursor-pointer" onClick={() => handleSlide("prev")}>
-                    <svg fill="#ffffff"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 330 330"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_6_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M205.606,234.394 c5.858,5.857,5.858,15.355,0,21.213C202.678,258.535,198.839,260,195,260s-7.678-1.464-10.606-4.394l-80-79.998 c-2.813-2.813-4.394-6.628-4.394-10.606c0-3.978,1.58-7.794,4.394-10.607l80-80.002c5.857-5.858,15.355-5.858,21.213,0 c5.858,5.857,5.858,15.355,0,21.213l-69.393,69.396L205.606,234.394z"></path> </g></svg>
-                </div>
+                    <div className="prev absolute left-1 top-[40%] translate-y-[-50%] w-8 hover:cursor-pointer" onClick={() => handleSlide("prev")}>
+                        <svg fill="#ffffff"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 330 330"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_6_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M205.606,234.394 c5.858,5.857,5.858,15.355,0,21.213C202.678,258.535,198.839,260,195,260s-7.678-1.464-10.606-4.394l-80-79.998 c-2.813-2.813-4.394-6.628-4.394-10.606c0-3.978,1.58-7.794,4.394-10.607l80-80.002c5.857-5.858,15.355-5.858,21.213,0 c5.858,5.857,5.858,15.355,0,21.213l-69.393,69.396L205.606,234.394z"></path> </g></svg>
+                    </div>
 
-                <div className="next absolute right-1 top-[40%] translate-y-[-50%] w-8 hover:cursor-pointer" onClick={() => handleSlide("next")}>
-                    <svg fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 330 330" ><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_2_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M225.606,175.605 l-80,80.002C142.678,258.535,138.839,260,135,260s-7.678-1.464-10.606-4.394c-5.858-5.857-5.858-15.355,0-21.213l69.393-69.396 l-69.393-69.392c-5.858-5.857-5.858-15.355,0-21.213c5.857-5.858,15.355-5.858,21.213,0l80,79.998 c2.814,2.813,4.394,6.628,4.394,10.606C230,168.976,228.42,172.792,225.606,175.605z"></path> </g></svg>
+                    <div className="next absolute right-1 top-[40%] translate-y-[-50%] w-8 hover:cursor-pointer" onClick={() => handleSlide("next")}>
+                        <svg fill="#ffffff" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 330 330" ><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path id="XMLID_2_" d="M165,0C74.019,0,0,74.019,0,165s74.019,165,165,165s165-74.019,165-165S255.981,0,165,0z M225.606,175.605 l-80,80.002C142.678,258.535,138.839,260,135,260s-7.678-1.464-10.606-4.394c-5.858-5.857-5.858-15.355,0-21.213l69.393-69.396 l-69.393-69.392c-5.858-5.857-5.858-15.355,0-21.213c5.857-5.858,15.355-5.858,21.213,0l80,79.998 c2.814,2.813,4.394,6.628,4.394,10.606C230,168.976,228.42,172.792,225.606,175.605z"></path> </g></svg>
+                    </div>
                 </div>
-            </div>
 
 
 
@@ -490,7 +492,7 @@ export const LandingPage = () => {
             </div>
 
             {/* section 4 */}
-            <div className="mt-[10%]">
+            <div className="mt-[20%] md:mt-[10%] lg:mt-[10%]">
                 {/* <div className="integrator-second-container">
                     <div className="m-3 md:m-12 lg:m-12 flex flex-col justify-center items-center">
                         <h1 className="text-xl md:text-[3vw] lg:text-[3vw] font-bold leading-[1.1] heading-text my-4">
@@ -548,11 +550,11 @@ export const LandingPage = () => {
                                 loop>
                                 <source src={Proof} type="video/mp4"/>
                             </video> */}
-                            <div className='tags-btn'>Proof</div>
+                            <div className='tags-btn'>Use Case</div>
                         <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">Unlocking the $78 Billion COBOL Time Bomb.</h1>
                         <p className="text-base md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]"> Joseph.ai, the world's first COBOL Batch Transformation Program Expert AI Agent, shatters the limitations of traditional modernization approaches, achieving unprecedented performance and cost savings.</p>
                     </div>
-                    <div className="flex items-center gap-[80px] justify-between flex-col md:flex-row lg:flex-row">
+                    <div className="flex items-center gap-[80px] gap-y-0 justify-between flex-col md:flex-row lg:flex-row">
                         <div className="flex flex-col w-full md:w-[50%] lg:w-[50%] text-base md:text-[1.1vw] lg:text-[1.1vw]">
                             <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
@@ -561,7 +563,7 @@ export const LandingPage = () => {
                             <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
                                 <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw]'>
-                                    Joseph.ai's patented generative AI engine <span className='font-bold text-accent uppercase'>deciphers intricate COBOL business logic</span> and transforms it into high-performance, cloud-native SQL, achieving unparalleled optimization. 
+                                    Joseph.ai's patented generative AI engine <span className='font-bold text-accent uppercase'>deciphers intricate COBOL business logic</span> and transforms it into high-performance, high-performant and maintable SQL, achieving unparalleled optimization. 
                                 </div>
                             </div>
                             <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
@@ -590,22 +592,22 @@ export const LandingPage = () => {
                     <div className="mt-10 flex flex-col items-center justify-center">   
                             {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
                             <p className="text-center text-[#CECECE] text-base md:text-[1.2vw] lg:text-[1.2vw] mt-2">*Limited time offer: Get insights into Expert AI Agents and access to advanced workshops upon sign-up.</p> */}
-                        <div className="bg-gray-800/50 !rounded-sm flex flex-col justify-center items-center p-6">
-                    <div className="bg-gray-600 w-full flex justify-center items-center rounded-sm">
-                        <h3 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold p-4">Your Unique Perspective Matters to Us.</h3>
-                    </div>
-                    <div className="mt-2 w-full p-4 bg-gray-600 flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-sm">
-                        <p>Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
-                        <ul className="list-disc">
-                            <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
-                            <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
-                        </ul>
-                    </div>
+                        <div className="bg-gray-800/50 flex flex-col justify-center items-center p-[10px] md:p-[60px] lg:p-[60px]">
+                            <div className="bg-gray-600 w-full flex justify-center items-center rounded-sm text-center">
+                                <h3 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold p-[30px]">Your Unique Perspective Matters to Us.</h3>
+                            </div>
+                            <div className="mt-6 w-full p-[30px] bg-gray-600 flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-md">
+                                <p className="text-center">Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
+                                <ul className="list-disc">
+                                    <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
+                                    <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
+                                </ul>
+                            </div>
 
-                    <div className="w-full mt-2 rounded-sm btn btn-accent text-white" onClick={() => handleNavigationToSurvey}>
-                        <p>Begin the Test - Your Insights Matter</p>
-                    </div>
-                </div>
+                            <div className="w-full mt-10 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={() => handleNavigationToSurvey}>
+                                <p className="">Begin the Test - Your Insights Matter</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

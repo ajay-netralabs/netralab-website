@@ -64,19 +64,19 @@ function App() {
     </Routes>
 
         <dialog id="survey-modal" className="modal">
-          <div className="bg-gray-800 modal-box w-fit max-w-full !rounded-sm flex flex-col justify-center items-center">
+          <div className="modal-box w-fit max-w-full bg-gray-800 flex flex-col justify-center items-center p-[10px] md:p-[60px] lg:p-[60px]">
               <div className="bg-gray-600 w-full flex justify-center items-center rounded-sm">
-                  <h3 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold p-4">Your Unique Perspective Matters to Us.</h3>
+                  <h3 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold p-4 text-center">Your Unique Perspective Matters to Us.</h3>
               </div>
-              <div className="mt-2 w-full p-4 bg-gray-600 flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-sm">
-                  <p>Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
+              <div className="mt-6 w-full p-[30px] bg-gray-600 flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-md">
+                  <p className='text-center'>Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
                   <ul className="list-disc">
                       <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
                       <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
                   </ul>
               </div>
 
-              <div className="w-full mt-2 rounded-sm btn btn-accent text-white" onClick={() => navigate("/data-scientist-survey")}>
+              <div className="w-full mt-10 btn btn-accent rounded-md hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={() => navigate("/data-scientist-survey")}>
                   <p>Begin the Test - Your Insights Matter</p>
               </div>
           </div>

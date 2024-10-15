@@ -1,6 +1,6 @@
 /* #slide1, #slide2, #slide3, #slide4, #slide5 */
 #slide1 {
-    background: linear-gradient(rgba(11, 11, 34, 0.9), rgba(11, 11, 34, 0.8)),
+    background: linear-gradient(rgba(11, 11, 34, 0.85), rgba(11, 11, 34, 0.95)),
     url("../../../public/landing-page/f1.jpeg");
 
     background-position: center;
@@ -9,7 +9,7 @@
 }
 
 #slide2 {
-    background: linear-gradient(rgba(11, 11, 34, 0.9), rgba(11, 11, 34, 0.8)),
+    background: linear-gradient(rgba(11, 11, 34, 0.85), rgba(11, 11, 34, 0.95)),
     url("../../../public/landing-page/f2.jpeg");
 
     background-position: center;
@@ -18,7 +18,7 @@
 }
 
 #slide3 {
-    background: linear-gradient(rgba(11, 11, 34, 0.9), rgba(11, 11, 34, 0.8)),
+    background: linear-gradient(rgba(11, 11, 34, 0.85), rgba(11, 11, 34, 0.95)),
     url("../../../public/landing-page/f3.jpeg");
 
     background-position: center;
@@ -27,7 +27,7 @@
 }
 
 #slide4 {
-    background: linear-gradient(rgba(11, 11, 34, 0.9), rgba(11, 11, 34, 0.8)),
+    background: linear-gradient(rgba(11, 11, 34, 0.85), rgba(11, 11, 34, 0.95)),
     url("../../../public/landing-page/f4.jpeg");
 
     background-position: center;
@@ -36,7 +36,7 @@
 }
 
 #slide5 {
-    background: linear-gradient(rgba(11, 11, 34, 0.9), rgba(11, 11, 34, 0.8)),
+    background: linear-gradient(rgba(11, 11, 34, 0.85), rgba(11, 11, 34, 0.95)),
     url("../../../public/landing-page/f5.jpeg");
 
     background-position: center;
@@ -63,9 +63,9 @@
     transform: translateX(-50%); */
 }
 
-.slick-list {
+/* .slick-list {
     margin-bottom: 10px;
-}
+} */
 
 .slick-active .slide-icon {
     border-color: #0FAE96ed;
@@ -99,7 +99,7 @@
 
 
 #hero-section {
-    background: linear-gradient(rgba(11, 11, 34, 0.7), rgba(11, 11, 34, 0.7)),
+    background: linear-gradient(rgba(11, 11, 34, 0.85), rgba(11, 11, 34, 0.95)),
     url("../../../public/landing-page/f2.jpeg");
     background-position: center;
     /* border: 1px solid red; */
@@ -193,6 +193,7 @@
     .slick-dots {
         gap: 20%;
         width: 50%;
+        top: 110%;
     }
     .slick-dots li {
         width: 100px;
@@ -204,6 +205,7 @@
     .slick-dots {
         gap: 20%;
         width: 50%;
+        top: 110%;
     }
     .slick-dots li {
         width: 100px;
