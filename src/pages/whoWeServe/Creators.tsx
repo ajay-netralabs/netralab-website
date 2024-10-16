@@ -84,8 +84,11 @@ export const Creators = () => {
                 // open()
                 // setOpen(true)
                 const modal = document.getElementById('survey-modal')
-                //@ts-ignore
-                if(modal) modal.showModal()
+                if(modal) {
+                    modal.classList.add("modal-center")
+                    //@ts-ignore
+                    modal.showModal()
+                }
 
             }
         }

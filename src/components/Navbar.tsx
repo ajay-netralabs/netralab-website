@@ -5,6 +5,13 @@ import { useEffect, useState } from "react"
 
 export const Navbar = () => {
 
+    const handleClick = () => {
+        const elem:any = document.activeElement;
+        if (elem) {
+          elem?.blur();
+        }
+      };
+
     const menu = {
         home : "/",
         whoWeServe : "/ai-agents-for-integrators/, /ai-agents-for-innovators/, /ai-agents-for-creators/",
@@ -68,9 +75,18 @@ export const Navbar = () => {
                                     {/* <li><a onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a></li>
                                     <li><a onClick={() => handleNavigation("/ai-agents-for-innovators/")}>Innovators</a></li>
                                     <li><a onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a></li> */}
-                                    <li><Link to="/ai-agents-for-integrators/" onClick={scrollWindowToTop}>Integrators</Link></li>
-                                    <li><Link to="/ai-agents-for-innovators/" onClick={scrollWindowToTop}>Innovators</Link></li>
-                                    <li><Link to="/ai-agents-for-creators/" onClick={scrollWindowToTop}>Creators</Link></li>
+                                    <li><Link to="/ai-agents-for-integrators/" onClick={() => {
+                                        handleClick();
+                                        scrollWindowToTop()
+                                    }}>Integrators</Link></li>
+                                    <li><Link to="/ai-agents-for-innovators/" onClick={() => {
+                                        handleClick();
+                                        scrollWindowToTop()
+                                    }}>Innovators</Link></li>
+                                    <li><Link to="/ai-agents-for-creators/" onClick={() => {
+                                        handleClick();
+                                        scrollWindowToTop()
+                                    }}>Creators</Link></li>
                                 </ul>
                             </div>
                         </li>
@@ -102,25 +118,46 @@ export const Navbar = () => {
                         <ul
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow right-[50%]">
-                            <li><Link to="/" onClick={scrollWindowToTop}>Home</Link></li>
+                            <li><Link to="/" onClick={() => {
+                                handleClick();
+                                scrollWindowToTop()
+                                }}>Home</Link></li>
                             <li>
                             <p>Who We Serve</p>
                             <ul className="p-2">
                                 {/* <li><a onClick={() => handleNavigation("/ai-agents-for-integrators/")}>Integrators</a></li>
                                 <li><a onClick={() => handleNavigation("/ai-agents-for-innovators/")}>Innovators</a></li>
                                 <li><a onClick={() => handleNavigation("/ai-agents-for-creators/")}>Creators</a></li> */}
-                                <li><Link to="/ai-agents-for-integrators/" onClick={scrollWindowToTop}>Integrators</Link></li>
-                                <li><Link to="/ai-agents-for-innovators/" onClick={scrollWindowToTop}>Innovators</Link></li>
-                                <li><Link to="/ai-agents-for-creators/" onClick={scrollWindowToTop}>Creators</Link></li>
+                                <li><Link to="/ai-agents-for-integrators/" onClick={() => {
+                                    handleClick();
+                                    scrollWindowToTop()
+                                    }}>Integrators</Link></li>
+                                <li><Link to="/ai-agents-for-innovators/" onClick={() => {
+                                    handleClick();
+                                    scrollWindowToTop()
+                                    }}>Innovators</Link></li>
+                                <li><Link to="/ai-agents-for-creators/" onClick={() => {
+                                    handleClick();
+                                    scrollWindowToTop()
+                                    }}>Creators</Link></li>
                             </ul>
                             </li>
                             {/* <li><a onClick={() => handleNavigation("/careers")}>Careers</a></li> */}
                             {/* <li><a onClick={() => handleNavigation("/blog/")}>Blog</a></li>
                             <li><a onClick={() => handleNavigation("/language-chain/")}>Enterprise Language Chain</a></li>
                             <li><a onClick={() => handleNavigation("/contact-us-main/")}>Contact Us</a></li> */}
-                            <li><Link to="/blog/" onClick={scrollWindowToTop}>Blog</Link></li>
-                            <li><Link to="/language-chain/" onClick={scrollWindowToTop}>Enterprise Language Chain</Link></li>
-                            <li><Link to="/contact-us-main/" onClick={scrollWindowToTop}>Contact Us</Link></li>
+                            <li><Link to="/blog/" onClick={() => {
+                                    handleClick();
+                                    scrollWindowToTop()
+                                    }}>Blog</Link></li>
+                            <li><Link to="/language-chain/" onClick={() => {
+                                    handleClick();
+                                    scrollWindowToTop()
+                                    }}>Enterprise Language Chain</Link></li>
+                            <li><Link to="/contact-us-main/" onClick={() => {
+                                    handleClick();
+                                    scrollWindowToTop()
+                                    }}>Contact Us</Link></li>
                         </ul>
                     </div>
                 {/* <button className="hidden lg:flex btn btn-accent rounded-sm" onClick={() => handleNavigation("/contact-us")}>Let's Talk</button> */}

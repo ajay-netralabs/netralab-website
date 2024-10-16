@@ -22,22 +22,53 @@ function App() {
     ReactGA.initialize(VITE_GA_ID);
   }
 
+
+  // useEffect(() => {
+  //   const modal = document.getElementById('survey-modal')
+  //   if(modal) {
+  //     modal.classList.add("modal-center")
+  //     //@ts-ignore
+  //     modal.showModal()
+  //   } 
+  // })
+
+  const removeClass = () => {
+    const modal = document.getElementById('survey-modal')
+    if(modal) {
+      modal.classList.remove("modal-center")
+    } 
+  }
+
+  const closeModal = () => {
+    const modal = document.getElementById('survey-modal')
+    if(modal) {
+      //@ts-ignore
+      modal.close()
+    } 
+  }
+
   // const showSurveyModal = (e:any) => {
   //   e.preventDefault()
+  //   e.returnValue = ''
+  //   return ''
   //   const modal = document.getElementById('survey-modal')
   //   //@ts-ignore
   //   if(modal) modal.showModal()
   // }
 
   // useEffect(() => {
-  //   const modal = document.getElementById('survey-modal')
-  //   if(modal) {
+  //   // const modal = document.getElementById('survey-modal')
+  //   // if(modal) {
   //     //@ts-ignore
-  //     window.confirm = modal.showModal
-  //     window.addEventListener('beforeunload', showSurveyModal)
-  //   }
+  //     // window.confirm = modal.showModal
+  //   // }
+  //   window.addEventListener('beforeunload', showSurveyModal)
   //   return () => removeEventListener('beforeunload', showSurveyModal)
   // }, [])
+
+  // const toggleVisibleModal = () => {
+  //   setIsOpen((open:boolean) => !open)
+  // };
 
 
   return (
@@ -68,8 +99,8 @@ function App() {
       
     </Routes>
 
-        <dialog id="survey-modal" className="modal">
-          <div className="modal-box w-fit max-w-full bg-[#303033FF] flex flex-col justify-center items-center p-[10px] md:p-[60px] lg:p-[60px]">
+        <dialog id="survey-modal" className="modal bg-transparent border-0">
+          <div className="modal-center modal-box w-fit max-w-full bg-[#303033FF] flex flex-col justify-center items-center p-[10px] md:p-[60px] lg:p-[60px]">
               <div className="bg-[#DFDFDF17] w-full flex justify-center items-center rounded-sm">
                   <h3 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold p-4 text-center">Your Unique Perspective Matters to Us.</h3>
               </div>
@@ -81,12 +112,12 @@ function App() {
                   </ul>
               </div>
 
-              <div className="w-full mt-10 btn btn-accent rounded-md hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={() => navigate("/data-scientist-survey")}>
+              <div className="w-full mt-10 btn btn-accent rounded-md hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={() => {closeModal(); navigate("/data-scientist-survey")}}>
                   <p>Begin the Test - Your Insights Matter</p>
               </div>
           </div>
-          <form method="dialog" className="modal-backdrop">
-              <button>close</button>
+          <form method="dialog" className="modal-backdrop bg-transparent">
+              <button className='border-0' onClick={removeClass}>close</button>
           </form>
       </dialog>
     </>
