@@ -105,7 +105,7 @@ function App() {
                   <h3 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold p-4 text-center">Your Unique Perspective Matters to Us.</h3>
               </div>
               <div className="mt-6 w-full p-[30px] bg-[#DFDFDF17] flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-md">
-                  <p className='text-center text-base md:text-[1.25vw] lg:text-[1.25vw]'>Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
+                  <p className='text-center text-base md:text-[1.25vw] lg:text-[1.25vw] font-bold'>Take our 8-Question Test and For Your Time, Get...</p>
                   <ul className="list-disc mt-4">
                       <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
                       <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>

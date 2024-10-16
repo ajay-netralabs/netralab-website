@@ -324,8 +324,12 @@ export const LandingPage = () => {
                     {/* video 2 */}
                 </div>
                 <div className="mt-10 flex flex-col items-center justify-center">
-                    <p className="text-black">Take our 8-Question Test and For Your Time, Get...</p>
-                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                    <p className="text-black font-bold text-center text-base md:text-[1.25vw] lg:text-[1.25vw]">Take our 8-Question Test and For Your Time, Get...</p>
+                    <ul className="list-disc mt-2 text-black">
+                        <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
+                        <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
+                    </ul>
+                    <Link className="mt-4 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
                 </div>
             </div>
 
@@ -344,8 +348,12 @@ export const LandingPage = () => {
                                 {parse(getCarouselData("1"))}
                             </div>
                             <div className="flex flex-col items-center justify-center mt-8">
-                                <p style={{fontSize: "initial"}} className="text-white">Take our 8-Question Test and For Your Time, Get...</p>
-                                <div>
+                                <p className="text-white  font-bold text-center text-base md:text-[1.25vw] lg:text-[1.25vw]">Take our 8-Question Test and For Your Time, Get...</p>
+                                <ul className="list-disc mt-2" style={{fontSize: "initial"}} >
+                                    <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
+                                    <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
+                                </ul>
+                                <div className="mt-4">
                                     <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
                                 </div>
                                 {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
@@ -358,8 +366,12 @@ export const LandingPage = () => {
                                 {parse(getCarouselData("2"))}
                             </div>
                             <div className="flex flex-col items-center justify-center mt-8">
-                                <p style={{fontSize: "initial"}} className="text-white">Take our 8-Question Test and For Your Time, Get...</p>
-                                <div>
+                                <p className="text-white  font-bold text-center text-base md:text-[1.25vw] lg:text-[1.25vw]">Take our 8-Question Test and For Your Time, Get...</p>
+                                <ul className="list-disc mt-2" style={{fontSize: "initial"}} >
+                                    <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
+                                    <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
+                                </ul>
+                                <div className="mt-4">
                                     <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
                                 </div>
                                 {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
@@ -372,8 +384,12 @@ export const LandingPage = () => {
                                 {parse(getCarouselData("3"))}
                             </div>
                             <div className="flex flex-col items-center justify-center mt-8">
-                                <p style={{fontSize: "initial"}} className="text-white">Take our 8-Question Test and For Your Time, Get...</p>
-                                <div>
+                                <p className="text-white  font-bold text-center text-base md:text-[1.25vw] lg:text-[1.25vw]">Take our 8-Question Test and For Your Time, Get...</p>
+                                <ul className="list-disc mt-2" style={{fontSize: "initial"}} >
+                                    <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
+                                    <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
+                                </ul>
+                                <div className="mt-4">
                                     <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
                                 </div>
                                 {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
@@ -386,8 +402,12 @@ export const LandingPage = () => {
                                 {parse(getCarouselData("4"))}
                             </div>
                             <div className="flex flex-col items-center justify-center mt-8">
-                                <p style={{fontSize: "initial"}} className="text-white">Take our 8-Question Test and For Your Time, Get...</p>
-                                <div>
+                            <p className="text-white  font-bold text-center text-base md:text-[1.25vw] lg:text-[1.25vw]">Take our 8-Question Test and For Your Time, Get...</p>
+                                <ul className="list-disc mt-2" style={{fontSize: "initial"}} >
+                                    <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
+                                    <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
+                                </ul>
+                                <div className="mt-4">
                                     <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
                                 </div>
                                 {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
@@ -400,8 +420,12 @@ export const LandingPage = () => {
                                 {parse(getCarouselData("5"))}
                             </div>
                             <div className="flex flex-col items-center justify-center mt-8">
-                                <p style={{fontSize: "initial"}} className="text-white">Take our 8-Question Test and For Your Time, Get...</p>
-                                <div>
+                            <p className="text-white  font-bold text-center text-base md:text-[1.25vw] lg:text-[1.25vw]">Take our 8-Question Test and For Your Time, Get...</p>
+                                <ul className="list-disc mt-2" style={{fontSize: "initial"}} >
+                                    <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
+                                    <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
+                                </ul>
+                                <div className="mt-4">
                                     <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
                                 </div>
                                 {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
@@ -621,7 +645,7 @@ export const LandingPage = () => {
                                 <h3 className="text-xl md:text-[2.5vw] lg:text-[2.5vw] leading-[1.1] font-bold p-[30px]">Your Unique Perspective Matters to Us.</h3>
                             </div>
                             <div className="mt-6 w-full p-[30px] bg-[#DFDFDF17] flex flex-col items-center text-lg md:text-[1.1vw] lg:text-[1.1vw] rounded-md">
-                                <p className="text-center text-base md:text-[1.25vw] lg:text-[1.25vw] ">Take our 8-Question Test <span className="font-bold">and For Your Time, Get...</span></p>
+                                <p className="text-center text-base md:text-[1.25vw] lg:text-[1.25vw] font-bold">Take our 8-Question Test and For Your Time, Get...</p>
                                 <ul className="list-disc mt-4">
                                     <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
                                     <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
