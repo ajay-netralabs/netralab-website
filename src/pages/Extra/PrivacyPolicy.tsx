@@ -30,7 +30,7 @@ export const PrivacyPolicy = () => {
     return (
         <div className="extra-page p-3 md:p-[5rem] lg:p-[5rem] text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed text-[#CECECE] break-words">
                 <Helmet>
-                    <title>Netralabs | Privacy Policy</title>
+                    <title>Netra Labs | Privacy Policy</title>
                     <meta name="description" content="Privacy Policy" />
                 </Helmet>
              

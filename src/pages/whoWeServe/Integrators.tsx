@@ -106,7 +106,7 @@ export const Integrators = () => {
         <div className="mt-1 md:mt-12 lg:mt-12">
 
             <Helmet>
-                <title>Netralabs | Integrators</title>
+                <title>Netra Labs | Integrators</title>
                 <meta name="description" content="Integrators" />
             </Helmet>
 

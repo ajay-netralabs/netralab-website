@@ -119,7 +119,7 @@ export const Creators = () => {
     return (
         <div className="mt-1 md:mt-12 lg:mt-12">
             <Helmet>
-                <title>Netralabs | Creators</title>
+                <title>Netra Labs | Creators</title>
                 <meta name="description" content="Creators" />
             </Helmet>
 

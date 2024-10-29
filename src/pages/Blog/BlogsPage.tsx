@@ -16,7 +16,7 @@ export const BlogsPage = () => {
         ReactGA.send({
             hitType: "pageview",
             page: "/blog/",
-            title: "Blogs page",
+            title: "Blogs",
         })
     }
 
@@ -25,7 +25,8 @@ export const BlogsPage = () => {
     const navigate = useNavigate()
 
     const handleBlogNavigation = (pathUrl:string) => {
-        navigate(`/${pathUrl}`)
+        const path = `/${pathUrl}`
+        navigate(path)
     }
 
     useEffect(() => {
@@ -39,7 +40,7 @@ export const BlogsPage = () => {
     return (
         <div>
              <Helmet>
-                <title>Netralabs | Blog</title>
+                <title>Netra Labs | Blogs</title>
                 <meta name="description" content="Blogs" />
             </Helmet>
             {/* header */}

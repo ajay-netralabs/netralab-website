@@ -36,7 +36,7 @@ export const Home = () => {
         ReactGA.send({
             hitType: "pageview",
             page: "/",
-            title: "Home",
+            title: "Netra Labs",
         })
     }
 
@@ -62,7 +62,7 @@ export const Home = () => {
     return (
         <div className="">
             <Helmet>
-                <title>Netralabs</title>
+                <title>Netra Labs</title>
                 <meta name="description" content="netralabs home page" />
             </Helmet>
 

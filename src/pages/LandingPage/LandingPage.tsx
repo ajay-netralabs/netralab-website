@@ -20,8 +20,8 @@ export const LandingPage = () => {
     if(PROD) {
         ReactGA.send({
             hitType: "pageview",
-            page: "/language-chain/",
-            title: "Enterprise language chain page",
+            page: "/ground-truth-gain-complete-control-over-your-ai-agent-development/",
+            title: "Landing page",
         })
     }
 
@@ -179,7 +179,7 @@ export const LandingPage = () => {
     return (
         <div className="landing-page">
              <Helmet>
-                <title>Netralabs</title>
+                <title>Netra Labs</title>
                 <meta name="description" content="AI Agent development" />
             </Helmet>
 

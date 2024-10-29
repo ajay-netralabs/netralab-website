@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import { blogs } from "./data"
 import parse from 'html-react-parser';
 import { useDispatch } from "react-redux";
@@ -11,6 +11,7 @@ import { Helmet } from "react-helmet-async";
 export const Blog = () => {
 
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
     const { pathUrl } = useParams()
 
@@ -20,16 +21,20 @@ export const Blog = () => {
 
     useEffect(() => {
         const blogData = blogs.find((blog:any) => blog.pathUrl === pathUrl)
-        setBlog(blogData)
-
-        // only send analytics on production environment
-        const { PROD } = import.meta.env
-        if(PROD && blogData?.pathUrl) {
-            ReactGA.send({
-                hitType: "pageview",
-                page: blogData.pathUrl,
-                title: "Blog page",
-            })
+        if(blogData){
+            setBlog(blogData)
+    
+            // only send analytics on production environment
+            const { PROD } = import.meta.env
+            if(PROD && blogData?.pathUrl) {
+                ReactGA.send({
+                    hitType: "pageview",
+                    page: blogData.pathUrl,
+                    title: "Blog",
+                })
+            }
+        }else {
+            navigate("/blog")
         }
 
     }, [pathUrl])
@@ -50,7 +55,7 @@ export const Blog = () => {
     return (
         <div>
             <Helmet>
-                <title>Netralabs | Blog</title>
+                <title>Netra Labs | Blog</title>
                 <meta name="description" content="Blogs" />
             </Helmet>
             { blog ? (

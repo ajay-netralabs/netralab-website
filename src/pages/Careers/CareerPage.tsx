@@ -3,6 +3,7 @@ import careerImg from "../../../public/static_img/carrer_img.jpeg"
 import { useNavigate } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import { resetPrevLocation } from "../../store/locationSlice"
+import { Helmet } from "react-helmet-async"
 
 export const CareersPage = () => {
 
@@ -27,16 +28,24 @@ export const CareersPage = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Netra Labs | Careers</title>
+                <meta name="description" content="Blogs" />
+            </Helmet>
+
+            <div className="w-full relative h-[400px]">
+                <img className="w-full object-cover h-full brightness-50" src={careerImg} alt="careers" />
+                <p className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold heading-text text-center">Do you want to Shape the Future of <span className="text-accent"> AI Agents?​</span></p>
+            </div>
             {/* header */}
-            <div className="w-full relative">
+            {/* <div className="w-full relative">
                 <img className="w-full object-cover" src={careerImg} alt="careers" />
                 <p className="absolute left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] text-[15px] md:text-[45px] lg:text-[55px] font-bold text-accent text-center">
                     Do you want to Shape the Future of <span className="text-accent"> AI Agents?​</span>
                 </p>
-            </div>
+            </div> */}
 
-            {/* popular topics */}
-            <div className="mt-16">
+            <div className="mt-16 h-[250px]">
                 <div className="text-center">
                     {[].length ? (
                         <p className="lg:text-4xl md:divider md:divider-accent lg:divider lg:divider-accent text-wrap">We have {[].length} open openings now!</p>

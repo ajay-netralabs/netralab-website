@@ -17,7 +17,7 @@ export const IntegratorForm = () => {
     return (
         <div className="max-w-[650px]">
                 <Helmet>
-                    <title>Netralabs | Contact us</title>
+                    <title>Netra Labs | Contact us</title>
                     <meta name="description" content="Contact us" />
                 </Helmet>
                 <iframe

@@ -32,7 +32,7 @@ export const TermsAndCondition = () => {
     return (
         <div className="extra-page p-3 md:p-[5rem] lg:p-[5rem] text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed text-[#CECECE] break-words">
            <Helmet>
-                <title>Netralabs | Terms of Use</title>
+                <title>Netra Labs | Terms of Use</title>
                 <meta name="description" content="Terms of Use" />
             </Helmet>
             

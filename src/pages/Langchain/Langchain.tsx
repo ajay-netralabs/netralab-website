@@ -328,7 +328,7 @@ export const Langchain = () => {
     <div>
 
             <Helmet>
-                <title>Netralabs | Enterprise Language Chain</title>
+                <title>Netra Labs | Enterprise Language Chain</title>
                 <meta name="description" content="Enterprise Language Chain" />
             </Helmet>
 
