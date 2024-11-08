@@ -10,6 +10,8 @@ import Slider from "react-slick";
 import parse from 'html-react-parser';
 import CreatorImg2 from "../../../public/creator-img-2-updated.png"
 import video1 from "../../../public/landing-page/videos/1.mp4"
+import { openSurveyLink } from "../../services/Utils";
+import { SURVEY_URL } from "../../services/Constant";
 
 
 export const LandingPage = () => {
@@ -128,7 +130,8 @@ export const LandingPage = () => {
     }
 
     const handleNavigationToSurvey = () => {
-        navigate("/data-scientist-survey")
+        // navigate("/data-scientist-survey")
+        openSurveyLink()
     }
 
     const settings = {
@@ -329,7 +332,7 @@ export const LandingPage = () => {
                         <li>Access to our GenAI Certification Program designed for every role, domain and functions.</li>
                         <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
                     </ul>
-                    <Link className="mt-4 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                    <Link className="mt-4 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={SURVEY_URL}>Sign Up For Early Access</Link>
                 </div>
             </div>
 
@@ -354,7 +357,7 @@ export const LandingPage = () => {
                                     <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
                                 </ul>
                                 <div className="mt-4">
-                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={SURVEY_URL}>Sign Up For Early Access</Link>
                                 </div>
                                 {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
                             </div>
@@ -372,7 +375,7 @@ export const LandingPage = () => {
                                     <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
                                 </ul>
                                 <div className="mt-4">
-                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={SURVEY_URL}>Sign Up For Early Access</Link>
                                 </div>
                                 {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
                             </div>
@@ -390,7 +393,7 @@ export const LandingPage = () => {
                                     <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
                                 </ul>
                                 <div className="mt-4">
-                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={SURVEY_URL}>Sign Up For Early Access</Link>
                                 </div>
                                 {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
                             </div>
@@ -408,7 +411,7 @@ export const LandingPage = () => {
                                     <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
                                 </ul>
                                 <div className="mt-4">
-                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={SURVEY_URL}>Sign Up For Early Access</Link>
                                 </div>
                                 {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
                             </div>
@@ -426,7 +429,7 @@ export const LandingPage = () => {
                                     <li>Beta access to Ground Truth<sup>®</sup> - bring your hypothesis to life and achieve the outcomes you envision.</li>
                                 </ul>
                                 <div className="mt-4">
-                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link>
+                                    <Link className="mt-2 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={SURVEY_URL}>Sign Up For Early Access</Link>
                                 </div>
                                 {/* <Link className="btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white px-6" to={"/data-scientist-survey"}>Sign Up For Early Access</Link> */}
                             </div>
@@ -652,7 +655,7 @@ export const LandingPage = () => {
                                 </ul>
                             </div>
 
-                            <div className="w-full mt-10 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={() => handleNavigationToSurvey}>
+                            <div className="w-full mt-10 btn btn-accent rounded-sm hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={handleNavigationToSurvey}>
                                 <p className="">Begin the Test - Your Insights Matter</p>
                             </div>
                         </div>

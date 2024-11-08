@@ -1,5 +1,5 @@
-import { Routes, Route, useNavigate } from 'react-router-dom'
-import { Home, LandingPage, PrivacyPolicy, SurveyTest, TermsAndCondition } from './pages'
+import { Routes, Route } from 'react-router-dom'
+import { Home, LandingPage, PrivacyPolicy, TermsAndCondition } from './pages'
 import './App.css'
 import { NavbarLayout } from './NavbarLayout'
 import { Creators, Innovators, Integrators } from './pages/whoWeServe'
@@ -9,12 +9,13 @@ import { ContactUsPage } from './pages/ContactUs'
 import { Langchain } from './pages/Langchain'
 
 import ReactGA from 'react-ga4';
+import { openSurveyLink } from './services/Utils'
 // import { useEffect } from 'react'
 
 
 function App() {
 
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
 
   // only send analytics on production environment
   const { PROD , VITE_GA_ID } = import.meta.env
@@ -39,13 +40,13 @@ function App() {
     } 
   }
 
-  const closeModal = () => {
-    const modal = document.getElementById('survey-modal')
-    if(modal) {
-      //@ts-ignore
-      modal.close()
-    } 
-  }
+  // const closeModal = () => {
+  //   const modal = document.getElementById('survey-modal')
+  //   if(modal) {
+  //     //@ts-ignore
+  //     modal.close()
+  //   } 
+  // }
 
   // const showSurveyModal = (e:any) => {
   //   e.preventDefault()
@@ -75,7 +76,7 @@ function App() {
     <>
     <Routes>
       <Route path="/ground-truth-gain-complete-control-over-your-ai-agent-development/" element={<LandingPage />} />
-      <Route path="/data-scientist-survey" element={<SurveyTest />} />
+      {/* <Route path="/data-scientist-survey" element={<SurveyTest />} /> */}
       <Route element={<NavbarLayout />}>
         <Route path="/" element={<Home />}/>
         <Route path="/ai-agents-for-integrators/" element={<Integrators />} />
@@ -112,7 +113,7 @@ function App() {
                   </ul>
               </div>
 
-              <div className="w-full mt-10 btn btn-accent rounded-md hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={() => {closeModal(); navigate("/data-scientist-survey")}}>
+              <div className="w-full mt-10 btn btn-accent rounded-md hover:cursor-pointer text-base md:text-[1.1vw] lg:text[1.1vw] text-white" onClick={openSurveyLink}>
                   <p>Begin the Test - Your Insights Matter</p>
               </div>
           </div>

@@ -78,8 +78,8 @@ export const Home = () => {
 
                         <div className="static md:absolute lg:absolute top-0">
                             <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold heading-text">
-                                Turn Human Expertise into <br /> Expert AI Agents</h1>
-                            <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Netra Lab's <strong className="text-accent">Ground Truth<sup>®</sup></strong> is the <strong className="uppercase text-accent">world's first Enterprise Language Chain</strong> framework for building and deploying Expert <strong className="uppercase text-accent">AI Agents™</strong> into production, at scale.</p>
+                                The All-in-One Platform for Building Production-Grade AI Agents</h1>
+                            <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words">Build, test, and deploy <span className="text-accent uppercase">autonomous</span> and <span className="text-accent uppercase">interactive AI agents.</span> The complete environment data scientists need for <span className="text-accent uppercase">agent development</span> - from hypothesis testing to production.</p>
                             <Link className="inline-block border border-accent learn-more-btn glass-btn mt-[5%] py-[10px] px-[20px] w-fit hover:cursor-pointer text-base md:text-[1.1vw] lg:text-[1.1vw]" to="/language-chain/">Enterprise Language Chain? <span className="ml-4 text-accent">Learn More</span></Link>
                         </div>
                     </div>
@@ -131,23 +131,23 @@ export const Home = () => {
                 <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Versatile</div>
                 <div className="flex flex-col md:flex-row lg:flex-row">
                     <div className="w-full md:w-[50%] lg:w-[50%]">
-                        <h1 className="text-xl md:text-[3vw] lg:text-[3vw] mt-[26px] leading-[1.1] font-bold heading-text">To simplify the complexity of Generative AI.</h1>
+                        <h1 className="text-xl md:text-[3vw] lg:text-[3vw] mt-[26px] leading-[1.1] font-bold heading-text">Build Production AI Agents with Complete Development Control.</h1>
                         <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed text-[#CECECE] break-words mt-[20px]">Ground Truth<sup>®</sup> simplifies AI Agent development with an intuitive drag-and-drop interface, enabling rapid creation of complex agentic workflows.</p>
                         {/* lists */}
                         <div className="mt-[40px] flex flex-col text-[#CECECE]">
                             <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold text-accent uppercase">Integrate with any model,</span> with no limitations.</div>
+                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Deploy and evaluate your <span className="text-accent uppercase">OPEN SOURCE AND CUSTOM MODELS</span> with built-in performance metrics.</div>
                             </div>
 
                             <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Easily craft prompts that guide your agent to <span className="font-bold text-accent uppercase"> act on your data exactly as you need.</span></div>
+                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Leverage our <span className="text-accent uppercase">PATENT-PENDING ADAPTER TECHNOLOGY</span> for efficient model fine-tuning.</div>
                             </div>
 
                             <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Connect and synchronize with your <span className="font-bold text-accent uppercase">existing tools and systems for a unified workflow</span>.</div>
+                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Monitor and optimize your <span className="text-accent uppercase">COMPUTATIONAL RESOURCES</span> across development and production.</div>
                             </div>
                         </div>
                     </div>
@@ -229,7 +229,7 @@ export const Home = () => {
                             <source src={Whyus} type="video/mp4"/>
                         </video> */}
                     <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Why Us?</div>
-                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] text-center mt-[26px] font-bold heading-text px-8">The only platform to provide complete control over the entire agentic workflow lifecycle, using our proprietary framework.</h1>
+                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] text-center mt-[26px] font-bold heading-text px-8">Enterprise-Grade Agent Development</h1>
                     {/* cards */}
                     <div className="hidden md:flex lg:flex w-full mt-[20px]">
 
@@ -583,7 +583,7 @@ export const Home = () => {
 
             {/* fourth container */}
             <div className="p-3 md:p-10 lg:p-10 ">
-                <div className="w-full md:w-[70%] lg:w-[70%] flex flex-col justify-end">
+                <div className="w-full md:w-[60%] lg:w-[60%] flex flex-col justify-end">
                     {/* <video
                         className="mix-blend-exclusion w-[100px] md:w-[115px] lg:w-[130px]"
                         muted // @ts-ignore
@@ -593,7 +593,9 @@ export const Home = () => {
                         <source src={Stable} type="video/mp4"/>
                     </video> */}
                     <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Stable</div>
-                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] mt-[26px] font-bold heading-text leading-[1]">Ensure Enterprise grade reliability and governance.</h1>
+                    {/* <div className="w-full md:w-[50%] lg:w-[50%]"> */}
+                        <h1 className="text-xl md:text-[3vw] lg:text-[3vw] mt-[26px] font-bold heading-text leading-[1]">Production-Ready Control Systems for AI Agents.</h1>
+                    {/* </div> */}
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] mt-[20px] text-[#CECECE] leading-relaxed">Enterprises demand security and accountability, the <span className="uppercase text-[18px] font-bold leading-relaxed">Ground Truth<sup>®</sup> Framework</span> delivers with enterprise-grade control mechanisms:</p>
                 </div>
                 <div className="flex items-center gap-[40px] flex-col md:flex-row lg:flex-row mt-[20px]">
@@ -613,15 +615,15 @@ export const Home = () => {
                     <div className="flex flex-col text-[#CECECE] w-full md:w-[50%] lg:w-[50%] mt-[20px] md:mt-0 lg:mt-0">
                         <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold"></span> Fine-tune agent responses and decision-making processes by <span className="font-bold leading-relaxed text-accent uppercase">ADJUSTING HYPERPARAMETERS AND LEVERAGE ADVANCED FINE TUNING TECHNIQUES.</span></div>
+                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span>Advanced hyperparameter optimization with <span className="uppercase font-bold text-accent">PATENT-PENDING ADAPTER TECHNOLOGY</span> for precise agent control.</span></div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Our unique Validation mode enables the <span className="font-bold leading-relaxed text-accent uppercase"> debugging and optimization of your agentic workflows.</span></div>
+                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Real-time workflow debugging with <span className="uppercase text-accent font-bold">VALIDATION MODE</span> for performance optimization.</div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
-                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold leading-relaxed text-accent uppercase">Guarantee security by deploying agents in your environment, </span> using your data.</div>
+                            <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Deploy using private infrastructure with <span className="uppercase text-accent font-bold">YOUR EXISTING SECURITY PROTOCOLS.</span></div>
                         </div>
                     </div>
                 </div>
@@ -639,25 +641,25 @@ export const Home = () => {
                         <source src={Scalable} type="video/mp4"/>
                     </video> */}
                     <div className='tags-btn text-xl md:text-[1.25vw] lg:text[1.25vw]'>Scalable</div>
-                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text">And endless scaling possibilities for your AI Agents.</h1>
+                    <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text">Optimize Performance at Scale.</h1>
                     <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE]">The Ground Truth<sup>®</sup> framework excels in the orchestration of complex agentic workflows, providing actual clarity around usage.</p>
                 </div>
                 <div className="flex justify-between mt-[20px] md:mt-0 lg:mt-0 items-center flex-col md:flex-row lg:flex-row">
                     <div className="flex flex-col text-[#CECECE]  w-full md:w-[50%] lg:w-[50%] mt-[20px] md:mt-12 lg:mt-12">
                         <div className="flex items-center gap-3 glass-card-1 p-2.5 md:p-5 lg:p-5">
                                 <div className="badge badge-secondary badge-xs"></div>
-                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]"><span className="font-bold leading-relaxed text-accent uppercase">Track your token consumption and monitor usage</span> simultaneously across all agentic workflows.</div>
+                                <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">Monitor detailed <span className="font-bold leading-relaxed text-accent uppercase">TOKEN CONSUMPTION ANALYTICS</span> across all workflows in real-time.</div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-2 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">
-                                Extract insights from diverse sources through <span className="font-bold leading-relaxed text-accent uppercase"> concurrent information retrieval.</span>
+                                Extract and analyze data with <span className="font-bold leading-relaxed text-accent uppercase">PARALLEL PROCESSING ARCHITECTURE</span> seamlessly.
                             </div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
                             <div className="badge badge-secondary badge-xs"></div>
                             <div lang='en' className="glass-text text-base md:text-[1.15vw] lg:text-[1.15vw]">
-                            <span className="font-bold leading-relaxed text-accent uppercase"> Agents that operate asynchronously,</span> ensuring tasks are executed without waiting for sequential order.
+                            Process large datasets with <span className="font-bold leading-relaxed text-accent uppercase">ASYNCHRONOUS AGENT EXECUTION</span> without bottlenecks.
                             </div>
                         </div>
                     </div>
