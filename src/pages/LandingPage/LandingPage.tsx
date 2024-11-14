@@ -98,7 +98,7 @@ export const LandingPage = () => {
             return `<p>Utilize our patent-pending LoRA Adapter technology to fine-tune models efficiently, even with limited computational resources. By updating only a subset of model parameters, you achieve faster training times and significantly reduce computational load. This results in <span className="font-bold text-accent uppercase">4x faster inference</span> and <span className="font-bold text-accent uppercase">75% reduction in compute costs</span>, enabling you to deploy high-performance AI agents without the typical resource constraints associated with large models.</p>`
         }
         else {
-            return `<p>Quickly validate outputs and adjust your models on the fly using Ground Truth's validation mode. Seamlessly integrate human feedback into the training process, allowing you to refine and improve your AI agents continuously. <span className="font-bold text-accent uppercase">This iterative approach enhances model accuracy and effectiveness</span>, and all of this is managed within a single platform—eliminating the need for manual interventions or separate systems for validation and feedback.</p>`
+            return `<p>Quickly validate outputs and adjust your models on the fly using Ground Ground Truth<sup>®</sup>'s validation mode. Seamlessly integrate human feedback into the training process, allowing you to refine and improve your AI agents continuously. <span className="font-bold text-accent uppercase">This iterative approach enhances model accuracy and effectiveness</span>, and all of this is managed within a single platform—eliminating the need for manual interventions or separate systems for validation and feedback.</p>`
         }
     }
 
@@ -214,7 +214,7 @@ export const LandingPage = () => {
                             {/* <div> */}
                                 <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold heading-text mt-4">Ground Truth<sup>®</sup>: Gain Complete Control Over Your AI Agent Development</h1>
                                 <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]">As data scientists, we grapple with the constraints of generic AI frameworks that handcuff our ability to develop accurate solutions.</p>
-                                <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]"><span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the first enterprise language chain framework <span className="font-bold text-accent uppercase">built specifically for data science teams</span>. Ground Truth gives data scientists the power to create finely tuned enterprise AI Agents that solve enterprise problems, whilst being in your complete control.</p>
+                                <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-relaxed mt-[20px] text-[#CECECE] break-words mx-[40px]"><span className="font-bold text-accent">Ground Truth<sup>®</sup></span> is the first enterprise language chain framework <span className="font-bold text-accent uppercase">built specifically for data science teams</span>. Ground Truth<sup>®</sup> gives data scientists the power to create finely tuned enterprise AI Agents that solve enterprise problems, whilst being in your complete control.</p>
 
                             {/* </div> */}
                         </div>

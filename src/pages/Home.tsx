@@ -596,7 +596,7 @@ export const Home = () => {
                     {/* <div className="w-full md:w-[50%] lg:w-[50%]"> */}
                         <h1 className="text-xl md:text-[3vw] lg:text-[3vw] mt-[26px] font-bold heading-text leading-[1]">Production-Ready Control Systems for AI Agents.</h1>
                     {/* </div> */}
-                    <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] mt-[20px] text-[#CECECE] leading-relaxed">Enterprises demand security and accountability, the <span className="uppercase text-[18px] font-bold leading-relaxed">Ground Truth<sup>®</sup> Framework</span> delivers with enterprise-grade control mechanisms:</p>
+                    <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] mt-[20px] text-[#CECECE] leading-relaxed">Enterprises demand security and accountability, the <span className="uppercase font-semibold leading-relaxed">Ground Truth<sup>®</sup> Framework</span> delivers with enterprise-grade control mechanisms:</p>
                 </div>
                 <div className="flex items-center gap-[40px] flex-col md:flex-row lg:flex-row mt-[20px]">
                     <div className="w-full md:w-[50%] lg:w-[50%] flex justify-center items-center">
@@ -800,7 +800,7 @@ export const Home = () => {
                     <div>
                         <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text">FAQs</h1>
                         <div className=" flex justify-center items-center mx-auto">
-                            <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-[20px] text-[#CECECE]">Netra Lab's is pioneering the development of "Expert" AI Agents. Our approach via our proprietary Ground Truth framework is truly innovative and game changing.  We understand you may have serious questions. If none of the answers presented here address your concerns, please reach out to us and we will be happy to discuss and deep dive with you!</p>
+                            <p className="text-lg md:text-[1.2vw] lg:text-[1.2vw] leading-relaxed mt-[20px] text-[#CECECE]">Netra Lab's is pioneering the development of "Expert" AI Agents. Our approach via our proprietary Ground Truth<sup>®</sup> framework is truly innovative and game changing.  We understand you may have serious questions. If none of the answers presented here address your concerns, please reach out to us and we will be happy to discuss and deep dive with you!</p>
                         </div>
                     </div>
                     <div className="mt-[40px] ">

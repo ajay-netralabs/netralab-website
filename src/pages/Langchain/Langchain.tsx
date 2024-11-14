@@ -774,7 +774,7 @@ export const Langchain = () => {
                 <div className="flex flex-col justify-center items-center text-center">
                     <h1 className="text-xl md:text-[2.8vw] lg:text-[2.8vw] leading-[1.2] font-bold heading-text break-words">Be part of our exclusive Pilot Program</h1>
                     <div className="text-center flex justify-center items-center">
-                        <p className="w-[80vw] text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-[1.4] text-[#CECECE] mt-2">Ready to build an Expert AI Agent? Join our Pilot Program and be among the first to leverage the power of true Enterprise Language Chains. See for yourself how Ground Truth can transform your AI initiatives from experimental projects to production-grade, enterprise-scale solutions.</p>
+                        <p className="w-[80vw] text-lg md:text-[1.5vw] lg:text-[1.5vw] leading-[1.4] text-[#CECECE] mt-2">Ready to build an Expert AI Agent? Join our Pilot Program and be among the first to leverage the power of true Enterprise Language Chains. See for yourself how Ground Truth<sup>®</sup> can transform your AI initiatives from experimental projects to production-grade, enterprise-scale solutions.</p>
                     </div>
                     
                     <div className="m-3 md:m-12 lg:m-12">

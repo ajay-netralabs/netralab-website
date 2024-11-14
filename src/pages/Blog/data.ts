@@ -10,7 +10,7 @@ export const blogs = [
 
                 Enter the era of Generative AI and AI Agents. These advanced AI systems, powered by large language models (LLMs), have the ability to understand context, handle subjectivity, and generate human-like responses. This has opened up new possibilities for automation, enabling the creation of more flexible and adaptable solutions.
 
-                In this blog post, we’ll explore the evolution of automation, from traditional RPA to generalized autonomous agents, and finally, to the emerging concept of Expert AI Agents (specialized agents trained on a hyperspecific task or function). We’ll also dive into how Ground Truth™, our cutting-edge platform, enables the creation of these specialized AI Agents, unlocking new levels of efficiency and innovation across industries.
+                In this blog post, we’ll explore the evolution of automation, from traditional RPA to generalized autonomous agents, and finally, to the emerging concept of Expert AI Agents (specialized agents trained on a hyperspecific task or function). We’ll also dive into how Ground Truth<sup>®</sup>, our cutting-edge platform, enables the creation of these specialized AI Agents, unlocking new levels of efficiency and innovation across industries.
 
                 <h1> The Limitations of Traditional Automation </h1>
                 First off, why do we automate anything? At its core, automation is about making processes more efficient and effective. By delegating repetitive, time-consuming tasks to machines, businesses save time, reduce errors, and free up human resources for higher-value activities.
@@ -31,19 +31,19 @@ export const blogs = [
 
                 The value of Expert Agents lies in their ability to scale human knowledge to an unlimited number of agents. In the past, a single expert with decades of experience could only take on a limited number of clients or projects at once. With Expert AI Agents, that same expertise can be replicated and applied on a much larger scale, enabling businesses to tackle complex, domain-specific challenges with unprecedented efficiency and accuracy.
 
-                <h1>Ground Truth™ : The Platform for building your Expert AI Agent</h1>
-                With Ground Truth™, we’ve developed a cutting-edge platform that empowers users to create Expert AI Agents and instill their domain expertise into AI-powered entities. Our platform provides a drag-and-drop interface for configuring and training specialized agents that will follow your specific workflow, making it easier than ever to harness the power of Generative AI for specific business functions.
+                <h1>Ground Truth<sup>®</sup> : The Platform for building your Expert AI Agent</h1>
+                With Ground Truth<sup>®</sup>, we’ve developed a cutting-edge platform that empowers users to create Expert AI Agents and instill their domain expertise into AI-powered entities. Our platform provides a drag-and-drop interface for configuring and training specialized agents that will follow your specific workflow, making it easier than ever to harness the power of Generative AI for specific business functions.
 
-                One notable example of an Expert AI Agent created using Ground Truth is “Joseph,” named after a gentleman with over 35 years of experience in batch processing. Joseph’s creator invented a novel method called HyperBatch™, which executes batch processes 20-60 times faster than traditional mainframe methods. However, the conversion process from legacy COBOL programs was manual, as existing refactoring tools couldn’t handle the complexity of the invention.
+                One notable example of an Expert AI Agent created using Ground Truth<sup>®</sup> is “Joseph,” named after a gentleman with over 35 years of experience in batch processing. Joseph’s creator invented a novel method called HyperBatch™, which executes batch processes 20-60 times faster than traditional mainframe methods. However, the conversion process from legacy COBOL programs was manual, as existing refactoring tools couldn’t handle the complexity of the invention.
 
-                Using Ground Truth, Joseph’s creator developed “JOSEPH.AI™,” the first Generative AI-powered batch processing conversion solution. This Expert AI Agent reduces years of development to mere days, resulting in operating cost savings of 80% and 20 times faster run times. By encapsulating Joseph’s creator’s extensive knowledge and expertise, JOSEPH.AI™ demonstrates the transformative potential of Expert AI Agents in tackling complex, domain-specific challenges.
+                Using Ground Truth<sup>®</sup>, Joseph’s creator developed “JOSEPH.AI™,” the first Generative AI-powered batch processing conversion solution. This Expert AI Agent reduces years of development to mere days, resulting in operating cost savings of 80% and 20 times faster run times. By encapsulating Joseph’s creator’s extensive knowledge and expertise, JOSEPH.AI™ demonstrates the transformative potential of Expert AI Agents in tackling complex, domain-specific challenges.
 
                 <h1>Conclusion</h1>
                 The evolution of automation has brought us from rigid, rule-based systems to the era of Generative AI and AI Agents. Expert AI Agents represent the next frontier in this journey, combining the power of AI with deep domain expertise to tackle hyper-specific business challenges.
 
                 We believe that Expert AI Agents are the future of automation. By enabling businesses to create specialized AI Agents for every function and task, we’re unlocking new levels of efficiency, accuracy, and innovation across industries. Our platform empowers users to instill their domain expertise into AI-powered entities, scaling human knowledge to unprecedented levels.
 
-                If you’re looking to harness the power of AI Agents for your specific domain, we invite you to explore Ground Truth. Our platform provides the tools and capabilities you need to create highly specialized agents that can transform your business processes. Contact us today to learn more about how Ground Truth can help you unlock the full potential of Generative AI and Expert Agents in your organization.`
+                If you’re looking to harness the power of AI Agents for your specific domain, we invite you to explore Ground Truth<sup>®</sup>. Our platform provides the tools and capabilities you need to create highly specialized agents that can transform your business processes. Contact us today to learn more about how Ground Ground Truth<sup>®</sup> can help you unlock the full potential of Generative AI and Expert Agents in your organization.`
 
         }
     ]
