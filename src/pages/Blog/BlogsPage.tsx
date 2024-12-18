@@ -37,6 +37,19 @@ export const BlogsPage = () => {
         }
     }, [])
 
+    useEffect(() => {
+        const script = document.createElement('script');
+      
+        script.src = "https://fe.sitedataprocessing.com/cscripts/cnySuUiE57-5a988b7d.js";
+        script.async = true;
+      
+        document.body.appendChild(script);
+      
+        return () => {
+          document.body.removeChild(script);
+        }
+      }, []);
+
     return (
         <div>
              <Helmet>

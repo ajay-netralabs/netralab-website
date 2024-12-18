@@ -3,7 +3,7 @@ import "./landing-page.css"
 // import GT_LOGO from "../../../public/GT_logo.png"
 import GT_LOGO from "../../../public/netralabs.png"
 import { Link, useNavigate } from "react-router-dom"
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import ReactGA from 'react-ga4';
 import { Helmet } from "react-helmet-async";
 import Slider from "react-slick";
@@ -178,6 +178,19 @@ export const LandingPage = () => {
             </div>
           )
       };
+
+    useEffect(() => {
+            const script = document.createElement('script');
+          
+            script.src = "https://fe.sitedataprocessing.com/cscripts/cnySuUiE57-5a988b7d.js";
+            script.async = true;
+          
+            document.body.appendChild(script);
+          
+            return () => {
+              document.body.removeChild(script);
+            }
+          }, []);
 
     return (
         <div className="landing-page">

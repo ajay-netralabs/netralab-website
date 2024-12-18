@@ -102,6 +102,19 @@ export const Integrators = () => {
         return () => window.clearTimeout(timer)
     })
 
+    useEffect(() => {
+        const script = document.createElement('script');
+      
+        script.src = "https://fe.sitedataprocessing.com/cscripts/cnySuUiE57-5a988b7d.js";
+        script.async = true;
+      
+        document.body.appendChild(script);
+      
+        return () => {
+          document.body.removeChild(script);
+        }
+      }, []);
+
     return (
         <div className="mt-1 md:mt-12 lg:mt-12">
 

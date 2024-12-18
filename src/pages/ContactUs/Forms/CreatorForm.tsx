@@ -1,4 +1,5 @@
 
+import { useEffect } from 'react';
 import ReactGA from 'react-ga4';
 import { Helmet } from 'react-helmet-async';
 
@@ -13,11 +14,25 @@ export const CreatorForm = () => {
         })
     }
 
+    useEffect(() => {
+            const script = document.createElement('script');
+          
+            script.src = "https://fe.sitedataprocessing.com/cscripts/cnySuUiE57-5a988b7d.js";
+            script.async = true;
+          
+            document.body.appendChild(script);
+          
+            return () => {
+              document.body.removeChild(script);
+            }
+          }, []);
+
     return (
         <div className=" max-w-[650px]">
                 <Helmet>
                     <title>Netra Labs | Contact us</title>
                     <meta name="description" content="Contact us" />
+                    
                 </Helmet>
                 <iframe
                 src="https://api.leadconnectorhq.com/widget/form/uQRkUGdi8YKpr6RvdtUH"

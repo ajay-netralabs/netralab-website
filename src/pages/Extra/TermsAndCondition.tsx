@@ -28,6 +28,19 @@ export const TermsAndCondition = () => {
         window.scrollTo(0,0)
     }, [])
 
+    useEffect(() => {
+        const script = document.createElement('script');
+      
+        script.src = "https://fe.sitedataprocessing.com/cscripts/cnySuUiE57-5a988b7d.js";
+        script.async = true;
+      
+        document.body.appendChild(script);
+      
+        return () => {
+          document.body.removeChild(script);
+        }
+      }, []);
+
 
     return (
         <div className="extra-page p-3 md:p-[5rem] lg:p-[5rem] text-base md:text-[1.25vw] lg:text-[1.25vw] leading-relaxed text-[#CECECE] break-words">
