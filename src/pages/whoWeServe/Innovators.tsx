@@ -1,7 +1,7 @@
 
 import parse from 'html-react-parser';
 
-import InnovatorProof from "../../../public/Innovator-john-2.svg"
+import InnovatorProof from "../../../public/Innovator-john-3.svg"
 import { useEffect, useState } from "react"
 import { InnovatorData } from "./data"
 import { FaqAccordion } from "../../components"
@@ -375,10 +375,8 @@ export const Innovators = () => {
                             <h1 className="font-bold text-[20px]">$25 Billion Market Opportunity</h1>
                             <p className="text-[16px] mt-[20px]">"With the Ground Truth<sup>®</sup> framework, we were able to create a systemic automation of information sources, and apply both objective and subjective analysis that cloned the domain expertise of our firm, to provide results at a speed that fundamentally changes how we do business."</p>
                         </div>
-                        <div className="border-t border-[#CECECE]">
-                            <p>John Dukes</p>
-                            <p>29+ Years DER Analysis Expertise</p>
-                            <p>CEO @ 8X Energy</p>
+                        <div className="border-t border-[#CECECE] pt-1">
+                            <p>DER Industry Veteran</p>
                         </div>
                     </div>
                 </div>
