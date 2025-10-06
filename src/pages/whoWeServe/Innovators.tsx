@@ -328,7 +328,7 @@ export const Innovators = () => {
                     </video> */}
                     <div className='tags-btn'>Proof</div>
                     <h1 className="text-xl md:text-[3vw] lg:text-[3vw] leading-[1.1] font-bold mt-[26px] heading-text break-words">Unlocking the Power of AI for a Sustainable Energy Future.</h1>
-                    <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">Bradley.ai, developed through our "Innovator" channel, is a testament to the transformative potential of combining deep industry expertise with cutting-edge AI.</p>
+                    {/* <p className="text-lg md:text-[1.5vw] lg:text-[1.5vw] lg:leading-relaxed mt-[20px] text-[#CECECE]">Bradley.ai, developed through our "Innovator" channel, is a testament to the transformative potential of combining deep industry expertise with cutting-edge AI.</p> */}
                 </div>
                 <div className="mt-4 flex items-center gap-[80px] flex-col-reverse md:flex-row lg:flex-row text-base md:text-[1.1vw] lg:text-[1.1vw] leading-relaxed">
                     <div className="flex flex-col w-full md:w-[50%] lg:w-[50%]">
@@ -344,9 +344,9 @@ export const Innovators = () => {
                             <div className="badge badge-secondary badge-xs"></div>
                             <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
                                 <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent uppercase'>Solution Statement</span>
-                                <span>
+                                {/* <span>
                                     Bradley.ai augments this process by fusing decades of DER analysis expertise with advanced generative AI and proprietary models, enabling rapid, accurate, and customized DER system recommendations.
-                                </span>
+                                </span> */}
                              </div>
                         </div>
                         <div className="flex items-center gap-3 glass-card-3 p-2.5 md:p-5 lg:p-5">
@@ -354,7 +354,7 @@ export const Innovators = () => {
                             <div lang='en' className='glass-text text-[#CECECE] text-base md:text-[1.15vw] lg:text-[1.15vw] flex flex-col gap-2'>
                                 <span className='font-bold text-lg  md:text-[1.25vw] lg:text-[1.25vw] text-accent uppercase'>Potential Impact</span>
                                 <span>
-                                    This accelerated DER adoption, driven by Bradley.ai's insights, can significantly reduce carbon emissions and accelerate the transition to a cleaner, more sustainable energy landscape.
+                                    This accelerated DER adoption, {/* driven by Bradley.ai's insights, */} can significantly reduce carbon emissions and accelerate the transition to a cleaner, more sustainable energy landscape.
                                 </span>
                             </div>
                         </div>
