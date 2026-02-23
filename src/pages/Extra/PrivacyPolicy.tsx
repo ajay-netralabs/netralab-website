@@ -219,9 +219,9 @@ export const PrivacyPolicy = () => {
             <div id="s12">
                 <h1>HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h1>
                 <p>If you have questions or comments about this notice, you may contact us by post at:
-                <br />__________
-                <br />__________
-                <br />__________
+                <br />Netra Labs LLC
+                <br />4850 Tamiami TRL N STE 301
+                <br />Naples, FL 34103
                 </p>
             </div>
             <div id="s13">

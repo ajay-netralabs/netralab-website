@@ -63,7 +63,7 @@ export const TermsAndCondition = () => {
             {/* agreement */}
             <div>
                 <h1>AGREEMENT TO OUR LEGAL TERMS</h1>
-                <p>We are Netra Labs LLC ("Company," "we," "us," "our"), a company registered in Wyoming, United States at 30 N GOULD ST STE R, Sheridan, WY 82801. We operate the website netralabs.ai (the "Site"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services"). You can contact us by email at info@netralabs.ai or by mail to 30 N GOULD ST STE R, Sheridan, WY 82801, United States. These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and Netra Labs LLC, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY. We will provide you with prior notice of any scheduled changes to the Services you are using. The modified Legal Terms will become effective upon posting or notifying you by info@netralabs.ai, as stated in the email message. By continuing to use the Services after the effective date of any changes, you agree to be bound by the modified terms. The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services. we recommend that you print a copy of these Legal Terms for your records.</p>
+                <p>We are Netra Labs LLC ("Company," "we," "us," "our"), a company registered in 4850 Tamiami TRL N STE 301, Naples, FL 34103. We operate the website netralabs.ai (the "Site"), as well as any other related products and services that refer or link to these legal terms (the "Legal Terms") (collectively, the "Services"). You can contact us by email at info@netralabs.ai or by mail to 4850 Tamiami TRL N STE 301, Naples, FL 34103, United States. These Legal Terms constitute a legally binding agreement made between you, whether personally or on behalf of an entity ("you"), and Netra Labs LLC, concerning your access to and use of the Services. You agree that by accessing the Services, you have read, understood, and agreed to be bound by all of these Legal Terms. IF YOU DO NOT AGREE WITH ALL OF THESE LEGAL TERMS, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE SERVICES AND YOU MUST DISCONTINUE USE IMMEDIATELY. We will provide you with prior notice of any scheduled changes to the Services you are using. The modified Legal Terms will become effective upon posting or notifying you by info@netralabs.ai, as stated in the email message. By continuing to use the Services after the effective date of any changes, you agree to be bound by the modified terms. The Services are intended for users who are at least 18 years old. Persons under the age of 18 are not permitted to use or register for the Services. we recommend that you print a copy of these Legal Terms for your records.</p>
             </div>
 
             {/* table of Content */}
@@ -309,11 +309,11 @@ Use the Services as part of any effort to compete with us or otherwise use the S
             </div>
             <div id="s13">
                 <h1>13. GOVERNING LAW</h1>
-                <p>These Legal Terms and your use of the Services are governed by and construed in accordance with the laws of the State of Wyoming applicable to agreements made and to be entirely performed within the State of Wyoming, without regard to its conflict of law principles.</p>
+                <p>These Legal Terms and your use of the Services are governed by and construed in accordance with the laws of the State of Florida applicable to agreements made and to be entirely performed within the State of Florida, without regard to its conflict of law principles.</p>
             </div>
             <div id="s14">
                 <h1>14. DISPUTE RESOLUTION</h1>
-                <p>Any legal action of whatever nature brought by either you or us (collectively, the "Parties" and individually, a "Party") shall be commenced or prosecuted in the state and federal courts located in Sheridan, Wyoming, and the Parties hereby consent to, and waive all defenses of lack of personal jurisdiction and forum non conveniens with respect to venue and jurisdiction in such state and federal courts. Application of the United Nations Convention on Contracts for the International Sale of Goods and the Uniform Computer Information Transaction Act (UCITA) are excluded from these Legal Terms. In no event shall any claim, action, or proceeding brought by either Party related in any way to the Services be commenced more than one (1) years after the cause of action arose.
+                <p>Any legal action of whatever nature brought by either you or us (collectively, the "Parties" and individually, a "Party") shall be commenced or prosecuted in the state and federal courts located in Florida, and the Parties hereby consent to, and waive all defenses of lack of personal jurisdiction and forum non conveniens with respect to venue and jurisdiction in such state and federal courts. Application of the United Nations Convention on Contracts for the International Sale of Goods and the Uniform Computer Information Transaction Act (UCITA) are excluded from these Legal Terms. In no event shall any claim, action, or proceeding brought by either Party related in any way to the Services be commenced more than one (1) years after the cause of action arose.
                 </p>
             </div>
             <div id="s15">
@@ -372,8 +372,8 @@ Use the Services as part of any effort to compete with us or otherwise use the S
             <p>In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:
 
             <br />Netra Labs LLC
-            <br />30 N GOULD ST STE R
-            <br />Sheridan, WY 82801
+            <br />4850 Tamiami TRL N STE 301
+            <br />Naples, FL 34103
             <br />United States
  
             <br />info@netralabs.ai
